@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <PackageId>BDDB.PublishGraph.Content</PackageId>
+    <Version>0.9.0-preview.3</Version>
+    <Description>Typed content contracts and deterministic compilation. Private P9 package candidate.</Description>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="HtmlSanitizer" />
+    <PackageReference Include="Markdig" />
+    <PackageReference Include="YamlDotNet" />
+  </ItemGroup>
+<ItemGroup><EmbeddedResource Include="LayoutContracts.cs" LogicalName="PublishGraph.Presentation.LayoutContracts.cs" /></ItemGroup>
+<ItemGroup><None Include="../../../Schemas/*.json" Pack="true" PackagePath="schemas" /></ItemGroup>
+</Project>

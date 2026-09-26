@@ -1,0 +1,23 @@
+# Keep the repository's text representation stable across operating systems.
+* text=auto eol=lf
+
+# Do not attempt line-ending normalization for binary assets.
+*.gif binary
+*.ico binary
+*.jpg binary
+*.jpeg binary
+*.pdf binary
+*.png binary
+*.webp binary
+*.woff binary
+*.woff2 binary
+*.zip binary
+
+# Review snapshots are byte-for-byte evidence captures. Preserve their original
+# encoding, line endings, and whitespace rather than applying text conversion.
+Documentation/Reviews/Archive/** -text whitespace=-trailing-space,-space-before-tab,-blank-at-eof
+
+# P7 review records and inputs are hash-bound to their exact source bytes.
+Documentation/Reviews/H7/** -text whitespace=-trailing-space,-space-before-tab,-blank-at-eof
+Content/Candidates/P7/** -text whitespace=-trailing-space,-space-before-tab,-blank-at-eof
+src/SDA.Studio.Web/Sites/Sda/layout-catalog.json -text whitespace=-trailing-space,-space-before-tab,-blank-at-eof

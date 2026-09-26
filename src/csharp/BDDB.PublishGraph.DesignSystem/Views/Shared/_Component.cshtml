@@ -1,0 +1,19 @@
+@model ComponentRecord
+@if (Model.Id == "notice")
+{
+  <aside class="notice" role="note">@(Model.Data.TryGetValue("text", out var text) ? text : "Synthetic notice")</aside>
+}
+else if (Model.Id == "media")
+{
+  <figure class="media-fallback">
+    <div class="media-placeholder" role="img" aria-label="Media unavailable">Media unavailable</div>
+    <figcaption>@(Model.Data.TryGetValue("caption", out var caption) ? caption : "Deterministic missing-media fallback")</figcaption>
+  </figure>
+}
+else if (Model.Id == "feed-fallback")
+{
+  <section class="feed-fallback" aria-label="External feed status">
+    <h2>Latest work</h2>
+    <p>Live updates are unavailable. The core page remains usable.</p>
+  </section>
+}

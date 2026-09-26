@@ -1,0 +1,2 @@
+@model CardGridModel
+<section class="stack"><h3>@Model.Heading</h3><div class="card-grid">@foreach (var card in Model.Cards) { @await Html.PartialAsync("_Card", card) }</div></section>

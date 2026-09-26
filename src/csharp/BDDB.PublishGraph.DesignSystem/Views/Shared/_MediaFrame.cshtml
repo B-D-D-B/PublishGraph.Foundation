@@ -1,0 +1,28 @@
+@model MediaFrameModel
+@{
+  var ratioClass = Model.AspectRatio switch
+  {
+    MediaAspectRatio.Landscape16x9 => "media-frame--16x9",
+    MediaAspectRatio.Portrait3x4 => "media-frame--3x4",
+    MediaAspectRatio.Panorama3x1 => "media-frame--3x1",
+    MediaAspectRatio.Standard4x3 => "media-frame--4x3",
+    MediaAspectRatio.Square1x1 => "media-frame--1x1",
+    _ => throw new InvalidOperationException($"Unsupported media aspect ratio: {Model.AspectRatio}")
+  };
+}
+<figure class="media-frame @ratioClass" data-state="@Model.State" data-asset-id="@Model.AssetId">
+  @if (Model.State == "available" && Model.Source is not null)
+  {
+    <img class="media-frame__visual" src="@Model.Source" alt="@Model.Alt" />
+  }
+  else
+  {
+    <div class="media-frame__visual" role="img" aria-label="@Model.Alt">
+      @if (Model.State != "available") { <span>Media unavailable</span> }
+    </div>
+  }
+  @if (Model.Caption is not null || Model.Credit is not null)
+  {
+    <figcaption class="split"><span>@Model.Caption</span>@if (Model.Credit is not null) { <small>Credit: @Model.Credit</small> }</figcaption>
+  }
+</figure>

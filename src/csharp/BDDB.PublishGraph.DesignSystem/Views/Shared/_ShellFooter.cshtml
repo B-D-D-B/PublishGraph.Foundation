@@ -1,0 +1,22 @@
+@model ShellModel
+<footer class="site-footer">
+  <div class="container stack">
+    @if (Model.Feed is not null) { @await Html.PartialAsync("_FeedShowcase", Model.Feed) }
+    <div class="footer-grid">
+      <div class="stack compact"><strong>@Model.SiteName</strong>@if (Model.Tagline is not null) { <p>@Model.Tagline</p> }</div>
+      @foreach (var group in Model.FooterGroups)
+      {
+        <section><h2>@group.Heading</h2><ul class="link-list">@foreach (var link in group.Links) { <li><a href="@link.Href">@link.Text</a></li> }</ul></section>
+      }
+    </div>
+    <div class="split footer-meta">
+      <ul class="social-links" aria-label="Social links">
+        @foreach (var link in Model.SocialLinks)
+        {
+          <li><a href="@link.Href"><svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><circle cx="10" cy="10" r="8" fill="none" stroke="currentColor" stroke-width="2"/><path d="M6 10h8M10 6v8" stroke="currentColor" stroke-width="2"/></svg><span>@link.Text</span></a></li>
+        }
+      </ul>
+      <small>@Model.Credits</small>
+    </div>
+  </div>
+</footer>

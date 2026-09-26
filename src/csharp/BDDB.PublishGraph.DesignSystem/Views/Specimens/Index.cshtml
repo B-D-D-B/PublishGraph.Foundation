@@ -1,0 +1,37 @@
+@model SpecimenViewModel
+@{ Layout = null; }
+<!doctype html>
+<html lang="en" data-palette="@Model.Palette">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex,nofollow,noarchive" />
+  <title>Design-system specimens Â· @Model.SiteName</title>
+  <link rel="stylesheet" href="~/_content/BDDB.PublishGraph.DesignSystem/site.css" asp-append-version="true" />
+</head>
+<body class="specimen-page" data-site-id="@Model.SiteId" data-asset-namespace="@Model.AssetNamespace">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  @await Html.PartialAsync("_ShellHeader", Model.Shell)
+  <main id="main-content">
+    <header class="section specimen-hero"><div class="container stack"><p class="eyebrow">Development-only synthetic surface</p><h1>P2 component system</h1><p class="lede">Normal, boundary, interactive, and failure states. This is synthetic component content.</p></div></header>
+
+    <section id="palette-contracts" class="section" aria-labelledby="palette-heading"><div class="container stack"><h2 id="palette-heading">Palette contracts</h2><div class="cluster palette-switcher">@foreach (var palette in Model.Palettes) { <a class="action action--secondary" aria-current="@(palette == Model.Palette ? "true" : null)" href="?site=@Model.SiteId&palette=@palette">@palette</a> }</div><div class="swatches">@foreach (var token in new[] { "background", "surface", "surface-strong", "text", "muted", "link", "control", "border", "focus", "success", "warning", "error" }) { <div class="swatch swatch--@token"><span></span><code>@token</code></div> }</div></div></section>
+
+    <section class="section section--alternate" aria-labelledby="type-heading"><div class="container stack"><h2 id="type-heading">Typography and primitives</h2><div class="split"><div class="prose"><h3>Readable prose with a deliberately long heading that must wrap without widening the document</h3><p>Short text.</p><p>This normal paragraph demonstrates a measured reading width, link treatment, <a href="#actions">keyboard access</a>, and the rhythm used for synthetic narrative content.</p><p class="unbroken">BoundaryTokenWithoutNaturalBreaks_ABCDEFGHIJKLMNOPQRSTUVWXYZ_0123456789_ABCDEFGHIJKLMNOPQRSTUVWXYZ_0123456789</p></div><aside class="callout callout--warning"><span class="status-badge status-badge--warning">Candidate</span><h3>Design review</h3><p>Colors, type, spacing, header treatment, and artwork composition require site-owner selection.</p></aside></div></div></section>
+
+    <section class="section" aria-labelledby="art-heading"><div class="container stack"><h2 id="art-heading">Artwork and media</h2>@await Html.PartialAsync("_ArtworkStrip", new ArtworkStripModel("Mixed aspect ratios and visible credits", Model.Media))</div></section>
+
+    <section class="section section--alternate" aria-labelledby="media-text-heading"><div class="container stack"><h2 id="media-text-heading">Media and narrative</h2>@foreach (var item in Model.MediaText) { @await Html.PartialAsync("_MediaText", item) }<div class="grid grid--three">@foreach (var item in Model.Narratives) { @await Html.PartialAsync("_NarrativeSection", item) }</div></div></section>
+
+    <section class="section" aria-labelledby="cards-heading"><div class="container stack"><h2 id="cards-heading">Cards and audiences</h2>@await Html.PartialAsync("_CardGrid", new CardGridModel("Flexible card grid", Model.Cards))<div class="grid grid--three">@foreach (var audience in Model.Audiences) { @await Html.PartialAsync("_AudienceCard", audience) }</div></div></section>
+
+    <section id="actions" class="section section--alternate" aria-labelledby="actions-heading"><div class="container stack"><h2 id="actions-heading">Actions, callouts, and status</h2><div class="cluster">@await Html.PartialAsync("_ActionLink", new ActionLinkModel("Primary action", "#forms")) @await Html.PartialAsync("_ActionLink", new ActionLinkModel("Secondary action", "#forms", "secondary")) @await Html.PartialAsync("_Button", new ButtonModel("Quiet button", "quiet")) @await Html.PartialAsync("_Button", new ButtonModel("Disabled button", "primary", true))</div><div class="cluster">@await Html.PartialAsync("_StatusBadge", new StatusBadgeModel("Information")) @await Html.PartialAsync("_StatusBadge", new StatusBadgeModel("Success", "success")) @await Html.PartialAsync("_StatusBadge", new StatusBadgeModel("Warning", "warning")) @await Html.PartialAsync("_StatusBadge", new StatusBadgeModel("Error", "error"))</div><div class="grid grid--three">@await Html.PartialAsync("_Callout", new CalloutModel("Normal state", "Supporting information stays readable and does not depend on color alone.")) @await Html.PartialAsync("_Callout", new CalloutModel("Completed state", "The named operation completed successfully.", "success")) @await Html.PartialAsync("_Callout", new CalloutModel("Failure state", "A useful recovery description remains available.", "error"))</div></div></section>
+
+    <section id="forms" class="section" aria-labelledby="forms-heading"><div class="container stack"><h2 id="forms-heading">Contact presentation states</h2><p>No form submits and no delivery integration is configured in P2.</p><div class="form-grid">@foreach (var form in Model.Forms) { @await Html.PartialAsync("_ContactForm", form) }</div></div></section>
+
+    <section class="section section--alternate" aria-labelledby="feeds-heading"><div class="container stack"><h2 id="feeds-heading">Feed and embed fallbacks</h2><div class="grid grid--three">@foreach (var feed in Model.Feeds) { @await Html.PartialAsync("_FeedShowcase", feed) }</div></div></section>
+  </main>
+  @await Html.PartialAsync("_ShellFooter", Model.Shell)
+  <script src="~/_content/BDDB.PublishGraph.DesignSystem/site.js" defer></script>
+</body>
+</html>

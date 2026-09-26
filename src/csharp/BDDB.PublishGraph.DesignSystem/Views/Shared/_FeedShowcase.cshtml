@@ -1,0 +1,6 @@
+@model FeedShowcaseModel
+<section class="feed-showcase stack compact" data-state="@Model.Status" aria-label="External feed status" aria-busy="@(Model.Status == "loading" ? "true" : "false")">
+  <div class="cluster"><h2>@Model.Heading</h2><span class="status-badge status-badge--@Model.Status">@Model.Status</span></div>
+  <p>@Model.Message</p>
+  @if (Model.Items.Count > 0) { <ul class="link-list">@foreach (var item in Model.Items) { <li><a href="@item.Href">@item.Text</a></li> }</ul> }
+</section>

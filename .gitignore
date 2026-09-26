@@ -1,0 +1,12 @@
+bin/
+obj/
+artifacts/
+.artifacts/
+.vs/
+*.user
+*.suo
+TestResults/
+Tests/Visual/test-results/
+Tests/Visual/playwright-report/
+__pycache__/
+*.pyc

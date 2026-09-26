@@ -1,0 +1,8 @@
+@model CardModel
+<article class="card stack compact">
+  @if (Model.Media is not null) { @await Html.PartialAsync("_MediaFrame", Model.Media) }
+  <p class="eyebrow">@Model.Eyebrow</p>
+  <h3>@Model.Heading</h3>
+  <p>@Model.Summary</p>
+  @if (Model.Action is not null) { <div class="card__action">@await Html.PartialAsync("_ActionLink", Model.Action)</div> }
+</article>

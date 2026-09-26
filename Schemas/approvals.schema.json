@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.sda.test/approvals-v1.json",
+  "title": "SDA detached approval ledger v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "authorizedReviewers", "approvals"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "authorizedReviewers": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "type": "string", "minLength": 1 } },
+    "approvals": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "pageId", "purpose", "reviewer", "reviewedAt", "decisionEvidence", "contentHash", "sourceHash"],
+        "properties": {
+          "id": { "type": "string", "pattern": "^[a-z][a-z0-9-]{1,63}$" },
+          "pageId": { "type": "string" },
+          "purpose": { "enum": ["content-publication", "archive-publication"] },
+          "reviewer": { "type": "string", "minLength": 1 },
+          "reviewedAt": { "type": "string", "format": "date-time" },
+          "decisionEvidence": { "type": "string", "minLength": 1 },
+          "contentHash": { "type": "string", "pattern": "^[a-fA-F0-9]{64}$" },
+          "sourceHash": { "type": "string", "pattern": "^[a-fA-F0-9]{64}$" }
+        }
+      }
+    }
+  }
+}

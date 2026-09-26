@@ -1,0 +1,8 @@
+@model PageViewModel
+@{ var data = (ArticleTemplateData)Model.Page.TemplateData; }
+<article class="container stack template-page template-page--article">
+  @await Html.PartialAsync("_PageHeading", new PageHeadingModel(Model.Page.Eyebrow ?? "Dated synthetic archive", Model.Page.Title, Model.Page.Description))
+  @await Html.PartialAsync("_ArticleHeader", new ArticleHeaderModel(data.Attribution, data.SourceDate, data.SourceDateUnknown, data.ArchiveLabel))
+  @await Html.PartialAsync("_MarkdownBody", new MarkdownBodyModel(Model.Html))
+  @await Html.PartialAsync("_Blocks", new BlocksModel(Model.Page.Blocks, "afterBody", Model.AssetNamespace))
+</article>

@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <PackageId>BDDB.PublishGraph.Templates</PackageId><Version>0.9.0-preview.3</Version>
+    <PackageType>Template</PackageType><SuppressDependenciesWhenPacking>true</SuppressDependenciesWhenPacking><IncludeBuildOutput>false</IncludeBuildOutput>
+    <IncludeContentInPack>true</IncludeContentInPack><ContentTargetFolders>content</ContentTargetFolders>
+    <NoDefaultExcludes>true</NoDefaultExcludes><EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <Description>Minimal PublishGraph host starter with private content placeholders.</Description>
+  </PropertyGroup>
+  <ItemGroup><Content Include="minimal/**" Exclude="minimal/**/bin/**;minimal/**/obj/**" Pack="true" /></ItemGroup>
+</Project>

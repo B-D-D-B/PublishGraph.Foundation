@@ -1,0 +1,2 @@
+@model RelatedLinksModel
+<nav class="related-links stack compact" aria-label="@Model.Heading"><h2>@Model.Heading</h2><ul class="link-list">@foreach (var link in Model.Links) { <li><a href="@link.Route">@link.Text</a></li> }</ul></nav>

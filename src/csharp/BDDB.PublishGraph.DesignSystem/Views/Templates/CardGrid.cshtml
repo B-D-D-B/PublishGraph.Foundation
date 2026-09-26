@@ -1,0 +1,9 @@
+@model PageViewModel
+@{ var data = (CardGridTemplateData)Model.Page.TemplateData; }
+<article class="container stack template-page template-page--card-grid">
+  @await Html.PartialAsync("_PageHeading", new PageHeadingModel(Model.Page.Eyebrow ?? "Private synthetic collection", Model.Page.Title, Model.Page.Description))
+  @await Html.PartialAsync("_MarkdownBody", new MarkdownBodyModel(Model.Html))
+  @await Html.PartialAsync("_Blocks", new BlocksModel(Model.Page.Blocks, "beforeGrid", Model.AssetNamespace))
+  <section class="stack"><h2>Explore the collection</h2><div class="card-grid">@foreach (var card in data.Cards) { <article class="card stack compact"><p class="eyebrow">Synthetic record</p><h3>@card.Heading</h3><p>@card.Summary</p><div class="card__action"><a class="action action--quiet" href="@card.Route">Explore</a></div></article> }</div></section>
+  @await Html.PartialAsync("_Blocks", new BlocksModel(Model.Page.Blocks, "afterBody", Model.AssetNamespace))
+</article>

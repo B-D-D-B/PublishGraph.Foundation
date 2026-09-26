@@ -1,0 +1,4 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup><OutputType>Exe</OutputType><PackAsTool>true</PackAsTool><ToolCommandName>publishgraph</ToolCommandName><PackageId>BDDB.PublishGraph.ContentCompiler</PackageId><Version>0.9.0-preview.3</Version></PropertyGroup>
+  <ItemGroup><ProjectReference Include="..\BDDB.PublishGraph.Content\BDDB.PublishGraph.Content.csproj" /></ItemGroup>
+</Project>

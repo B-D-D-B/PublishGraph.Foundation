@@ -1,0 +1,2 @@
+@model CapabilitiesModel
+<section class="capabilities stack"><div class="cluster"><h2>Capabilities</h2><span class="status-badge status-badge--@Model.Product.Status">@Model.Product.Status</span></div><p>@Model.Product.Summary</p><ul class="capability-list">@foreach (var capability in Model.Capabilities) { <li class="stack compact"><div class="cluster"><strong>@capability.Name</strong><span class="status-badge status-badge--@capability.Status">@capability.Status</span></div><p>@capability.Description</p></li> }</ul></section>

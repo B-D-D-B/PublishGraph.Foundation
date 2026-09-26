@@ -1,0 +1,23 @@
+@model ContactFormModel
+<section class="contact-panel stack" data-state="@Model.State" data-form-id="@Model.FormId">
+  <div><h3>@Model.Heading</h3><p>@Model.Description</p></div>
+  @if (Model.State == "invalid") { <div class="error-summary" role="alert" tabindex="-1"><h4>There is a problem</h4><a href="#@(Model.FormId)-@(Model.Fields.First(x => x.Error is not null).Id)">Review the highlighted field.</a></div> }
+  @if (Model.State == "success") { <div class="success-message" role="status">Synthetic success state. No message was sent.</div> }
+  <form class="stack compact" novalidate>
+    <fieldset @(Model.State == "disabled" ? "disabled" : null)><legend>Contact details</legend>
+      @foreach (var field in Model.Fields)
+      {
+        var domId = $"{Model.FormId}-{field.Id}";
+        var describedBy = string.Join(' ', new[] { field.Hint is null ? null : $"{domId}-hint", field.Error is null ? null : $"{domId}-error" }.Where(x => x is not null));
+        var specimenFocused = StringComparer.Ordinal.Equals(Model.FocusedFieldId, field.Id);
+        <div class="field" data-specimen-focus="@(specimenFocused ? "true" : null)"><label for="@domId">@field.Label@if (field.Required) { <span aria-hidden="true"> *</span> }</label>
+          @if (field.Hint is not null) { <span class="field-hint" id="@(domId)-hint">@field.Hint</span> }
+          @if (field.Type == "textarea") { <textarea id="@domId" disabled="@field.Disabled" required="@field.Required" aria-describedby="@(describedBy.Length == 0 ? null : describedBy)" aria-invalid="@(field.Error is not null ? "true" : null)"></textarea> }
+          else { <input id="@domId" type="@field.Type" disabled="@field.Disabled" required="@field.Required" aria-describedby="@(describedBy.Length == 0 ? null : describedBy)" aria-invalid="@(field.Error is not null ? "true" : null)" /> }
+          @if (field.Error is not null) { <span class="field-error" id="@(domId)-error">@field.Error</span> }
+        </div>
+      }
+    </fieldset>
+    <button class="action action--primary" type="button">Show presentation state</button>
+  </form>
+</section>

@@ -1,0 +1,9 @@
+@model PageViewModel
+@{ var data = (SidebarTemplateData)Model.Page.TemplateData; }
+<article class="container stack template-page template-page--sidebar">
+  @await Html.PartialAsync("_PageHeading", new PageHeadingModel(Model.Page.Eyebrow ?? "Private synthetic journey", Model.Page.Title, Model.Page.Description))
+  <div class="sidebar-layout">
+    <div class="stack">@await Html.PartialAsync("_MarkdownBody", new MarkdownBodyModel(Model.Html))@await Html.PartialAsync("_Blocks", new BlocksModel(Model.Page.Blocks, "afterBody", Model.AssetNamespace))</div>
+    <aside class="stack">@await Html.PartialAsync("_RelatedLinks", new RelatedLinksModel("Related pages", data.Related))@await Html.PartialAsync("_Blocks", new BlocksModel(Model.Page.Blocks, "sidebar", Model.AssetNamespace))</aside>
+  </div>
+</article>

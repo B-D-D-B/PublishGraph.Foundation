@@ -1,0 +1,36 @@
+@model ShellModel
+@if (Model.Announcement is not null)
+{
+  <aside class="announcement" aria-label="Announcement">
+    <div class="container cluster">
+      <span>@Model.Announcement.Text</span>
+      @if (Model.Announcement.Action is not null) { <a href="@Model.Announcement.Action.Href">@Model.Announcement.Action.Text</a> }
+    </div>
+  </aside>
+}
+<header class="site-header">
+  <div class="container cluster shell-bar">
+    <a class="brand" href="@Model.HomeUrl" aria-label="@Model.SiteName home">
+      <span class="brand-mark" aria-hidden="true">S</span>
+      <span><strong>@Model.SiteName</strong>@if (Model.Tagline is not null) { <small>@Model.Tagline</small> }</span>
+    </a>
+    @if (Model.Navigation.Count > 0)
+    {
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span>Menu</span></button>
+      <nav id="site-nav" class="primary-nav" aria-label="Primary"><ul>
+          @foreach (var item in Model.Navigation) { <li><a href="@item.Href" aria-current="@(item.IsCurrent ? "page" : null)">@item.Text</a></li> }
+      </ul></nav>
+    }
+  </div>
+</header>
+@if (Model.Breadcrumbs.Count > 0)
+{
+  <nav class="breadcrumbs container" aria-label="Breadcrumb">
+    <ol>
+      @foreach (var item in Model.Breadcrumbs)
+      {
+        <li>@if (item.IsCurrent) { <span aria-current="page">@item.Text</span> } else { <a href="@item.Href">@item.Text</a> }</li>
+      }
+    </ol>
+  </nav>
+}

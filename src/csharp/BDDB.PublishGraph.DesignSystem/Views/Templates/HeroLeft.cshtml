@@ -1,0 +1,12 @@
+@model PageViewModel
+@{ var data = (HeroLeftTemplateData)Model.Page.TemplateData; }
+<article class="container stack template-page template-page--hero-left">
+  @await Html.PartialAsync("_PageHeading", new PageHeadingModel(Model.Page.Eyebrow ?? "Private synthetic journey", Model.Page.Title, Model.Page.Description))
+  @await Html.PartialAsync("_Hero", new HeroModel(data.Summary,
+    data.Media is null ? null : new MediaFrameModel(data.Media.AssetId, MediaAspectRatio.Landscape16x9, data.Media.Alt, data.Media.Caption, data.Media.Credit, data.Media.State,
+      data.Media.State == "available" ? AssetRoute.For(Model.AssetNamespace, data.Media.AssetId) : null),
+    data.Actions.Select(x => new ActionLinkModel(x.Text, x.Route, x.Variant)).ToArray()))
+  @await Html.PartialAsync("_Blocks", new BlocksModel(Model.Page.Blocks, "afterHero", Model.AssetNamespace))
+  @await Html.PartialAsync("_MarkdownBody", new MarkdownBodyModel(Model.Html))
+  @await Html.PartialAsync("_Blocks", new BlocksModel(Model.Page.Blocks, "afterBody", Model.AssetNamespace))
+</article>

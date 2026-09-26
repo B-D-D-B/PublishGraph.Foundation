@@ -1,0 +1,29 @@
+@model BlocksModel
+@foreach (var block in Model.Blocks.Where(x => x.Slot == Model.Slot))
+{
+  if (block is NoticeBlock notice)
+  {
+    <aside class="notice" role="note">@notice.Text</aside>
+  }
+  else if (block is MediaBlock media)
+  {
+    @await Html.PartialAsync("_MediaFrame", new MediaFrameModel(media.Media.AssetId, MediaAspectRatio.Landscape16x9, media.Media.Alt, media.Media.Caption, media.Media.Credit, media.Media.State,
+      media.Media.State == "available" ? AssetRoute.For(Model.AssetNamespace, media.Media.AssetId) : null))
+  }
+  else if (block is FeedFallbackBlock feed)
+  {
+    <section class="feed-showcase stack compact" data-state="@feed.Status" aria-label="External feed status"><h2>@feed.Heading</h2><p>@feed.Message</p></section>
+  }
+  else if (block is CalloutBlock callout)
+  {
+    <aside class="callout callout--@callout.Tone stack compact"><p class="eyebrow">@callout.Heading</p><p>@callout.Body</p></aside>
+  }
+  else if (block is StatusBlock status)
+  {
+    @await Html.PartialAsync("_StatusBadge", new StatusBadgeModel(status.Text, status.Tone))
+  }
+  else
+  {
+    throw new InvalidOperationException($"Unregistered block model '{block.GetType().Name}'.");
+  }
+}

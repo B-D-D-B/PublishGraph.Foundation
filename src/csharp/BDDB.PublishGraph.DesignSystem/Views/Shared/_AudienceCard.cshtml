@@ -1,0 +1,2 @@
+@model AudienceCardModel
+<article class="audience-card stack compact"><p class="eyebrow">@Model.Audience</p><h3>@Model.Heading</h3><p>@Model.Summary</p><ul class="link-list">@foreach (var link in Model.Links) { <li><a href="@link.Href">@link.Text</a></li> }</ul></article>

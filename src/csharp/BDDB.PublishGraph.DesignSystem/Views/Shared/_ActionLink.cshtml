@@ -1,0 +1,9 @@
+@model ActionLinkModel
+@if (Model.Disabled)
+{
+  <span class="action action--@Model.Variant" aria-disabled="true">@Model.Text</span>
+}
+else
+{
+  <a class="action action--@Model.Variant" href="@Model.Href">@Model.Text</a>
+}

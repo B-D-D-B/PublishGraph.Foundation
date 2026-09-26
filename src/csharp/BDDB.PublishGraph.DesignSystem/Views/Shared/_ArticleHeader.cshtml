@@ -1,0 +1,6 @@
+@model ArticleHeaderModel
+<div class="article-meta cluster">
+  <span>By @Model.Attribution</span>
+  <span>@(Model.SourceDateUnknown ? "Source date unknown" : Model.SourceDate)</span>
+  @if (Model.ArchiveLabel is not null) { <span class="status-badge status-badge--neutral">@Model.ArchiveLabel</span> }
+</div>

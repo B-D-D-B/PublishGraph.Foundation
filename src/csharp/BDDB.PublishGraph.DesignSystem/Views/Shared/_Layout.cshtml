@@ -1,0 +1,20 @@
+@model PageViewModel
+<!doctype html>
+<html lang="en" data-palette="@Model.Page.Palette">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>@Model.Page.Title · @Model.SiteName</title>
+  <meta name="description" content="@Model.Page.Description" />
+  <link rel="canonical" href="@Model.Page.CanonicalUrl" />
+  <link rel="stylesheet" href="~/_content/BDDB.PublishGraph.DesignSystem/site.css" asp-append-version="true" />
+  @await Html.PartialAsync("_SiteStyles", Model)
+</head>
+<body data-site-id="@Model.SiteId" data-asset-namespace="@Model.AssetNamespace">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  @await Html.PartialAsync("_ShellHeader", Model.Shell)
+  <main id="main-content">@RenderBody()</main>
+  @await Html.PartialAsync("_ShellFooter", Model.Shell)
+  <script src="~/_content/BDDB.PublishGraph.DesignSystem/site.js" defer></script>
+</body>
+</html>

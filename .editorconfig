@@ -1,0 +1,8 @@
+root = true
+
+# Every text writer should use these rules when creating or saving a file.
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true

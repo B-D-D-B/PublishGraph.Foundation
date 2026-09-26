@@ -1,0 +1,5 @@
+@model MediaTextModel
+<section class="media-text @(Model.MediaAfter ? "media-text--reverse" : null)">
+  <div class="media-text__media">@await Html.PartialAsync("_MediaFrame", Model.Media)</div>
+  <div class="stack"><h3>@Model.Heading</h3><p>@Model.Body</p>@if (Model.Action is not null) { @await Html.PartialAsync("_ActionLink", Model.Action) }</div>
+</section>

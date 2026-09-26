@@ -1,0 +1,2 @@
+@model ArtworkStripModel
+<section class="stack"><h3>@Model.Heading</h3><div class="artwork-strip" tabindex="0" aria-label="@Model.Heading">@foreach (var item in Model.Items) { <div class="artwork-strip__item">@await Html.PartialAsync("_MediaFrame", item)</div> }</div></section>

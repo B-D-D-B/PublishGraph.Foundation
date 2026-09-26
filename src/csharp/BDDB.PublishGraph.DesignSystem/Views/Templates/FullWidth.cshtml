@@ -1,0 +1,7 @@
+@model PageViewModel
+<article class="container stack template-page">
+  @await Html.PartialAsync("_PageHeading", new PageHeadingModel(Model.Page.Eyebrow ?? "Private synthetic fixture", Model.Page.Title, Model.Page.Description))
+  @await Html.PartialAsync("_Blocks", new BlocksModel(Model.Page.Blocks, "beforeBody", Model.AssetNamespace))
+  @await Html.PartialAsync("_MarkdownBody", new MarkdownBodyModel(Model.Html))
+  @await Html.PartialAsync("_Blocks", new BlocksModel(Model.Page.Blocks, "afterBody", Model.AssetNamespace))
+</article>

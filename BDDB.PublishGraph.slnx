@@ -1,0 +1,8 @@
+<Solution>
+  <Project Path="src/csharp/BDDB.PublishGraph.Content/BDDB.PublishGraph.Content.csproj" />
+  <Project Path="src/csharp/BDDB.PublishGraph.ContentCompiler/BDDB.PublishGraph.ContentCompiler.csproj" />
+  <Project Path="src/csharp/BDDB.PublishGraph.DesignSystem/BDDB.PublishGraph.DesignSystem.csproj" />
+  <Project Path="src/csharp/BDDB.PublishGraph.Hosting/BDDB.PublishGraph.Hosting.csproj" />
+  <Project Path="Tests/BDDB.PublishGraph.Content.Tests/BDDB.PublishGraph.Content.Tests.csproj" />
+  <Project Path="Templates/BDDB.PublishGraph.Templates.csproj" />
+</Solution>

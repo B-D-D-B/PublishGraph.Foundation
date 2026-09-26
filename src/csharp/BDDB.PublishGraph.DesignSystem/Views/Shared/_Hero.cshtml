@@ -1,0 +1,5 @@
+@model HeroModel
+<section class="template-hero split">
+  <div class="stack"><p class="lede">@Model.Summary</p>@if (Model.Actions.Count > 0) { <div class="cluster">@foreach (var action in Model.Actions) { @await Html.PartialAsync("_ActionLink", action) }</div> }</div>
+  @if (Model.Media is not null) { <div>@await Html.PartialAsync("_MediaFrame", Model.Media)</div> }
+</section>
