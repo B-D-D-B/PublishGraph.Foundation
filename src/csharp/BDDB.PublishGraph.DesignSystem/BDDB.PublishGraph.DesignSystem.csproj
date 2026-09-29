@@ -2,7 +2,7 @@
   <PropertyGroup>
     <AddRazorSupportForMvc>true</AddRazorSupportForMvc>
     <PackageId>BDDB.PublishGraph.DesignSystem</PackageId>
-    <Version>0.9.0-preview.3</Version>
+    <Version>0.9.0-preview.4</Version>
     <Description>Shared Razor templates, components and candidate palette tokens. Private P9 package candidate.</Description>
   </PropertyGroup>
   <ItemGroup>

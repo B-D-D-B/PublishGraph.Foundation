@@ -117,21 +117,26 @@ public sealed class SiteRegistry : IDisposable
             if (string.IsNullOrWhiteSpace(registration.Id) || !ids.Add(registration.Id)) throw new InvalidDataException("Duplicate or empty site identity.");
             ValidateReview(registration, environment);
             var origin = CanonicalOrigin(registration.CanonicalOrigin);
-            ContentBundle? bundle;
+            ContentBundle? bundle = null;
             RegionBundle? regions = null;
-            try
+            // Shared failure must remain authoritative. Keep structural registration
+            // validation and host bindings, but do not enter any content/site adapter.
+            if (DeploymentAvailable)
             {
-                bundle = Load(registration);
-                if (bundle.SiteId != registration.Id || CanonicalOrigin(bundle.BaseUrl) != origin ||
-                    !bundle.Hostnames.Any(h => NormalizeHost(h) == origin.IdnHost))
-                    throw new InvalidDataException("Bundle identity does not match the registered site.");
-                // Invalid route manifests also fail only their owning site closed.
-                _ = new RouteManifest(bundle, presentation.Routes(bundle));
-                regions = presentation.Load(registration, bundle, environment);
-            }
-            catch (Exception error) when (error is ContentCompilationException or InvalidDataException or IOException or System.Text.Json.JsonException or InvalidOperationException or ArgumentException)
-            {
-                bundle = null;
+                try
+                {
+                    bundle = Load(registration);
+                    if (bundle.SiteId != registration.Id || CanonicalOrigin(bundle.BaseUrl) != origin ||
+                        !bundle.Hostnames.Any(h => NormalizeHost(h) == origin.IdnHost))
+                        throw new InvalidDataException("Bundle identity does not match the registered site.");
+                    // Invalid route manifests also fail only their owning site closed.
+                    _ = new RouteManifest(bundle, presentation.Routes(bundle));
+                    regions = presentation.Load(registration, bundle, environment);
+                }
+                catch (Exception error) when (error is ContentCompilationException or InvalidDataException or IOException or System.Text.Json.JsonException or InvalidOperationException or ArgumentException)
+                {
+                    bundle = null;
+                }
             }
             if (bundle is not null && !namespaces.Add(bundle.AssetNamespace)) throw new InvalidDataException("Site asset namespaces overlap.");
             var site = new SiteRuntime(registration, bundle, regions, bundle is null ? null : presentation.Routes(bundle));

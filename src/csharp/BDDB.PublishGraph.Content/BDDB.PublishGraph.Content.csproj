@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <PackageId>BDDB.PublishGraph.Content</PackageId>
-    <Version>0.9.0-preview.3</Version>
+    <Version>0.9.0-preview.4</Version>
     <Description>Typed content contracts and deterministic compilation. Private P9 package candidate.</Description>
   </PropertyGroup>
   <ItemGroup>
