@@ -11,6 +11,13 @@ async function readBody(request) {
 }
 function createHandler(config,deps) {return async function(request,context={}){
   const requestId=randomUUID(),started=Date.now(); let cors={};
+  try {
+    if(request.method==='OPTIONS'){
+      const markers=request.query?.getAll('obs_run')||[];
+      const markerPresent=markers.length===1&&markers[0].length===36&&/^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/.test(markers[0]);
+      context.log?.(JSON.stringify({event:'contact.options.enter',invocationId:context.invocationId,requestId,markerPresent,...(markerPresent?{obs_run:markers[0]}:{})}));
+    }
+  }catch{}
   const respond=(status,code,extra={})=>{context.log?.(JSON.stringify({requestId,status,code,durationMs:Date.now()-started}));return {status,headers:{'Content-Type':'application/json','Cache-Control':'no-store',...cors},jsonBody:{ok:false,code,message:texts[code],requestId,...extra}};};
   try {
     const origin=request.headers.get('origin');
