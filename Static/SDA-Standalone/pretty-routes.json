@@ -1,0 +1,589 @@
+{
+  "function": "SDA-STATIC-ROUTES-03",
+  "slugRule": "NFKD; strip combining marks; lowercase; non ASCII alphanumeric runs to hyphen; trim",
+  "hosting": "HTTP site root; file and subpath site browsing unsupported",
+  "routes": [
+    {
+      "id": 1,
+      "canonical": "/",
+      "aliases": [],
+      "output": "index.html",
+      "labels": [
+        "Home"
+      ],
+      "hidden": false,
+      "provenance": "current navigation"
+    },
+    {
+      "id": 2,
+      "canonical": "/about-sda",
+      "aliases": [
+        "/about-sda/"
+      ],
+      "output": "index.php/about.html",
+      "labels": [
+        "About SDA"
+      ],
+      "hidden": false,
+      "provenance": "current navigation"
+    },
+    {
+      "id": 3,
+      "canonical": "/about-sda/history",
+      "aliases": [
+        "/about-sda/history/"
+      ],
+      "output": "index.php/about/sda-history.html",
+      "labels": [
+        "About SDA",
+        "History"
+      ],
+      "hidden": false,
+      "provenance": "current navigation"
+    },
+    {
+      "id": 4,
+      "canonical": "/about-sda/timeline",
+      "aliases": [
+        "/about-sda/timeline/"
+      ],
+      "output": "index.php/about/sda-timeline.html",
+      "labels": [
+        "About SDA",
+        "Timeline"
+      ],
+      "hidden": false,
+      "provenance": "current navigation"
+    },
+    {
+      "id": 5,
+      "canonical": "/about-sda/sda-art-singularity-charter",
+      "aliases": [
+        "/about-sda/sda-art-singularity-charter/"
+      ],
+      "output": "index.php/about/singularity-charter.html",
+      "labels": [
+        "About SDA",
+        "SDA Art Singularity Charter"
+      ],
+      "hidden": false,
+      "provenance": "current navigation"
+    },
+    {
+      "id": 6,
+      "canonical": "/about-sda/sda-art-singularity-charter/press-release-sda-art-singularity-charter",
+      "aliases": [
+        "/about-sda/sda-art-singularity-charter/press-release-sda-art-singularity-charter/"
+      ],
+      "output": "index.php/about/singularity-charter/press-release.html",
+      "labels": [
+        "About SDA",
+        "SDA Art Singularity Charter",
+        "Press Release - SDA Art Singularity Charter ♾️🌀🔁🤖"
+      ],
+      "hidden": false,
+      "provenance": "current navigation"
+    },
+    {
+      "id": 7,
+      "canonical": "/art",
+      "aliases": [
+        "/art/"
+      ],
+      "output": "index.php/art.html",
+      "labels": [
+        "Art"
+      ],
+      "hidden": false,
+      "provenance": "current navigation"
+    },
+    {
+      "id": 8,
+      "canonical": "/art/themes",
+      "aliases": [
+        "/art/themes/"
+      ],
+      "output": "index.php/art/frames.html",
+      "labels": [
+        "Art",
+        "Themes"
+      ],
+      "hidden": false,
+      "provenance": "current navigation"
+    },
+    {
+      "id": 9,
+      "canonical": "/art/galleries",
+      "aliases": [
+        "/art/galleries/"
+      ],
+      "output": "index.php/art/galleries.html",
+      "labels": [
+        "Art",
+        "Galleries"
+      ],
+      "hidden": false,
+      "provenance": "current navigation"
+    },
+    {
+      "id": 10,
+      "canonical": "/art/galleries/advanced-aether-adworks",
+      "aliases": [
+        "/art/galleries/advanced-aether-adworks/"
+      ],
+      "output": "index.php/art/galleries/advanced-aether-adworks.html",
+      "labels": [
+        "Art",
+        "Galleries",
+        "Advanced Aether Adworks"
+      ],
+      "hidden": false,
+      "provenance": "current navigation"
+    },
+    {
+      "id": 11,
+      "canonical": "/art/projects",
+      "aliases": [
+        "/art/projects/"
+      ],
+      "output": "index.php/art/projects.html",
+      "labels": [
+        "Art",
+        "Projects"
+      ],
+      "hidden": false,
+      "provenance": "current navigation"
+    },
+    {
+      "id": 12,
+      "canonical": "/art/projects/advanced-aether-adworks",
+      "aliases": [
+        "/art/projects/advanced-aether-adworks/"
+      ],
+      "output": "index.php/art/projects/advanced-aether-adworks.html",
+      "labels": [
+        "Art",
+        "Projects",
+        "Advanced Aether Adworks"
+      ],
+      "hidden": false,
+      "provenance": "current navigation"
+    },
+    {
+      "id": 13,
+      "canonical": "/art/sda-collection",
+      "aliases": [
+        "/art/sda-collection/"
+      ],
+      "output": "index.php/art/sda-collection.html",
+      "labels": [
+        "Art",
+        "SDA Collection"
+      ],
+      "hidden": false,
+      "provenance": "current navigation"
+    },
+    {
+      "id": 14,
+      "canonical": "/for-artists",
+      "aliases": [
+        "/for-artists/"
+      ],
+      "output": "index.php/artists.html",
+      "labels": [
+        "For Artists"
+      ],
+      "hidden": false,
+      "provenance": "current navigation"
+    },
+    {
+      "id": 15,
+      "canonical": "/for-artists/exposure",
+      "aliases": [
+        "/for-artists/exposure/"
+      ],
+      "output": "index.php/artists/exposure.html",
+      "labels": [
+        "For Artists",
+        "Exposure"
+      ],
+      "hidden": false,
+      "provenance": "current navigation"
+    },
+    {
+      "id": 16,
+      "canonical": "/for-artists/commissions-royalties",
+      "aliases": [
+        "/for-artists/commissions-royalties/"
+      ],
+      "output": "index.php/artists/income.html",
+      "labels": [
+        "For Artists",
+        "Commissions & Royalties"
+      ],
+      "hidden": false,
+      "provenance": "current navigation"
+    },
+    {
+      "id": 17,
+      "canonical": "/for-businesses",
+      "aliases": [
+        "/for-businesses/"
+      ],
+      "output": "index.php/businesses.html",
+      "labels": [
+        "For Businesses"
+      ],
+      "hidden": false,
+      "provenance": "current navigation"
+    },
+    {
+      "id": 18,
+      "canonical": "/for-collectors",
+      "aliases": [
+        "/for-collectors/"
+      ],
+      "output": "index.php/collectors.html",
+      "labels": [
+        "For Collectors"
+      ],
+      "hidden": false,
+      "provenance": "current navigation"
+    },
+    {
+      "id": 19,
+      "canonical": "/for-collectors/commissions",
+      "aliases": [
+        "/for-collectors/commissions/"
+      ],
+      "output": "index.php/collectors/commissions.html",
+      "labels": [
+        "For Collectors",
+        "Commissions"
+      ],
+      "hidden": false,
+      "provenance": "current navigation"
+    },
+    {
+      "id": 20,
+      "canonical": "/for-collectors/investor-bundles",
+      "aliases": [
+        "/for-collectors/investor-bundles/"
+      ],
+      "output": "index.php/collectors/investor-bundles.html",
+      "labels": [
+        "For Collectors",
+        "Investor Bundles"
+      ],
+      "hidden": false,
+      "provenance": "current navigation"
+    },
+    {
+      "id": 21,
+      "canonical": "/for-collectors/nft-marketplaces",
+      "aliases": [
+        "/for-collectors/nft-marketplaces/"
+      ],
+      "output": "index.php/collectors/nft-marketplaces.html",
+      "labels": [
+        "For Collectors",
+        "NFT Marketplaces"
+      ],
+      "hidden": false,
+      "provenance": "current navigation"
+    },
+    {
+      "id": 22,
+      "canonical": "/for-collectors/authenticated-digital-collectables",
+      "aliases": [
+        "/for-collectors/authenticated-digital-collectables/"
+      ],
+      "output": "index.php/collectors/specifications.html",
+      "labels": [
+        "For Collectors",
+        "Authenticated Digital Collectables"
+      ],
+      "hidden": false,
+      "provenance": "current navigation"
+    },
+    {
+      "id": 23,
+      "canonical": "/about-sda/contact",
+      "aliases": [
+        "/about-sda/contact/"
+      ],
+      "output": "index.php/contact.html",
+      "labels": [
+        "About SDA",
+        "Contact"
+      ],
+      "hidden": false,
+      "provenance": "current navigation"
+    },
+    {
+      "id": 24,
+      "canonical": "/sda-frame",
+      "aliases": [
+        "/sdaframe",
+        "/sdaframe/",
+        "/sda-frame/"
+      ],
+      "output": "index.php/feeds-sdaframe.html",
+      "labels": [
+        "SDA Frame"
+      ],
+      "hidden": false,
+      "provenance": "current navigation"
+    },
+    {
+      "id": 25,
+      "canonical": "/membership",
+      "aliases": [
+        "/membership/"
+      ],
+      "output": "index.php/membership.html",
+      "labels": [
+        "Membership"
+      ],
+      "hidden": false,
+      "provenance": "current navigation"
+    },
+    {
+      "id": 26,
+      "canonical": "/membership/agents",
+      "aliases": [
+        "/membership/agents/"
+      ],
+      "output": "index.php/membership/agents.html",
+      "labels": [
+        "Membership",
+        "Agents"
+      ],
+      "hidden": false,
+      "provenance": "current navigation"
+    },
+    {
+      "id": 27,
+      "canonical": "/membership/amplifiers",
+      "aliases": [
+        "/membership/amplifiers/"
+      ],
+      "output": "index.php/membership/amplifiers.html",
+      "labels": [
+        "Membership",
+        "Amplifiers"
+      ],
+      "hidden": false,
+      "provenance": "current navigation"
+    },
+    {
+      "id": 28,
+      "canonical": "/membership/artists",
+      "aliases": [
+        "/membership/artists/"
+      ],
+      "output": "index.php/membership/artists.html",
+      "labels": [
+        "Membership",
+        "Artists"
+      ],
+      "hidden": false,
+      "provenance": "current navigation"
+    },
+    {
+      "id": 29,
+      "canonical": "/membership/curators",
+      "aliases": [
+        "/membership/curators/"
+      ],
+      "output": "index.php/membership/curators.html",
+      "labels": [
+        "Membership",
+        "Curators"
+      ],
+      "hidden": false,
+      "provenance": "current navigation"
+    },
+    {
+      "id": 30,
+      "canonical": "/membership/moderators",
+      "aliases": [
+        "/membership/moderators/"
+      ],
+      "output": "index.php/membership/moderators.html",
+      "labels": [
+        "Membership",
+        "Moderators"
+      ],
+      "hidden": false,
+      "provenance": "current navigation"
+    },
+    {
+      "id": 31,
+      "canonical": "/membership/operators",
+      "aliases": [
+        "/membership/operators/"
+      ],
+      "output": "index.php/membership/operators.html",
+      "labels": [
+        "Membership",
+        "Operators"
+      ],
+      "hidden": false,
+      "provenance": "current navigation"
+    },
+    {
+      "id": 32,
+      "canonical": "/membership/welcome",
+      "aliases": [
+        "/membership/welcome/"
+      ],
+      "output": "index.php/membership/welcome.html",
+      "labels": [
+        "Membership",
+        "Welcome"
+      ],
+      "hidden": false,
+      "provenance": "current navigation"
+    },
+    {
+      "id": 33,
+      "canonical": "/for-collectors/nft-2-0-proposal",
+      "aliases": [
+        "/for-collectors/nft-2-0-proposal/"
+      ],
+      "output": "index.php/nft-proposal.html",
+      "labels": [
+        "For Collectors",
+        "NFT 2.0 Proposal"
+      ],
+      "hidden": false,
+      "provenance": "current navigation"
+    },
+    {
+      "id": 34,
+      "canonical": "/pulses",
+      "aliases": [
+        "/pulses/"
+      ],
+      "output": "index.php/pulses.html",
+      "labels": [
+        "Pulses"
+      ],
+      "hidden": true,
+      "provenance": "original removed Pulses menu"
+    },
+    {
+      "id": 35,
+      "canonical": "/pulses/bddb",
+      "aliases": [
+        "/pulses/bddb/"
+      ],
+      "output": "index.php/pulses/bddb.html",
+      "labels": [
+        "Pulses",
+        "BDDB"
+      ],
+      "hidden": true,
+      "provenance": "original removed Pulses menu"
+    },
+    {
+      "id": 36,
+      "canonical": "/pulses/point-break",
+      "aliases": [
+        "/pulses/point-break/"
+      ],
+      "output": "index.php/pulses/point-break.html",
+      "labels": [
+        "Pulses",
+        "Point Break"
+      ],
+      "hidden": true,
+      "provenance": "original removed Pulses menu"
+    },
+    {
+      "id": 37,
+      "canonical": "/pulses/sda-frame",
+      "aliases": [
+        "/pulses/sda-frame/"
+      ],
+      "output": "index.php/pulses/sda-frame.html",
+      "labels": [
+        "Pulses",
+        "SDA Frame"
+      ],
+      "hidden": true,
+      "provenance": "original removed Pulses menu"
+    },
+    {
+      "id": 38,
+      "canonical": "/pulses/sda-fusion",
+      "aliases": [
+        "/pulses/sda-fusion/"
+      ],
+      "output": "index.php/pulses/sda-fusion.html",
+      "labels": [
+        "Pulses",
+        "SDA Fusion"
+      ],
+      "hidden": true,
+      "provenance": "original removed Pulses menu"
+    },
+    {
+      "id": 39,
+      "canonical": "/pulses/sda-skydeck",
+      "aliases": [
+        "/pulses/sda-skydeck/"
+      ],
+      "output": "index.php/pulses/sda-skydeck.html",
+      "labels": [
+        "Pulses",
+        "SDA SkyDeck"
+      ],
+      "hidden": true,
+      "provenance": "original removed Pulses menu"
+    },
+    {
+      "id": 40,
+      "canonical": "/pulses/sda-studio",
+      "aliases": [
+        "/pulses/sda-studio/"
+      ],
+      "output": "index.php/pulses/sda-studio.html",
+      "labels": [
+        "Pulses",
+        "SDA Studio"
+      ],
+      "hidden": true,
+      "provenance": "original removed Pulses menu"
+    },
+    {
+      "id": 41,
+      "canonical": "/pulses/sovereign-trust",
+      "aliases": [
+        "/pulses/sovereign-trust/"
+      ],
+      "output": "index.php/pulses/sovereign-trust.html",
+      "labels": [
+        "Pulses",
+        "Sovereign Trust"
+      ],
+      "hidden": true,
+      "provenance": "original removed Pulses menu"
+    },
+    {
+      "id": 42,
+      "canonical": "/about-sda/technology",
+      "aliases": [
+        "/about-sda/technology/"
+      ],
+      "output": "index.php/sda-technology.html",
+      "labels": [
+        "About SDA",
+        "Technology"
+      ],
+      "hidden": false,
+      "provenance": "current navigation"
+    }
+  ]
+}

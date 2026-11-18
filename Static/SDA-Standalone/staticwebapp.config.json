@@ -1,0 +1,344 @@
+{
+  "routes": [
+    {
+      "route": "/",
+      "rewrite": "/index.html"
+    },
+    {
+      "route": "/about-sda",
+      "rewrite": "/index.php/about.html"
+    },
+    {
+      "route": "/about-sda/",
+      "rewrite": "/index.php/about.html"
+    },
+    {
+      "route": "/about-sda/history",
+      "rewrite": "/index.php/about/sda-history.html"
+    },
+    {
+      "route": "/about-sda/history/",
+      "rewrite": "/index.php/about/sda-history.html"
+    },
+    {
+      "route": "/about-sda/timeline",
+      "rewrite": "/index.php/about/sda-timeline.html"
+    },
+    {
+      "route": "/about-sda/timeline/",
+      "rewrite": "/index.php/about/sda-timeline.html"
+    },
+    {
+      "route": "/about-sda/sda-art-singularity-charter",
+      "rewrite": "/index.php/about/singularity-charter.html"
+    },
+    {
+      "route": "/about-sda/sda-art-singularity-charter/",
+      "rewrite": "/index.php/about/singularity-charter.html"
+    },
+    {
+      "route": "/about-sda/sda-art-singularity-charter/press-release-sda-art-singularity-charter",
+      "rewrite": "/index.php/about/singularity-charter/press-release.html"
+    },
+    {
+      "route": "/about-sda/sda-art-singularity-charter/press-release-sda-art-singularity-charter/",
+      "rewrite": "/index.php/about/singularity-charter/press-release.html"
+    },
+    {
+      "route": "/art",
+      "rewrite": "/index.php/art.html"
+    },
+    {
+      "route": "/art/",
+      "rewrite": "/index.php/art.html"
+    },
+    {
+      "route": "/art/themes",
+      "rewrite": "/index.php/art/frames.html"
+    },
+    {
+      "route": "/art/themes/",
+      "rewrite": "/index.php/art/frames.html"
+    },
+    {
+      "route": "/art/galleries",
+      "rewrite": "/index.php/art/galleries.html"
+    },
+    {
+      "route": "/art/galleries/",
+      "rewrite": "/index.php/art/galleries.html"
+    },
+    {
+      "route": "/art/galleries/advanced-aether-adworks",
+      "rewrite": "/index.php/art/galleries/advanced-aether-adworks.html"
+    },
+    {
+      "route": "/art/galleries/advanced-aether-adworks/",
+      "rewrite": "/index.php/art/galleries/advanced-aether-adworks.html"
+    },
+    {
+      "route": "/art/projects",
+      "rewrite": "/index.php/art/projects.html"
+    },
+    {
+      "route": "/art/projects/",
+      "rewrite": "/index.php/art/projects.html"
+    },
+    {
+      "route": "/art/projects/advanced-aether-adworks",
+      "rewrite": "/index.php/art/projects/advanced-aether-adworks.html"
+    },
+    {
+      "route": "/art/projects/advanced-aether-adworks/",
+      "rewrite": "/index.php/art/projects/advanced-aether-adworks.html"
+    },
+    {
+      "route": "/art/sda-collection",
+      "rewrite": "/index.php/art/sda-collection.html"
+    },
+    {
+      "route": "/art/sda-collection/",
+      "rewrite": "/index.php/art/sda-collection.html"
+    },
+    {
+      "route": "/for-artists",
+      "rewrite": "/index.php/artists.html"
+    },
+    {
+      "route": "/for-artists/",
+      "rewrite": "/index.php/artists.html"
+    },
+    {
+      "route": "/for-artists/exposure",
+      "rewrite": "/index.php/artists/exposure.html"
+    },
+    {
+      "route": "/for-artists/exposure/",
+      "rewrite": "/index.php/artists/exposure.html"
+    },
+    {
+      "route": "/for-artists/commissions-royalties",
+      "rewrite": "/index.php/artists/income.html"
+    },
+    {
+      "route": "/for-artists/commissions-royalties/",
+      "rewrite": "/index.php/artists/income.html"
+    },
+    {
+      "route": "/for-businesses",
+      "rewrite": "/index.php/businesses.html"
+    },
+    {
+      "route": "/for-businesses/",
+      "rewrite": "/index.php/businesses.html"
+    },
+    {
+      "route": "/for-collectors",
+      "rewrite": "/index.php/collectors.html"
+    },
+    {
+      "route": "/for-collectors/",
+      "rewrite": "/index.php/collectors.html"
+    },
+    {
+      "route": "/for-collectors/commissions",
+      "rewrite": "/index.php/collectors/commissions.html"
+    },
+    {
+      "route": "/for-collectors/commissions/",
+      "rewrite": "/index.php/collectors/commissions.html"
+    },
+    {
+      "route": "/for-collectors/investor-bundles",
+      "rewrite": "/index.php/collectors/investor-bundles.html"
+    },
+    {
+      "route": "/for-collectors/investor-bundles/",
+      "rewrite": "/index.php/collectors/investor-bundles.html"
+    },
+    {
+      "route": "/for-collectors/nft-marketplaces",
+      "rewrite": "/index.php/collectors/nft-marketplaces.html"
+    },
+    {
+      "route": "/for-collectors/nft-marketplaces/",
+      "rewrite": "/index.php/collectors/nft-marketplaces.html"
+    },
+    {
+      "route": "/for-collectors/authenticated-digital-collectables",
+      "rewrite": "/index.php/collectors/specifications.html"
+    },
+    {
+      "route": "/for-collectors/authenticated-digital-collectables/",
+      "rewrite": "/index.php/collectors/specifications.html"
+    },
+    {
+      "route": "/about-sda/contact",
+      "rewrite": "/index.php/contact.html"
+    },
+    {
+      "route": "/about-sda/contact/",
+      "rewrite": "/index.php/contact.html"
+    },
+    {
+      "route": "/sda-frame",
+      "rewrite": "/index.php/feeds-sdaframe.html"
+    },
+    {
+      "route": "/sdaframe",
+      "rewrite": "/index.php/feeds-sdaframe.html"
+    },
+    {
+      "route": "/sdaframe/",
+      "rewrite": "/index.php/feeds-sdaframe.html"
+    },
+    {
+      "route": "/sda-frame/",
+      "rewrite": "/index.php/feeds-sdaframe.html"
+    },
+    {
+      "route": "/membership",
+      "rewrite": "/index.php/membership.html"
+    },
+    {
+      "route": "/membership/",
+      "rewrite": "/index.php/membership.html"
+    },
+    {
+      "route": "/membership/agents",
+      "rewrite": "/index.php/membership/agents.html"
+    },
+    {
+      "route": "/membership/agents/",
+      "rewrite": "/index.php/membership/agents.html"
+    },
+    {
+      "route": "/membership/amplifiers",
+      "rewrite": "/index.php/membership/amplifiers.html"
+    },
+    {
+      "route": "/membership/amplifiers/",
+      "rewrite": "/index.php/membership/amplifiers.html"
+    },
+    {
+      "route": "/membership/artists",
+      "rewrite": "/index.php/membership/artists.html"
+    },
+    {
+      "route": "/membership/artists/",
+      "rewrite": "/index.php/membership/artists.html"
+    },
+    {
+      "route": "/membership/curators",
+      "rewrite": "/index.php/membership/curators.html"
+    },
+    {
+      "route": "/membership/curators/",
+      "rewrite": "/index.php/membership/curators.html"
+    },
+    {
+      "route": "/membership/moderators",
+      "rewrite": "/index.php/membership/moderators.html"
+    },
+    {
+      "route": "/membership/moderators/",
+      "rewrite": "/index.php/membership/moderators.html"
+    },
+    {
+      "route": "/membership/operators",
+      "rewrite": "/index.php/membership/operators.html"
+    },
+    {
+      "route": "/membership/operators/",
+      "rewrite": "/index.php/membership/operators.html"
+    },
+    {
+      "route": "/membership/welcome",
+      "rewrite": "/index.php/membership/welcome.html"
+    },
+    {
+      "route": "/membership/welcome/",
+      "rewrite": "/index.php/membership/welcome.html"
+    },
+    {
+      "route": "/for-collectors/nft-2-0-proposal",
+      "rewrite": "/index.php/nft-proposal.html"
+    },
+    {
+      "route": "/for-collectors/nft-2-0-proposal/",
+      "rewrite": "/index.php/nft-proposal.html"
+    },
+    {
+      "route": "/pulses",
+      "rewrite": "/index.php/pulses.html"
+    },
+    {
+      "route": "/pulses/",
+      "rewrite": "/index.php/pulses.html"
+    },
+    {
+      "route": "/pulses/bddb",
+      "rewrite": "/index.php/pulses/bddb.html"
+    },
+    {
+      "route": "/pulses/bddb/",
+      "rewrite": "/index.php/pulses/bddb.html"
+    },
+    {
+      "route": "/pulses/point-break",
+      "rewrite": "/index.php/pulses/point-break.html"
+    },
+    {
+      "route": "/pulses/point-break/",
+      "rewrite": "/index.php/pulses/point-break.html"
+    },
+    {
+      "route": "/pulses/sda-frame",
+      "rewrite": "/index.php/pulses/sda-frame.html"
+    },
+    {
+      "route": "/pulses/sda-frame/",
+      "rewrite": "/index.php/pulses/sda-frame.html"
+    },
+    {
+      "route": "/pulses/sda-fusion",
+      "rewrite": "/index.php/pulses/sda-fusion.html"
+    },
+    {
+      "route": "/pulses/sda-fusion/",
+      "rewrite": "/index.php/pulses/sda-fusion.html"
+    },
+    {
+      "route": "/pulses/sda-skydeck",
+      "rewrite": "/index.php/pulses/sda-skydeck.html"
+    },
+    {
+      "route": "/pulses/sda-skydeck/",
+      "rewrite": "/index.php/pulses/sda-skydeck.html"
+    },
+    {
+      "route": "/pulses/sda-studio",
+      "rewrite": "/index.php/pulses/sda-studio.html"
+    },
+    {
+      "route": "/pulses/sda-studio/",
+      "rewrite": "/index.php/pulses/sda-studio.html"
+    },
+    {
+      "route": "/pulses/sovereign-trust",
+      "rewrite": "/index.php/pulses/sovereign-trust.html"
+    },
+    {
+      "route": "/pulses/sovereign-trust/",
+      "rewrite": "/index.php/pulses/sovereign-trust.html"
+    },
+    {
+      "route": "/about-sda/technology",
+      "rewrite": "/index.php/sda-technology.html"
+    },
+    {
+      "route": "/about-sda/technology/",
+      "rewrite": "/index.php/sda-technology.html"
+    }
+  ]
+}

@@ -1,0 +1,142 @@
+[
+  {
+    "src": "https://frame.sda.studio/?feed=logos",
+    "class": "iframe-clean",
+    "x": 135,
+    "y": 90.625,
+    "width": 200,
+    "height": 200,
+    "hidden": false,
+    "source": "desktop/01-home.png",
+    "sourceSha256": "e6d76dbbbc698b4463c465cbc818c21e38c758f0884fef0dcb4420e5964b3a0e",
+    "crop": {
+      "left": 135,
+      "top": 91,
+      "width": 200,
+      "height": 200
+    },
+    "output": "assets/unavailable/interior-1.png",
+    "padding": 0,
+    "outputSha256": "1778d09de0d843fd9ea9e0ba82c754206a769e01dfdf3a36714f7bce5b1ad9e6"
+  },
+  {
+    "src": "https://frame.sda.studio/?feed=fineart",
+    "class": "iframe-clean",
+    "x": 510,
+    "y": 70.625,
+    "width": 320,
+    "height": 200,
+    "hidden": false,
+    "source": "desktop/01-home.png",
+    "sourceSha256": "e6d76dbbbc698b4463c465cbc818c21e38c758f0884fef0dcb4420e5964b3a0e",
+    "crop": {
+      "left": 510,
+      "top": 71,
+      "width": 320,
+      "height": 200
+    },
+    "output": "assets/unavailable/interior-2.png",
+    "padding": 0,
+    "outputSha256": "5b8525358b7c759531ad4895d4edeac08ce92e1a10f8f21bcf762790369ad613"
+  },
+  {
+    "src": "https://frame.sda.studio/?feed=surrealism",
+    "class": "iframe-clean",
+    "x": 846.671875,
+    "y": 70.625,
+    "width": 320,
+    "height": 200,
+    "hidden": false,
+    "source": "desktop/01-home.png",
+    "sourceSha256": "e6d76dbbbc698b4463c465cbc818c21e38c758f0884fef0dcb4420e5964b3a0e",
+    "crop": {
+      "left": 847,
+      "top": 71,
+      "width": 320,
+      "height": 200
+    },
+    "output": "assets/unavailable/interior-3.png",
+    "padding": 0,
+    "outputSha256": "5b8525358b7c759531ad4895d4edeac08ce92e1a10f8f21bcf762790369ad613"
+  },
+  {
+    "src": "https://gallery.sda.studio/frame/slideshow?key=m3d8Fd&speed=5&transition=fade&autoStart=1&captions=0&navigation=1&playButton=0&randomize=1&transitionSpeed=2",
+    "class": "lcd-screen",
+    "x": 163,
+    "y": 1409.40625,
+    "width": 400,
+    "height": 258,
+    "hidden": false,
+    "source": "desktop/14-artists.png",
+    "sourceSha256": "976ef80ceaa6ccfe013e397ff17d1b3cef32d5f25595938772657d7dab6bb436",
+    "crop": {
+      "left": 170,
+      "top": 1416,
+      "width": 386,
+      "height": 244
+    },
+    "output": "assets/unavailable/interior-4.png",
+    "padding": 7,
+    "outputSha256": "b924cc037152bf1edd9529e7f3384ef5bf10435e827799ccea7426a48e132abe"
+  },
+  {
+    "src": "https://gallery.sda.studio/frame/slideshow?key=Szfcnb&speed=5&transition=fade&autoStart=1&captions=0&navigation=0&playButton=0&randomize=1&transitionSpeed=2",
+    "class": "lcd-screen",
+    "x": 830.828125,
+    "y": 468.65625,
+    "width": 440,
+    "height": 440,
+    "hidden": false,
+    "source": "desktop/17-businesses.png",
+    "sourceSha256": "ef7a178fd2facb2c5d62edd7785f5baae1fbc3a3970cbc6dba136eca1dc00d21",
+    "crop": {
+      "left": 838,
+      "top": 476,
+      "width": 426,
+      "height": 426
+    },
+    "output": "assets/unavailable/interior-5.png",
+    "padding": 7,
+    "outputSha256": "4e35b9ed6f9d4d36bee734fc78c50e328070c35478463a3971b6517d05f90f68"
+  },
+  {
+    "src": "https://gallery.sda.studio/frame/slideshow?key=FSzKdN&speed=5&transition=fade&autoStart=1&captions=0&navigation=1&playButton=0&randomize=1&transitionSpeed=2",
+    "class": "lcd-screen",
+    "x": 483.15625,
+    "y": 1349.65625,
+    "width": 467,
+    "height": 600,
+    "hidden": false,
+    "source": "desktop/17-businesses.png",
+    "sourceSha256": "ef7a178fd2facb2c5d62edd7785f5baae1fbc3a3970cbc6dba136eca1dc00d21",
+    "crop": {
+      "left": 490,
+      "top": 1357,
+      "width": 453,
+      "height": 586
+    },
+    "output": "assets/unavailable/interior-6.png",
+    "padding": 7,
+    "outputSha256": "c3bab2517979f20c2e1cbecdb83648ec03cb5a8b42a908d7d220284df981a6f4"
+  },
+  {
+    "src": "https://frame.sda.studio/?feed=fantasy",
+    "class": "",
+    "x": 237,
+    "y": 461.65625,
+    "width": 640,
+    "height": 400,
+    "hidden": false,
+    "source": "desktop/24-feeds-sdaframe.png",
+    "sourceSha256": "ee95a7f66acbaf20242918c590f45303ceff239006e17d904fad496ab7db8759",
+    "crop": {
+      "left": 239,
+      "top": 464,
+      "width": 636,
+      "height": 396
+    },
+    "output": "assets/unavailable/interior-7.png",
+    "padding": 2,
+    "outputSha256": "9611a6e0e3348658f1c09c8752e22aa64b18461e09a2c2163be42e4d0ddc913c"
+  }
+]

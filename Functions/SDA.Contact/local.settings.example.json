@@ -1,0 +1,1 @@
+{"IsEncrypted":false,"Values":{"FUNCTIONS_WORKER_RUNTIME":"node","MAIL_ENABLED":"false","MAIL_FROM":"","ALLOWED_ORIGINS":"http://127.0.0.1:4173","TURNSTILE_HOSTNAME":"","TURNSTILE_SECRET":"","TABLE_ENDPOINT":"","TABLE_NAME":"contactDaily"}}

@@ -10,3 +10,5 @@ Tests/Visual/test-results/
 Tests/Visual/playwright-report/
 __pycache__/
 *.pyc
+
+/dist/

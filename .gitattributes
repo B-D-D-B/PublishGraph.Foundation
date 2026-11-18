@@ -21,3 +21,13 @@ Documentation/Reviews/Archive/** -text whitespace=-trailing-space,-space-before-
 Documentation/Reviews/H7/** -text whitespace=-trailing-space,-space-before-tab,-blank-at-eof
 Content/Candidates/P7/** -text whitespace=-trailing-space,-space-before-tab,-blank-at-eof
 src/SDA.Studio.Web/Sites/Sda/layout-catalog.json -text whitespace=-trailing-space,-space-before-tab,-blank-at-eof
+
+# SDA accepted publication bytes must survive staging and checkout unchanged.
+Static/SDA-Standalone/** -text
+Functions/SDA.Contact/** -text
+Documentation/Projects/Plans/SDA-Standalone-HTML-Plan.md -text
+Documentation/Projects/Plans/SDA-Contact-Azure-Function-Plan.md -text
+Scripts/Publish-SdaWebsite.mjs -text
+Documentation/Projects/SDA-Publishing.md -text
+.gitattributes -text
+.gitignore -text

@@ -1,0 +1,2441 @@
+{
+  "root": "C:/GitHub/SiliconDreamArtists/SDA.Studio.Website/Legacy",
+  "files": [
+    {
+      "path": "sda.studio/index.html",
+      "sha256": "b5bd565f4beb5829a94218d99402af7f6b6df0dc25f07ca09e17ccdf7bfe8aa1"
+    },
+    {
+      "path": "sda.studio/index.php/about.html",
+      "sha256": "fe3a8c24ebdc109f95676d77bb1a72b14ac9363a200208fa0a4a4cbb8e455064"
+    },
+    {
+      "path": "sda.studio/index.php/about/sda-history.html",
+      "sha256": "fb0da08f1b33addceb58a269806759d7ee85d1bfb0138bb61377e5945dd42f13"
+    },
+    {
+      "path": "sda.studio/index.php/about/sda-timeline.html",
+      "sha256": "a072feec22cd928ac81eeeb84b0abe6a7ef5d1e1ab044f493579d12349d36eff"
+    },
+    {
+      "path": "sda.studio/index.php/about/singularity-charter.html",
+      "sha256": "4f214d0855c1f70379ea0dc8d9a55f25157a39f3399ba7dba8d3274063d93129"
+    },
+    {
+      "path": "sda.studio/index.php/about/singularity-charter/press-release.html",
+      "sha256": "a943c9bf87002e22fb7aad597406aa0be424556438d4d444dd70b8c3b22b3b9a"
+    },
+    {
+      "path": "sda.studio/index.php/art.html",
+      "sha256": "f64d788461205b0747e9229fc88cd7e03f6f70480c2c9d5d3fec0b60e9d06153"
+    },
+    {
+      "path": "sda.studio/index.php/art/frames.html",
+      "sha256": "c25c00d3e8ef9a25a86128306a510fd5a2bf732ca2842168c42522197d4497f9"
+    },
+    {
+      "path": "sda.studio/index.php/art/galleries.html",
+      "sha256": "3f8669b9862d9cc588c91224a7a00557c8d69a8f42dc4f51acda31b455c37026"
+    },
+    {
+      "path": "sda.studio/index.php/art/galleries/advanced-aether-adworks.html",
+      "sha256": "f3413a36d7cb5dffe8f1b94bd91cae8450ec1b1767d773e9d7222c8ceb554215"
+    },
+    {
+      "path": "sda.studio/index.php/art/projects.html",
+      "sha256": "f18a279729486cb90ff958265bebfeb3792b5244ed5e6d821a36fffa70c3bb1c"
+    },
+    {
+      "path": "sda.studio/index.php/art/projects/advanced-aether-adworks.html",
+      "sha256": "f5b64afa22447c14ddf5ab16a1d9d17cda0b215bee374e68093f95c2bc815b51"
+    },
+    {
+      "path": "sda.studio/index.php/art/sda-collection.html",
+      "sha256": "97164b9cb0015fc05ca8ec5da644cc126d860d9fdf7e25755dd16958c17a9720"
+    },
+    {
+      "path": "sda.studio/index.php/artists.html",
+      "sha256": "3befdf131ac28ab58913ac046bbe29cf1e42cded2e07478b4f726825075f7764"
+    },
+    {
+      "path": "photos.smugmug.com/Library/Silicon-Dream-Artists/Website/Desktops/i-xhGDSWL/0/NQgf8LcnrbLgvspkBNx3D765RBQXXsj6SF3vh45W9/X2/u8445342122_A_sleek_yet_dynamic_digital_wor.html",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "photos.smugmug.com/Library/Silicon-Dream-Artists/Website/RetroDesktop/i-WDxp6bm/0/LqR8zZbJM73z5Msn26PHZmM6NKb5n99jqv4p6kVRt/X4/aitubo (21)-scale-X4.html",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "photos.smugmug.com/Library/Silicon-Dream-Artists/Website/Tall-Panels/i-mPsvS6f/0/K78C8XDK3bz27kG8BCvXmk9bXszpQm3wRswDmVt9v/X5/aitubo (37)-scale-X5.html",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "photos.smugmug.com/Library/Silicon-Dream-Artists/Website/Desktops/i-gMzfvX2/0/K75nGPdHdgWXSnJFb9kLg3NzmQvkgCQLQV6nGfqWs/X3/w3cqgo1KMhIJbF1PgKhx--0--fef6u-scale-regen1-X3.html",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "sda.studio/index.php/artists/exposure.html",
+      "sha256": "d4ebedab25bcd8845faaaf1e67a8b13cca6810735d9dc465cb9ef42d59fa538b"
+    },
+    {
+      "path": "sda.studio/index.php/artists/income.html",
+      "sha256": "3158ac1be3a8770560095061e9e8918f71728d9f48d9b374a9b1b283ee3743ef"
+    },
+    {
+      "path": "sda.studio/index.php/businesses.html",
+      "sha256": "c274f5965ab9d61bdedf91cbc0c4969ccc38a18082bb0d856bd0024cfd5b38f1"
+    },
+    {
+      "path": "sda.studio/index.php/collectors.html",
+      "sha256": "70dd53cb5f5a288392f04d197aa13f6f7943c8d84388be1e6704da101e56e60c"
+    },
+    {
+      "path": "sda.studio/index.php/collectors/commissions.html",
+      "sha256": "7b567d92cc3aa2516dffee8c3626fb518cf12527be15254a8fecb1d27cadfd0d"
+    },
+    {
+      "path": "sda.studio/index.php/collectors/investor-bundles.html",
+      "sha256": "211ae84d1e77848aebf8614cb29c0c4961752f8392b5bd58254a8bbad328acdd"
+    },
+    {
+      "path": "sda.studio/index.php/collectors/nft-marketplaces.html",
+      "sha256": "56a107c4168661deceede97c84c5b2ec3ccf0ba68dd968c7675cc74acbd3549d"
+    },
+    {
+      "path": "sda.studio/index.php/collectors/specifications.html",
+      "sha256": "4210fd0bf179d07acfb1c4e335355a5d7cbfe6c347260fabd1ac380e72127973"
+    },
+    {
+      "path": "sda.studio/index.php/contact.html",
+      "sha256": "d2b163d45fb392538e74e2ea05014ace186643814f3a4c02ae32aa28ecda889f"
+    },
+    {
+      "path": "sda.studio/index.php/feeds-sdaframe.html",
+      "sha256": "240c53646889205b99f094a6392962fb496c68b6c1c7ba0b5c242fe30d120e4d"
+    },
+    {
+      "path": "photos.smugmug.com/Projects/SiliconDreamArtists/Relaunch/Shadow-PhanTom/i-FLxTLmd/0/MBdjX2XH3MjFnc6F8NKnCG4vs6WGkq5VKhkxcVbXC/4K/1991-2024.SDA.Relaunch.RelaunchPanel.B.009_.html",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "sda.studio/index.php/membership.html",
+      "sha256": "26e21d4fa1423ae2a9ba64683ba4049ff275da58f001f63ac7b350cdc8371293"
+    },
+    {
+      "path": "sda.studio/index.php/membership/agents.html",
+      "sha256": "52cff107f3b8a429214bb8d3e5c8fb4779f3fc905575782a277408a4110dd4fd"
+    },
+    {
+      "path": "sda.studio/index.php/membership/amplifiers.html",
+      "sha256": "bb15a65bcdde3de0b500f20c69c365dbb56fd25aeb53e53cb0d86d9421d2316e"
+    },
+    {
+      "path": "sda.studio/index.php/membership/artists.html",
+      "sha256": "d0cc9bcc8ad1b0d66e71b12e31f32b77ebeb9a92aaf3c7d417782594dab609c1"
+    },
+    {
+      "path": "sda.studio/index.php/membership/curators.html",
+      "sha256": "090540f7eadfee99c303e8fb172c37495a26e6e3b395b8ea3251531833c39097"
+    },
+    {
+      "path": "sda.studio/index.php/membership/moderators.html",
+      "sha256": "eb32e49ae47fea009aedacfcfa5785ac6dfa9e3eccdf0887a5abe5b4b249c1bd"
+    },
+    {
+      "path": "sda.studio/index.php/membership/operators.html",
+      "sha256": "d13984d91a41f3c916084496ed197de13721008c7ab5b35f06943493d6fb6db4"
+    },
+    {
+      "path": "sda.studio/index.php/membership/welcome.html",
+      "sha256": "65b2b88e5818908deac19f040e8634b35ac2d63d755272fdb17daed83a55e4fb"
+    },
+    {
+      "path": "sda.studio/index.php/nft-proposal.html",
+      "sha256": "40a2a7ef2eb0d20f9281e593f543e344f05469039bddb33c648a84744d72561f"
+    },
+    {
+      "path": "sda.studio/index.php/pulses.html",
+      "sha256": "09a8bd15ca6b87eb636a1f6e5bba1339ca57580cd5fdc414cc8a8ad1d1b153b5"
+    },
+    {
+      "path": "sda.studio/index.php/pulses/bddb.html",
+      "sha256": "a8df84a76cd7fdfb111a15cba7eee032dd91bb65a075cfd13d747065475feb4b"
+    },
+    {
+      "path": "sda.studio/index.php/pulses/point-break.html",
+      "sha256": "db290e883835c04b2518eb82b7e5c78e995a5904876b94df51ca09e11d92d930"
+    },
+    {
+      "path": "sda.studio/index.php/pulses/sda-frame.html",
+      "sha256": "a45bff035c04c4cf62e7142341a9a27b1124a45d9a6bb1fabc7afd6ab83c37fb"
+    },
+    {
+      "path": "sda.studio/index.php/pulses/sda-fusion.html",
+      "sha256": "66870c7cb073a3ae19d42af55ceb8c33e1f8dc4b440b130360c2314925a29192"
+    },
+    {
+      "path": "sda.studio/index.php/pulses/sda-skydeck.html",
+      "sha256": "aedb17d07f775b954de7a408478244da0b0c559303793e54fc3bb699e582da29"
+    },
+    {
+      "path": "sda.studio/index.php/pulses/sda-studio.html",
+      "sha256": "6e21dd7ab7b3f4147b2e8b60bf47ddfad4a1a1793b51e7fb61261128fd40bdba"
+    },
+    {
+      "path": "sda.studio/index.php/pulses/sovereign-trust.html",
+      "sha256": "75c84438e912fd2f164260fe5c6a4faec19711796d00def1b547832388035393"
+    },
+    {
+      "path": "sda.studio/index.php/sda-technology.html",
+      "sha256": "22fe3292b573af826161b14fa2249ab6ae809fab95b25dd26df6f3ec85ec7e4c"
+    },
+    {
+      "path": "sda.studio/application/files/5117/4107/7753/favicon.ico",
+      "sha256": "cc7b4f752cce28a75e0c0246b8e949de97b4a47424463367adf50bc4d8fb62a3"
+    },
+    {
+      "path": "sda.studio/application/files/7717/4107/7784/icon-192.png",
+      "sha256": "7c84cf0c6434b752a2acf2463d1e69c17bdf1ce469546610fe18938d24f91b3c"
+    },
+    {
+      "path": "sda.studio/index.php/ccm/system/css/layout/149c045.css",
+      "sha256": "327e7b1384e193c54c1a5bc46d7c234c04e4dd459133d2049dbaa01fde06f9b3"
+    },
+    {
+      "path": "sda.studio/concrete/css/fontawesome/allc045.css",
+      "sha256": "72b3c9506f6906b9895dd5096aa326bb519488eb9e3791f6407bd41d76d64dc2"
+    },
+    {
+      "path": "sda.studio/concrete/js/jqueryc045.js",
+      "sha256": "fc9a93dd241f6b045cbff0481cf4e1901becd0e12fb45166a8f17f95823f0b1a"
+    },
+    {
+      "path": "sda.studio/concrete/css/features/imagery/frontendc045.css",
+      "sha256": "9b42cf389a9f9242f13a7ee51089cc895d7c1c01e54f1d39b24bf6bf35c48a49"
+    },
+    {
+      "path": "sda.studio/concrete/css/features/navigation/frontendc045.css",
+      "sha256": "59b505832b999515462c62dc30532ba8afaab3273475f9455a5c9ba2d6e27c81"
+    },
+    {
+      "path": "sda.studio/concrete/css/features/basics/frontendc045.css",
+      "sha256": "3d9cb1a3a43cbad8d6018e26c974ae5118526f168a01cde6bdadaac7423b3151"
+    },
+    {
+      "path": "sda.studio/concrete/css/features/social/frontendc045.css",
+      "sha256": "a439ed49621f98d07f3310151530ac76793ef5586094ccfc13389cbb99c7624b"
+    },
+    {
+      "path": "sda.studio/packages/theme_stucco/themes/stucco/css/bootstrap-theme.min.css",
+      "sha256": "99766bce7a3000891e25f14dd2c02bdf4777920c9952c781ffdc42b6102e0a36"
+    },
+    {
+      "path": "sda.studio/packages/theme_stucco/themes/stucco/css/bootstrap.css",
+      "sha256": "c4289c870970d5e52f9862102b08c75ce4b07e7bd7eb7bd6806de025e5ab9f85"
+    },
+    {
+      "path": "sda.studio/packages/theme_stucco/themes/stucco/fonts/glyphicons-halflings-regular.woff2.html",
+      "sha256": "cc0b4e42510d49c6decd464123ecf3b14ae9b47f9b4ed2ee64893e2d6520a264"
+    },
+    {
+      "path": "sda.studio/index.php/ccm/system/css/page/1/main.less.css",
+      "sha256": "4892eefa13f59d16ec70ded1a5f5ad01d05d33834c394a5faa51fe756bebc148"
+    },
+    {
+      "path": "photos.smugmug.com/Library/Silicon-Dream-Artists/Website/Desktops/i-Tptj5sP/0/MbFxX7jHdmzr8gzdJnBPstM2z3Q8XcFmnjTnfp3bw/X4/DALL·E 2025-02-19 03.17.15 - A soft, blurry.html",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "photos.smugmug.com/Library/Silicon-Dream-Artists/Website/Desktops/i-bL39Ddr/0/Lb2FmPJGX8qJB922msv6DZbnbthX2SFJsrw5pRQGj/X4/DALL·E 2025-02-20 02.12.37 - A soft, dreamy.html",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "photos.smugmug.com/Library/Silicon-Dream-Artists/Website/Desktops/i-Z6RRnPF/0/NTW4dV4x56GTkHxHFpD6S5VHNx8Jq8ZbbMxKTMcpf/X3/9gPDckuqbmmrPkvWJeA2--0--mnspw-scale-regen1-X3.html",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "photos.smugmug.com/Library/Silicon-Dream-Artists/Website/Desktops/i-9PwSHmM/0/NFgR88S48kCSVZjgrpgHTZCTdfxkndLGVHC6Bcdwd/4K/22a7tUlxbdJynipVAWAW--0--znxgt-scale-regen1-4K.html",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "photos.smugmug.com/Library/Silicon-Dream-Artists/Website/Background/i-9hLpfsk/0/KpCgzcCXJjKmGLT8kQxfbXdSqtLXnNWqf9dVqrwTp/X2/u8445342122_a_burning_raceway_with_skid_mar.html",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "photos.smugmug.com/Library/Silicon-Dream-Artists/Website/Background/i-bBRhtxW/0/MmRzdctbrB8xm4H5vjhgC5dwNGGbxmSWLNVfdGdJg/X4/u8445342122_a_grand_luxury_hotel_lobby_with.html",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "sda.studio/packages/theme_stucco/themes/stucco/css/your-texture.html",
+      "sha256": "cc0b4e42510d49c6decd464123ecf3b14ae9b47f9b4ed2ee64893e2d6520a264"
+    },
+    {
+      "path": "sda.studio/packages/theme_stucco/themes/stucco/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js",
+      "sha256": "e60d0ada30a96bc25231985b04a96879b296867bfec5087299a25493c80eb281"
+    },
+    {
+      "path": "sda.studio/application/files/7517/3976/2983/SDALogo.png",
+      "sha256": "4110b44b916cc19203b4b922429b2c9381874e8535fcdcf29dc19d7c63e3ab2b"
+    },
+    {
+      "path": "sda.studio/application/files/5317/3978/5371/2024.12.19.08.156.-101.SanNicolas.Aruba.SDA.WeatherVaults.Travel.LyraFlux_2048_sda.jpg",
+      "sha256": "d45129a029990e8f679e86cd12a0d1d4867376e97809a8de317acb08f8e4cc43"
+    },
+    {
+      "path": "sda.studio/application/files/5417/3978/4038/aitubo_24-12288-cgi-2x.jpeg",
+      "sha256": "b7b3765135d8f9405ee019fd2fc83dd728d965a86d796c8e5db8f27cb7e0089b"
+    },
+    {
+      "path": "sda.studio/application/files/2117/3978/5373/2024.12.16.07.130.-126.Hallstatt.Austria.SDA.WeatherVaults.Museum.LyraFlux_2048_sda.jpg",
+      "sha256": "a8062481e5328b64574fd2be1a327c038a3a3fe22d12b56defc172f659abf925"
+    },
+    {
+      "path": "sda.studio/application/files/4817/3978/5372/2024.12.13.05.102.-154.Bandung.Indonesia.SDA.WeatherVaults.Museum.LyraFlux_2048_sda.jpg",
+      "sha256": "8d684109ab545f239243dabb01728d174e736ff46ecee28850a8840634de2d1c"
+    },
+    {
+      "path": "sda.studio/concrete/js/features/imagery/frontendc045.js",
+      "sha256": "498938ade18def3e0ce02224d36ee835335360295a144ae500b2839b489388ce"
+    },
+    {
+      "path": "sda.studio/concrete/js/features/navigation/frontendc045.js",
+      "sha256": "1d7f080e83f9f0c8b1141a4f861d2445ca247253710b9d49a93a36e7b7c10558"
+    },
+    {
+      "path": "sda.studio/packages/theme_stucco/blocks/autonav/templates/stucco_global_nav_animenu/viewc045.js",
+      "sha256": "9f7e7d5d634c1b619e482234a6e6edc6310ace2d7d1675c08c02cf423cb3885a"
+    },
+    {
+      "path": "sda.studio/packages/theme_stucco/themes/stucco/js/main.js",
+      "sha256": "04fcc164eb5dc14904359e2e3345c0d1786b35a5578fc701f5e589163ad5a133"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/medium/5317/3978/5371/2024.12.19.08.156.-101.SanNicolas.Aruba.SDA.WeatherVaults.Travel.LyraFlux_2048_sda.jpg",
+      "sha256": "4a92edb36a6fc46fba1bcd8388f8919b4fd0826dc84bb714b131997285ca4326"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/small/5317/3978/5371/2024.12.19.08.156.-101.SanNicolas.Aruba.SDA.WeatherVaults.Travel.LyraFlux_2048_sda.jpg",
+      "sha256": "038bb26d77b8604501c70ab1d0d95c5f3ac68dcf87a6e3746f18bbd0493c817f"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/large/5417/3978/4038/aitubo_24-12288-cgi-2x.jpg",
+      "sha256": "6a9131c31f68a30403f2e05f3cb1c58fb2b1559cdee4d691f871036c6d1c16cb"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/medium/5417/3978/4038/aitubo_24-12288-cgi-2x.jpg",
+      "sha256": "f15a985be6bba2bc895d14ca4919176acc215a1b4ec87f39ba7150d1ee983d7c"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/small/5417/3978/4038/aitubo_24-12288-cgi-2x.jpg",
+      "sha256": "e45211742c36b4252f0b13dcbd2535c01672b5c3512e127cfa9df8724b9d0a8e"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/medium/2117/3978/5373/2024.12.16.07.130.-126.Hallstatt.Austria.SDA.WeatherVaults.Museum.LyraFlux_2048_sda.jpg",
+      "sha256": "568f391257ac7b2ef6734165a471eaf4791ff872342b80ebd01d02fc3233197e"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/small/2117/3978/5373/2024.12.16.07.130.-126.Hallstatt.Austria.SDA.WeatherVaults.Museum.LyraFlux_2048_sda.jpg",
+      "sha256": "db4c78c84e58f5345b0f2455e6f48d79570ec1319986b234e147afbe7e4773a8"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/medium/4817/3978/5372/2024.12.13.05.102.-154.Bandung.Indonesia.SDA.WeatherVaults.Museum.LyraFlux_2048_sda.jpg",
+      "sha256": "7e8250e38048e51bacfc3b7af4082f6437022e265f0e9227122044a5044ad127"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/small/4817/3978/5372/2024.12.13.05.102.-154.Bandung.Indonesia.SDA.WeatherVaults.Museum.LyraFlux_2048_sda.jpg",
+      "sha256": "de78ba4acb046a486e821804e40f16c0f71a04013cf94a7e6890e8925cb8f182"
+    },
+    {
+      "path": "sda.studio/index.php/ccm/system/css/page/445/main.less.css",
+      "sha256": "c0e3febf19dc7153a19f01f746633504d0c303e8818cad655f1d77c6adaf731a"
+    },
+    {
+      "path": "sda.studio/index.php/ccm/system/css/page/444/main.less.css",
+      "sha256": "e248eefab385c9000e0a03cef5e464e1711383168aefc0adc1624fea14227cf0"
+    },
+    {
+      "path": "sda.studio/index.php/ccm/system/css/page/492/main.less.css",
+      "sha256": "48d1e1dce78d71a53308b381784c6acfd166a264785de27b2be48e535f807c0c"
+    },
+    {
+      "path": "sda.studio/index.php/ccm/system/css/page/501/main.less.css",
+      "sha256": "48d1e1dce78d71a53308b381784c6acfd166a264785de27b2be48e535f807c0c"
+    },
+    {
+      "path": "sda.studio/index.php/ccm/system/css/page/502/main.less.css",
+      "sha256": "48d1e1dce78d71a53308b381784c6acfd166a264785de27b2be48e535f807c0c"
+    },
+    {
+      "path": "sda.studio/index.php/ccm/system/css/layout/507c045.css",
+      "sha256": "3c68288e3e40750977815e34bcee25a89cdb4dc7cfa46555686096c4f491c381"
+    },
+    {
+      "path": "sda.studio/index.php/ccm/system/css/layout/511c045.css",
+      "sha256": "a1ef7dad90d4c47d3ede73d99999871cb4b75af12a314708a1d8815383e5655d"
+    },
+    {
+      "path": "sda.studio/index.php/ccm/system/css/layout/508c045.css",
+      "sha256": "013d3328f2d40f4c2fef370e87e7e124b6d3deb2feda1bc868d196737e97fff3"
+    },
+    {
+      "path": "sda.studio/index.php/ccm/system/css/page/442/main.less.css",
+      "sha256": "1efde6b4e391f74e5c8a68245f1e6e68e4c049a86ac9d45284dc4e325f05a986"
+    },
+    {
+      "path": "sda.studio/application/files/5317/3987/2438/2025.01.03.WeatherVaults.SDA.Sokcho.SouthKorea.D1.0013-D0002.0085-WV0022.LyraFlux_2048_sda.jpg",
+      "sha256": "a2374fd132b89da75fb304cffdefee8d98817850485a01fd99c6b1fd95a45f59"
+    },
+    {
+      "path": "sda.studio/application/files/9317/4028/1165/010625_Rotorua_MuseumAlternate01-scaled_2048_sda.jpg",
+      "sha256": "bed3e707cc83b57b6140d8ee1cca15b94a4aa8dd0a79e9bb1bb1081a59399a64"
+    },
+    {
+      "path": "sda.studio/application/files/5317/3668/0544/aitubo_57_copy_watermark.jpg",
+      "sha256": "c957db435a215ae9c9bf83dd3e4dc3dbf28a5691955e8b9226f0f9a08ea49742"
+    },
+    {
+      "path": "sda.studio/application/files/1817/4028/1202/2024.12.25.04.200.-056.NeuschwansteinCastle.Germany.SDA.WeatherVaults.Museum.LyraFlux_2048_sda.jpg",
+      "sha256": "2c0ae915df947e0ff8c7cab648703ac360e64e43c2f44870c1cea9919e4a3459"
+    },
+    {
+      "path": "sda.studio/application/files/9017/4028/1203/2024.12.25.05.201.-055.NeuschwansteinCastle.Germany.SDA.WeatherVaults.Museum.LyraFlux_Studio_2048_sda.jpg",
+      "sha256": "57a1c2cf24476ac5b73906a6bdd7ce718cee23ffba460d0e89b76ce529d45e64"
+    },
+    {
+      "path": "sda.studio/application/files/4617/4028/1183/2024_12_20_04_162_-095_Avanos_Turkey_SDA_WeatherVaults_Museum_LyraFlux_2048_sda.jpg",
+      "sha256": "68410c323df1cca6f11f7eb8cc04f960bdfe0cd0ad4c957a740570fa87ed2b0d"
+    },
+    {
+      "path": "sda.studio/application/files/5317/4047/9566/Bluesky-Social-Logo-Vector.svg-.png",
+      "sha256": "f1c2b91d1737483081d9c3c539ebc039d30cd7edbaa8a44e6641d1e3557f03af"
+    },
+    {
+      "path": "sda.studio/application/files/4217/4047/9565/discord-mark-blue.png",
+      "sha256": "b2939df5a48f422fc9d62f270c182f07b5fd5a7a334478ea73af4fdb5eb12d3b"
+    },
+    {
+      "path": "sda.studio/application/files/5717/4048/0360/logo-linkedin-icon-1536.png",
+      "sha256": "f5f5dcd555f028a473c430a0bf138e2be1eb0f21a98d526f290f4ff1ddc28e0b"
+    },
+    {
+      "path": "sda.studio/application/files/5517/4026/5451/Ways_to_collect_7.2.jpg",
+      "sha256": "bd89c9e99a2c9717653d318dfc959445a5ceee315956ac3f4ab9f1e907a42de9"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/medium/5317/3987/2438/2025.01.03.WeatherVaults.SDA.Sokcho.SouthKorea.D1.0013-D0002.0085-WV0022.LyraFlux_2048_sda.jpg",
+      "sha256": "ee24a010f5c8a18d50fd45bd1194b4560d6245a94307fefc56f3dbe8489fc557"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/small/5317/3987/2438/2025.01.03.WeatherVaults.SDA.Sokcho.SouthKorea.D1.0013-D0002.0085-WV0022.LyraFlux_2048_sda.jpg",
+      "sha256": "32ad14c0fc1a73f8a42f4bf875480ea9fd98b6eb6e345a9a1f7dfd257b71416c"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/medium/9317/4028/1165/010625_Rotorua_MuseumAlternate01-scaled_2048_sda.jpg",
+      "sha256": "dc86232eb415cc01d59bfdef28127253f2d300d440f59d247a595ae08df9bd97"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/small/9317/4028/1165/010625_Rotorua_MuseumAlternate01-scaled_2048_sda.jpg",
+      "sha256": "64ecb349d58e078999f5a91766703d6e08a7cf7a17bfc7651a2cdb54e3c596e7"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/large/5317/3668/0544/aitubo_57_copy_watermark.jpg",
+      "sha256": "37fd1eedf7ac1cd4febcab2a7a5e9d5039dfb2108eff2779b5c1a5ea30f8eb2d"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/medium/5317/3668/0544/aitubo_57_copy_watermark.jpg",
+      "sha256": "aa8bd9414bbfffa1130e4832e51c7db399b80f4de4c1d5edfcbf27adc71239b1"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/small/5317/3668/0544/aitubo_57_copy_watermark.jpg",
+      "sha256": "63affc0916e9c1f03f46ded06d16dcfd87d4e3d84c9528b0834a3609526a175f"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/medium/1817/4028/1202/2024.12.25.04.200.-056.NeuschwansteinCastle.Germany.SDA.WeatherVaults.Museum.LyraFlux_2048_sda.jpg",
+      "sha256": "c433cac6931ab07b7b92c2c9b08dc1aae37845ac6dde20fe199bfc361d8800cf"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/small/1817/4028/1202/2024.12.25.04.200.-056.NeuschwansteinCastle.Germany.SDA.WeatherVaults.Museum.LyraFlux_2048_sda.jpg",
+      "sha256": "000847e5ebbce08aeeecd4278cb601c26328f9a93b700d27fef082029a63f014"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/medium/9017/4028/1203/2024.12.25.05.201.-055.NeuschwansteinCastle.Germany.SDA.WeatherVaults.Museum.LyraFlux_Studio_2048_sda.jpg",
+      "sha256": "6901305d7430593d3e409bb9162063b4d028ef589b49b7dccc5ef76cbe20d15d"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/small/9017/4028/1203/2024.12.25.05.201.-055.NeuschwansteinCastle.Germany.SDA.WeatherVaults.Museum.LyraFlux_Studio_2048_sda.jpg",
+      "sha256": "dc4215340db4a49169466d2f150e7d4e95c73a11e21b40843c460a222daaf0c7"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/medium/4617/4028/1183/2024_12_20_04_162_-095_Avanos_Turkey_SDA_WeatherVaults_Museum_LyraFlux_2048_sda.jpg",
+      "sha256": "ff007890e4a7865064242f9ff991390f90c10765672d396f8c501483e3063784"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/small/4617/4028/1183/2024_12_20_04_162_-095_Avanos_Turkey_SDA_WeatherVaults_Museum_LyraFlux_2048_sda.jpg",
+      "sha256": "794afeeedc90dc48a68a4810caca7bd2e737ba54a2508c7d9fae77eae899b1d5"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/large/5317/4047/9566/Bluesky-Social-Logo-Vector.svg-.png",
+      "sha256": "5d732b55666df8a6134217f7445dddd6b6f0f5ecae37dd729925380b7d6f04ad"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/medium/5317/4047/9566/Bluesky-Social-Logo-Vector.svg-.png",
+      "sha256": "0c7c099dabbfb8a359d3c9a5f8e362dc6e8def4efd9c986694ad0059fa9abaab"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/small/5317/4047/9566/Bluesky-Social-Logo-Vector.svg-.png",
+      "sha256": "dd480cd5bf5928798e9efd325e4522ee2b25c940f5ce2df9642dd4dd50946466"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/large/5717/4048/0360/logo-linkedin-icon-1536.png",
+      "sha256": "0ae59b22202e20b5b5dbdcf177d5ce8fbfce1acdbf845291eff48996f8f48f1a"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/medium/5717/4048/0360/logo-linkedin-icon-1536.png",
+      "sha256": "11d547d04e67dea285c82ce2c4edafd57045dd9868d93f1f5cf538321e32b1a6"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/small/5717/4048/0360/logo-linkedin-icon-1536.png",
+      "sha256": "4cfc361a59b64e7e6f0e714158e7c59398f80eef6766229b15603076f287c2ea"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/large/5517/4026/5451/Ways_to_collect_7.2.jpg",
+      "sha256": "fa207dd91c326378f8bfc7d16278033472973a4277067dd4dd5a5a0a7b916b27"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/medium/5517/4026/5451/Ways_to_collect_7.2.jpg",
+      "sha256": "4e4f84e4774e23faa0084011d7112da76bb3eb4f1d06b046b0e30c01367f45d7"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/small/5517/4026/5451/Ways_to_collect_7.2.jpg",
+      "sha256": "2d9fae71604e0107c950fe95d04b1a322eb2b341cda384b7e957929b775cdf1a"
+    },
+    {
+      "path": "sda.studio/index.php/ccm/system/css/page/446/main.less.css",
+      "sha256": "7fde6e061c0b9e9080467ab67fad1fb1546d9335d20103bd7f777a1242a4d161"
+    },
+    {
+      "path": "sda.studio/application/files/1217/4045/9056/SDA_harlequin_sticker-scaled_2048_sda.png",
+      "sha256": "62c58608a61aa3516d81fbf08fd292926b6c69a4bc93e46d96ea16adb754718f"
+    },
+    {
+      "path": "sda.studio/application/files/2317/4004/9015/2024.SDA24.Stickers.RandomMixed.037_d16814b7-6667-4d08-aa7d-13c9f76c48ef_2048_sda.jpg",
+      "sha256": "c2e89bf71154ae892435796ccff02888a7d0e3dca79b5b1184679a45b3d43092"
+    },
+    {
+      "path": "sda.studio/application/files/3317/4004/9050/2024.SDA24.Stickers.RandomMixed.006_3c42fccd-bb5e-41ac-82da-7a179d008188_2048_sda.jpg",
+      "sha256": "6ac16bff71d9ecac2146d43a20a0bb891f87f231863202b729c62d5385f6d4bd"
+    },
+    {
+      "path": "sda.studio/application/files/1117/4004/9055/2024.SDA24.Stickers.RandomMixed.016_c7775deb-28d2-4930-bc8d-ffa366efd850_2048_sda.jpg",
+      "sha256": "db4bf7e265bf0c63c9b3690cac168af7de38a3cac9587cb0b8fc235d23c7ac8d"
+    },
+    {
+      "path": "sda.studio/application/files/1417/4004/9077/2024.SDA24.Stickers.RandomMixed.028_926f6bbf-2783-47d8-8c34-4f2cfbcb3d44_2048_sda.jpg",
+      "sha256": "fd68ae97593a69b0b873239a6325bab10a6e5dff8fddbfecea6c707162afe732"
+    },
+    {
+      "path": "sda.studio/application/files/8617/4004/9041/2024.SDA24.Stickers.RandomMixed.050_1f5c0f76-32e8-4bd7-93da-34d9816c7188_2048_sda.jpg",
+      "sha256": "fd1cf285419de67448bd90e4402201ba8201adeb3a2b3ac9dc20cf8d8f4ede59"
+    },
+    {
+      "path": "sda.studio/application/files/6417/4005/0333/2024.SDA24.Stickers.RandomMixed.017_e4c3ec33-7a42-4423-94d8-d1b78ee1fb45_2048_sda.jpg",
+      "sha256": "d5ba99adc0b9fa7818c5a77d3fa6f7942124884283676bcd42d3c1b78bb3bb08"
+    },
+    {
+      "path": "sda.studio/application/files/7217/4005/0791/2024.SDA24.Stickers.RandomMixed.052_593972fa-cb69-4cc9-b0af-c704e231c179_2048_sda.jpg",
+      "sha256": "411521037bc778fa9ee14e9648871a4ff2f223c95ce478b3dcfb84f0feec3c99"
+    },
+    {
+      "path": "sda.studio/application/files/1717/4004/9028/2024.SDA24.Stickers.RandomMixed.045_cf51c574-f62d-4d69-b0ec-0d436d4dde4d_2048_sda.jpg",
+      "sha256": "a9eb16cb1820a183bab4c3ccee0f74d03659d613adc72ee7f4ab7bde3cd6a427"
+    },
+    {
+      "path": "sda.studio/application/files/4617/4004/9046/2024.SDA24.Stickers.RandomMixed.004_b32685fb-c367-4cac-9ae8-e77cb3d174ba_2048_sda.jpg",
+      "sha256": "71c4f6cd869e0c82a36cfc382d10b63b8a17ed967481a10402d8ce1dfffe85a0"
+    },
+    {
+      "path": "sda.studio/application/files/3417/4034/7078/SDA_sensual_sticker-scaled_2048_sda.jpg",
+      "sha256": "14ce611ecdd885e11f14152fb9ee83ea1b6ad463ec0fee9f852f8077a45c76eb"
+    },
+    {
+      "path": "sda.studio/application/files/1017/4004/9039/2024.SDA24.Stickers.RandomMixed.049_877a1b2d-0205-4768-80d9-b197655c734f_2048_sda.jpg",
+      "sha256": "1cbba8715f2321d8a419cec3b98cc08e5b1228ca6c5a9c4f3a606f139b2b5b41"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/medium/1217/4045/9056/SDA_harlequin_sticker-scaled_2048_sda.png",
+      "sha256": "94f8541b0801ac6d08af172fd89cbedc4498e81e32fbce40df5d86bfd021f391"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/small/1217/4045/9056/SDA_harlequin_sticker-scaled_2048_sda.png",
+      "sha256": "b67b1b8413df5f2e3f5d57c1360192ed5da13c6fe869ff523c14c7c1ff613df3"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/large/2317/4004/9015/2024.SDA24.Stickers.RandomMixed.037_d16814b7-6667-4d08-aa7d-13c9f76c48ef_2048_sda.jpg",
+      "sha256": "d39b8b0f18ab463fdb257737ece7733cc20a8b34a54020d7b1d251234cdba508"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/medium/2317/4004/9015/2024.SDA24.Stickers.RandomMixed.037_d16814b7-6667-4d08-aa7d-13c9f76c48ef_2048_sda.jpg",
+      "sha256": "addf76acbcda6d06a72eb656b8fa89d373abd25d039b002aec7c4334d4fe39a4"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/small/2317/4004/9015/2024.SDA24.Stickers.RandomMixed.037_d16814b7-6667-4d08-aa7d-13c9f76c48ef_2048_sda.jpg",
+      "sha256": "8c1cbbf71f5041a1f893776325deb86f77a45b61a49bcad221d39299724cce6c"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/large/3317/4004/9050/2024.SDA24.Stickers.RandomMixed.006_3c42fccd-bb5e-41ac-82da-7a179d008188_2048_sda.jpg",
+      "sha256": "f115cf63c73f6c074f1e30d4ddf82317cbf520aaddf63b0ec0f93df263c8d040"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/medium/3317/4004/9050/2024.SDA24.Stickers.RandomMixed.006_3c42fccd-bb5e-41ac-82da-7a179d008188_2048_sda.jpg",
+      "sha256": "961797ad6a548a7b6c1d7f67bae6302171f47e569d85f255bff4920e8514d8a5"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/small/3317/4004/9050/2024.SDA24.Stickers.RandomMixed.006_3c42fccd-bb5e-41ac-82da-7a179d008188_2048_sda.jpg",
+      "sha256": "1d5aeece651750dcef0e2fa5b0d41ea9eee65179ce261f442836cd994d8c1737"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/large/1117/4004/9055/2024.SDA24.Stickers.RandomMixed.016_c7775deb-28d2-4930-bc8d-ffa366efd850_2048_sda.jpg",
+      "sha256": "19a2bae77758f8138789e7c880d6c0eced94a8230cad6c3837f3ac412923fe59"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/medium/1117/4004/9055/2024.SDA24.Stickers.RandomMixed.016_c7775deb-28d2-4930-bc8d-ffa366efd850_2048_sda.jpg",
+      "sha256": "da62338e335b14c95a4f11bc4be66d4d77b505772dcfafafcc8d9fb9d098d440"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/small/1117/4004/9055/2024.SDA24.Stickers.RandomMixed.016_c7775deb-28d2-4930-bc8d-ffa366efd850_2048_sda.jpg",
+      "sha256": "3c882fc6c64e6bf171c6dae916ddb25f39aabf6e2b6ddd51654cb3ee9b84c582"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/large/1417/4004/9077/2024.SDA24.Stickers.RandomMixed.028_926f6bbf-2783-47d8-8c34-4f2cfbcb3d44_2048_sda.jpg",
+      "sha256": "6c3907a3b0e747ab817d42a513146491dfdf8fdf0001e0ca0bf26fc84c5d6fb3"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/medium/1417/4004/9077/2024.SDA24.Stickers.RandomMixed.028_926f6bbf-2783-47d8-8c34-4f2cfbcb3d44_2048_sda.jpg",
+      "sha256": "08a4daa7e437088b1e7143960be9cb7b887f5f99b9e2d82d9b7bfff39f8ac8a5"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/small/1417/4004/9077/2024.SDA24.Stickers.RandomMixed.028_926f6bbf-2783-47d8-8c34-4f2cfbcb3d44_2048_sda.jpg",
+      "sha256": "e5b90d8a292975bbea1fd9d09bfafbb900bd11052afcf20c073799cf6d91da3d"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/large/8617/4004/9041/2024.SDA24.Stickers.RandomMixed.050_1f5c0f76-32e8-4bd7-93da-34d9816c7188_2048_sda.jpg",
+      "sha256": "41141d54b685783ca508e34f848e1340bfada3c00748f2ecc9a3f0794aaa2adc"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/medium/8617/4004/9041/2024.SDA24.Stickers.RandomMixed.050_1f5c0f76-32e8-4bd7-93da-34d9816c7188_2048_sda.jpg",
+      "sha256": "ccdbb778fb85d14f47fef2e9305325e150ff3c896629a4599acfb6677dc9eba2"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/small/8617/4004/9041/2024.SDA24.Stickers.RandomMixed.050_1f5c0f76-32e8-4bd7-93da-34d9816c7188_2048_sda.jpg",
+      "sha256": "618ad43b4594742cbd3e6ab2a703e10c06bd186822eef83b8900d11ba82d6c5c"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/large/6417/4005/0333/2024.SDA24.Stickers.RandomMixed.017_e4c3ec33-7a42-4423-94d8-d1b78ee1fb45_2048_sda.jpg",
+      "sha256": "9001aec4aecfa84f162add276dfdb8234d13dcc276821d77074e89056aaeae67"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/medium/6417/4005/0333/2024.SDA24.Stickers.RandomMixed.017_e4c3ec33-7a42-4423-94d8-d1b78ee1fb45_2048_sda.jpg",
+      "sha256": "12f6de8cd5d77d3066f10bf351d9bf7c2cbabc11f3860c1d925b9e33061fd6bb"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/small/6417/4005/0333/2024.SDA24.Stickers.RandomMixed.017_e4c3ec33-7a42-4423-94d8-d1b78ee1fb45_2048_sda.jpg",
+      "sha256": "6c4ef0255acb38bef71eb5215d44efdc00a67365da26dcb4bbc583cca2e1d875"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/large/7217/4005/0791/2024.SDA24.Stickers.RandomMixed.052_593972fa-cb69-4cc9-b0af-c704e231c179_2048_sda.jpg",
+      "sha256": "96ad4c4521aa6e0c15090489e0999b63436ea2074e037206a73acd88b3b6da87"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/medium/7217/4005/0791/2024.SDA24.Stickers.RandomMixed.052_593972fa-cb69-4cc9-b0af-c704e231c179_2048_sda.jpg",
+      "sha256": "b8f47cbeab05a9cc63cac361e035d739cba7faef6982280ed41122b69d7fb46b"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/small/7217/4005/0791/2024.SDA24.Stickers.RandomMixed.052_593972fa-cb69-4cc9-b0af-c704e231c179_2048_sda.jpg",
+      "sha256": "400af11c0cb19c554ad3a1fe296c4bb6aac3d8fa0a4b04d6ed29d1a48cc8ced4"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/large/1717/4004/9028/2024.SDA24.Stickers.RandomMixed.045_cf51c574-f62d-4d69-b0ec-0d436d4dde4d_2048_sda.jpg",
+      "sha256": "1836c7ffc67139a27abfeff127a89882987411dfed09918a03679e3a6429dca1"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/medium/1717/4004/9028/2024.SDA24.Stickers.RandomMixed.045_cf51c574-f62d-4d69-b0ec-0d436d4dde4d_2048_sda.jpg",
+      "sha256": "df99129d8d101dcbee5d0275a46344879ab9d6d8bd96f9a78d45f5daed69e3b0"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/small/1717/4004/9028/2024.SDA24.Stickers.RandomMixed.045_cf51c574-f62d-4d69-b0ec-0d436d4dde4d_2048_sda.jpg",
+      "sha256": "a004e81ef71453626cd4bebec404945a16009c0e627f5ec977cf88e785d0760b"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/large/4617/4004/9046/2024.SDA24.Stickers.RandomMixed.004_b32685fb-c367-4cac-9ae8-e77cb3d174ba_2048_sda.jpg",
+      "sha256": "3f33a62821333d88bf279ed7dde5211463e7cd22422ec45212b10123b4dbd3d7"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/medium/4617/4004/9046/2024.SDA24.Stickers.RandomMixed.004_b32685fb-c367-4cac-9ae8-e77cb3d174ba_2048_sda.jpg",
+      "sha256": "2d62c082089e13ea9a7b46994f839198d06e961366bff2ae9135fb315fee32d3"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/small/4617/4004/9046/2024.SDA24.Stickers.RandomMixed.004_b32685fb-c367-4cac-9ae8-e77cb3d174ba_2048_sda.jpg",
+      "sha256": "e17b8cbe48e995dac3f6cd79e2fe81ce8e11b936f38d8a0dff453b6bba370e77"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/medium/3417/4034/7078/SDA_sensual_sticker-scaled_2048_sda.jpg",
+      "sha256": "04781fcdb94b5fcbd0fe4a1100a7d8c126b0632132fe4a14f4656df75127ab28"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/small/3417/4034/7078/SDA_sensual_sticker-scaled_2048_sda.jpg",
+      "sha256": "577d920cc6cbab12c5e69b2ec14035d210d8bd6b13ef018e227eacbe7eae9696"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/large/1017/4004/9039/2024.SDA24.Stickers.RandomMixed.049_877a1b2d-0205-4768-80d9-b197655c734f_2048_sda.jpg",
+      "sha256": "b625ca972fc7ad18befa3a227d417ec076559cbce96c8c446dcbd110a6622d54"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/medium/1017/4004/9039/2024.SDA24.Stickers.RandomMixed.049_877a1b2d-0205-4768-80d9-b197655c734f_2048_sda.jpg",
+      "sha256": "64c5175846749d0f3b2e87d14f8d329a339ff13284642eb8b30182d9713eeaac"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/small/1017/4004/9039/2024.SDA24.Stickers.RandomMixed.049_877a1b2d-0205-4768-80d9-b197655c734f_2048_sda.jpg",
+      "sha256": "ce7846a3dd3260e4ecc60c65566e8b0a93a6c8ff31867fcef13656d6cfad89ab"
+    },
+    {
+      "path": "sda.studio/index.php/ccm/system/css/layout/704c045.css",
+      "sha256": "4490eacf8fec067672b615db61c83126f5a21df037efef31299a4efa56be719b"
+    },
+    {
+      "path": "sda.studio/index.php/ccm/system/css/layout/700c045.css",
+      "sha256": "2affa1e5c65cbd3c046e630587e73bc0fb4ecda70e8c659b2ab05fe8959521b5"
+    },
+    {
+      "path": "sda.studio/index.php/ccm/system/css/page/447/main.less.css",
+      "sha256": "a0b1cb64e8e59b84b362de62c80a74ff955b7e4161653ccf6a6b3093001a08d8"
+    },
+    {
+      "path": "sda.studio/application/files/8817/3987/2433/2025.01.01.WeatherVaults.SDA.Savannah.UnitedStates.M.01.01.01.00001.LyraFlux_2048_sda.jpg",
+      "sha256": "ff32022bd9d2149fb81b6ef030f91f19bef8cf73f6562d20016cb59b90a66be8"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/medium/8817/3987/2433/2025.01.01.WeatherVaults.SDA.Savannah.UnitedStates.M.01.01.01.00001.LyraFlux_2048_sda.jpg",
+      "sha256": "ed4e806a9b4d7baaa764a20e03808b7f01da42a68c68a335b2b4352e7d524d9c"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/small/8817/3987/2433/2025.01.01.WeatherVaults.SDA.Savannah.UnitedStates.M.01.01.01.00001.LyraFlux_2048_sda.jpg",
+      "sha256": "2adc0fce47e96812c1717120e7929182ce825fd6ce93617e27b18a2f7efe5ca3"
+    },
+    {
+      "path": "sda.studio/application/files/cache/css/stucco/main49e6.css",
+      "sha256": "1f7c6c1886020fc50347fdf933fb9d306e829840337c750687f3f15c6e2f8653"
+    },
+    {
+      "path": "sda.studio/index.php/ccm/system/css/layout/370c045.css",
+      "sha256": "82f4bb35267467b9c0f9fa879354b848a6beb8c93efc0e204b5f10593d70dee0"
+    },
+    {
+      "path": "sda.studio/index.php/ccm/system/css/layout/635c045.css",
+      "sha256": "d459060f45a60d401aded13e4f69349180d9656f8fb8b14822bd76ef7aa8f11b"
+    },
+    {
+      "path": "sda.studio/index.php/ccm/system/css/page/449/main.less.css",
+      "sha256": "c4083717c0f1c11b2c3882dd6c30765b4d4b27cc5fd95b1c1f1cd932e037a655"
+    },
+    {
+      "path": "sda.studio/application/files/5117/4046/2730/art.projects.image.1.jpg",
+      "sha256": "5c92951448f477a97ed2fd0cff5105af4b579d17456356e466457c0ea239178c"
+    },
+    {
+      "path": "sda.studio/application/files/6717/4046/2729/art.projects.image2.2.jpg",
+      "sha256": "b004111e3f2839abf15e2dbc556042d0072dd0bd34ed08f14814357f90794f3b"
+    },
+    {
+      "path": "sda.studio/application/files/1517/3978/5375/2024.12.11.04.083.-173.Kelowna.Canada.SDA.WeatherVaults.Travel.LyraFlux_Studio_2048_sda.jpg",
+      "sha256": "06988ccaf05a188525db27acccb42900b488c5651474ac38977f9dc7f0522b12"
+    },
+    {
+      "path": "sda.studio/application/files/3617/4046/5632/art.projects.image.4.jpg",
+      "sha256": "fd0807e91e275ab1d59e056fe16f90c9fe3f95b57e6c03445d4af3b6e2068cc1"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/medium/5117/4046/2730/art.projects.image.1.jpg",
+      "sha256": "1994bb5232fc425e2375ce4db6feab81996bbfef009d05c27dc7853370e1faef"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/small/5117/4046/2730/art.projects.image.1.jpg",
+      "sha256": "e7a3ec167d67d98f1a1fb2fbe1ac78a7dfbb7f85db06792bad7b53e2d3cf0067"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/medium/6717/4046/2729/art.projects.image2.2.jpg",
+      "sha256": "31d23cf05f8a356d246151a7a6d1c894b66b0943a98f7503d85057a28f9d03af"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/small/6717/4046/2729/art.projects.image2.2.jpg",
+      "sha256": "d361ed5cf8bb7cf2c27e86fb0ae1fca129505ffd234235f8f610fc27f36ae7c5"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/medium/1517/3978/5375/2024.12.11.04.083.-173.Kelowna.Canada.SDA.WeatherVaults.Travel.LyraFlux_Studio_2048_sda.jpg",
+      "sha256": "6d47871e26392909dc96cbef59053ea6a83960800df06b7b6aa9324d935cd0ba"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/small/1517/3978/5375/2024.12.11.04.083.-173.Kelowna.Canada.SDA.WeatherVaults.Travel.LyraFlux_Studio_2048_sda.jpg",
+      "sha256": "a33b3a7d348ba17c1faf38986e3989749415a835e39b9acf2e4e670367a7aab2"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/medium/3617/4046/5632/art.projects.image.4.jpg",
+      "sha256": "93f12e9e2348f70e243de53f8800d00255cccc323b8b29129cd5b8e35cfc02f8"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/small/3617/4046/5632/art.projects.image.4.jpg",
+      "sha256": "78d1c16362c8aa1d9ea3e457823c5b7d1973d7e17c97fd86aca4cd4511b9489e"
+    },
+    {
+      "path": "sda.studio/application/files/cache/css/stucco/mainc783.css",
+      "sha256": "1f7c6c1886020fc50347fdf933fb9d306e829840337c750687f3f15c6e2f8653"
+    },
+    {
+      "path": "sda.studio/index.php/ccm/system/css/page/453/main.less.css",
+      "sha256": "d70a5a213f29680f93d2300b47a38ca0557ede72925ef833a84201793def0799"
+    },
+    {
+      "path": "sda.studio/index.php/ccm/system/css/layout/276c045.css",
+      "sha256": "f805127d41494149bf0adac11b691021be411b734f4f355cd84c87c04de8439f"
+    },
+    {
+      "path": "sda.studio/index.php/ccm/system/css/page/435/main.less.css",
+      "sha256": "574a650ca0b5e23e33a6ce1279b9bd9eb20b8d22d9441884865d90b0d1441b86"
+    },
+    {
+      "path": "sda.studio/index.php/ccm/system/css/layout/605c045.css",
+      "sha256": "9065ac660576b081be515fb54624012087e8c0bcc6be0e7af440d87c7ba1a34b"
+    },
+    {
+      "path": "sda.studio/index.php/ccm/system/css/layout/609c045.css",
+      "sha256": "425b6a937112d846ccf19fb3b010d36333ebd6c3ab052dab82976a613360c423"
+    },
+    {
+      "path": "sda.studio/index.php/ccm/system/css/layout/611c045.css",
+      "sha256": "f47bfb225294e7e4f0b5b94133b766d28c137f5a2484f32caff29ea805344d69"
+    },
+    {
+      "path": "sda.studio/index.php/ccm/system/css/layout/610c045.css",
+      "sha256": "651d32be1c53fed2973183336ec3a93f4db8a965042e4dae97968cc2c28cbed5"
+    },
+    {
+      "path": "sda.studio/index.php/ccm/system/css/page/460/main.less.css",
+      "sha256": "cc3b4635c10d472d2b270831512e186dafa518d682acd4dcf42058821e600060"
+    },
+    {
+      "path": "sda.studio/application/files/5117/4044/8693/aitubo_35-scale_2048_sda.jpg",
+      "sha256": "437f6b6e242167725d311a4eb6ac3947803cdd5a23afe7a6b4078a4bc655d0aa"
+    },
+    {
+      "path": "sda.studio/application/files/1117/4045/2638/Linkedin-Logo-Vector.svg-.png",
+      "sha256": "b28cc2988f40f958b4d0161b764586a378542f2ac42b10edcb98a2097e0a8dd3"
+    },
+    {
+      "path": "sda.studio/application/files/8517/4045/3544/discord-logo-blue_2048_sda.png",
+      "sha256": "396da5f1c634ec014e95cf4cec8170b23242b85a95136ca78e52a37c4eec9ddc"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/large/5117/4044/8693/aitubo_35-scale_2048_sda.jpg",
+      "sha256": "cfa81c3b811047fbaf9bbabaa58a52049b9597875948b703c74b5be154d35414"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/medium/5117/4044/8693/aitubo_35-scale_2048_sda.jpg",
+      "sha256": "b0c7aaa1800d4e8250bf4366ad282c5767a836f4efc48a4934f1c13ec1970a88"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/small/5117/4044/8693/aitubo_35-scale_2048_sda.jpg",
+      "sha256": "7e43ef394c99822bff8f38a933efc7feccbe341909b7fc5ae662cf7ed9ccee2e"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/large/1117/4045/2638/Linkedin-Logo-Vector.svg-.png",
+      "sha256": "1c85f87eaad63d588fbae9a534b1894474742a658378db1577112943bf597d5b"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/medium/1117/4045/2638/Linkedin-Logo-Vector.svg-.png",
+      "sha256": "54098dc7a6d6bafd12b6c3d3d1c5720dbe8c7afdcd2073de73d1e70fea82800b"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/small/1117/4045/2638/Linkedin-Logo-Vector.svg-.png",
+      "sha256": "c29811ea8bc2b88585b4028b9a9fe088138c758ac28c07d190be61e856897ddd"
+    },
+    {
+      "path": "sda.studio/index.php/ccm/system/css/layout/596c045.css",
+      "sha256": "8a38e0298eed6c4ff9243ea545eb2a7a566b7d6be4716c3676ac6c2a714eb290"
+    },
+    {
+      "path": "sda.studio/index.php/ccm/system/css/layout/589c045.css",
+      "sha256": "1852c40db9464c6a0e73683df8f39afbccc701917e759e8747ecbae8aec09574"
+    },
+    {
+      "path": "sda.studio/index.php/ccm/system/css/page/459/main.less.css",
+      "sha256": "cc3b4635c10d472d2b270831512e186dafa518d682acd4dcf42058821e600060"
+    },
+    {
+      "path": "sda.studio/application/files/5517/4044/4493/SDA_COmmissions_and_royalties-06-scaled_2048_sda.jpg",
+      "sha256": "56630c784b6f8fec56061ad5afbc17ec1a0207811df378eb9e16cd3e890a1c44"
+    },
+    {
+      "path": "sda.studio/application/files/3917/4038/8341/cuqnif0cliv000800uh0.jpg",
+      "sha256": "d1cc8a44f8ef58f6b87fdf50104353bfc6f14986f13719db01bf3e1324d1957d"
+    },
+    {
+      "path": "sda.studio/application/files/4017/4044/4800/SDA_Commissions_and_royalties-05-scaled_2048_sda_2048_sda.jpg",
+      "sha256": "14cb82591f0867f356315ab3eaeea03e31806ffc5b8abe8db6feeb164b062aac"
+    },
+    {
+      "path": "sda.studio/application/files/4917/4039/7525/SDA_Commissions_and_royalties-00.webp",
+      "sha256": "90e171c423693397ad9817e992da67d7f63b4db5aa84f0c9536f435d1ec7fc06"
+    },
+    {
+      "path": "sda.studio/application/files/5817/4038/9607/SDA_Commissions_and_royalties-03.webp",
+      "sha256": "36c60afbea648b60d831ce46815a9dcae136eea45f5e31f3fa8b9567e94f4cee"
+    },
+    {
+      "path": "sda.studio/application/files/9217/4039/1195/SDA_Commissions_and_royalties-04.webp",
+      "sha256": "0efcac19058563c58b7c2514b599d996ae9d5ea0b7e8a25781eac880e1f540c1"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/large/5517/4044/4493/SDA_COmmissions_and_royalties-06-scaled_2048_sda.jpg",
+      "sha256": "5a7b86607e2e2510d4c0216e6c3ec1a031f0d8fc21779a54dd441d857d9464ad"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/medium/5517/4044/4493/SDA_COmmissions_and_royalties-06-scaled_2048_sda.jpg",
+      "sha256": "20a9d24c394315439f506dc4a8dfbb01d3872563f817270c396a576709c79f10"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/small/5517/4044/4493/SDA_COmmissions_and_royalties-06-scaled_2048_sda.jpg",
+      "sha256": "9a08441a9b9444f35a0d7a9e6151942a122204371c2dd56c7f7222bb60bef44f"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/large/3917/4038/8341/cuqnif0cliv000800uh0.jpg",
+      "sha256": "a924155ffb9e7bc06e975d765f382c84813d70104009d0f8df1e98d22c11df07"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/medium/3917/4038/8341/cuqnif0cliv000800uh0.jpg",
+      "sha256": "c390138bacc60509e719847dad6d778d97659ea03bfc3ec81e46b7b65d02b009"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/small/3917/4038/8341/cuqnif0cliv000800uh0.jpg",
+      "sha256": "e9125d43cc455c5a1b9692a03c1b63ed2e521332709fab41bd9473586d6b1223"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/medium/4017/4044/4800/SDA_Commissions_and_royalties-05-scaled_2048_sda_2048_sda.jpg",
+      "sha256": "7395c9a925dfc995b2cfb1c441545dc445ab8aa2795ce2aa0b4d08ceccd6e113"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/small/4017/4044/4800/SDA_Commissions_and_royalties-05-scaled_2048_sda_2048_sda.jpg",
+      "sha256": "c928e86db839adb797871d4ff6553ab22ba42ba0bd96446cc848e32fb6a8c1bd"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/medium/4917/4039/7525/SDA_Commissions_and_royalties-00.webp",
+      "sha256": "08e08d93d779041a719b56079e23565e849bc34225684d6c813fa504a37c055e"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/small/4917/4039/7525/SDA_Commissions_and_royalties-00.webp",
+      "sha256": "771bb7889483467fb037bb2bbd516acafa9e25e0dc70a344a6f5f6ec29f6925e"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/medium/5817/4038/9607/SDA_Commissions_and_royalties-03.webp",
+      "sha256": "a0de188517cb010c7a995bf82b609b350d6ed566fdbbcac507ae30d2eb9b9955"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/small/5817/4038/9607/SDA_Commissions_and_royalties-03.webp",
+      "sha256": "151227f22eba0b9342b30cc0d4a4bc752b5fabad2b764ccc0efd41e661f2ef83"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/medium/9217/4039/1195/SDA_Commissions_and_royalties-04.webp",
+      "sha256": "8c8a15587015b4b81e8fcc75ac7338d77c6b70c7c6b59e330bf6d2d101613839"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/small/9217/4039/1195/SDA_Commissions_and_royalties-04.webp",
+      "sha256": "d60edf8d7b745bc285fea912a58429884e7d23b89b1cb3c283973d158319d13a"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/large/3317/4004/9068/2024.SDA24.Stickers.RandomMixed.024_644be38c-23b9-4193-b51f-3329a4d1ed3a_2048_sda.jpg",
+      "sha256": "0868fd998bc2776137a13021c169ea967c48adef92cc9a02c5d286cce7a3c133"
+    },
+    {
+      "path": "sda.studio/index.php/ccm/system/css/layout/196c045.css",
+      "sha256": "641bf833566c28f7aa4bcf4975f10741bc63881a6677381ce5aa9fcd742a67a9"
+    },
+    {
+      "path": "sda.studio/index.php/ccm/system/css/page/439/main.less.css",
+      "sha256": "789bc0644864738889473336ccd94ce2a4be2acc27057e9ec8fb040dab321544"
+    },
+    {
+      "path": "sda.studio/application/files/5517/4028/4940/Weaver_01.jpg",
+      "sha256": "ae08a4899aeae84818c18ce5c0b744141d514a4f0b7b3f0ee72cc1eb8792cd52"
+    },
+    {
+      "path": "sda.studio/application/files/3417/4026/2534/Hibiscus_01.jpg",
+      "sha256": "0e8a233dfb366850f0ef3e300e408dc043d1a0dcba12c2c6d834a1251b79018a"
+    },
+    {
+      "path": "sda.studio/application/files/2817/3676/0437/ParisRelease_04-12288-cgi-6x_watermark_release_watermark.jpg",
+      "sha256": "101e7e60a9fb396600b0467359b511fffd1452cb967244087ee3f9eb439ad684"
+    },
+    {
+      "path": "sda.studio/application/files/6417/4026/2535/2024_12_26_01_204_-052_Agra_India_SDA_WeatherVaults_Museum_LyraFlux.jpg",
+      "sha256": "de020713b13e61dcc2d3a8744e532eed529b25b59310029744015f2deef4cadb"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/large/5517/4028/4940/Weaver_01.jpg",
+      "sha256": "b11134fe89472a7f680523ba9a7a57ee4b5e3e4cb214982ec9986ad2f7dbb856"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/medium/5517/4028/4940/Weaver_01.jpg",
+      "sha256": "27cff7fdea519ff6566ae4f85704636aef7f1ce08038cdfe891675af561b6741"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/small/5517/4028/4940/Weaver_01.jpg",
+      "sha256": "7400f5fa1899efccdeead593c2b7b37270d70d4df821118446b8cb7bb41a4128"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/large/3417/4026/2534/Hibiscus_01.jpg",
+      "sha256": "6e3e7067e5db38b9d8e40e5492b3924639f02e1514e2931b1d6368caf6923d43"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/medium/3417/4026/2534/Hibiscus_01.jpg",
+      "sha256": "d1c74585390440e509b29d5c24c752daf024160f11d9fca2879e4781a063f759"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/small/3417/4026/2534/Hibiscus_01.jpg",
+      "sha256": "23855e7dcb41c532489baa3269959854b1710b77d88ded374c39934591541b90"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/large/2817/3676/0437/ParisRelease_04-12288-cgi-6x_watermark_release_watermark.jpg",
+      "sha256": "fdef189290a6cba70433c63127563f0b4d77f950d17a0b02b5b9209d59494003"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/medium/2817/3676/0437/ParisRelease_04-12288-cgi-6x_watermark_release_watermark.jpg",
+      "sha256": "55e88f2531026390c0ecaca9e988d582e52a03b536f7b1a16603ec3c9d0a1512"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/small/2817/3676/0437/ParisRelease_04-12288-cgi-6x_watermark_release_watermark.jpg",
+      "sha256": "8849534db6c66b054ca0bc24dcdfe207937ff6836df4bc2d8c75eb53765aad20"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/large/6417/4026/2535/2024_12_26_01_204_-052_Agra_India_SDA_WeatherVaults_Museum_LyraFlux.jpg",
+      "sha256": "92b9111bf56369fd37b63f857dccce1484c234c480ad3b961becd297d051c14c"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/medium/6417/4026/2535/2024_12_26_01_204_-052_Agra_India_SDA_WeatherVaults_Museum_LyraFlux.jpg",
+      "sha256": "2c33ded2f43142442eda43e25abf4f6589cb28c552f03fad4e950212e5cb33ae"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/small/6417/4026/2535/2024_12_26_01_204_-052_Agra_India_SDA_WeatherVaults_Museum_LyraFlux.jpg",
+      "sha256": "d260b26906d74639fd5aac47e9f838e842a8882f1fdc3a6f68ef5ac96d23a921"
+    },
+    {
+      "path": "sda.studio/index.php/ccm/system/css/layout/198c045.css",
+      "sha256": "65bb3a5d51c653a05ae5baf9f7117fa046681bcc95aeb7adf286dffc8c374194"
+    },
+    {
+      "path": "sda.studio/index.php/ccm/system/css/layout/194c045.css",
+      "sha256": "4c335d3a71daf3180d28fe2d604935c57b1f4b8b14304efc73dde7002811b8c4"
+    },
+    {
+      "path": "sda.studio/index.php/ccm/system/css/layout/202c045.css",
+      "sha256": "3a761f7cf8e70de3718fdb119e3dafd4d9b2a861030c7f0e0317187fb9f45e0a"
+    },
+    {
+      "path": "sda.studio/index.php/ccm/system/css/layout/204c045.css",
+      "sha256": "6f48a5be8e0d9ee39eeb26ff725f8ea70180d881ee2f713cd8b90a76197fd1c2"
+    },
+    {
+      "path": "sda.studio/index.php/ccm/system/css/layout/207c045.css",
+      "sha256": "27ce3323fa8f84a311c676f700cd043dee9971383ff809151fb542406436c901"
+    },
+    {
+      "path": "sda.studio/index.php/ccm/system/css/layout/412c045.css",
+      "sha256": "8705ec6cf370df80e1e491afc44b62a932d7cac792fe26c6a86e75a634316872"
+    },
+    {
+      "path": "sda.studio/index.php/ccm/system/css/page/440/main.less.css",
+      "sha256": "f07db968ec9207cd94722bcf53093dd84bfe52ff6f09646807f2e1d1be55efb6"
+    },
+    {
+      "path": "sda.studio/application/files/1317/3987/2417/2024.12.26.03.206.-050.Agra.India.SDA.WeatherVaults.Museum.LyraFlux_2048_sda.jpg",
+      "sha256": "db00ea8bf6575b8feafc496e5ae54dea0196a00605cb0591a5d2eda54edd397d"
+    },
+    {
+      "path": "sda.studio/application/files/5017/3987/2409/2024.12.15.04.120.-136.Queenstown.NewZealand.SDA.WeatherVaults.MuseumOrTravel.LyraFlux_2048_sda.jpg",
+      "sha256": "adfbdaff560ac2230368077978fbab99c373c0de23008ede62f61a0c987cec65"
+    },
+    {
+      "path": "sda.studio/application/files/6217/3987/2326/2025.01.04.WeatherVaults.SDA.Lisbon.Portugal.M4.0022-M0017.0094-WV0029.LyraFlux_2048_sda.jpg",
+      "sha256": "88c493658e089bae5512b1776a3e06cbfc06664bc5725e1ed2574a07dd51a42a"
+    },
+    {
+      "path": "sda.studio/application/files/3917/4026/3317/Ways_to_collect_2.2.jpg",
+      "sha256": "dff075b7fa7f6d348825843015aa63df10b1bd9c789d5170ab8077c92b2c2e83"
+    },
+    {
+      "path": "sda.studio/application/files/4017/4026/3316/Ways_to_collect_2.1.jpg",
+      "sha256": "113cdd232c07df2015bcd3db03a3d72baab5cc585dac202636f06a3c1f8704a5"
+    },
+    {
+      "path": "sda.studio/application/files/1417/4026/3317/Ways_to_collect_2.3.jpg",
+      "sha256": "94e3eeff457d716a287a3801c2383eeb9f4267f52bafcb6555817457d0a7a5ab"
+    },
+    {
+      "path": "sda.studio/application/files/3917/3987/2442/2024.12.13.07.104.-152.Bandung.Indonesia.SDA.WeatherVaults.Museum.LyraFlux_2048_sda.jpg",
+      "sha256": "aabfe8e952d0e646989e538bf01434f39dcb3ed34606dc66e7d0e168c25b518f"
+    },
+    {
+      "path": "sda.studio/application/files/9117/3987/2426/2024.12.29.03.227.-029.Harbin.China.SDA.WeatherVaults.Museum.LyraFlux_2048_sda.jpg",
+      "sha256": "c51a8404eeb6f3504051b509cb2cb98c2dd69e6c0703e862beaf67d5b174ca25"
+    },
+    {
+      "path": "sda.studio/application/files/3417/4026/3749/Block_set_1.3.jpg",
+      "sha256": "66c3c66ae7c83cf78490795c096c865e460ea7c98eb1818db7dba4bff0e70628"
+    },
+    {
+      "path": "sda.studio/application/files/2817/3987/2429/2024.12.30.02.233.-023.Gdansk.Poland.SDA.WeatherVaults.Travel.LyraFlux_2048_sda.jpg",
+      "sha256": "b745f07c1a9f1445bd6d56dc5f879221692a83e2924befa027d9c0e4cd228df5"
+    },
+    {
+      "path": "sda.studio/application/files/9217/3978/5376/2024.12.17.06.139.-117.Marrakech.Morrocco.SDA.WeatherVaults.Museum.LyraFlux_2048_sda.jpg",
+      "sha256": "6ba296afe9c7d8c38e9bac7d8794da3bcb29437091109e432dffce4fd4e6cc6a"
+    },
+    {
+      "path": "sda.studio/application/files/3017/3987/2331/2025.01.04.WeatherVaults.SDA.LisbonPortugal.M3.0021-M0016.0093-WV0027.LyraFlux_2048_sda.jpg",
+      "sha256": "afa3f7528c0d148f03a6328a3db5c17fe887527b7550fac7de7d7ffaa06d6e4e"
+    },
+    {
+      "path": "sda.studio/application/files/1917/3987/2328/2025.01.05.WeatherVaults.SDA.Rotorua.NewZealand.M4.0028-M0021.0100-WV0037.LyraFlux_2048_sda.jpg",
+      "sha256": "6aa55398772e854d3abf32d4757bdbcb93994c9d71b0800f483decd2682b9ad2"
+    },
+    {
+      "path": "sda.studio/application/files/6717/3978/5373/2024.12.15.03.119.-137.Queenstown.NewZealand.SDA.WeatherVaults.Museum.LyraFlux_2048_sda.jpg",
+      "sha256": "1b601936e95f55995667b297dd5885ec21aa33ff4af6191563ffe010ba9fbdf1"
+    },
+    {
+      "path": "sda.studio/application/files/8017/3987/2413/2024.12.24.02.191.-065.Manila.Philippines.SDA.WeatherVaults.Travel.LyraFlux_2048_sda.jpg",
+      "sha256": "ad84281bc1f3fbb4db8c451dc21246c6409800ad34dc7f7169634290ea4523d8"
+    },
+    {
+      "path": "sda.studio/application/files/6217/4026/3305/Ways_to_collect_1.3.jpg",
+      "sha256": "a5fb0d2dd0e1e0e6bfed043a3265d72412101efabfcb4711c3be444599199232"
+    },
+    {
+      "path": "sda.studio/application/files/3317/4026/3750/Block_set_3.1.jpg",
+      "sha256": "bf994c2bfc4efce712ca1db10e7532dd842cc4f7e9015835bbd6b862417b3978"
+    },
+    {
+      "path": "sda.studio/application/files/7617/3987/2418/2024.12.26.04.207.-049.Agra.India.SDA.WeatherVaults.Museum.LyraFlux_2048_sda.jpg",
+      "sha256": "76f33170249b971216771f8d6870f33c4438b62b0f6c7de696ae504899aa0325"
+    },
+    {
+      "path": "sda.studio/application/files/2517/3987/2438/2025.01.03.WeatherVaults.SDA.Sokcho.SouthKorea.M1.0013-M0009.0061-WV0017.LyraFlux_2048_sda.jpg",
+      "sha256": "6a305ca489a2572f0cda2b9623cf04e965f4a62a531dd1c3ae694b92e82bd9fd"
+    },
+    {
+      "path": "sda.studio/application/files/2317/3987/2437/2025.01.02.WeatherVaults.SDA.CapeTown.SouthAfrica.T3.0009-T0004.0039-WV0014.LyraFlux_2048_sda.jpg",
+      "sha256": "c9f6e90f97efe4aac9fd5b0c2527c48d6241dcba8f7276f5b82bb2bdac2b823f"
+    },
+    {
+      "path": "sda.studio/application/files/8317/4026/6378/2024_12_21_01_167_-089_ElCalafate_Argentina_SDA_WeatherVaults_Museum_LyraFlux_2048_sda.jpg",
+      "sha256": "0472800e7ebb439af5f15452b720f281a4e7759f1b518b3635660b3ef073b3d3"
+    },
+    {
+      "path": "sda.studio/application/files/5017/4026/6379/2024_12_21_06_172_-084_ElCalafate_Argentina_SDA_WeatherVaults_Museum_LyraFlux_2048_sda.jpg",
+      "sha256": "74a33e4dae06feac0288521b5b9e6a5b6476bae3de19fdcd770ed9bc1a6a647c"
+    },
+    {
+      "path": "sda.studio/application/files/6617/4026/6379/2024_12_21_08_174_-082_ElCalafate_Argentina_SDA_WeatherVaults_Museum_LyraFlux_2048_sda.jpg",
+      "sha256": "80481b87cce83d1cceaf3858e3d61b4c1f961c3b50b9906e9eab866a7f6a86cd"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/medium/1317/3987/2417/2024.12.26.03.206.-050.Agra.India.SDA.WeatherVaults.Museum.LyraFlux_2048_sda.jpg",
+      "sha256": "18f99624a5d01a9c605d2853588198a1233936cd4c09ee8b414b3627db0978a5"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/small/1317/3987/2417/2024.12.26.03.206.-050.Agra.India.SDA.WeatherVaults.Museum.LyraFlux_2048_sda.jpg",
+      "sha256": "199606a7f146c7a24b5628d5149119fa5b9c995ea5b6e05825d7ce78194a72c3"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/medium/5017/3987/2409/2024.12.15.04.120.-136.Queenstown.NewZealand.SDA.WeatherVaults.MuseumOrTravel.LyraFlux_2048_sda.jpg",
+      "sha256": "d80603c52fe55c8061812a3e444e1688bf35c260b7fa48c1263c8374c157f845"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/small/5017/3987/2409/2024.12.15.04.120.-136.Queenstown.NewZealand.SDA.WeatherVaults.MuseumOrTravel.LyraFlux_2048_sda.jpg",
+      "sha256": "f2437ac2ddf36f41e69a86ec39001eaae0026e2558a40be9c45f773957c65ea5"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/medium/6217/3987/2326/2025.01.04.WeatherVaults.SDA.Lisbon.Portugal.M4.0022-M0017.0094-WV0029.LyraFlux_2048_sda.jpg",
+      "sha256": "9d94dd4118a1ff84e12eec4d632386d7d8266072665ed4483bdfedc27c252ec6"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/small/6217/3987/2326/2025.01.04.WeatherVaults.SDA.Lisbon.Portugal.M4.0022-M0017.0094-WV0029.LyraFlux_2048_sda.jpg",
+      "sha256": "e50e03527c3cd74be7e2f57d2294c0fab7b751112d25599a4d9020c707c32cd9"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/large/3917/4026/3317/Ways_to_collect_2.2.jpg",
+      "sha256": "7753d6aa613393f09d3f7085605e7a7541d76f3d1575b0296f0433411bc6986e"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/medium/3917/4026/3317/Ways_to_collect_2.2.jpg",
+      "sha256": "893eb456da3665487281037ba2c2a243487c3f11761b4d8578c027628070598f"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/small/3917/4026/3317/Ways_to_collect_2.2.jpg",
+      "sha256": "22e759df3eb9684a43f2d152c3181fee53dbdf97ebef76fd8e22004bd8e959fe"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/large/4017/4026/3316/Ways_to_collect_2.1.jpg",
+      "sha256": "fad27b13ff48a4355ba9006f1dcd5f2f39d7f7363d0fda68fdace9c3a2e4d350"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/medium/4017/4026/3316/Ways_to_collect_2.1.jpg",
+      "sha256": "eb71f3a59f884a6fd64909ada90774413112c6e7c11533e53cce72adcadbb3aa"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/small/4017/4026/3316/Ways_to_collect_2.1.jpg",
+      "sha256": "162fefccae129fdf163e94889403a2064c60d0c7177a3ea2261653ec5a374977"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/large/1417/4026/3317/Ways_to_collect_2.3.jpg",
+      "sha256": "cce7807b769b8a533c43e8ada391146aade339d2591cf30b018981c64341c2f0"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/medium/1417/4026/3317/Ways_to_collect_2.3.jpg",
+      "sha256": "4b9bd35fb9c0f989fb265f9c482497ffdc1ab0d5a055de14e7b8e954743d84ae"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/small/1417/4026/3317/Ways_to_collect_2.3.jpg",
+      "sha256": "b29827a333bb04ab46227a6dc6d4d0f43e3b465e0f1587f403e187af9aea49d4"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/medium/3917/3987/2442/2024.12.13.07.104.-152.Bandung.Indonesia.SDA.WeatherVaults.Museum.LyraFlux_2048_sda.jpg",
+      "sha256": "5a631539e2353dc6c9bec8a9300607c453a772322ecb42b273d3e4dadef8f97c"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/small/3917/3987/2442/2024.12.13.07.104.-152.Bandung.Indonesia.SDA.WeatherVaults.Museum.LyraFlux_2048_sda.jpg",
+      "sha256": "3bac89c6219539dd9ec21d2f90aa5e6c2e8f90470fc294b6e509fae61535cce0"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/medium/9117/3987/2426/2024.12.29.03.227.-029.Harbin.China.SDA.WeatherVaults.Museum.LyraFlux_2048_sda.jpg",
+      "sha256": "7a1918246acbc9909605ec829bb79e041ba44b8c52c4bb03a3ad8d75b02f2e5f"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/small/9117/3987/2426/2024.12.29.03.227.-029.Harbin.China.SDA.WeatherVaults.Museum.LyraFlux_2048_sda.jpg",
+      "sha256": "37925576fe37ae9fad88f4a5d7ac3f8ddc7cd51789402487156ca99cb67031f5"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/large/3417/4026/3749/Block_set_1.3.jpg",
+      "sha256": "98055d7ec89b5c27c79d25a6b22487ebec6ec2247104c8a4921d0f505b639727"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/medium/3417/4026/3749/Block_set_1.3.jpg",
+      "sha256": "f3e629b95a587d067cb33c1f3ff90bc8da03266dab659f80143184d31e12dec2"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/small/3417/4026/3749/Block_set_1.3.jpg",
+      "sha256": "016a4c9aa29269e1a5f76db14234de81baf885eb40c475d580ee17c51074d2df"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/medium/2817/3987/2429/2024.12.30.02.233.-023.Gdansk.Poland.SDA.WeatherVaults.Travel.LyraFlux_2048_sda.jpg",
+      "sha256": "5ed497106ad1f7198c6ce2e695a834b0916b1d66ec4f8da4a0e794e54a7b65d0"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/small/2817/3987/2429/2024.12.30.02.233.-023.Gdansk.Poland.SDA.WeatherVaults.Travel.LyraFlux_2048_sda.jpg",
+      "sha256": "256f944d2fb3e4cc0171c39e7693b973417f1e6eab3b9a700270410f85613677"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/medium/9217/3978/5376/2024.12.17.06.139.-117.Marrakech.Morrocco.SDA.WeatherVaults.Museum.LyraFlux_2048_sda.jpg",
+      "sha256": "d9cc515bcead42579ff0146e969f4bb44d99e9b2330048a2e213da0cd5cb544d"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/small/9217/3978/5376/2024.12.17.06.139.-117.Marrakech.Morrocco.SDA.WeatherVaults.Museum.LyraFlux_2048_sda.jpg",
+      "sha256": "a6f4c53100ba974080dabf2fdab605170b1e1c24bae39e99c236326047282bfd"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/medium/3017/3987/2331/2025.01.04.WeatherVaults.SDA.LisbonPortugal.M3.0021-M0016.0093-WV0027.LyraFlux_2048_sda.jpg",
+      "sha256": "330c9f9efb8ffa7cfbc2abc89d989187093ae706e327730f761770aced8b1bed"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/small/3017/3987/2331/2025.01.04.WeatherVaults.SDA.LisbonPortugal.M3.0021-M0016.0093-WV0027.LyraFlux_2048_sda.jpg",
+      "sha256": "9bc340f9531488cf73779e56c311319c486f1113d94ca4ff759db783a8a11100"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/medium/1917/3987/2328/2025.01.05.WeatherVaults.SDA.Rotorua.NewZealand.M4.0028-M0021.0100-WV0037.LyraFlux_2048_sda.jpg",
+      "sha256": "e087e8359ea425764f11d723de546ed29824586841146a77a5458c1aea1a6ae7"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/small/1917/3987/2328/2025.01.05.WeatherVaults.SDA.Rotorua.NewZealand.M4.0028-M0021.0100-WV0037.LyraFlux_2048_sda.jpg",
+      "sha256": "b763fc9fcc444f3ef42767fa8f08f5adb78269665012e55c22d2e79f2acfc951"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/medium/6717/3978/5373/2024.12.15.03.119.-137.Queenstown.NewZealand.SDA.WeatherVaults.Museum.LyraFlux_2048_sda.jpg",
+      "sha256": "960b8a19768edf45287f9a58ca312b563498db67f251904771bbe4463ae86538"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/small/6717/3978/5373/2024.12.15.03.119.-137.Queenstown.NewZealand.SDA.WeatherVaults.Museum.LyraFlux_2048_sda.jpg",
+      "sha256": "829766603111276243d7853e01c85d0b73908e5379e6f7447b535fb6f40bad63"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/medium/8017/3987/2413/2024.12.24.02.191.-065.Manila.Philippines.SDA.WeatherVaults.Travel.LyraFlux_2048_sda.jpg",
+      "sha256": "362f3875c244b4493c5712b9503c751ec9daf0dc3bb1244bb2df4893a6564942"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/small/8017/3987/2413/2024.12.24.02.191.-065.Manila.Philippines.SDA.WeatherVaults.Travel.LyraFlux_2048_sda.jpg",
+      "sha256": "6aac002342afe87fce666089ca4f41e875e4ee8bdbb051d4e8221a0c52c7ced0"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/large/6217/4026/3305/Ways_to_collect_1.3.jpg",
+      "sha256": "d1c4c066b4bb227e0687f507d28a36a5e90bdc1a64c95bec926fae4217198e22"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/medium/6217/4026/3305/Ways_to_collect_1.3.jpg",
+      "sha256": "b876cc65b9283a45e38105e6ad3964be96234e7d6482462ed0c1df1354d40d80"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/small/6217/4026/3305/Ways_to_collect_1.3.jpg",
+      "sha256": "f724f89bc92865cc7f67a0df9c7619429e08a9f1f7215960aa7c7503079bed5a"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/large/3317/4026/3750/Block_set_3.1.jpg",
+      "sha256": "b53adc7c30c073fe4639a2fc8155c6d901c6288bf442e04988bac4434aa3361e"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/medium/3317/4026/3750/Block_set_3.1.jpg",
+      "sha256": "a242dfdda9a028df5306a6725caf971d4f9bcd5b77e51dfcc269dcf8c6baa923"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/small/3317/4026/3750/Block_set_3.1.jpg",
+      "sha256": "a3c17dbf19347e6248b066d153fdd5aa6fc99540c9ad6c4f6b3b0b8541ed1621"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/medium/7617/3987/2418/2024.12.26.04.207.-049.Agra.India.SDA.WeatherVaults.Museum.LyraFlux_2048_sda.jpg",
+      "sha256": "a9e8b75d97c98e54ba68308c27b03a8e5820508495d0bfe224b1292333adb40b"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/small/7617/3987/2418/2024.12.26.04.207.-049.Agra.India.SDA.WeatherVaults.Museum.LyraFlux_2048_sda.jpg",
+      "sha256": "28eb80afbbbedcbc60b37af0a0aa6daf706d77cec0f756b3d2528467e257093e"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/medium/2517/3987/2438/2025.01.03.WeatherVaults.SDA.Sokcho.SouthKorea.M1.0013-M0009.0061-WV0017.LyraFlux_2048_sda.jpg",
+      "sha256": "2cc8fb2a2bb0f20a1ccdf28ed88c845ce089d07fba897d2b3d21a46cadf5f000"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/small/2517/3987/2438/2025.01.03.WeatherVaults.SDA.Sokcho.SouthKorea.M1.0013-M0009.0061-WV0017.LyraFlux_2048_sda.jpg",
+      "sha256": "07e1f77f1384de1df3583c88b869e6479d5035dcd5c74ebb452f89acde8019c9"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/medium/2317/3987/2437/2025.01.02.WeatherVaults.SDA.CapeTown.SouthAfrica.T3.0009-T0004.0039-WV0014.LyraFlux_2048_sda.jpg",
+      "sha256": "601f0edc82cbe86c284be0e2ba1db4c01ae495efc4e7a31710013e9d8357cb6b"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/small/2317/3987/2437/2025.01.02.WeatherVaults.SDA.CapeTown.SouthAfrica.T3.0009-T0004.0039-WV0014.LyraFlux_2048_sda.jpg",
+      "sha256": "edee8524eccbef3d6f7301013c31085424c907192ef7978e3ad50b5953ab6d59"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/medium/8317/4026/6378/2024_12_21_01_167_-089_ElCalafate_Argentina_SDA_WeatherVaults_Museum_LyraFlux_2048_sda.jpg",
+      "sha256": "25df8eac3df7834ab90f446006f498f7bd145716e17a578e1840be3155997b85"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/small/8317/4026/6378/2024_12_21_01_167_-089_ElCalafate_Argentina_SDA_WeatherVaults_Museum_LyraFlux_2048_sda.jpg",
+      "sha256": "0866cd63a355c255ce76f496bde07dd71677a90f9c45a98bc14551f421281be2"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/medium/5017/4026/6379/2024_12_21_06_172_-084_ElCalafate_Argentina_SDA_WeatherVaults_Museum_LyraFlux_2048_sda.jpg",
+      "sha256": "45b92d94e58a1ad31c142da4dbd363efa1583229d55d09c0b49fb03a39f279fa"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/small/5017/4026/6379/2024_12_21_06_172_-084_ElCalafate_Argentina_SDA_WeatherVaults_Museum_LyraFlux_2048_sda.jpg",
+      "sha256": "0cc95b229831941bfdbf41b63cad0eecc9883a8814cf08b78252ce1c4d23a878"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/medium/6617/4026/6379/2024_12_21_08_174_-082_ElCalafate_Argentina_SDA_WeatherVaults_Museum_LyraFlux_2048_sda.jpg",
+      "sha256": "a03a6f4f460c66f399ce44c07bf5eb45722391c367d57b6bb882c12ec24dc4bf"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/small/6617/4026/6379/2024_12_21_08_174_-082_ElCalafate_Argentina_SDA_WeatherVaults_Museum_LyraFlux_2048_sda.jpg",
+      "sha256": "5a5f228f8820c94231d49a6de712d1cbb1625193b90ccb223f0f926f2b05f986"
+    },
+    {
+      "path": "sda.studio/index.php/ccm/system/css/page/480/main.less.css",
+      "sha256": "ce04c519588efe8e23425229ff83d53a620fa0c2197c25ee6d5c08002b957ea4"
+    },
+    {
+      "path": "sda.studio/application/files/6617/4028/1173/s3M4j0BwPhvoKzHmSi6t--1--6b0l1_2048_sda_2048_sda.jpg",
+      "sha256": "ed4a4ed367e1878fd2d87ae72583657202af1b064055f363f639631023556d66"
+    },
+    {
+      "path": "sda.studio/application/files/3517/3987/2410/2024.12.16.10.133.-123.Hallstatt.Austria.SDA.WeatherVaults.Travel.LyraFlux_2048_sda.jpg",
+      "sha256": "f56a7c9c278a1dc66ed6ad9cb02f38d6c715421aa7906626f25e7cee43d1943d"
+    },
+    {
+      "path": "sda.studio/application/files/5217/4028/1177/YV1mTpESLabNGJbNXrOh--1--x2htj_1_2048_sda_2048_sda.jpg",
+      "sha256": "85960f3f95819e39dc4e482ad0a97d0be98b7a3f3c11e92768f6b24e77eb83e3"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/medium/6617/4028/1173/s3M4j0BwPhvoKzHmSi6t--1--6b0l1_2048_sda_2048_sda.jpg",
+      "sha256": "2dad0fe196f6dd2845d8d3434888e3b2dc41a0940143cec3bc911758bb5b200f"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/small/6617/4028/1173/s3M4j0BwPhvoKzHmSi6t--1--6b0l1_2048_sda_2048_sda.jpg",
+      "sha256": "e8b670cde9aea49fcb870e19849dc92e8d8ead822c40933f9a5cd258b3c564f2"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/medium/3517/3987/2410/2024.12.16.10.133.-123.Hallstatt.Austria.SDA.WeatherVaults.Travel.LyraFlux_2048_sda.jpg",
+      "sha256": "ca6db53cb59de863a039fee263cfac49671d2c030896c52f6b56d0d2a1494a62"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/small/3517/3987/2410/2024.12.16.10.133.-123.Hallstatt.Austria.SDA.WeatherVaults.Travel.LyraFlux_2048_sda.jpg",
+      "sha256": "3834ef2d99e3ecac5028c6d5e8f9919296f661fde50a3f508e8bfa7ae9705fe3"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/medium/5217/4028/1177/YV1mTpESLabNGJbNXrOh--1--x2htj_1_2048_sda_2048_sda.jpg",
+      "sha256": "73a35d375fee16c448192d37ba75e2702ab4956912a4cfbe9637e5a0507098d5"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/small/5217/4028/1177/YV1mTpESLabNGJbNXrOh--1--x2htj_1_2048_sda_2048_sda.jpg",
+      "sha256": "4446c1da99313955a83d5d234de217c3eb399108a7fe601d6bf0cf6ca026f091"
+    },
+    {
+      "path": "sda.studio/index.php/ccm/system/css/page/456/main.less.css",
+      "sha256": "ce04c519588efe8e23425229ff83d53a620fa0c2197c25ee6d5c08002b957ea4"
+    },
+    {
+      "path": "sda.studio/index.php/ccm/system/css/page/454/main.less.css",
+      "sha256": "69e614c1536532bf70706586a03b966bcad5bf32d174e3b02821c867df28bc64"
+    },
+    {
+      "path": "sda.studio/index.php/ccm/system/css/layout/532c045.css",
+      "sha256": "7b296fd6f07c62e2f56fb032ef325f267429b403fea4e64ba24489091fd21512"
+    },
+    {
+      "path": "sda.studio/index.php/ccm/system/css/layout/522c045.css",
+      "sha256": "b29ed68fad39487c0154c9a97eba0f7b27aca5a11c1761067a9b134ffb42cc8d"
+    },
+    {
+      "path": "sda.studio/index.php/ccm/system/css/page/461/main.less.css",
+      "sha256": "4c8787e613724dfce8c1d96a8a318c985a7694dfa1692f2ff4e9a5dbecd0ed87"
+    },
+    {
+      "path": "sda.studio/application/files/2417/4028/1183/2024_12_20_08_166_-091_Avanos_Turkey_SDA_WeatherVaults_Museum_LyraFlux_2048_sda.jpg",
+      "sha256": "46332dc5c5c6209457b41ec72fe82f374a5bc58760bc82f2050487567b9f49d9"
+    },
+    {
+      "path": "sda.studio/application/files/6217/4028/1174/vPfDZPRYWVRQsvGfQqUS--1--94qfl_1_2048_sda_2048_sda.jpg",
+      "sha256": "2f6737bad0338365c332973cc998da4514db6864b8ca084dbab584a47200d584"
+    },
+    {
+      "path": "sda.studio/application/files/5317/3987/2333/2025.01.04.WeatherVaults.SDA.LisbonPortugal.T1.0019-T0003.0097-WV0028.LyraFlux_2048_sda.jpg",
+      "sha256": "a4019c1e4e65fbb882b5dbefcfe6f99374fc1a222208ca807cd47a5079e19a47"
+    },
+    {
+      "path": "sda.studio/application/files/4217/4028/1207/2024.12.26.05.208.-048.Agra.India.SDA.WeatherVaults.Museum.LyraFlux_Studio_2048_sda.jpg",
+      "sha256": "365422596e44645ed80342a3284b69b721eaaa838c5418f124748c466bf521b7"
+    },
+    {
+      "path": "sda.studio/application/files/9217/4026/5432/Ways_to_collect_5.2.jpg",
+      "sha256": "44c5650dcf2551ffee86d373160f3bf9e3a70f5ffc912d7a5eff42738b5b26a5"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/medium/2417/4028/1183/2024_12_20_08_166_-091_Avanos_Turkey_SDA_WeatherVaults_Museum_LyraFlux_2048_sda.jpg",
+      "sha256": "e5fc23c7d6eed0b16feb6706265ded78f3ade9fba0f79d23bd4bc180b20d44a6"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/small/2417/4028/1183/2024_12_20_08_166_-091_Avanos_Turkey_SDA_WeatherVaults_Museum_LyraFlux_2048_sda.jpg",
+      "sha256": "f6ba78f468418ff32830914576ea5e801d29ba98b69c901220e9bf51d5eab012"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/medium/6217/4028/1174/vPfDZPRYWVRQsvGfQqUS--1--94qfl_1_2048_sda_2048_sda.jpg",
+      "sha256": "f6ff5850e6cf290b34b91e3a400906374e84be53f25eedbe881627853d46c25b"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/small/6217/4028/1174/vPfDZPRYWVRQsvGfQqUS--1--94qfl_1_2048_sda_2048_sda.jpg",
+      "sha256": "a6496801bcac7ff2211c103e6e9b23d14b08146be5931301406bc80d7c12e7db"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/medium/5317/3987/2333/2025.01.04.WeatherVaults.SDA.LisbonPortugal.T1.0019-T0003.0097-WV0028.LyraFlux_2048_sda.jpg",
+      "sha256": "92ede11d3446a386991f58c2426b2ae807cd962ba82320cf04f9ae1115867178"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/small/5317/3987/2333/2025.01.04.WeatherVaults.SDA.LisbonPortugal.T1.0019-T0003.0097-WV0028.LyraFlux_2048_sda.jpg",
+      "sha256": "7cad9a13574d99e32a00e2e45206a7fdda528da15aaa725ea0fbf3e3b04fc1ef"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/medium/4217/4028/1207/2024.12.26.05.208.-048.Agra.India.SDA.WeatherVaults.Museum.LyraFlux_Studio_2048_sda.jpg",
+      "sha256": "888dd8fdc3e885f3aff3bf40a6432ac7f5b58bb80167d07f3d68588f94ece5a1"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/small/4217/4028/1207/2024.12.26.05.208.-048.Agra.India.SDA.WeatherVaults.Museum.LyraFlux_Studio_2048_sda.jpg",
+      "sha256": "30a3713cce05f9a4ebd7f58f229dc085df9e123571f5a497ed6e4e979255efda"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/large/9217/4026/5432/Ways_to_collect_5.2.jpg",
+      "sha256": "3a0b6a589159bbfd9972d9a51af3e0753ab2f1eb9fcf5b1eaf92541184d8aa91"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/medium/9217/4026/5432/Ways_to_collect_5.2.jpg",
+      "sha256": "dc54d4d94af9b128a9e97622dee902a18252d25d8540bdac242b1e70ea81f49c"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/small/9217/4026/5432/Ways_to_collect_5.2.jpg",
+      "sha256": "c08c61ac7a4f07bf8a8a94283008eb472397eb28d8e58bf262ae32aa6f5c4f75"
+    },
+    {
+      "path": "sda.studio/index.php/ccm/system/css/layout/671c045.css",
+      "sha256": "b4908c0a923109cc153031291c794794056c131deae06cff3809909737fe9051"
+    },
+    {
+      "path": "sda.studio/index.php/ccm/system/css/page/376/main.less.css",
+      "sha256": "cfff68e4f607efe1af5802a8e374d6dc1f10649a84aca3d2d5b321199634a3af"
+    },
+    {
+      "path": "sda.studio/application/files/8717/4047/9568/discord-mark-white.png",
+      "sha256": "3e862997885fc898199365b6907ddd71b9297e2a56b845fa9bfbbd3663600a36"
+    },
+    {
+      "path": "sda.studio/application/files/8717/4020/1533/DALLE_2025-02-21_21.17.48_-_A_retro-futuris.webp",
+      "sha256": "2c194e5ce8bbbd823275d1aab5d857c389aa0cbf223709c176533cb8d30c1ac7"
+    },
+    {
+      "path": "sda.studio/index.php/ccm/system/captcha/picturea164.png",
+      "sha256": "f12e298944b4307f5a693470a74cd69326af041071d7c62d42fed58539b5b9e8"
+    },
+    {
+      "path": "sda.studio/concrete/js/features/forms/frontendc045.js",
+      "sha256": "f4877f1fffda388e423b160e4adee6c8231cc9bac56fff0c5575a2eead25e0b9"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/medium/8717/4020/1533/DALLE_2025-02-21_21.17.48_-_A_retro-futuris.webp",
+      "sha256": "47668e4897162ec6b88b7c7a33fd756cce82b8098c2374ff9d658f36180d4552"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/small/8717/4020/1533/DALLE_2025-02-21_21.17.48_-_A_retro-futuris.webp",
+      "sha256": "9b6d826002b4ff08ee07e824074db6d099610718e382d29cb974d702e5ca83c0"
+    },
+    {
+      "path": "sda.studio/index.php/ccm/system/css/page/497/main.less.css",
+      "sha256": "8c54273de24aba13dd680ef24227b1e091592814dd84c2878fdb8d02861a3ca0"
+    },
+    {
+      "path": "sda.studio/index.php/ccm/system/css/layout/743c045.css",
+      "sha256": "9981e2f114d5656789ca4b38b60ac6eee555d415dc82827d7d7d68cd6b92556e"
+    },
+    {
+      "path": "sda.studio/index.php/ccm/system/css/layout/565c045.css",
+      "sha256": "4d3e15ccc91573cc3f7b29b01517ca4867be3f3d6732e3ccd621995f560d1713"
+    },
+    {
+      "path": "sda.studio/index.php/ccm/system/css/page/452/main.less.css",
+      "sha256": "cc0253215d24468cf6c8042df250b0f9260067863ceed80edc0677de8e2486a7"
+    },
+    {
+      "path": "sda.studio/application/files/1517/3675/7949/MdB7kmjKRdQyhqYf23uT--1--ceh1f_watermark.jpg",
+      "sha256": "f5d0ce14c9f99de16839f1ebbdb88058fcade91f840942111601d30ae76646e6"
+    },
+    {
+      "path": "sda.studio/application/files/6717/4037/7296/DALLE_2025-02-23_22.04.01_-_A_bold_graphic_n.jpg",
+      "sha256": "faaee1c671142a37784f5bf3b80583ff8c9f6b82a03da5245a13046a441ebef1"
+    },
+    {
+      "path": "sda.studio/application/files/8617/4037/5997/graphic_novel_peanut-scaled_2048_sda.jpg",
+      "sha256": "4c0c3c8c2f3cf2c5381ba451021100ec7482c3fa9f42829fd25e2bcca6beb41a"
+    },
+    {
+      "path": "sda.studio/application/files/9717/4038/4535/SDA_membership_Opportunities_beyond_creation-01-scaled-scaled_2048_sda.jpg",
+      "sha256": "279f56556a1789843627ec41662e5001afe1d6715a4cd535a84b8eb9b766a0f1"
+    },
+    {
+      "path": "sda.studio/application/files/4317/4038/4534/SDA_membership_Opportunities_beyond_creation-02-scaled-scaled_2048_sda.jpg",
+      "sha256": "a003c613de4888d16d7ca90ac0163f44c572866fa9c08d3e49d02163a0630068"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/large/1517/3675/7949/MdB7kmjKRdQyhqYf23uT--1--ceh1f_watermark.jpg",
+      "sha256": "67e5493cded4c1bfa6678b34c3738c9b3537213a20b741b54d0bd474d5a931ca"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/medium/1517/3675/7949/MdB7kmjKRdQyhqYf23uT--1--ceh1f_watermark.jpg",
+      "sha256": "96d08bafcf3272c8191f8585137e40fb9768038a5b18de33f3b4f62a93ff4917"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/small/1517/3675/7949/MdB7kmjKRdQyhqYf23uT--1--ceh1f_watermark.jpg",
+      "sha256": "46765f9cde6b518cb2bd3f3c32b8209c290e50f931fc039caab137b87396bddc"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/medium/6717/4037/7296/DALLE_2025-02-23_22.04.01_-_A_bold_graphic_n.jpg",
+      "sha256": "c64b9294268ee8af4340504e8f7883de54cb43d3b199585889d6ab77ff75ba1a"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/small/6717/4037/7296/DALLE_2025-02-23_22.04.01_-_A_bold_graphic_n.jpg",
+      "sha256": "6231fb5499d05165d220a155cba0271e2da3caa62fbff426e6855e02af8e0e9c"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/medium/8617/4037/5997/graphic_novel_peanut-scaled_2048_sda.jpg",
+      "sha256": "324a209b0db4b553aa53bcfa8b2e8a33f1f2d93be8d7b03e3483f1e6855fc160"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/small/8617/4037/5997/graphic_novel_peanut-scaled_2048_sda.jpg",
+      "sha256": "505eeae53f43410bc5af4bd4679a56de86520a20bc5e930e7d0009ecd8728871"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/medium/9717/4038/4535/SDA_membership_Opportunities_beyond_creation-01-scaled-scaled_2048_sda.jpg",
+      "sha256": "67eeb3592093905a2c2d62b2643d239fd755ccf84a9e588239e8acee8444c62f"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/small/9717/4038/4535/SDA_membership_Opportunities_beyond_creation-01-scaled-scaled_2048_sda.jpg",
+      "sha256": "9cdd2fb871533e96e5455c6cefe33fd1f0f21ac7b8890182b88b92fc420fa328"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/medium/4317/4038/4534/SDA_membership_Opportunities_beyond_creation-02-scaled-scaled_2048_sda.jpg",
+      "sha256": "8ae19b1556864dc9d7df67fa4021fb772e2737058e67b913b18867e2a8d37f9a"
+    },
+    {
+      "path": "sda.studio/application/files/thumbnails/small/4317/4038/4534/SDA_membership_Opportunities_beyond_creation-02-scaled-scaled_2048_sda.jpg",
+      "sha256": "7e6561fdc9e27ff6f489cb232687eca4f3b179d710e6830c47124ee22ff471f5"
+    },
+    {
+      "path": "sda.studio/index.php/ccm/system/css/page/482/main.less.css",
+      "sha256": "cc0253215d24468cf6c8042df250b0f9260067863ceed80edc0677de8e2486a7"
+    },
+    {
+      "path": "sda.studio/index.php/ccm/system/css/page/483/main.less.css",
+      "sha256": "cc0253215d24468cf6c8042df250b0f9260067863ceed80edc0677de8e2486a7"
+    },
+    {
+      "path": "sda.studio/index.php/ccm/system/css/page/484/main.less.css",
+      "sha256": "cc0253215d24468cf6c8042df250b0f9260067863ceed80edc0677de8e2486a7"
+    },
+    {
+      "path": "sda.studio/index.php/ccm/system/css/page/487/main.less.css",
+      "sha256": "cc0253215d24468cf6c8042df250b0f9260067863ceed80edc0677de8e2486a7"
+    },
+    {
+      "path": "sda.studio/index.php/ccm/system/css/page/486/main.less.css",
+      "sha256": "cc0253215d24468cf6c8042df250b0f9260067863ceed80edc0677de8e2486a7"
+    },
+    {
+      "path": "sda.studio/index.php/ccm/system/css/page/489/main.less.css",
+      "sha256": "cc0253215d24468cf6c8042df250b0f9260067863ceed80edc0677de8e2486a7"
+    },
+    {
+      "path": "sda.studio/index.php/ccm/system/css/page/491/main.less.css",
+      "sha256": "cc0253215d24468cf6c8042df250b0f9260067863ceed80edc0677de8e2486a7"
+    },
+    {
+      "path": "sda.studio/index.php/ccm/system/css/page/469/main.less.css",
+      "sha256": "69e614c1536532bf70706586a03b966bcad5bf32d174e3b02821c867df28bc64"
+    },
+    {
+      "path": "sda.studio/index.php/ccm/system/css/page/504/main.less.css",
+      "sha256": "71b48051dcd99e60cdebd7dbb58fee55b8233a5b2c3a4f07c659b784dff17d43"
+    },
+    {
+      "path": "cdn.jsdelivr.net/npm/marked/marked.min.js",
+      "sha256": "3e7e7d7feb3e5d58cb6c804f68ab5c24cc7e5eb6270fd6e5cbb9124739217d0c"
+    },
+    {
+      "path": "sda.studio/application/files/cache/css/stucco/mainebf2.css",
+      "sha256": "1f7c6c1886020fc50347fdf933fb9d306e829840337c750687f3f15c6e2f8653"
+    },
+    {
+      "path": "sda.studio/index.php/ccm/system/css/page/505/main.less.css",
+      "sha256": "71b48051dcd99e60cdebd7dbb58fee55b8233a5b2c3a4f07c659b784dff17d43"
+    },
+    {
+      "path": "sda.studio/application/files/cache/css/stucco/mainc019.css",
+      "sha256": "1f7c6c1886020fc50347fdf933fb9d306e829840337c750687f3f15c6e2f8653"
+    },
+    {
+      "path": "sda.studio/application/files/cache/css/stucco/maina5ac.css",
+      "sha256": "1f7c6c1886020fc50347fdf933fb9d306e829840337c750687f3f15c6e2f8653"
+    },
+    {
+      "path": "sda.studio/index.php/ccm/system/css/page/513/main.less.css",
+      "sha256": "71b48051dcd99e60cdebd7dbb58fee55b8233a5b2c3a4f07c659b784dff17d43"
+    },
+    {
+      "path": "sda.studio/application/files/cache/css/stucco/main0aa0.css",
+      "sha256": "1f7c6c1886020fc50347fdf933fb9d306e829840337c750687f3f15c6e2f8653"
+    },
+    {
+      "path": "sda.studio/index.php/ccm/system/css/page/498/main.less.css",
+      "sha256": "c0e3febf19dc7153a19f01f746633504d0c303e8818cad655f1d77c6adaf731a"
+    },
+    {
+      "path": "sda.studio/concrete/css/webfonts/fa-brands-400.eot",
+      "sha256": "e4299464e7b012968eed63ac2db1c9509f56bca409ef9f71f2926a8c3c80b2a9"
+    },
+    {
+      "path": "sda.studio/concrete/css/webfonts/fa-brands-400d41d.eot",
+      "sha256": "e4299464e7b012968eed63ac2db1c9509f56bca409ef9f71f2926a8c3c80b2a9"
+    },
+    {
+      "path": "sda.studio/concrete/css/webfonts/fa-brands-400.woff2",
+      "sha256": "8ea8791754915a898a3100e63e32978a6d1763be6df8e73a39d3a90d691cdeef"
+    },
+    {
+      "path": "sda.studio/concrete/css/webfonts/fa-brands-400.woff",
+      "sha256": "f9217f66874b0c01cd8c10b6a295dbc4f609acb6f5adc41c37da46641b57eb02"
+    },
+    {
+      "path": "sda.studio/concrete/css/webfonts/fa-brands-400.ttf",
+      "sha256": "cda59d6efffa685830fd95b55f64ae9cb51279cd34b2410b69f84c7ec30157d9"
+    },
+    {
+      "path": "sda.studio/concrete/css/webfonts/fa-brands-400.svg",
+      "sha256": "a3b9817780214caf01e8aec20bcdc2305a1ff34a15fae81ecd0923df9cd5cd0a"
+    },
+    {
+      "path": "sda.studio/concrete/css/webfonts/fa-regular-400.eot",
+      "sha256": "79d088064beb3826054fb88165416235897a856ca952fca1498b1c59b16aaa48"
+    },
+    {
+      "path": "sda.studio/concrete/css/webfonts/fa-regular-400d41d.eot",
+      "sha256": "79d088064beb3826054fb88165416235897a856ca952fca1498b1c59b16aaa48"
+    },
+    {
+      "path": "sda.studio/concrete/css/webfonts/fa-regular-400.woff2",
+      "sha256": "e42a88444448ac3d60549cc7c1ff2c8a9cac721034c073d80a14a44e79730cca"
+    },
+    {
+      "path": "sda.studio/concrete/css/webfonts/fa-regular-400.woff",
+      "sha256": "cb9e9e693192413cde2b1f21c1dc1d44b6fe7b27cc2b458e8b359d18f9ff8f4e"
+    },
+    {
+      "path": "sda.studio/concrete/css/webfonts/fa-regular-400.ttf",
+      "sha256": "e8711bbb871afd8e9dea60e16d30f00c7e4837bbc9807065017475b849fa2313"
+    },
+    {
+      "path": "sda.studio/concrete/css/webfonts/fa-regular-400.svg",
+      "sha256": "be0a084962d8066884f7fe9bd27ec16e51f5a93b72a502c92c5a24dc87eb2ebc"
+    },
+    {
+      "path": "sda.studio/concrete/css/webfonts/fa-solid-900.eot",
+      "sha256": "373c04fd2418f5c77eea49d514731058f1907a94ff3b4e5d7c3e5767e8b53d8b"
+    },
+    {
+      "path": "sda.studio/concrete/css/webfonts/fa-solid-900d41d.eot",
+      "sha256": "373c04fd2418f5c77eea49d514731058f1907a94ff3b4e5d7c3e5767e8b53d8b"
+    },
+    {
+      "path": "sda.studio/concrete/css/webfonts/fa-solid-900.woff2",
+      "sha256": "9834b82ad26e2a37583d22676a12dd2eb0fe7c80356a2114d0db1aa8b3899537"
+    },
+    {
+      "path": "sda.studio/concrete/css/webfonts/fa-solid-900.woff",
+      "sha256": "3f6d3488cf65374f6f676c315340b0ac2be832bd55240c809448e36ef9b96326"
+    },
+    {
+      "path": "sda.studio/concrete/css/webfonts/fa-solid-900.ttf",
+      "sha256": "af6397503fcefbd613976c21ad5c1e37298c18bbe07d096db03ccd3af6e05ba8"
+    },
+    {
+      "path": "sda.studio/concrete/css/webfonts/fa-solid-900.svg",
+      "sha256": "9674eb1bd5504717903837093a67668ea88f2ed006d91367d0d4b7aa1f9211fc"
+    },
+    {
+      "path": "sda.studio/packages/theme_stucco/themes/stucco/fonts/glyphicons-halflings-regular.eot",
+      "sha256": "f495f34e4f177cf0115af995bbbfeb3fcabc88502876e76fc51a4ab439bc8431"
+    },
+    {
+      "path": "sda.studio/packages/theme_stucco/themes/stucco/fonts/glyphicons-halflings-regulard41d.eot",
+      "sha256": "f495f34e4f177cf0115af995bbbfeb3fcabc88502876e76fc51a4ab439bc8431"
+    },
+    {
+      "path": "sda.studio/packages/theme_stucco/themes/stucco/fonts/glyphicons-halflings-regular.woff",
+      "sha256": "fc969dc1c6ff531abcf368089dcbaf5775133b0626ff56b52301a059fc0f9e1e"
+    },
+    {
+      "path": "sda.studio/packages/theme_stucco/themes/stucco/fonts/glyphicons-halflings-regular.ttf",
+      "sha256": "bd18efd3efd70fec8ad09611a20cdbf99440b2c1d40085c29be036f891d65358"
+    },
+    {
+      "path": "sda.studio/packages/theme_stucco/themes/stucco/fonts/glyphicons-halflings-regular.svg",
+      "sha256": "5d234508037dc13a419ef6ce48f3fc73dbb477f1a162c052b872182b494e626e"
+    },
+    {
+      "path": "sda.studio/packages/theme_stucco/themes/stucco/css/img/headeing_dot.svg",
+      "sha256": "6867be76b11d9cdefb7de7e81765129e31a2cc42892483a56390436a286a4c16"
+    },
+    {
+      "path": "sda.studio/packages/theme_stucco/themes/stucco/css/img/page_top_arrow.png",
+      "sha256": "128dc0f9ade8a73bc7e7604e30697c128253a85e36b0e4f067144e17e8009ddd"
+    },
+    {
+      "path": "Screenshots/desktop/01-home.png",
+      "sha256": "e6d76dbbbc698b4463c465cbc818c21e38c758f0884fef0dcb4420e5964b3a0e"
+    },
+    {
+      "path": "Screenshots/desktop/02-about.png",
+      "sha256": "c6a8758635478f035887b0b90c8ae62227334878f01f466f806ddeaeaf99eb94"
+    },
+    {
+      "path": "Screenshots/desktop/03-about--sda-history.png",
+      "sha256": "05e685c8df5b3db7499061603187813c0eb131035ba0a701c7b1c2df4598bed9"
+    },
+    {
+      "path": "Screenshots/desktop/04-about--sda-timeline.png",
+      "sha256": "2cdf3064ab387f06e052e2d55df0bee9e9fd275c64efde31c32ee77dd728efec"
+    },
+    {
+      "path": "Screenshots/desktop/05-about--singularity-charter.png",
+      "sha256": "1553819bec14b54165e9330934ddd59574cbfaf55d3bb97628c0e8aa226e65e6"
+    },
+    {
+      "path": "Screenshots/desktop/06-about--singularity-charter--press-release.png",
+      "sha256": "771cc99105fcc4a927cd97c01992adeaa6145674097124dc577713c3ed4fb499"
+    },
+    {
+      "path": "Screenshots/desktop/07-art.png",
+      "sha256": "d65be99963c9fe5b5d0f038816bf0d2a7e0b146312bfff34efecf309e61607c1"
+    },
+    {
+      "path": "Screenshots/desktop/08-art--frames.png",
+      "sha256": "bffc49ef781ffe7769feca6b819fb48a6dd68ae678af00e7e781ba9df5ee0878"
+    },
+    {
+      "path": "Screenshots/desktop/09-art--galleries.png",
+      "sha256": "98c15651ac66ed75631dfe7c98bab08a48637c3765bb30afad3d5971f7a10a51"
+    },
+    {
+      "path": "Screenshots/desktop/10-art--galleries--advanced-aether-adworks.png",
+      "sha256": "0699c7547880512c82587780587c5668d3c7cc3be6a5d023ae8fd85502b05ef3"
+    },
+    {
+      "path": "Screenshots/desktop/11-art--projects.png",
+      "sha256": "e2b4583d61411d4945ac8e782acb1939c5d83651c319fb3dc8055098e666e061"
+    },
+    {
+      "path": "Screenshots/desktop/12-art--projects--advanced-aether-adworks.png",
+      "sha256": "6d7f380af20ec1f2150be49a72d227a7a5ce0f2e38b4f976ea8ce5f25bc48d73"
+    },
+    {
+      "path": "Screenshots/desktop/13-art--sda-collection.png",
+      "sha256": "9ab0b9204f3d5ce9db5e44bc3d3f8270ebad3cb1d3993bd144c8f119f1000b4e"
+    },
+    {
+      "path": "Screenshots/desktop/14-artists.png",
+      "sha256": "976ef80ceaa6ccfe013e397ff17d1b3cef32d5f25595938772657d7dab6bb436"
+    },
+    {
+      "path": "Screenshots/desktop/15-artists--exposure.png",
+      "sha256": "52dd8c29ca76fdc6118454ec8ca8e543fd485c7fc4bd8d773f68ee2d3a2eb332"
+    },
+    {
+      "path": "Screenshots/desktop/16-artists--income.png",
+      "sha256": "a18359d4b423e78232b708cd8ee3d4d269d72d8d4275f2fb254260211798b7da"
+    },
+    {
+      "path": "Screenshots/desktop/17-businesses.png",
+      "sha256": "ef7a178fd2facb2c5d62edd7785f5baae1fbc3a3970cbc6dba136eca1dc00d21"
+    },
+    {
+      "path": "Screenshots/desktop/18-collectors.png",
+      "sha256": "601fed515d35b6d2e275371b0220549f92a9d9c5e1387e530e76df7ca7104689"
+    },
+    {
+      "path": "Screenshots/desktop/19-collectors--commissions.png",
+      "sha256": "49df4dc5eab2fbd40cf557c84bfdc953d9b00e6daf84bfc4bd9031d434a35da6"
+    },
+    {
+      "path": "Screenshots/desktop/20-collectors--investor-bundles.png",
+      "sha256": "dd2737d83e4a1af9f7995ae5d90d283f03e12dc5c3329b4978e8ca483feb2073"
+    },
+    {
+      "path": "Screenshots/desktop/21-collectors--nft-marketplaces.png",
+      "sha256": "be8f9894f9e442eb44b3cf49ee88cbaaa924ca955b232742ca380fd07e581fc2"
+    },
+    {
+      "path": "Screenshots/desktop/22-collectors--specifications.png",
+      "sha256": "7f5359fcfdf0512779bfe24797529ea9d9175e790dfd9921df3dac654686e070"
+    },
+    {
+      "path": "Screenshots/desktop/23-contact.png",
+      "sha256": "7baac4283d66f37286c4ca22d6808df858e5820968a856ab10c462020d5b6c45"
+    },
+    {
+      "path": "Screenshots/desktop/24-feeds-sdaframe.png",
+      "sha256": "ee95a7f66acbaf20242918c590f45303ceff239006e17d904fad496ab7db8759"
+    },
+    {
+      "path": "Screenshots/desktop/25-membership.png",
+      "sha256": "eb623c4f306d052c36029a3de4c8b062ed134997c239633fbbbecc02161f8fce"
+    },
+    {
+      "path": "Screenshots/desktop/26-membership--agents.png",
+      "sha256": "0c1458fe6c9a285426a7e267bb109ba1a39798aeee7573dad539106e3338d809"
+    },
+    {
+      "path": "Screenshots/desktop/27-membership--amplifiers.png",
+      "sha256": "3e7dc3a0bedbd1b4cc9c4a4d41dc7397cdbff1a8da672d35c7f56ddb373bc09d"
+    },
+    {
+      "path": "Screenshots/desktop/28-membership--artists.png",
+      "sha256": "9688e0c58590f20fc46781fc3c70a988d3bf14126545b32a7dab818afba96e07"
+    },
+    {
+      "path": "Screenshots/desktop/29-membership--curators.png",
+      "sha256": "debd767eaabc859a25f9870dca132ea0311215a3bbaafc2007671883b2e81e42"
+    },
+    {
+      "path": "Screenshots/desktop/30-membership--moderators.png",
+      "sha256": "268f5fc5cc1529c03c38c2a8a7c5779d913491674333188b89463adfc20f7699"
+    },
+    {
+      "path": "Screenshots/desktop/31-membership--operators.png",
+      "sha256": "3a10a52debe8b9bb1bac13e2b74f72b07a393891a57ed2f7cd6dedc0b8f7e665"
+    },
+    {
+      "path": "Screenshots/desktop/32-membership--welcome.png",
+      "sha256": "c289e1f05043866e0319764b9ebc6cf2b6bb48f61ea405ed918dccc2bdd0c591"
+    },
+    {
+      "path": "Screenshots/desktop/33-nft-proposal.png",
+      "sha256": "73262f9f278faa08f469410535c99bbf08af04f6b1e5a43fc558b634b0cbab33"
+    },
+    {
+      "path": "Screenshots/desktop/34-pulses.png",
+      "sha256": "8cec822b26abe984bd39c37e9bca9a5e15f973ab116f45f10a5c809b31049e73"
+    },
+    {
+      "path": "Screenshots/desktop/35-pulses--bddb.png",
+      "sha256": "3ca460bdfc8093d5af0fb4b34ff73527415b44de9fd79d2791b0a3af1d77144a"
+    },
+    {
+      "path": "Screenshots/desktop/36-pulses--point-break.png",
+      "sha256": "30f0dec2e25fd402e79f207200cbb84b6681a0c6a5d06505b919dab2b5b870d9"
+    },
+    {
+      "path": "Screenshots/desktop/37-pulses--sda-frame.png",
+      "sha256": "d4baec5a662ac5d6a243709fd0a0328c4b62fc7fbbdd94f0e1d89d6822d77ec2"
+    },
+    {
+      "path": "Screenshots/desktop/38-pulses--sda-fusion.png",
+      "sha256": "c71ab1b165f6e4c4fc48661e4574b0ccf83df22c46a23d4a211cce25877b8518"
+    },
+    {
+      "path": "Screenshots/desktop/39-pulses--sda-skydeck.png",
+      "sha256": "064cb607e6a33abbce19f3a1c983f925a49d85ec9ee58b141ca52e32e11ec5fd"
+    },
+    {
+      "path": "Screenshots/desktop/40-pulses--sda-studio.png",
+      "sha256": "a7b16066464dda2bb3f7ca2e19c8cf0f3960d41312c07fe15bc80d1e254d260e"
+    },
+    {
+      "path": "Screenshots/desktop/41-pulses--sovereign-trust.png",
+      "sha256": "c66639e488b422761fe5e74914b07d7610402a3e3fa741ce3c23e057b5cf0d6c"
+    },
+    {
+      "path": "Screenshots/desktop/42-sda-technology.png",
+      "sha256": "4d169ed06e43159b753652ceb7fef0cadd3890fbb6fe4136eacf7cf9b3e1f015"
+    },
+    {
+      "path": "Screenshots/mobile/01-home.png",
+      "sha256": "12279e5f70b8be12065057635ad63d7688671539988c64ab7569f77b716b7b56"
+    },
+    {
+      "path": "Screenshots/mobile/02-about.png",
+      "sha256": "2d5597ce1068ee177ccd8721de1a8730f85f28d3b633f4be8d95659d31bc2e2b"
+    },
+    {
+      "path": "Screenshots/mobile/03-about--sda-history.png",
+      "sha256": "421bb3d4e09ae9ddf841d496c8f539fd4cd1c87819afa4841f09da73a823e1c8"
+    },
+    {
+      "path": "Screenshots/mobile/04-about--sda-timeline.png",
+      "sha256": "e78ad305d7570d9f52d7d4049518eda9e7f991a32ba77cb75e6d2785811c8937"
+    },
+    {
+      "path": "Screenshots/mobile/05-about--singularity-charter.png",
+      "sha256": "79bf83f9fbde7311e1c824c1d5a332c2303967a105bb04991d8d54f3041fec20"
+    },
+    {
+      "path": "Screenshots/mobile/06-about--singularity-charter--press-release.png",
+      "sha256": "e0dc393008c47dcffca874492d863b194406c41e12cce12067c8eaf67090899f"
+    },
+    {
+      "path": "Screenshots/mobile/07-art.png",
+      "sha256": "67bf9ccafacf69484df7b48e153ae10ba80a27a01f965fbca908b402924aac4e"
+    },
+    {
+      "path": "Screenshots/mobile/08-art--frames.png",
+      "sha256": "d55fc7c815e17a05c95e3cf3ad986c1112d708b6ccc71d09b627346a1ca69234"
+    },
+    {
+      "path": "Screenshots/mobile/09-art--galleries.png",
+      "sha256": "2f9980103215f5792f74c22d7cc535f4040a06c7cf9790ca11256c8c797b271b"
+    },
+    {
+      "path": "Screenshots/mobile/10-art--galleries--advanced-aether-adworks.png",
+      "sha256": "e9e78107f1b830c555f475c22fbc1a2484410c06ea2593329bd2ba794e986cb2"
+    },
+    {
+      "path": "Screenshots/mobile/11-art--projects.png",
+      "sha256": "36730bf7ded4ccae51eaa0ea52ea502773d17033eeb670fdd1164f865269e504"
+    },
+    {
+      "path": "Screenshots/mobile/12-art--projects--advanced-aether-adworks.png",
+      "sha256": "e9e78107f1b830c555f475c22fbc1a2484410c06ea2593329bd2ba794e986cb2"
+    },
+    {
+      "path": "Screenshots/mobile/13-art--sda-collection.png",
+      "sha256": "4a3a4cb652ad80da4522fc000d7b8c3483643cab25f137abe4867393cdbe41e6"
+    },
+    {
+      "path": "Screenshots/mobile/14-artists.png",
+      "sha256": "121120099ad497d6d2571b8c833481ea11f1941e43e5c373fdac6d6d8b396ad0"
+    },
+    {
+      "path": "Screenshots/mobile/15-artists--exposure.png",
+      "sha256": "5ad109690dbe07966b09d4dba522265859bf32a01693a2a0ace64912e1dad7b1"
+    },
+    {
+      "path": "Screenshots/mobile/16-artists--income.png",
+      "sha256": "ee5db5434346c63ba075a930c4d7b95a6e5e606bc58f475da33c2e9b5e56db59"
+    },
+    {
+      "path": "Screenshots/mobile/17-businesses.png",
+      "sha256": "686a75f899312ccd3e43c05b2642ad6f0e4926159dc002ef419c662c6626680c"
+    },
+    {
+      "path": "Screenshots/mobile/18-collectors.png",
+      "sha256": "87643d1f03c3405a2b007f5aca2a6eb0b5e2b9e961aa11f9412e6d44bfd0131b"
+    },
+    {
+      "path": "Screenshots/mobile/19-collectors--commissions.png",
+      "sha256": "d3389ed2279479a387b51c5efa0eca9b1f6e41bf453762835a44592429c2e868"
+    },
+    {
+      "path": "Screenshots/mobile/20-collectors--investor-bundles.png",
+      "sha256": "2ad47e432f560a8b5de61d39fdd6de44570752defd36d28a993ec05e1d64dfad"
+    },
+    {
+      "path": "Screenshots/mobile/21-collectors--nft-marketplaces.png",
+      "sha256": "253c317b4ad6ded65327e96c9a1873c0a47d891a1724fbbc5f8f6d5d54b2c901"
+    },
+    {
+      "path": "Screenshots/mobile/22-collectors--specifications.png",
+      "sha256": "ecbb43b00c7f46a316d18b98081bf48133b9f417f1bad8806e77ca47bf6e3956"
+    },
+    {
+      "path": "Screenshots/mobile/23-contact.png",
+      "sha256": "9c7b816c65825a2ab385686bf5adb638b907b92776a808fb460221c9cf360e54"
+    },
+    {
+      "path": "Screenshots/mobile/24-feeds-sdaframe.png",
+      "sha256": "3d88e5704817ade2bdd7bda2896d82a20036d682e9f24b8003d80abf55bf12b2"
+    },
+    {
+      "path": "Screenshots/mobile/25-membership.png",
+      "sha256": "f4a9462169b7797ffaee1088fe0a21a7d8fc220def9053135c46c045db1f2967"
+    },
+    {
+      "path": "Screenshots/mobile/26-membership--agents.png",
+      "sha256": "fa11751ba461289b004db9467b77f18f7ed5c4258a338494c2f7068e9d57a2a8"
+    },
+    {
+      "path": "Screenshots/mobile/27-membership--amplifiers.png",
+      "sha256": "0573ae4ccf04b371a5704ebf114e5c28a9496fbbe9310cba090fd40c1ca4d00b"
+    },
+    {
+      "path": "Screenshots/mobile/28-membership--artists.png",
+      "sha256": "e182b6069a8c94315b0f6d7916b2a41b3ef9b8da254a0d03f13b66dfd02f5181"
+    },
+    {
+      "path": "Screenshots/mobile/29-membership--curators.png",
+      "sha256": "e4e2ca77f0fdc254420d5d82b12aae4a069d8e46211dabf82128356d332c356b"
+    },
+    {
+      "path": "Screenshots/mobile/30-membership--moderators.png",
+      "sha256": "a00f0913752834391d9a0edb0ea40867e12d0d0b2a6c57a8f3ce3554b9a2e5dd"
+    },
+    {
+      "path": "Screenshots/mobile/31-membership--operators.png",
+      "sha256": "86bba48e45bacf153340d6a3f7e14651fe78d2c71ea743227395b7a8bf6ca7da"
+    },
+    {
+      "path": "Screenshots/mobile/32-membership--welcome.png",
+      "sha256": "d4df9bf8c87b14ef41f35fcbf7d3fd14925f505f9df1200664b62fcd4f657eae"
+    },
+    {
+      "path": "Screenshots/mobile/33-nft-proposal.png",
+      "sha256": "b819a5dedfc1ad62212cb7a71b043e902aa53b0fef989c6a1243c1486696bb1a"
+    },
+    {
+      "path": "Screenshots/mobile/34-pulses.png",
+      "sha256": "3e429540e909b494dd687e536f01bb9c87bcd9121145e193c6d44e74354f6d87"
+    },
+    {
+      "path": "Screenshots/mobile/35-pulses--bddb.png",
+      "sha256": "8b54d57e697be884d44fc45ccfc3bcc87b1e59b6f82787441c728b19b95f50f5"
+    },
+    {
+      "path": "Screenshots/mobile/36-pulses--point-break.png",
+      "sha256": "3e429540e909b494dd687e536f01bb9c87bcd9121145e193c6d44e74354f6d87"
+    },
+    {
+      "path": "Screenshots/mobile/37-pulses--sda-frame.png",
+      "sha256": "8b54d57e697be884d44fc45ccfc3bcc87b1e59b6f82787441c728b19b95f50f5"
+    },
+    {
+      "path": "Screenshots/mobile/38-pulses--sda-fusion.png",
+      "sha256": "8b54d57e697be884d44fc45ccfc3bcc87b1e59b6f82787441c728b19b95f50f5"
+    },
+    {
+      "path": "Screenshots/mobile/39-pulses--sda-skydeck.png",
+      "sha256": "3e429540e909b494dd687e536f01bb9c87bcd9121145e193c6d44e74354f6d87"
+    },
+    {
+      "path": "Screenshots/mobile/40-pulses--sda-studio.png",
+      "sha256": "8b54d57e697be884d44fc45ccfc3bcc87b1e59b6f82787441c728b19b95f50f5"
+    },
+    {
+      "path": "Screenshots/mobile/41-pulses--sovereign-trust.png",
+      "sha256": "8b54d57e697be884d44fc45ccfc3bcc87b1e59b6f82787441c728b19b95f50f5"
+    },
+    {
+      "path": "Screenshots/mobile/42-sda-technology.png",
+      "sha256": "7111deb24606e2112424510b037ba6fa6085fa863f60e82f0eac974eceb68d16"
+    },
+    {
+      "path": "Screenshots/tablet-p0-final/portrait/01-home.png",
+      "sha256": "cdc53e10752b6849cf94e114f39c9f630fdea1ed1517cf571e4896f8ac9052cc"
+    },
+    {
+      "path": "Screenshots/tablet-p0-final/portrait/02-about.png",
+      "sha256": "8083bbead614ea531e426482bb4d630d894a9708dcf9324395bf8c95fd428270"
+    },
+    {
+      "path": "Screenshots/tablet-p0-final/portrait/03-about--sda-history.png",
+      "sha256": "92041b2c8c4b6839f71302d727ab4986983c1b98d14f99af2256e58b31a84948"
+    },
+    {
+      "path": "Screenshots/tablet-p0-final/portrait/04-about--sda-timeline.png",
+      "sha256": "5b820e552ef7a0d73fe4d2bc3e002c3364a99a07c8ee8329f7941e7277c094ee"
+    },
+    {
+      "path": "Screenshots/tablet-p0-final/portrait/05-about--singularity-charter.png",
+      "sha256": "3767e21ba002c649ec8975e4d7b6d9ad3cf2171dd49ae37251f2a15c577bef47"
+    },
+    {
+      "path": "Screenshots/tablet-p0-final/portrait/06-about--singularity-charter--press-release.png",
+      "sha256": "ff8b6927ba43f214828d15d3de5f81bfb88ce19f8e6bffd074935eda52062f85"
+    },
+    {
+      "path": "Screenshots/tablet-p0-final/portrait/07-art.png",
+      "sha256": "b4d3bdcc616c8d2fc82b7d58ac4637dcf77784ae8426828824de3f14ff861186"
+    },
+    {
+      "path": "Screenshots/tablet-p0-final/portrait/08-art--frames.png",
+      "sha256": "b33d91a6c708f91aaa2dc20bd93382192ce0c69ab0d38ec7bfdf533bfa9eb99e"
+    },
+    {
+      "path": "Screenshots/tablet-p0-final/portrait/09-art--galleries.png",
+      "sha256": "fe161b25f4588d0ad70cbb55113f7701339919180f46dd2aeb028f5482dda6c9"
+    },
+    {
+      "path": "Screenshots/tablet-p0-final/portrait/10-art--galleries--advanced-aether-adworks.png",
+      "sha256": "59cb5617bc266568ee9414938b82346f14abc663a4797f49a4182dc06d96dd24"
+    },
+    {
+      "path": "Screenshots/tablet-p0-final/portrait/11-art--projects.png",
+      "sha256": "57bd01637a0aba17b907da671b0bdbbe6af0af179520984ba4ba400cf6233bd3"
+    },
+    {
+      "path": "Screenshots/tablet-p0-final/portrait/12-art--projects--advanced-aether-adworks.png",
+      "sha256": "46e0fe5ba25724029be1042711c89c120453c617c571640cd9f8eb85501e1628"
+    },
+    {
+      "path": "Screenshots/tablet-p0-final/portrait/13-art--sda-collection.png",
+      "sha256": "a9e3652cb1ac11bad8478c8962bedaec0fb64f2a916c449d34f9ba06d8a74292"
+    },
+    {
+      "path": "Screenshots/tablet-p0-final/portrait/14-artists.png",
+      "sha256": "c9ed137b0c6dd47897f5e216c6396c2a83e13682771ffbf29d819ac4bde8aca2"
+    },
+    {
+      "path": "Screenshots/tablet-p0-final/portrait/15-artists--exposure.png",
+      "sha256": "033615692bb9074cc73ab20aebb6a55ee88d92ba64a7e73d58f987fdbee04c42"
+    },
+    {
+      "path": "Screenshots/tablet-p0-final/portrait/16-artists--income.png",
+      "sha256": "17108d713e8dbc957fe814fbc71a6286a584b9878f0f2820420b8dd58f79060a"
+    },
+    {
+      "path": "Screenshots/tablet-p0-final/portrait/17-businesses.png",
+      "sha256": "a137a0d4a1df2a3d722af1527f1f2b832ce06602e8cde17d759fde9aab7d02c5"
+    },
+    {
+      "path": "Screenshots/tablet-p0-final/portrait/18-collectors.png",
+      "sha256": "088b3d3fc5550fe565bf4d9e765ec9511fcd3e10c23a87717a1704b7f9247d59"
+    },
+    {
+      "path": "Screenshots/tablet-p0-final/portrait/19-collectors--commissions.png",
+      "sha256": "007b00dcaec867b8aac664054a3e92d1aae0807898e438d3ee1b3a043940b27f"
+    },
+    {
+      "path": "Screenshots/tablet-p0-final/portrait/20-collectors--investor-bundles.png",
+      "sha256": "05bd98da26506c2f67bf662af724a1f3cf49d4b370a2be115fbd13f76e271501"
+    },
+    {
+      "path": "Screenshots/tablet-p0-final/portrait/21-collectors--nft-marketplaces.png",
+      "sha256": "9c4da5e31804b30253124b64ef80f84abfa2240b2546157f89c76d82ec43f0aa"
+    },
+    {
+      "path": "Screenshots/tablet-p0-final/portrait/22-collectors--specifications.png",
+      "sha256": "9b0113fed193b4847aed225f29b40e76d19ca021f25540345606dfbf8c145078"
+    },
+    {
+      "path": "Screenshots/tablet-p0-final/portrait/23-contact.png",
+      "sha256": "f8e7762794a8c7d1e81dbcd88b4f08251f18aa14a72c4575acce2b277f7d0445"
+    },
+    {
+      "path": "Screenshots/tablet-p0-final/portrait/24-feeds-sdaframe.png",
+      "sha256": "8cfcec536f4a92b0b0f6a13709b2bc2c1e19cf9e9586d3a99ef0a3fcb6812773"
+    },
+    {
+      "path": "Screenshots/tablet-p0-final/portrait/25-membership.png",
+      "sha256": "7d2ac75ef294f13bc0ab3a09f0508f30f73b70f3095e7246d614ccf819958e03"
+    },
+    {
+      "path": "Screenshots/tablet-p0-final/portrait/26-membership--agents.png",
+      "sha256": "865ba0476c02f5a2083afe80e93ba9827d1ad2050656375a79e71a59a1d3250e"
+    },
+    {
+      "path": "Screenshots/tablet-p0-final/portrait/27-membership--amplifiers.png",
+      "sha256": "8a86bc1182f78d0dfcee5a49cc57eb01b5acf8dc5c5b291c910743fae78e50e5"
+    },
+    {
+      "path": "Screenshots/tablet-p0-final/portrait/28-membership--artists.png",
+      "sha256": "d6f9a936c6a61b1f220e91ca9c8c1959d454dc02e73b08a41fd9e275ae2407d5"
+    },
+    {
+      "path": "Screenshots/tablet-p0-final/portrait/29-membership--curators.png",
+      "sha256": "9ec695d14dba1b211e388de6ec12fdecd5f189bb99b4348683dde5eb55fd735c"
+    },
+    {
+      "path": "Screenshots/tablet-p0-final/portrait/30-membership--moderators.png",
+      "sha256": "d070aa5dceb2b5896d9c281cfbf524835b8886b8e1a7884dcccf103a4d116bb7"
+    },
+    {
+      "path": "Screenshots/tablet-p0-final/portrait/31-membership--operators.png",
+      "sha256": "2624acbf065cda6aabe508e00cb6b944778b82eb3a14f5f2fbda1cefe6a9b9fe"
+    },
+    {
+      "path": "Screenshots/tablet-p0-final/portrait/32-membership--welcome.png",
+      "sha256": "b8dd6ff371f8e590f3aaccb06b3b90c0502604faccad2b035d7035395da59587"
+    },
+    {
+      "path": "Screenshots/tablet-p0-final/portrait/33-nft-proposal.png",
+      "sha256": "b5733c9bd2c200c5543916173d82cf42a442f390db9e1db62227dda69a68a84c"
+    },
+    {
+      "path": "Screenshots/tablet-p0-final/portrait/34-pulses.png",
+      "sha256": "22c466302ab1d3545aff44ff2eefaaa6e023a660dabbbb7de479f9757e256d3a"
+    },
+    {
+      "path": "Screenshots/tablet-p0-final/portrait/35-pulses--bddb.png",
+      "sha256": "86e6b2344aa41b8f389887910ce71978c28903fe672a67f2834cd4046a854005"
+    },
+    {
+      "path": "Screenshots/tablet-p0-final/portrait/36-pulses--point-break.png",
+      "sha256": "f16a563ca81c5c5e20e4164aa0195dc68527994f83ad5564e7b76ff641e557f6"
+    },
+    {
+      "path": "Screenshots/tablet-p0-final/portrait/37-pulses--sda-frame.png",
+      "sha256": "26f991aaad96a054f0c6be6650012329557a957a71d615eba2f7903adb08d753"
+    },
+    {
+      "path": "Screenshots/tablet-p0-final/portrait/38-pulses--sda-fusion.png",
+      "sha256": "7568d80d034909fd3c1c3f2cdc3de0198d9fa393485bbe6931f98b65ff4b34c6"
+    },
+    {
+      "path": "Screenshots/tablet-p0-final/portrait/39-pulses--sda-skydeck.png",
+      "sha256": "ea2704db200507fb83a5d0bee5eef66b6ff93da79684e360f225dc194f7f749a"
+    },
+    {
+      "path": "Screenshots/tablet-p0-final/portrait/40-pulses--sda-studio.png",
+      "sha256": "f2f2e1c05816c262aa2a9ba9d5764a1446c4aed194bcce33affb389d40936430"
+    },
+    {
+      "path": "Screenshots/tablet-p0-final/portrait/41-pulses--sovereign-trust.png",
+      "sha256": "53a9a7df0846dfbcb02a79db3526e51e11b566138625916f41d699637d953d6b"
+    },
+    {
+      "path": "Screenshots/tablet-p0-final/portrait/42-sda-technology.png",
+      "sha256": "660a5d48225cb6f3f9244868546ddd3d87575be2d41774ddf888722d7a4424f9"
+    },
+    {
+      "path": "Screenshots/tablet-p0-final/landscape/01-home.png",
+      "sha256": "62b9464cd63b8963a0fb586844102d1176a8c1310bca5571e4cec026d34a55b9"
+    },
+    {
+      "path": "Screenshots/tablet-p0-final/landscape/02-about.png",
+      "sha256": "d4a6e514c3aa5664340484ca60b09e3d4636b6b9dc575f0e31cc00ebc53d8f15"
+    },
+    {
+      "path": "Screenshots/tablet-p0-final/landscape/03-about--sda-history.png",
+      "sha256": "23f99117f9624d5582bb12c8eb6cc2ff2a808a444882279259ca42256d8f54b7"
+    },
+    {
+      "path": "Screenshots/tablet-p0-final/landscape/04-about--sda-timeline.png",
+      "sha256": "2b906e0c56b664bd70ce1134a7b275f30dcd2eb83f3d5ec48557981e347eed4b"
+    },
+    {
+      "path": "Screenshots/tablet-p0-final/landscape/05-about--singularity-charter.png",
+      "sha256": "0e458271f0ab471f76fe27201ffaa81f087c7ca64dcbcc36675f8a1905bcf305"
+    },
+    {
+      "path": "Screenshots/tablet-p0-final/landscape/06-about--singularity-charter--press-release.png",
+      "sha256": "df1ba90a5fadc2ed2a7c90c5e2b97d6cbb7d835a4a4d11f4bacabf3226949a96"
+    },
+    {
+      "path": "Screenshots/tablet-p0-final/landscape/07-art.png",
+      "sha256": "5da137992bea876b099c0a3138116be950edef670bff57f43232396728d6c367"
+    },
+    {
+      "path": "Screenshots/tablet-p0-final/landscape/08-art--frames.png",
+      "sha256": "acdcf037bf07878762de399b3a81f4283504e077fe7a2d2b751bebab6b92c958"
+    },
+    {
+      "path": "Screenshots/tablet-p0-final/landscape/09-art--galleries.png",
+      "sha256": "d720638c904eaf1cd80eaa186fbd577e38acadc58b36d53d90f0434e6cc3842a"
+    },
+    {
+      "path": "Screenshots/tablet-p0-final/landscape/10-art--galleries--advanced-aether-adworks.png",
+      "sha256": "92d1199a562579b47e75dfef9b88c022d2590e64a5bb1565b214f42a4cb83ff8"
+    },
+    {
+      "path": "Screenshots/tablet-p0-final/landscape/11-art--projects.png",
+      "sha256": "aa285b394897bf242b75cb44faae81d6f06123fa9831451fab978efa9386accc"
+    },
+    {
+      "path": "Screenshots/tablet-p0-final/landscape/12-art--projects--advanced-aether-adworks.png",
+      "sha256": "41aadd9db13448e1486a4d65f88a1b06772411a7607701a896bcdbf8e614c71c"
+    },
+    {
+      "path": "Screenshots/tablet-p0-final/landscape/13-art--sda-collection.png",
+      "sha256": "26086627992711b24e19458cea68754b24aa5475d67ba95c012904cc3fdf51b8"
+    },
+    {
+      "path": "Screenshots/tablet-p0-final/landscape/14-artists.png",
+      "sha256": "98b13cb107accd10b1b92a17e8bfb9bc632af16a3a7d37b43eee6a94a175be67"
+    },
+    {
+      "path": "Screenshots/tablet-p0-final/landscape/15-artists--exposure.png",
+      "sha256": "6d1980d8f68dcf0918c9590f4980fc542b28400d741e6340f0d39234c59fb3f0"
+    },
+    {
+      "path": "Screenshots/tablet-p0-final/landscape/16-artists--income.png",
+      "sha256": "c35fd6122811ec7817d253323fd5622c815022679840314d4f0346bd8c0b80bb"
+    },
+    {
+      "path": "Screenshots/tablet-p0-final/landscape/17-businesses.png",
+      "sha256": "89bf26888700677dc63fc16ec402f8193f454c2a09588506d5d88cfcacd7e8f8"
+    },
+    {
+      "path": "Screenshots/tablet-p0-final/landscape/18-collectors.png",
+      "sha256": "b2b26d7190b99415b78e2c50e9864c885f371ea17ae5fb1b57649d2be2fbb9c6"
+    },
+    {
+      "path": "Screenshots/tablet-p0-final/landscape/19-collectors--commissions.png",
+      "sha256": "8a378ba0865bf2f40696c3746dec72673060477f911f9c46904b0b47db91a338"
+    },
+    {
+      "path": "Screenshots/tablet-p0-final/landscape/20-collectors--investor-bundles.png",
+      "sha256": "71119afc23229ae971a948b693ea7a1fe3ff766f20644b37be2f55b01ac2a83a"
+    },
+    {
+      "path": "Screenshots/tablet-p0-final/landscape/21-collectors--nft-marketplaces.png",
+      "sha256": "05e388dcc3905ff89ef253de2f40a8afbc5ef859277ef94a8a9a1d14591fb87b"
+    },
+    {
+      "path": "Screenshots/tablet-p0-final/landscape/22-collectors--specifications.png",
+      "sha256": "4f14451abf23c824932aad339ad32a7b2ae3f1dc5f7c03180433d2ba8250dbb3"
+    },
+    {
+      "path": "Screenshots/tablet-p0-final/landscape/23-contact.png",
+      "sha256": "f405a000720cd3b750b46ebc0840d213add7a9650221d846c076a72acc59555f"
+    },
+    {
+      "path": "Screenshots/tablet-p0-final/landscape/24-feeds-sdaframe.png",
+      "sha256": "f354030886f3f0d2ac7ceb59f0ccf9e80fb3c680ccb212b815d59ea88fee20d5"
+    },
+    {
+      "path": "Screenshots/tablet-p0-final/landscape/25-membership.png",
+      "sha256": "3aa14c37e9580167a1b2238f9829765a68500bbfc6f39ad9025b0447970f672a"
+    },
+    {
+      "path": "Screenshots/tablet-p0-final/landscape/26-membership--agents.png",
+      "sha256": "ab7f6054ff740a3b4347b48cb953683ad3d38aa9ec055c02f28a1c0d97b8e077"
+    },
+    {
+      "path": "Screenshots/tablet-p0-final/landscape/27-membership--amplifiers.png",
+      "sha256": "4afbac3ca2c95927bcc7b709c9227de074e5e85fdecb9a14066e8d90f81734c9"
+    },
+    {
+      "path": "Screenshots/tablet-p0-final/landscape/28-membership--artists.png",
+      "sha256": "10ef659ed7de5ea8234b29f4fcbb49108f43230debe68138930631b9bf66075c"
+    },
+    {
+      "path": "Screenshots/tablet-p0-final/landscape/29-membership--curators.png",
+      "sha256": "f88dff5a99eceaf145c75993c9bc95e8017389f2b3add1d380aba9c520dec5db"
+    },
+    {
+      "path": "Screenshots/tablet-p0-final/landscape/30-membership--moderators.png",
+      "sha256": "80dd012e1725c10997f6a336b2f204654853c963aa730f50bb8dcfb57a8731b5"
+    },
+    {
+      "path": "Screenshots/tablet-p0-final/landscape/31-membership--operators.png",
+      "sha256": "422dead33c8f57bda21a0f047debfd9e53e9b26d567b5f5b9126d11fe05d7bf6"
+    },
+    {
+      "path": "Screenshots/tablet-p0-final/landscape/32-membership--welcome.png",
+      "sha256": "109211fe6245d818019c46895a59b84d130e419ff50071ee9a7a5c3d0fa5e40f"
+    },
+    {
+      "path": "Screenshots/tablet-p0-final/landscape/33-nft-proposal.png",
+      "sha256": "b5bd2368db1775923af7e7b8ecec55fe3a3f163a9a1780e618dc5c491e275e24"
+    },
+    {
+      "path": "Screenshots/tablet-p0-final/landscape/34-pulses.png",
+      "sha256": "89a3aa8251469abf3f60e5316892c4f6b569ac2939b24371288351ca00fb85b1"
+    },
+    {
+      "path": "Screenshots/tablet-p0-final/landscape/35-pulses--bddb.png",
+      "sha256": "4c82cbe2fc6089dfcf5db0faca74328011f45096d4116c0275d870be291f0f15"
+    },
+    {
+      "path": "Screenshots/tablet-p0-final/landscape/36-pulses--point-break.png",
+      "sha256": "a56cdb8c638b13d3b5a08e23ba57cf5cbcd360f3e1392bfc754b40d599eade1f"
+    },
+    {
+      "path": "Screenshots/tablet-p0-final/landscape/37-pulses--sda-frame.png",
+      "sha256": "b0506a65e54364b32cb8f5dce89344aacda9d37e2907b3a66eb7a5e8b07018e3"
+    },
+    {
+      "path": "Screenshots/tablet-p0-final/landscape/38-pulses--sda-fusion.png",
+      "sha256": "b2d0823bd7ce4439edfba433f24f73920bb4e77a3232e9129f8f718e502c86b9"
+    },
+    {
+      "path": "Screenshots/tablet-p0-final/landscape/39-pulses--sda-skydeck.png",
+      "sha256": "dce898a20b67970c165565a4dd8aa781a44f9b3202b70b894eac6aa5176a48f3"
+    },
+    {
+      "path": "Screenshots/tablet-p0-final/landscape/40-pulses--sda-studio.png",
+      "sha256": "2d63d94a2cec1fe8092305133f3777e9a79dd4732fde8f6509a072cedd09b2a6"
+    },
+    {
+      "path": "Screenshots/tablet-p0-final/landscape/41-pulses--sovereign-trust.png",
+      "sha256": "6c8d91313b9577d85b1bc49b96f00f6cca8eaa1c04f014627227be95647fa1a4"
+    },
+    {
+      "path": "Screenshots/tablet-p0-final/landscape/42-sda-technology.png",
+      "sha256": "221deeaa95b74c8ebc471986d3fc317e66a04540807c8e8bc10ceb74d6121f9d"
+    },
+    {
+      "path": "Screenshots/capture-manifest.json",
+      "sha256": "fcbf83ba0e153d9688c64871ac505631777e9a24c7a08123cd4444269aeb62c6"
+    },
+    {
+      "path": "Screenshots/tablet-p0-final/capture-manifest.json",
+      "sha256": "83b527f24c7375585a64d693ff1bb54f421c92b942d4b153e75f1be7f2d62731"
+    }
+  ]
+}

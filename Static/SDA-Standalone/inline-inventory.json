@@ -1,0 +1,178 @@
+[
+  {
+    "source": "sda.studio/index.html",
+    "code": "<script type=\"text/javascript\">\n    var CCM_DISPATCHER_FILENAME = \"index-2.html\";\n    var CCM_CID = 1;\n    var CCM_EDIT_MODE = false;\n    var CCM_ARRANGE_MODE = false;\n    var CCM_IMAGE_PATH = \"/concrete/images\";\n    var CCM_APPLICATION_URL = \"index.html\";\n    var CCM_REL = \"\";\n    var CCM_ACTIVE_LOCALE = \"en_US\";\n    var CCM_USER_REGISTERED = false;\n</script>"
+  },
+  {
+    "source": "sda.studio/index.php/about.html",
+    "code": "<script type=\"text/javascript\">\n    var CCM_DISPATCHER_FILENAME = \"../index-2.html\";\n    var CCM_CID = 445;\n    var CCM_EDIT_MODE = false;\n    var CCM_ARRANGE_MODE = false;\n    var CCM_IMAGE_PATH = \"/concrete/images\";\n    var CCM_APPLICATION_URL = \"../index.html\";\n    var CCM_REL = \"\";\n    var CCM_ACTIVE_LOCALE = \"en_US\";\n    var CCM_USER_REGISTERED = false;\n</script>"
+  },
+  {
+    "source": "sda.studio/index.php/about/sda-history.html",
+    "code": "<script type=\"text/javascript\">\n    var CCM_DISPATCHER_FILENAME = \"../../index-2.html\";\n    var CCM_CID = 444;\n    var CCM_EDIT_MODE = false;\n    var CCM_ARRANGE_MODE = false;\n    var CCM_IMAGE_PATH = \"/concrete/images\";\n    var CCM_APPLICATION_URL = \"../../index.html\";\n    var CCM_REL = \"\";\n    var CCM_ACTIVE_LOCALE = \"en_US\";\n    var CCM_USER_REGISTERED = false;\n</script>"
+  },
+  {
+    "source": "sda.studio/index.php/about/sda-timeline.html",
+    "code": "<script type=\"text/javascript\">\n    var CCM_DISPATCHER_FILENAME = \"../../index-2.html\";\n    var CCM_CID = 492;\n    var CCM_EDIT_MODE = false;\n    var CCM_ARRANGE_MODE = false;\n    var CCM_IMAGE_PATH = \"/concrete/images\";\n    var CCM_APPLICATION_URL = \"../../index.html\";\n    var CCM_REL = \"\";\n    var CCM_ACTIVE_LOCALE = \"en_US\";\n    var CCM_USER_REGISTERED = false;\n</script>"
+  },
+  {
+    "source": "sda.studio/index.php/about/singularity-charter.html",
+    "code": "<script type=\"text/javascript\">\n    var CCM_DISPATCHER_FILENAME = \"../../index-2.html\";\n    var CCM_CID = 501;\n    var CCM_EDIT_MODE = false;\n    var CCM_ARRANGE_MODE = false;\n    var CCM_IMAGE_PATH = \"/concrete/images\";\n    var CCM_APPLICATION_URL = \"../../index.html\";\n    var CCM_REL = \"\";\n    var CCM_ACTIVE_LOCALE = \"en_US\";\n    var CCM_USER_REGISTERED = false;\n</script>"
+  },
+  {
+    "source": "sda.studio/index.php/about/singularity-charter/press-release.html",
+    "code": "<script type=\"text/javascript\">\n    var CCM_DISPATCHER_FILENAME = \"../../../index-2.html\";\n    var CCM_CID = 502;\n    var CCM_EDIT_MODE = false;\n    var CCM_ARRANGE_MODE = false;\n    var CCM_IMAGE_PATH = \"/concrete/images\";\n    var CCM_APPLICATION_URL = \"../../../index.html\";\n    var CCM_REL = \"\";\n    var CCM_ACTIVE_LOCALE = \"en_US\";\n    var CCM_USER_REGISTERED = false;\n</script>"
+  },
+  {
+    "source": "sda.studio/index.php/art.html",
+    "code": "<script type=\"text/javascript\">\n    var CCM_DISPATCHER_FILENAME = \"../index-2.html\";\n    var CCM_CID = 442;\n    var CCM_EDIT_MODE = false;\n    var CCM_ARRANGE_MODE = false;\n    var CCM_IMAGE_PATH = \"/concrete/images\";\n    var CCM_APPLICATION_URL = \"../index.html\";\n    var CCM_REL = \"\";\n    var CCM_ACTIVE_LOCALE = \"en_US\";\n    var CCM_USER_REGISTERED = false;\n</script>"
+  },
+  {
+    "source": "sda.studio/index.php/art/frames.html",
+    "code": "<script type=\"text/javascript\">\n    var CCM_DISPATCHER_FILENAME = \"../../index-2.html\";\n    var CCM_CID = 446;\n    var CCM_EDIT_MODE = false;\n    var CCM_ARRANGE_MODE = false;\n    var CCM_IMAGE_PATH = \"/concrete/images\";\n    var CCM_APPLICATION_URL = \"../../index.html\";\n    var CCM_REL = \"\";\n    var CCM_ACTIVE_LOCALE = \"en_US\";\n    var CCM_USER_REGISTERED = false;\n</script>"
+  },
+  {
+    "source": "sda.studio/index.php/art/galleries.html",
+    "code": "<script type=\"text/javascript\">\n    var CCM_DISPATCHER_FILENAME = \"../../index-2.html\";\n    var CCM_CID = 447;\n    var CCM_EDIT_MODE = false;\n    var CCM_ARRANGE_MODE = false;\n    var CCM_IMAGE_PATH = \"/concrete/images\";\n    var CCM_APPLICATION_URL = \"../../index.html\";\n    var CCM_REL = \"\";\n    var CCM_ACTIVE_LOCALE = \"en_US\";\n    var CCM_USER_REGISTERED = false;\n</script>"
+  },
+  {
+    "source": "sda.studio/index.php/art/galleries/advanced-aether-adworks.html",
+    "code": "<script type=\"text/javascript\">\n    var CCM_DISPATCHER_FILENAME = \"../../../index-2.html\";\n    var CCM_CID = 500;\n    var CCM_EDIT_MODE = false;\n    var CCM_ARRANGE_MODE = false;\n    var CCM_IMAGE_PATH = \"/concrete/images\";\n    var CCM_APPLICATION_URL = \"../../../index.html\";\n    var CCM_REL = \"\";\n    var CCM_ACTIVE_LOCALE = \"en_US\";\n    var CCM_USER_REGISTERED = false;\n</script>"
+  },
+  {
+    "source": "sda.studio/index.php/art/projects.html",
+    "code": "<script type=\"text/javascript\">\n    var CCM_DISPATCHER_FILENAME = \"../../index-2.html\";\n    var CCM_CID = 449;\n    var CCM_EDIT_MODE = false;\n    var CCM_ARRANGE_MODE = false;\n    var CCM_IMAGE_PATH = \"/concrete/images\";\n    var CCM_APPLICATION_URL = \"../../index.html\";\n    var CCM_REL = \"\";\n    var CCM_ACTIVE_LOCALE = \"en_US\";\n    var CCM_USER_REGISTERED = false;\n</script>"
+  },
+  {
+    "source": "sda.studio/index.php/art/projects/advanced-aether-adworks.html",
+    "code": "<script type=\"text/javascript\">\n    var CCM_DISPATCHER_FILENAME = \"../../../index-2.html\";\n    var CCM_CID = 499;\n    var CCM_EDIT_MODE = false;\n    var CCM_ARRANGE_MODE = false;\n    var CCM_IMAGE_PATH = \"/concrete/images\";\n    var CCM_APPLICATION_URL = \"../../../index.html\";\n    var CCM_REL = \"\";\n    var CCM_ACTIVE_LOCALE = \"en_US\";\n    var CCM_USER_REGISTERED = false;\n</script>"
+  },
+  {
+    "source": "sda.studio/index.php/art/sda-collection.html",
+    "code": "<script type=\"text/javascript\">\n    var CCM_DISPATCHER_FILENAME = \"../../index-2.html\";\n    var CCM_CID = 453;\n    var CCM_EDIT_MODE = false;\n    var CCM_ARRANGE_MODE = false;\n    var CCM_IMAGE_PATH = \"/concrete/images\";\n    var CCM_APPLICATION_URL = \"../../index.html\";\n    var CCM_REL = \"\";\n    var CCM_ACTIVE_LOCALE = \"en_US\";\n    var CCM_USER_REGISTERED = false;\n</script>"
+  },
+  {
+    "source": "sda.studio/index.php/artists.html",
+    "code": "<script type=\"text/javascript\">\n    var CCM_DISPATCHER_FILENAME = \"../index-2.html\";\n    var CCM_CID = 435;\n    var CCM_EDIT_MODE = false;\n    var CCM_ARRANGE_MODE = false;\n    var CCM_IMAGE_PATH = \"/concrete/images\";\n    var CCM_APPLICATION_URL = \"../index.html\";\n    var CCM_REL = \"\";\n    var CCM_ACTIVE_LOCALE = \"en_US\";\n    var CCM_USER_REGISTERED = false;\n</script>"
+  },
+  {
+    "source": "sda.studio/index.php/artists/exposure.html",
+    "code": "<script type=\"text/javascript\">\n    var CCM_DISPATCHER_FILENAME = \"../../index-2.html\";\n    var CCM_CID = 460;\n    var CCM_EDIT_MODE = false;\n    var CCM_ARRANGE_MODE = false;\n    var CCM_IMAGE_PATH = \"/concrete/images\";\n    var CCM_APPLICATION_URL = \"../../index.html\";\n    var CCM_REL = \"\";\n    var CCM_ACTIVE_LOCALE = \"en_US\";\n    var CCM_USER_REGISTERED = false;\n</script>"
+  },
+  {
+    "source": "sda.studio/index.php/artists/income.html",
+    "code": "<script type=\"text/javascript\">\n    var CCM_DISPATCHER_FILENAME = \"../../index-2.html\";\n    var CCM_CID = 459;\n    var CCM_EDIT_MODE = false;\n    var CCM_ARRANGE_MODE = false;\n    var CCM_IMAGE_PATH = \"/concrete/images\";\n    var CCM_APPLICATION_URL = \"../../index.html\";\n    var CCM_REL = \"\";\n    var CCM_ACTIVE_LOCALE = \"en_US\";\n    var CCM_USER_REGISTERED = false;\n</script>"
+  },
+  {
+    "source": "sda.studio/index.php/businesses.html",
+    "code": "<script type=\"text/javascript\">\n    var CCM_DISPATCHER_FILENAME = \"../index-2.html\";\n    var CCM_CID = 439;\n    var CCM_EDIT_MODE = false;\n    var CCM_ARRANGE_MODE = false;\n    var CCM_IMAGE_PATH = \"/concrete/images\";\n    var CCM_APPLICATION_URL = \"../index.html\";\n    var CCM_REL = \"\";\n    var CCM_ACTIVE_LOCALE = \"en_US\";\n    var CCM_USER_REGISTERED = false;\n</script>"
+  },
+  {
+    "source": "sda.studio/index.php/collectors.html",
+    "code": "<script type=\"text/javascript\">\n    var CCM_DISPATCHER_FILENAME = \"../index-2.html\";\n    var CCM_CID = 440;\n    var CCM_EDIT_MODE = false;\n    var CCM_ARRANGE_MODE = false;\n    var CCM_IMAGE_PATH = \"/concrete/images\";\n    var CCM_APPLICATION_URL = \"../index.html\";\n    var CCM_REL = \"\";\n    var CCM_ACTIVE_LOCALE = \"en_US\";\n    var CCM_USER_REGISTERED = false;\n</script>"
+  },
+  {
+    "source": "sda.studio/index.php/collectors/commissions.html",
+    "code": "<script type=\"text/javascript\">\n    var CCM_DISPATCHER_FILENAME = \"../../index-2.html\";\n    var CCM_CID = 480;\n    var CCM_EDIT_MODE = false;\n    var CCM_ARRANGE_MODE = false;\n    var CCM_IMAGE_PATH = \"/concrete/images\";\n    var CCM_APPLICATION_URL = \"../../index.html\";\n    var CCM_REL = \"\";\n    var CCM_ACTIVE_LOCALE = \"en_US\";\n    var CCM_USER_REGISTERED = false;\n</script>"
+  },
+  {
+    "source": "sda.studio/index.php/collectors/investor-bundles.html",
+    "code": "<script type=\"text/javascript\">\n    var CCM_DISPATCHER_FILENAME = \"../../index-2.html\";\n    var CCM_CID = 456;\n    var CCM_EDIT_MODE = false;\n    var CCM_ARRANGE_MODE = false;\n    var CCM_IMAGE_PATH = \"/concrete/images\";\n    var CCM_APPLICATION_URL = \"../../index.html\";\n    var CCM_REL = \"\";\n    var CCM_ACTIVE_LOCALE = \"en_US\";\n    var CCM_USER_REGISTERED = false;\n</script>"
+  },
+  {
+    "source": "sda.studio/index.php/collectors/nft-marketplaces.html",
+    "code": "<script type=\"text/javascript\">\n    var CCM_DISPATCHER_FILENAME = \"../../index-2.html\";\n    var CCM_CID = 454;\n    var CCM_EDIT_MODE = false;\n    var CCM_ARRANGE_MODE = false;\n    var CCM_IMAGE_PATH = \"/concrete/images\";\n    var CCM_APPLICATION_URL = \"../../index.html\";\n    var CCM_REL = \"\";\n    var CCM_ACTIVE_LOCALE = \"en_US\";\n    var CCM_USER_REGISTERED = false;\n</script>"
+  },
+  {
+    "source": "sda.studio/index.php/collectors/specifications.html",
+    "code": "<script type=\"text/javascript\">\n    var CCM_DISPATCHER_FILENAME = \"../../index-2.html\";\n    var CCM_CID = 461;\n    var CCM_EDIT_MODE = false;\n    var CCM_ARRANGE_MODE = false;\n    var CCM_IMAGE_PATH = \"/concrete/images\";\n    var CCM_APPLICATION_URL = \"../../index.html\";\n    var CCM_REL = \"\";\n    var CCM_ACTIVE_LOCALE = \"en_US\";\n    var CCM_USER_REGISTERED = false;\n</script>"
+  },
+  {
+    "source": "sda.studio/index.php/contact.html",
+    "code": "<script type=\"text/javascript\">\n    var CCM_DISPATCHER_FILENAME = \"../index-2.html\";\n    var CCM_CID = 376;\n    var CCM_EDIT_MODE = false;\n    var CCM_ARRANGE_MODE = false;\n    var CCM_IMAGE_PATH = \"/concrete/images\";\n    var CCM_APPLICATION_URL = \"../index.html\";\n    var CCM_REL = \"\";\n    var CCM_ACTIVE_LOCALE = \"en_US\";\n    var CCM_USER_REGISTERED = false;\n</script>"
+  },
+  {
+    "source": "sda.studio/index.php/contact.html",
+    "code": "<script type=\"text/javascript\">\n        var images = document.getElementsByClassName('ccm-image-block-hover');\n\n        for (var i = 0; i < images.length; i++) {\n            var image = images[i];\n            image.onmouseover = function () {\n                this.setAttribute('src', this.getAttribute('data-hover-src'));\n            };\n            image.onmouseout = function () {\n                this.setAttribute('src', this.getAttribute('data-default-src'));\n            };\n        }\n    </script>"
+  },
+  {
+    "source": "sda.studio/index.php/feeds-sdaframe.html",
+    "code": "<script type=\"text/javascript\">\n    var CCM_DISPATCHER_FILENAME = \"../index-2.html\";\n    var CCM_CID = 497;\n    var CCM_EDIT_MODE = false;\n    var CCM_ARRANGE_MODE = false;\n    var CCM_IMAGE_PATH = \"/concrete/images\";\n    var CCM_APPLICATION_URL = \"../index.html\";\n    var CCM_REL = \"\";\n    var CCM_ACTIVE_LOCALE = \"en_US\";\n    var CCM_USER_REGISTERED = false;\n</script>"
+  },
+  {
+    "source": "sda.studio/index.php/membership.html",
+    "code": "<script type=\"text/javascript\">\n    var CCM_DISPATCHER_FILENAME = \"../index-2.html\";\n    var CCM_CID = 452;\n    var CCM_EDIT_MODE = false;\n    var CCM_ARRANGE_MODE = false;\n    var CCM_IMAGE_PATH = \"/concrete/images\";\n    var CCM_APPLICATION_URL = \"../index.html\";\n    var CCM_REL = \"\";\n    var CCM_ACTIVE_LOCALE = \"en_US\";\n    var CCM_USER_REGISTERED = false;\n</script>"
+  },
+  {
+    "source": "sda.studio/index.php/membership/agents.html",
+    "code": "<script type=\"text/javascript\">\n    var CCM_DISPATCHER_FILENAME = \"../../index-2.html\";\n    var CCM_CID = 482;\n    var CCM_EDIT_MODE = false;\n    var CCM_ARRANGE_MODE = false;\n    var CCM_IMAGE_PATH = \"/concrete/images\";\n    var CCM_APPLICATION_URL = \"../../index.html\";\n    var CCM_REL = \"\";\n    var CCM_ACTIVE_LOCALE = \"en_US\";\n    var CCM_USER_REGISTERED = false;\n</script>"
+  },
+  {
+    "source": "sda.studio/index.php/membership/amplifiers.html",
+    "code": "<script type=\"text/javascript\">\n    var CCM_DISPATCHER_FILENAME = \"../../index-2.html\";\n    var CCM_CID = 483;\n    var CCM_EDIT_MODE = false;\n    var CCM_ARRANGE_MODE = false;\n    var CCM_IMAGE_PATH = \"/concrete/images\";\n    var CCM_APPLICATION_URL = \"../../index.html\";\n    var CCM_REL = \"\";\n    var CCM_ACTIVE_LOCALE = \"en_US\";\n    var CCM_USER_REGISTERED = false;\n</script>"
+  },
+  {
+    "source": "sda.studio/index.php/membership/artists.html",
+    "code": "<script type=\"text/javascript\">\n    var CCM_DISPATCHER_FILENAME = \"../../index-2.html\";\n    var CCM_CID = 484;\n    var CCM_EDIT_MODE = false;\n    var CCM_ARRANGE_MODE = false;\n    var CCM_IMAGE_PATH = \"/concrete/images\";\n    var CCM_APPLICATION_URL = \"../../index.html\";\n    var CCM_REL = \"\";\n    var CCM_ACTIVE_LOCALE = \"en_US\";\n    var CCM_USER_REGISTERED = false;\n</script>"
+  },
+  {
+    "source": "sda.studio/index.php/membership/curators.html",
+    "code": "<script type=\"text/javascript\">\n    var CCM_DISPATCHER_FILENAME = \"../../index-2.html\";\n    var CCM_CID = 487;\n    var CCM_EDIT_MODE = false;\n    var CCM_ARRANGE_MODE = false;\n    var CCM_IMAGE_PATH = \"/concrete/images\";\n    var CCM_APPLICATION_URL = \"../../index.html\";\n    var CCM_REL = \"\";\n    var CCM_ACTIVE_LOCALE = \"en_US\";\n    var CCM_USER_REGISTERED = false;\n</script>"
+  },
+  {
+    "source": "sda.studio/index.php/membership/moderators.html",
+    "code": "<script type=\"text/javascript\">\n    var CCM_DISPATCHER_FILENAME = \"../../index-2.html\";\n    var CCM_CID = 486;\n    var CCM_EDIT_MODE = false;\n    var CCM_ARRANGE_MODE = false;\n    var CCM_IMAGE_PATH = \"/concrete/images\";\n    var CCM_APPLICATION_URL = \"../../index.html\";\n    var CCM_REL = \"\";\n    var CCM_ACTIVE_LOCALE = \"en_US\";\n    var CCM_USER_REGISTERED = false;\n</script>"
+  },
+  {
+    "source": "sda.studio/index.php/membership/operators.html",
+    "code": "<script type=\"text/javascript\">\n    var CCM_DISPATCHER_FILENAME = \"../../index-2.html\";\n    var CCM_CID = 489;\n    var CCM_EDIT_MODE = false;\n    var CCM_ARRANGE_MODE = false;\n    var CCM_IMAGE_PATH = \"/concrete/images\";\n    var CCM_APPLICATION_URL = \"../../index.html\";\n    var CCM_REL = \"\";\n    var CCM_ACTIVE_LOCALE = \"en_US\";\n    var CCM_USER_REGISTERED = false;\n</script>"
+  },
+  {
+    "source": "sda.studio/index.php/membership/welcome.html",
+    "code": "<script type=\"text/javascript\">\n    var CCM_DISPATCHER_FILENAME = \"../../index-2.html\";\n    var CCM_CID = 491;\n    var CCM_EDIT_MODE = false;\n    var CCM_ARRANGE_MODE = false;\n    var CCM_IMAGE_PATH = \"/concrete/images\";\n    var CCM_APPLICATION_URL = \"../../index.html\";\n    var CCM_REL = \"\";\n    var CCM_ACTIVE_LOCALE = \"en_US\";\n    var CCM_USER_REGISTERED = false;\n</script>"
+  },
+  {
+    "source": "sda.studio/index.php/nft-proposal.html",
+    "code": "<script type=\"text/javascript\">\n    var CCM_DISPATCHER_FILENAME = \"../index-2.html\";\n    var CCM_CID = 469;\n    var CCM_EDIT_MODE = false;\n    var CCM_ARRANGE_MODE = false;\n    var CCM_IMAGE_PATH = \"/concrete/images\";\n    var CCM_APPLICATION_URL = \"../index.html\";\n    var CCM_REL = \"\";\n    var CCM_ACTIVE_LOCALE = \"en_US\";\n    var CCM_USER_REGISTERED = false;\n</script>"
+  },
+  {
+    "source": "sda.studio/index.php/pulses.html",
+    "code": "<script type=\"text/javascript\">\n    var CCM_DISPATCHER_FILENAME = \"../index-2.html\";\n    var CCM_CID = 504;\n    var CCM_EDIT_MODE = false;\n    var CCM_ARRANGE_MODE = false;\n    var CCM_IMAGE_PATH = \"/concrete/images\";\n    var CCM_APPLICATION_URL = \"../index.html\";\n    var CCM_REL = \"\";\n    var CCM_ACTIVE_LOCALE = \"en_US\";\n    var CCM_USER_REGISTERED = false;\n</script>"
+  },
+  {
+    "source": "sda.studio/index.php/pulses/sovereign-trust.html",
+    "code": "<script>\n  const defaultDocuments = {\n    \"sovereign-trust\": \"BDDB-ST-001_WhatIsSovereignTrust\",\n    \"sovereigntrust\": \"BDDB-ST-000_Table_Of_Contents\",\n    \"point-break\": \"SDA-PB-000_Point-Break-Starting-Point-Break\",\n    \"sda-skydeck\": \"SDA-SKY-000_SkyDeck-Pulse-Index\",\n    \"sda-studio\":\"SDA-SDA-001_Intro-To-SDA\",\n    \"sda-frame\": \"SDA-FRM-000_CuratorialIndex\",\n    \"sda-fusion\": \"SDA-FUS-000_SDA-Fusion-Summary\",\n    \"bddb\": \"SDA-BDDB-000_BDDB-Blog-Summary\",\n    \"signals\": \"SDA-SDA-000_Signals-Publication-Constellation\",\n    \"pulses\": \"SDA-SDA-000_Pulses-Publication-Constellation\"\n  };\n\n  // Try to get `signal` query param\n  let tag = new URLSearchParams(window.location.search).get(\"pulse\");\n\n  if (!tag) {\n    // If no query param, use pathname fallback\n    const pathSegments = window.location.pathname.split(\"/\").filter(Boolean); // remove empty strings\n    const lastSegment = pathSegments[pathSegments.length - 1] || \"pulses\";\n    tag = defaultDocuments[lastSegment.toLowerCase()] || \"SDA-SDA-000_Pulses-Publication-Constellation\";\n  }\n\n  // Extract folder structure from tag\n  const parts = tag.split(\"-\");\n  const folder1 = parts[0] || \"sda\";\n  const folder2 = parts[1] || \"sda\";\n\n  // Compose the full virtual path\n  const path = `/application/files/publication/${folder1}/${folder2}/${tag}.md`;\n\n  // Load and render markdown\n  fetch(path)\n    .then(res => {\n      if (!res.ok) throw new Error(\"File not found\");\n      return res.text();\n    })\n    .then(md => {\n      document.getElementById(\"markdown-content\").innerHTML = marked.parse(md);\n    })\n    .catch(err => {\n      document.getElementById(\"markdown-content\").innerText = \"Could not load article.\";\n      console.error(err);\n    });\n</script>"
+  },
+  {
+    "source": "sda.studio/index.php/pulses/bddb.html",
+    "code": "<script type=\"text/javascript\">\n    var CCM_DISPATCHER_FILENAME = \"../../index-2.html\";\n    var CCM_CID = 510;\n    var CCM_EDIT_MODE = false;\n    var CCM_ARRANGE_MODE = false;\n    var CCM_IMAGE_PATH = \"/concrete/images\";\n    var CCM_APPLICATION_URL = \"../../index.html\";\n    var CCM_REL = \"\";\n    var CCM_ACTIVE_LOCALE = \"en_US\";\n    var CCM_USER_REGISTERED = false;\n</script>"
+  },
+  {
+    "source": "sda.studio/index.php/pulses/point-break.html",
+    "code": "<script type=\"text/javascript\">\n    var CCM_DISPATCHER_FILENAME = \"../../index-2.html\";\n    var CCM_CID = 505;\n    var CCM_EDIT_MODE = false;\n    var CCM_ARRANGE_MODE = false;\n    var CCM_IMAGE_PATH = \"/concrete/images\";\n    var CCM_APPLICATION_URL = \"../../index.html\";\n    var CCM_REL = \"\";\n    var CCM_ACTIVE_LOCALE = \"en_US\";\n    var CCM_USER_REGISTERED = false;\n</script>"
+  },
+  {
+    "source": "sda.studio/index.php/pulses/sda-frame.html",
+    "code": "<script type=\"text/javascript\">\n    var CCM_DISPATCHER_FILENAME = \"../../index-2.html\";\n    var CCM_CID = 509;\n    var CCM_EDIT_MODE = false;\n    var CCM_ARRANGE_MODE = false;\n    var CCM_IMAGE_PATH = \"/concrete/images\";\n    var CCM_APPLICATION_URL = \"../../index.html\";\n    var CCM_REL = \"\";\n    var CCM_ACTIVE_LOCALE = \"en_US\";\n    var CCM_USER_REGISTERED = false;\n</script>"
+  },
+  {
+    "source": "sda.studio/index.php/pulses/sda-fusion.html",
+    "code": "<script type=\"text/javascript\">\n    var CCM_DISPATCHER_FILENAME = \"../../index-2.html\";\n    var CCM_CID = 507;\n    var CCM_EDIT_MODE = false;\n    var CCM_ARRANGE_MODE = false;\n    var CCM_IMAGE_PATH = \"/concrete/images\";\n    var CCM_APPLICATION_URL = \"../../index.html\";\n    var CCM_REL = \"\";\n    var CCM_ACTIVE_LOCALE = \"en_US\";\n    var CCM_USER_REGISTERED = false;\n</script>"
+  },
+  {
+    "source": "sda.studio/index.php/pulses/sda-skydeck.html",
+    "code": "<script type=\"text/javascript\">\n    var CCM_DISPATCHER_FILENAME = \"../../index-2.html\";\n    var CCM_CID = 513;\n    var CCM_EDIT_MODE = false;\n    var CCM_ARRANGE_MODE = false;\n    var CCM_IMAGE_PATH = \"/concrete/images\";\n    var CCM_APPLICATION_URL = \"../../index.html\";\n    var CCM_REL = \"\";\n    var CCM_ACTIVE_LOCALE = \"en_US\";\n    var CCM_USER_REGISTERED = false;\n</script>"
+  },
+  {
+    "source": "sda.studio/index.php/pulses/sda-studio.html",
+    "code": "<script type=\"text/javascript\">\n    var CCM_DISPATCHER_FILENAME = \"../../index-2.html\";\n    var CCM_CID = 506;\n    var CCM_EDIT_MODE = false;\n    var CCM_ARRANGE_MODE = false;\n    var CCM_IMAGE_PATH = \"/concrete/images\";\n    var CCM_APPLICATION_URL = \"../../index.html\";\n    var CCM_REL = \"\";\n    var CCM_ACTIVE_LOCALE = \"en_US\";\n    var CCM_USER_REGISTERED = false;\n</script>"
+  },
+  {
+    "source": "sda.studio/index.php/pulses/sovereign-trust.html",
+    "code": "<script type=\"text/javascript\">\n    var CCM_DISPATCHER_FILENAME = \"../../index-2.html\";\n    var CCM_CID = 512;\n    var CCM_EDIT_MODE = false;\n    var CCM_ARRANGE_MODE = false;\n    var CCM_IMAGE_PATH = \"/concrete/images\";\n    var CCM_APPLICATION_URL = \"../../index.html\";\n    var CCM_REL = \"\";\n    var CCM_ACTIVE_LOCALE = \"en_US\";\n    var CCM_USER_REGISTERED = false;\n</script>"
+  },
+  {
+    "source": "sda.studio/index.php/sda-technology.html",
+    "code": "<script type=\"text/javascript\">\n    var CCM_DISPATCHER_FILENAME = \"../index-2.html\";\n    var CCM_CID = 498;\n    var CCM_EDIT_MODE = false;\n    var CCM_ARRANGE_MODE = false;\n    var CCM_IMAGE_PATH = \"/concrete/images\";\n    var CCM_APPLICATION_URL = \"../index.html\";\n    var CCM_REL = \"\";\n    var CCM_ACTIVE_LOCALE = \"en_US\";\n    var CCM_USER_REGISTERED = false;\n</script>"
+  }
+]

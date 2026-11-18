@@ -1,0 +1,9 @@
+node_modules/
+evidence/
+preimages/
+output-manifest*.json
+build-result*.json
+check-*.json
+/*-diagnosis.json
+/home-recovery.json
+/*.png

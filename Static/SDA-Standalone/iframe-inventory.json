@@ -1,0 +1,42 @@
+[
+  {
+    "source": "sda.studio/index.php/sda-technology.html",
+    "html": "<iframe class=\"iframe-clean\" height=\"200\" src=\"https://frame.sda.studio/?feed=logos\" width=\"200\"></iframe>"
+  },
+  {
+    "source": "sda.studio/index.php/sda-technology.html",
+    "html": "<iframe class=\"iframe-clean\" src=\"https://frame.sda.studio/?feed=fineart\" width=320 height=200></iframe>"
+  },
+  {
+    "source": "sda.studio/index.php/sda-technology.html",
+    "html": "<iframe class=\"iframe-clean\" src=\"https://frame.sda.studio/?feed=surrealism\" width=320 height=200></iframe>"
+  },
+  {
+    "source": "sda.studio/index.php/artists.html",
+    "html": "<iframe class=\"hidden lcd-screen\" frameborder=\"no\" height=\"440\" scrolling=\"no\" src=\"https://gallery.sda.studio/frame/slideshow?key=HqRs4V&amp;speed=3&amp;transition=fade&amp;autoStart=1&amp;captions=0&amp;navigation=0&amp;playButton=0&amp;randomize=1&amp;transitionSpeed=2\" width=\"330\"></iframe>"
+  },
+  {
+    "source": "sda.studio/index.php/artists.html",
+    "html": "<iframe class=\"lcd-screen\" frameborder=\"no\" height=\"258\" scrolling=\"no\" src=\"https://gallery.sda.studio/frame/slideshow?key=m3d8Fd&amp;speed=5&amp;transition=fade&amp;autoStart=1&amp;captions=0&amp;navigation=1&amp;playButton=0&amp;randomize=1&amp;transitionSpeed=2\" width=\"400\"></iframe>"
+  },
+  {
+    "source": "sda.studio/index.php/artists.html",
+    "html": "<iframe class=\"hidden lcd-screen\" frameborder=\"no\" height=\"800\" scrolling=\"no\" src=\"https://gallery.sda.studio/frame/slideshow?key=x5bfPL&amp;speed=5&amp;transition=fade&amp;autoStart=1&amp;captions=0&amp;navigation=1&amp;playButton=0&amp;randomize=1&amp;transitionSpeed=2\" width=\"350\"></iframe>"
+  },
+  {
+    "source": "sda.studio/index.php/businesses.html",
+    "html": "<iframe class=\"lcd-screen\" frameborder=\"no\" height=\"440\" scrolling=\"no\" src=\"https://gallery.sda.studio/frame/slideshow?key=Szfcnb&amp;speed=5&amp;transition=fade&amp;autoStart=1&amp;captions=0&amp;navigation=0&amp;playButton=0&amp;randomize=1&amp;transitionSpeed=2\" width=\"440\"></iframe>"
+  },
+  {
+    "source": "sda.studio/index.php/businesses.html",
+    "html": "<iframe class=\"lcd-screen\" frameborder=\"no\" height=\"600\" scrolling=\"no\" src=\"https://gallery.sda.studio/frame/slideshow?key=FSzKdN&amp;speed=5&amp;transition=fade&amp;autoStart=1&amp;captions=0&amp;navigation=1&amp;playButton=0&amp;randomize=1&amp;transitionSpeed=2\" width=\"467\"></iframe>"
+  },
+  {
+    "source": "sda.studio/index.php/businesses.html",
+    "html": "<iframe class=\"hidden lcd-screen\" frameborder=\"no\" height=\"600\" scrolling=\"no\" src=\"https://gallery.sda.studio/frame/slideshow?key=dHmfDG&amp;speed=6&amp;transition=fade&amp;autoStart=1&amp;captions=0&amp;navigation=0&amp;playButton=0&amp;randomize=1&amp;transitionSpeed=2\" width=\"800\"></iframe>"
+  },
+  {
+    "source": "sda.studio/index.php/feeds-sdaframe.html",
+    "html": "<iframe src=\"https://frame.sda.studio/?feed=fantasy\" width=640 height=400></iframe>"
+  }
+]

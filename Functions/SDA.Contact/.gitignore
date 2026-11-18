@@ -1,0 +1,6 @@
+node_modules/
+.tools/
+.azurite/
+local.settings.json
+infra/main.json
+test-results/

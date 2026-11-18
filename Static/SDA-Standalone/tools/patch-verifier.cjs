@@ -1,0 +1,11 @@
+const patch=require('./patch.cjs');
+patch('tools/verify.cjs',"await p.waitForTimeout(160);", "await p.evaluate(async()=>{for(let y=0;y<document.body.scrollHeight;y+=750){scrollTo(0,y);await new Promise(r=>setTimeout(r,35));}scrollTo(0,0);});await p.waitForTimeout(350);");
+patch('tools/verify.cjs',"const context=await browser.newContext({deviceScaleFactor:1});await context.route('**/*',route=>", "let context,p,o;async function fresh(viewport,isMobile){if(context)await context.close();context=await browser.newContext({viewport,deviceScaleFactor:1,isMobile,hasTouch:isMobile,serviceWorkers:'block'});await context.route('**/*',route=>");
+patch('tools/verify.cjs',"page:req.frame().url()", "page:req.frame().url(),originPage:req.frame().page().url()");
+patch('tools/verify.cjs',"});let p=await context.newPage(),o=await context.newPage();", "});p=await context.newPage();o=await context.newPage();");
+patch('tools/verify.cjs',"o.on('pageerror',e=>report.sourceErrors.push({page:o.url(),error:e.message}));for(const [i,r]", "o.on('pageerror',e=>report.sourceErrors.push({page:o.url(),error:e.message}));}let variant;report.runtimeStart=require('./runtime-snapshot.cjs')();for(const [i,r]");
+patch('tools/verify.cjs',"const mapped=coverage.pages.find(p=>p.source===r.source);", "if(variant!==r.variant){variant=r.variant;await fresh(r.viewport,r.variant!=='desktop');}const mapped=coverage.pages.find(p=>p.source===r.source);");
+patch('tools/verify.cjs',"// Each route at both mount points", "await fresh({width:1440,height:1000},false);\n// Each route at both mount points");
+patch('tools/verify.cjs',"document.querySelectorAll('img.ccm-image-block')].map(e=>({alt:e.alt", "document.querySelectorAll('img')].map(e=>({alt:e.alt");
+patch('tools/verify.cjs',"i.complete&&i.naturalWidth>0", "i.complete&&(i.naturalWidth>0||i.src==='data:image/png;base64,')");
+patch('tools/verify.cjs',"report.requests.filter(x=>!x.page.startsWith(source)).length", "report.requests.filter(x=>!x.originPage.startsWith(source)).length");patch('tools/verify.cjs',"report.requests.filter(x=>!x.page.startsWith(source)))", "report.requests.filter(x=>!x.originPage.startsWith(source)))");
