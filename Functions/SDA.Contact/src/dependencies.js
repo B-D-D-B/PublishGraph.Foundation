@@ -1,5 +1,5 @@
 'use strict';
-// No production mock/bypass switch. Production mail adapter awaits owner selection.
+// No production mock/bypass switch. Dependency deadlines propagate cancellation.
 async function bounded(work, ms) {
   const controller=new AbortController(); let timer;
   try {return await Promise.race([Promise.resolve().then(()=>work(controller.signal)),new Promise((_,reject)=>{timer=setTimeout(()=>{controller.abort();reject(new Error('dependency_timeout'));},ms);})]);} finally {clearTimeout(timer);}

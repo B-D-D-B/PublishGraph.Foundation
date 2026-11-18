@@ -99,7 +99,7 @@ try {
   const actual=[];function walk(dir,prefix=''){for(const entry of fs.readdirSync(dir,{withFileTypes:true})){const name=prefix+entry.name;if(entry.isDirectory())walk(path.join(dir,entry.name),name+'/');else actual.push(name);}}walk(artifact);
   test('artifact allowlist',JSON.stringify(actual.sort())===JSON.stringify(names));
   for(const name of actual){const bytes=fs.readFileSync(path.join(artifact,name));test('artifact source hash '+name,sha(bytes)===sha(fs.readFileSync(path.join(root,name))));test('artifact privacy '+name,!/contact@sda\.studio|mailto:[^"'<>\s]+@/i.test(bytes.toString()));}
-  for(const page of coverage.pages){const s=fs.readFileSync(path.join(artifact,page.output),'utf8');if(page.output==='index.php/contact.html')test('accepted disabled blank endpoint',s.includes('data-endpoint=""')&&s.includes('data-enabled="false"')&&s.includes('data-sitekey=""')&&/<button[^>]+disabled/.test(s));}
+  for(const page of coverage.pages){const s=fs.readFileSync(path.join(artifact,page.output),'utf8');if(page.output==='index.php/contact.html')test('accepted disabled same-origin endpoint',s.includes('data-endpoint="/api/contact"')&&s.includes('data-enabled="false"')&&s.includes('data-sitekey=""')&&/<button[^>]+disabled/.test(s));}
 } catch(e) { report.failures.push({error:e.stack}); process.exitCode=1; }
 finally {
   if(browser)await browser.close();for(const s of servers){s.closeAllConnections();await new Promise(r=>s.close(r));}
