@@ -60,7 +60,7 @@ export function selfTest() {
 export function packageWebsite({ sourceRoot = source, out = path.join(repo, 'dist/website') } = {}) {
   freshOutput(out);
   const manifest = JSON.parse(fs.readFileSync(path.join(sourceRoot, 'coverage-manifest.json')));
-  if (manifest.pages.length !== 42 || manifest.assets.length !== 405) throw Error('Runtime manifest counts changed');
+  if (manifest.pages.length !== 42 || manifest.assets.length !== 407) throw Error('Runtime manifest counts changed');
   const names = uniqueNames([...manifest.pages, ...manifest.assets].map(x => x.output).concat(['assets/static-preview.js', 'assets/contact.js', 'staticwebapp.config.json'])).sort();
   const files = names.map(name => {
     const bytes = fs.readFileSync(regularFile(sourceRoot, name));

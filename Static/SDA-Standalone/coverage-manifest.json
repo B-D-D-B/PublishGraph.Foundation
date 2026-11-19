@@ -95,7 +95,7 @@
       "id": 14,
       "source": "sda.studio/index.php/artists.html",
       "output": "index.php/artists.html",
-      "sha256": "5b1702fb558d96dcb53fd5a315744156914aa4f73d4a987b10aa76adeecb912f",
+      "sha256": "d9923a29d3b22f07e56d720d413015abd8025f9759ecec19225a8cfe46af0c1c",
       "title": "For Artists :: Silicon Dream Artists"
     },
     {
@@ -165,7 +165,7 @@
       "id": 24,
       "source": "sda.studio/index.php/feeds-sdaframe.html",
       "output": "index.php/feeds-sdaframe.html",
-      "sha256": "240c53646889205b99f094a6392962fb496c68b6c1c7ba0b5c242fe30d120e4d",
+      "sha256": "56e844bb936b0abd959bec4312e6f7bbc726dd2a59b58a2d7484f9f586dda7c0",
       "title": "SDA Frame :: Silicon Dream Artists"
     },
     {
@@ -1915,6 +1915,14 @@
     {
       "source": "https://sda.studio/application/files/4717/3779/1366/2024.SDA24.Stickers.006_f2e5a283-c773-4081-b1e6-1b38b0aea5f0_NeuralAlchemist.jpeg",
       "output": "application/files/4717/3779/1366/2024.SDA24.Stickers.006_f2e5a283-c773-4081-b1e6-1b38b0aea5f0_NeuralAlchemist.jpeg"
+    },
+    {
+      "source": "generated:SDA-PLACEHOLDER-16/artists-dreamscape.png",
+      "output": "assets/placeholders/artists-dreamscape.png"
+    },
+    {
+      "source": "generated:SDA-PLACEHOLDER-16/sda-frame.png",
+      "output": "assets/placeholders/sda-frame.png"
     }
   ],
   "references": [
