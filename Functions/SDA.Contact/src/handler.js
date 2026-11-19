@@ -22,6 +22,7 @@ function createHandler(config,deps) {return async function(request,context={}){
   try {
     const origin=request.headers.get('origin');
     if(!origin||origin==='null'||!config.origins.includes(origin))return respond(403,'origin_not_allowed');
+    const expectedHostname=new URL(origin).hostname;
     cors={'Access-Control-Allow-Origin':origin,Vary:'Origin'};
     if(request.method==='OPTIONS'){
       const hs=request.headers.get('access-control-request-headers');
@@ -33,7 +34,7 @@ function createHandler(config,deps) {return async function(request,context={}){
     let data;try {data=JSON.parse(await readBody(request));}catch(e){return respond(e.status===413?413:400,e.status===413?'request_too_large':'invalid_json');}
     const v=validate(data);if(!v.valid)return respond(400,'validation_failed',{fields:v.fields});
     if(!config.enabled||!config.from||!deps.send)return respond(503,'temporarily_unavailable');
-    let verified;try {verified=await deps.verify(v.data.challengeToken);}catch{return respond(503,'temporarily_unavailable');}
+    let verified;try {verified=await deps.verify(v.data.challengeToken,expectedHostname);}catch{return respond(503,'temporarily_unavailable');}
     if(!verified)return respond(403,'challenge_failed');
     let reserved;try{reserved=await deps.reserve();}catch{return respond(503,'temporarily_unavailable');}
     if(!reserved){const r=respond(429,'daily_limit');const now=deps.now?.()||new Date();r.headers['Retry-After']=String(Math.ceil((Date.UTC(now.getUTCFullYear(),now.getUTCMonth(),now.getUTCDate()+1)-now)/1000));return r;}
