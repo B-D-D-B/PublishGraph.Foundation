@@ -4,294 +4,294 @@
       "id": 1,
       "source": "sda.studio/index.html",
       "output": "index.html",
-      "sha256": "82781c3ee5c3672d594f578434f99e171ed91517fc59298a6a370a50692713fa",
+      "sha256": "3701564b46684aaf939d91216fae70a9907d72fe0f771b7769cf760add49191d",
       "title": "Home :: Silicon Dream Artists"
     },
     {
       "id": 2,
       "source": "sda.studio/index.php/about.html",
       "output": "index.php/about.html",
-      "sha256": "a005fcd89a5245f70f6b65e1aab54a1fb80133c6f213a04aa040b466de9c6089",
+      "sha256": "6cfb3aa3aed60b6e374ebbd7b40a9d2469f9302f6f034e7c617fdcc26be8566b",
       "title": "About SDA :: Silicon Dream Artists"
     },
     {
       "id": 3,
       "source": "sda.studio/index.php/about/sda-history.html",
       "output": "index.php/about/sda-history.html",
-      "sha256": "927e00d6d00e23b76c7a224cf407d79fdb4d8895e005f1d3dd720f0f6cde3ac5",
+      "sha256": "6653e7deeb2cfb12ce79c326643930bf58a3a1a8c1a34d1a430574fa7a555a2d",
       "title": "History :: Silicon Dream Artists"
     },
     {
       "id": 4,
       "source": "sda.studio/index.php/about/sda-timeline.html",
       "output": "index.php/about/sda-timeline.html",
-      "sha256": "881616f7c7cd727953ee6be3cc4c80347b2d7241356ad2a34309ff19acb906d5",
+      "sha256": "a1c77af43f04c2cf921c32da56fbe54a1e173f38fcbda0d9dbf78dda83e60b31",
       "title": "Timeline :: Silicon Dream Artists"
     },
     {
       "id": 5,
       "source": "sda.studio/index.php/about/singularity-charter.html",
       "output": "index.php/about/singularity-charter.html",
-      "sha256": "4f24cbaeff9ae72d847acce59576cf5341e987a83727ad61fb2b03920e1dfa99",
+      "sha256": "82c962443c79299b346a214b8aa8097c8ba2e01c0de95a8321e2a9bfdd31e3b2",
       "title": "SDA Art Singularity Charter :: Silicon Dream Artists"
     },
     {
       "id": 6,
       "source": "sda.studio/index.php/about/singularity-charter/press-release.html",
       "output": "index.php/about/singularity-charter/press-release.html",
-      "sha256": "be0e8ebddcd05ce6c23207ffeb5b38b46a12c0908089ac2f63980fb76efb7f36",
+      "sha256": "6938eb6dc1aafdcc75ec91055f696c632fdf1bccff034dfa1a21c9a55c7649c9",
       "title": "Press Release - SDA Art Singularity Charter ♾️🌀🔁🤖 :: Silicon Dream Artists"
     },
     {
       "id": 7,
       "source": "sda.studio/index.php/art.html",
       "output": "index.php/art.html",
-      "sha256": "a05295e630e59d6404b0d0ae5caa6098e265d94f07ac0cdd85fc4c7d0b86b10d",
+      "sha256": "8e38e2fb5f1ce6441ebcbde796795175a146431e0330bb6cf13cd32cd187807d",
       "title": "Art :: Silicon Dream Artists"
     },
     {
       "id": 8,
       "source": "sda.studio/index.php/art/frames.html",
       "output": "index.php/art/frames.html",
-      "sha256": "3ec337dccd6aa33366fef3c3e5fbd8f77a867ff6d5758c3de36509dd031efb11",
+      "sha256": "b732c3575a13d313f9ed7b95dfeb69231b3e930e2eb1859946ddbced0fb3d6e7",
       "title": "Themes :: Silicon Dream Artists"
     },
     {
       "id": 9,
       "source": "sda.studio/index.php/art/galleries.html",
       "output": "index.php/art/galleries.html",
-      "sha256": "b9e8bea0200f7048a30c44b2421cbba94679edc030d84d225a676b4aa5865136",
+      "sha256": "0e34b52888b4e341acfe0ba2a2f22e019283a291311f0bca8879e0d2a6b6d202",
       "title": "Galleries :: Silicon Dream Artists"
     },
     {
       "id": 10,
       "source": "sda.studio/index.php/art/galleries/advanced-aether-adworks.html",
       "output": "index.php/art/galleries/advanced-aether-adworks.html",
-      "sha256": "e0b7545da5329b380cd8a10ee7f81da2ef0bd0dfd7bbf1d868baccc4d7d791e4",
+      "sha256": "79a43df3e5bb0a35967c8b7d73ad9cb23cd276727e9293beda89d6b8b1f74be1",
       "title": "Advanced Aether Adworks :: Silicon Dream Artists"
     },
     {
       "id": 11,
       "source": "sda.studio/index.php/art/projects.html",
       "output": "index.php/art/projects.html",
-      "sha256": "93483ea3bdb79173bd592e3ec4e6a78ab0acf38ab8bb16ce66c7e2b91c6b9388",
+      "sha256": "be998212c4f55ddbab4c41227065aa30389a46598b243c4a3e7899cddca7ee93",
       "title": "Projects :: Silicon Dream Artists"
     },
     {
       "id": 12,
       "source": "sda.studio/index.php/art/projects/advanced-aether-adworks.html",
       "output": "index.php/art/projects/advanced-aether-adworks.html",
-      "sha256": "b28c2070b0d5b3cb2f54e04aa308516712fd8eb5b7678878dff1dea2ab703021",
+      "sha256": "63eedbd9a9364d18fa6599b39a34a450e0c41fb76ecee210eb27c63a359ea204",
       "title": "Advanced Aether Adworks :: Silicon Dream Artists"
     },
     {
       "id": 13,
       "source": "sda.studio/index.php/art/sda-collection.html",
       "output": "index.php/art/sda-collection.html",
-      "sha256": "4e91b856fb73d4c16049428afc08e3078362d0e73a38dbb9f728417bb0d915e9",
+      "sha256": "2a3b7c3a7ac79d0cf19793cfbf7d60f2c87154015fe769bfaee0d3622d337024",
       "title": "SDA Collection :: Silicon Dream Artists"
     },
     {
       "id": 14,
       "source": "sda.studio/index.php/artists.html",
       "output": "index.php/artists.html",
-      "sha256": "5caa8af49c0aee8b7a847e4b8a8b22ab7f61871686c07b85f4a5dc320631e143",
+      "sha256": "b0a2d324504647d7634b194973f3bfbeb2669e6808d904e08eaba27646c118b8",
       "title": "For Artists :: Silicon Dream Artists"
     },
     {
       "id": 15,
       "source": "sda.studio/index.php/artists/exposure.html",
       "output": "index.php/artists/exposure.html",
-      "sha256": "df4f6034d887908c5316b7784aed2170445309d70d8e13d34369b5ea81ebefe9",
+      "sha256": "d11cdde69ec964bcf579b1b770c04505c886432d53ef1fb10259135c3b798577",
       "title": "Exposure :: Silicon Dream Artists"
     },
     {
       "id": 16,
       "source": "sda.studio/index.php/artists/income.html",
       "output": "index.php/artists/income.html",
-      "sha256": "5c0939a3efd3070c7f8a08da987d15b096fc6a02117bdf7f37b04967f94cf8ea",
+      "sha256": "211b5738d81d043f8257d52c4c8ecf9c6bd77087695b97a8efd4530a440648a2",
       "title": "Commissions & Royalties :: Silicon Dream Artists"
     },
     {
       "id": 17,
       "source": "sda.studio/index.php/businesses.html",
       "output": "index.php/businesses.html",
-      "sha256": "7a8cb7f95ebc94a8335b377a354d853bd3481d92b8912e607e5344df8bd779b1",
+      "sha256": "f1f0bfccba40e2a54d052c9bda3c73c7da6cdb45a7e70aa8dcc6fb3331ff78a3",
       "title": "For Businesses :: Silicon Dream Artists"
     },
     {
       "id": 18,
       "source": "sda.studio/index.php/collectors.html",
       "output": "index.php/collectors.html",
-      "sha256": "c73bc9f4c717cfe9ebfd951d4529c84ef0ee093821e866111e39377c105b38c0",
+      "sha256": "32ad0f7fe94e42370fefc47319f5e2d03ca82d558e90b2fd3fb3cfcefb1fb60a",
       "title": "For Collectors :: Silicon Dream Artists"
     },
     {
       "id": 19,
       "source": "sda.studio/index.php/collectors/commissions.html",
       "output": "index.php/collectors/commissions.html",
-      "sha256": "86daa14f8c2923b41fb6184ca9706363f7c1d154000f485c8ee779454315a513",
+      "sha256": "23e9a66ceff9047e1f7bdc02fc04da7f4080090eeb1ca9878cedd2f551c747c2",
       "title": "Commissions :: Silicon Dream Artists"
     },
     {
       "id": 20,
       "source": "sda.studio/index.php/collectors/investor-bundles.html",
       "output": "index.php/collectors/investor-bundles.html",
-      "sha256": "a6b20054d0f55718d7923288681af147bb478f443291f72c21066ce6013352dd",
+      "sha256": "85aa8a72b0e4f284b2c27591b83525c2dae7f4addb75abddb9d2ea93bca43fe9",
       "title": "Investor Bundles :: Silicon Dream Artists"
     },
     {
       "id": 21,
       "source": "sda.studio/index.php/collectors/nft-marketplaces.html",
       "output": "index.php/collectors/nft-marketplaces.html",
-      "sha256": "1c3fec37163f1bbdd630ea2de3128124f4d0542639e36eb2139dc4d7da2fb5d1",
+      "sha256": "713d3f896245144aac1879dc25505987e9dca9ccbfd58bdae4a5a57ae23535f4",
       "title": "NFT Marketplaces :: Silicon Dream Artists"
     },
     {
       "id": 22,
       "source": "sda.studio/index.php/collectors/specifications.html",
       "output": "index.php/collectors/specifications.html",
-      "sha256": "6bfc000802c2b7622e99a29da53d819804b6ea10b5b01c1d2da89bfdd27519ff",
+      "sha256": "cd5df84e1e108e0638c6bd2594fb43ac48866bdefaded3d03c46e4cb503ce858",
       "title": "Authenticated Digital Collectables :: Silicon Dream Artists"
     },
     {
       "id": 23,
       "source": "sda.studio/index.php/contact.html",
       "output": "index.php/contact.html",
-      "sha256": "2710a28c9b38cb3fbff9708a1b79a96271c585cd6d1cad79f82dc848f79b85e1",
+      "sha256": "eea9f51a8bc93bf779113f8f53f6d9c19fd0423aa39025c2279452098a726b4b",
       "title": "Contact :: Silicon Dream Artists"
     },
     {
       "id": 24,
       "source": "sda.studio/index.php/feeds-sdaframe.html",
       "output": "index.php/feeds-sdaframe.html",
-      "sha256": "df86654565b1ca10060def43f5c80820d99d717a4fe353ff5863ff0b11996ffb",
+      "sha256": "f032ef2391998b7a9d66e26a1918ce92a0ac6abf4658370dd087b84a6faa7267",
       "title": "SDA Frame :: Silicon Dream Artists"
     },
     {
       "id": 25,
       "source": "sda.studio/index.php/membership.html",
       "output": "index.php/membership.html",
-      "sha256": "b3064e0c9eab4ea53dfba4858c9aa70ba7e4e299bd35715839ce837f02267d21",
+      "sha256": "d76f6b52296e93f76a58e74536c91c4fa1c19d538058ce575709b6717a360966",
       "title": "Membership :: Silicon Dream Artists"
     },
     {
       "id": 26,
       "source": "sda.studio/index.php/membership/agents.html",
       "output": "index.php/membership/agents.html",
-      "sha256": "b7956741f21952afcd7ff7a045f7cabaf7544c97bae853dd17b564d6f6d6dc73",
+      "sha256": "4e231fe3aaa9ff06f75f125af965143febd09ecccf86320f6c3ad997cc25aa83",
       "title": "Agents :: Silicon Dream Artists"
     },
     {
       "id": 27,
       "source": "sda.studio/index.php/membership/amplifiers.html",
       "output": "index.php/membership/amplifiers.html",
-      "sha256": "e8fb05919c18aefa682a02581fd09625b93e18e990e582a11c9a9ad4a16b5b99",
+      "sha256": "e391a521406bc897225a219bfa8e5f7c8a44e9fb01653a47e86c4503815211d7",
       "title": "Amplifiers :: Silicon Dream Artists"
     },
     {
       "id": 28,
       "source": "sda.studio/index.php/membership/artists.html",
       "output": "index.php/membership/artists.html",
-      "sha256": "7f2357f7641de6b5d7260f31e77c994b6eaa24d14749a97a9dd0f87b4ed1873a",
+      "sha256": "b32b4e9aa0126ee1f4bfe199a057c3188cee32688c300a4341959e689bf0e455",
       "title": "Artists :: Silicon Dream Artists"
     },
     {
       "id": 29,
       "source": "sda.studio/index.php/membership/curators.html",
       "output": "index.php/membership/curators.html",
-      "sha256": "def5bbbd3988b2e88f0753a93a0b32efde4937a9a53ce2db554618868b7b6d45",
+      "sha256": "41f33a0b361ce81d425120abbc872b93567352c6e626759f79dc030a044b486f",
       "title": "Curators :: Silicon Dream Artists"
     },
     {
       "id": 30,
       "source": "sda.studio/index.php/membership/moderators.html",
       "output": "index.php/membership/moderators.html",
-      "sha256": "b42749598619ca7783f961f5f52aa6b6ddfd2bbeb8c6c1ae6bfed5825bba63f0",
+      "sha256": "9c062b9674c26ddff6fc7321d4e90f8acb95eafc363ae61b3f064c71d5c2d1f7",
       "title": "Moderators :: Silicon Dream Artists"
     },
     {
       "id": 31,
       "source": "sda.studio/index.php/membership/operators.html",
       "output": "index.php/membership/operators.html",
-      "sha256": "c03686b95914af731f64eec5576ef01c1f6f98652984da16dd3f56fc789f41ac",
+      "sha256": "8014e6ea118cc345aab2e8c71abe098540dc149291b2c531d0a890c3bf729e5e",
       "title": "Operators :: Silicon Dream Artists"
     },
     {
       "id": 32,
       "source": "sda.studio/index.php/membership/welcome.html",
       "output": "index.php/membership/welcome.html",
-      "sha256": "d1dbdb11c46a370631dcdd8da99c968c9afb9936c62000b4bedab5f5fc9109ca",
+      "sha256": "2bd6501cf5bdf22f5807ad693bc3aaf71ebfcb10820907d46d98bfe98e9dcb4b",
       "title": "Welcome :: Silicon Dream Artists"
     },
     {
       "id": 33,
       "source": "sda.studio/index.php/nft-proposal.html",
       "output": "index.php/nft-proposal.html",
-      "sha256": "6d11634e95c3af3f9829f561aa8f87d3dc89489bdfebd98fb37c4e7676cf5b1d",
+      "sha256": "a64a52a3bb1fc02f31c06875670f91c5fc103a7717b5dc6ee062e6fd659a5290",
       "title": "NFT 2.0 Proposal :: Silicon Dream Artists"
     },
     {
       "id": 34,
       "source": "sda.studio/index.php/pulses.html",
       "output": "index.php/pulses.html",
-      "sha256": "d0098fb96f3b0fa598a9001fe63db9a87756a8e75a97e2161963e5963aab790e",
+      "sha256": "cecb25ed48816e44c67b229d207f9a65621ba800fdf4ae20fabfd973dedb7f06",
       "title": "Pulses :: Silicon Dream Artists"
     },
     {
       "id": 35,
       "source": "sda.studio/index.php/pulses/bddb.html",
       "output": "index.php/pulses/bddb.html",
-      "sha256": "2f21f0ede7c960958ac1051bee0e902c2d46598d56c19e5bbbfe28b3a3b8421a",
+      "sha256": "662ca340a320ce8777229e232bb911bd11b6413a98d4a02297874f118e000aba",
       "title": "BDDB :: Silicon Dream Artists"
     },
     {
       "id": 36,
       "source": "sda.studio/index.php/pulses/point-break.html",
       "output": "index.php/pulses/point-break.html",
-      "sha256": "083f0ec3f0c08c3d710761747451f71770b48764209f4284a1c476909e7bd576",
+      "sha256": "ea3083140f13ba544e6fc2c8a4131ec052db550708386aa628f4197db0ab770c",
       "title": "Point Break :: Silicon Dream Artists"
     },
     {
       "id": 37,
       "source": "sda.studio/index.php/pulses/sda-frame.html",
       "output": "index.php/pulses/sda-frame.html",
-      "sha256": "efcfc120a4a48077df40fc9fdaa09985b395f7db707ea7be4be8e16f94ad3d56",
+      "sha256": "3479fc8d871d25e3cfdc401054ec799eea3ea16976834b50a644f7d7f1a71954",
       "title": "SDA Frame :: Silicon Dream Artists"
     },
     {
       "id": 38,
       "source": "sda.studio/index.php/pulses/sda-fusion.html",
       "output": "index.php/pulses/sda-fusion.html",
-      "sha256": "73b2a91423859a0d3f49e7a82426c439dcf5f00551a6876350481eaa2f247a2f",
+      "sha256": "6bb0bbdb8f13e930352187d518450edef5262da544984afdc129e235f5d48704",
       "title": "SDA Fusion :: Silicon Dream Artists"
     },
     {
       "id": 39,
       "source": "sda.studio/index.php/pulses/sda-skydeck.html",
       "output": "index.php/pulses/sda-skydeck.html",
-      "sha256": "aa4e87bc80a43f7b6647231657163130d163ecdba6c4371d9d079c88a8d15694",
+      "sha256": "823b93bb307addb742c5dd303c3abf85efe412712195de22a93a7931a90226c9",
       "title": "SDA SkyDeck :: Silicon Dream Artists"
     },
     {
       "id": 40,
       "source": "sda.studio/index.php/pulses/sda-studio.html",
       "output": "index.php/pulses/sda-studio.html",
-      "sha256": "e2b1afbc979dd77f18240f883b7bb52d12a6eabb725d7e7ed3cf5f50350bf35d",
+      "sha256": "e976a4493e88b98024c38d1e427dc88b0c3ce1630c7c931ee97b7827dd54bec0",
       "title": "SDA Studio :: Silicon Dream Artists"
     },
     {
       "id": 41,
       "source": "sda.studio/index.php/pulses/sovereign-trust.html",
       "output": "index.php/pulses/sovereign-trust.html",
-      "sha256": "ee251d2da2e2eacd34e400c422e1448f8b063b3258e49a820e1142c615d1db53",
+      "sha256": "69f863c4590539110a21b976715799f45c317472606f2ab039638d2e6bc172b6",
       "title": "Sovereign Trust :: Silicon Dream Artists"
     },
     {
       "id": 42,
       "source": "sda.studio/index.php/sda-technology.html",
       "output": "index.php/sda-technology.html",
-      "sha256": "c1d788f0f4939d4e58e5e853e2418340cb352e7ee6c5a7991081b5e0c07f7b1d",
+      "sha256": "3d56ac3bb35a56e87c7cf414ebb12ed10e1b9ee25df6e45332fdcd647e274328",
       "title": "Technology :: Silicon Dream Artists"
     }
   ],
