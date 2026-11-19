@@ -95,7 +95,7 @@
       "id": 14,
       "source": "sda.studio/index.php/artists.html",
       "output": "index.php/artists.html",
-      "sha256": "3befdf131ac28ab58913ac046bbe29cf1e42cded2e07478b4f726825075f7764",
+      "sha256": "5b1702fb558d96dcb53fd5a315744156914aa4f73d4a987b10aa76adeecb912f",
       "title": "For Artists :: Silicon Dream Artists"
     },
     {
@@ -116,7 +116,7 @@
       "id": 17,
       "source": "sda.studio/index.php/businesses.html",
       "output": "index.php/businesses.html",
-      "sha256": "c274f5965ab9d61bdedf91cbc0c4969ccc38a18082bb0d856bd0024cfd5b38f1",
+      "sha256": "785ae50bc3be47e8d46ef2c131636396e0ab93f2a61c883a130010ff827f3405",
       "title": "For Businesses :: Silicon Dream Artists"
     },
     {
@@ -1831,6 +1831,90 @@
     {
       "source": "sda.studio/packages/theme_stucco/themes/stucco/css/img/page_top_arrow.png",
       "output": "packages/theme_stucco/themes/stucco/css/img/page_top_arrow.png"
+    },
+    {
+      "source": "https://sda.studio/application/files/thumbnails/large/5717/3779/6062/jGR3MPa5wndYvABgUiUh--0--1wdkp_7.8125x-real-esrgan-x4-plus_2048_sda.jpg",
+      "output": "application/files/thumbnails/large/5717/3779/6062/jGR3MPa5wndYvABgUiUh--0--1wdkp_7.8125x-real-esrgan-x4-plus_2048_sda.jpg"
+    },
+    {
+      "source": "https://sda.studio/application/files/thumbnails/medium/5717/3779/6062/jGR3MPa5wndYvABgUiUh--0--1wdkp_7.8125x-real-esrgan-x4-plus_2048_sda.jpg",
+      "output": "application/files/thumbnails/medium/5717/3779/6062/jGR3MPa5wndYvABgUiUh--0--1wdkp_7.8125x-real-esrgan-x4-plus_2048_sda.jpg"
+    },
+    {
+      "source": "https://sda.studio/application/files/thumbnails/small/5717/3779/6062/jGR3MPa5wndYvABgUiUh--0--1wdkp_7.8125x-real-esrgan-x4-plus_2048_sda.jpg",
+      "output": "application/files/thumbnails/small/5717/3779/6062/jGR3MPa5wndYvABgUiUh--0--1wdkp_7.8125x-real-esrgan-x4-plus_2048_sda.jpg"
+    },
+    {
+      "source": "https://sda.studio/application/files/thumbnails/medium/9917/4026/3334/Ways_to_collect_3.3.jpg",
+      "output": "application/files/thumbnails/medium/9917/4026/3334/Ways_to_collect_3.3.jpg"
+    },
+    {
+      "source": "https://sda.studio/application/files/thumbnails/large/9917/4026/3334/Ways_to_collect_3.3.jpg",
+      "output": "application/files/thumbnails/large/9917/4026/3334/Ways_to_collect_3.3.jpg"
+    },
+    {
+      "source": "https://sda.studio/application/files/5717/3779/6062/jGR3MPa5wndYvABgUiUh--0--1wdkp_7.8125x-real-esrgan-x4-plus_2048_sda.jpg",
+      "output": "application/files/5717/3779/6062/jGR3MPa5wndYvABgUiUh--0--1wdkp_7.8125x-real-esrgan-x4-plus_2048_sda.jpg"
+    },
+    {
+      "source": "https://sda.studio/application/files/thumbnails/small/9917/4026/3334/Ways_to_collect_3.3.jpg",
+      "output": "application/files/thumbnails/small/9917/4026/3334/Ways_to_collect_3.3.jpg"
+    },
+    {
+      "source": "https://sda.studio/application/files/thumbnails/large/8917/3675/7556/X7VFbwOU2m0gQUA1pUuq--1--k9ugd_watermark.jpg",
+      "output": "application/files/thumbnails/large/8917/3675/7556/X7VFbwOU2m0gQUA1pUuq--1--k9ugd_watermark.jpg"
+    },
+    {
+      "source": "https://sda.studio/application/files/thumbnails/medium/8917/3675/7556/X7VFbwOU2m0gQUA1pUuq--1--k9ugd_watermark.jpg",
+      "output": "application/files/thumbnails/medium/8917/3675/7556/X7VFbwOU2m0gQUA1pUuq--1--k9ugd_watermark.jpg"
+    },
+    {
+      "source": "https://sda.studio/application/files/9917/4026/3334/Ways_to_collect_3.3.jpg",
+      "output": "application/files/9917/4026/3334/Ways_to_collect_3.3.jpg"
+    },
+    {
+      "source": "https://sda.studio/application/files/thumbnails/small/8917/3675/7556/X7VFbwOU2m0gQUA1pUuq--1--k9ugd_watermark.jpg",
+      "output": "application/files/thumbnails/small/8917/3675/7556/X7VFbwOU2m0gQUA1pUuq--1--k9ugd_watermark.jpg"
+    },
+    {
+      "source": "https://sda.studio/application/files/8917/3675/7556/X7VFbwOU2m0gQUA1pUuq--1--k9ugd_watermark.jpg",
+      "output": "application/files/8917/3675/7556/X7VFbwOU2m0gQUA1pUuq--1--k9ugd_watermark.jpg"
+    },
+    {
+      "source": "https://sda.studio/application/files/thumbnails/medium/6017/8976/4398/SDA_Commissions_and_royalties-02.jpg",
+      "output": "application/files/thumbnails/medium/6017/8976/4398/SDA_Commissions_and_royalties-02.jpg"
+    },
+    {
+      "source": "https://sda.studio/application/files/thumbnails/large/6017/8976/4398/SDA_Commissions_and_royalties-02.jpg",
+      "output": "application/files/thumbnails/large/6017/8976/4398/SDA_Commissions_and_royalties-02.jpg"
+    },
+    {
+      "source": "https://sda.studio/application/files/thumbnails/small/6017/8976/4398/SDA_Commissions_and_royalties-02.jpg",
+      "output": "application/files/thumbnails/small/6017/8976/4398/SDA_Commissions_and_royalties-02.jpg"
+    },
+    {
+      "source": "https://sda.studio/application/files/6017/8976/4398/SDA_Commissions_and_royalties-02.jpg",
+      "output": "application/files/6017/8976/4398/SDA_Commissions_and_royalties-02.jpg"
+    },
+    {
+      "source": "https://sda.studio/application/files/thumbnails/large/3017/8976/4817/2024.12.04.02.023.-234.Huejotzingo.Mexico.SDA.WeatherVaults.Nexus.ShadowPhanTom_Studio_2048_sda.jpg",
+      "output": "application/files/thumbnails/large/3017/8976/4817/2024.12.04.02.023.-234.Huejotzingo.Mexico.SDA.WeatherVaults.Nexus.ShadowPhanTom_Studio_2048_sda.jpg"
+    },
+    {
+      "source": "https://sda.studio/application/files/thumbnails/medium/3017/8976/4817/2024.12.04.02.023.-234.Huejotzingo.Mexico.SDA.WeatherVaults.Nexus.ShadowPhanTom_Studio_2048_sda.jpg",
+      "output": "application/files/thumbnails/medium/3017/8976/4817/2024.12.04.02.023.-234.Huejotzingo.Mexico.SDA.WeatherVaults.Nexus.ShadowPhanTom_Studio_2048_sda.jpg"
+    },
+    {
+      "source": "https://sda.studio/application/files/thumbnails/small/3017/8976/4817/2024.12.04.02.023.-234.Huejotzingo.Mexico.SDA.WeatherVaults.Nexus.ShadowPhanTom_Studio_2048_sda.jpg",
+      "output": "application/files/thumbnails/small/3017/8976/4817/2024.12.04.02.023.-234.Huejotzingo.Mexico.SDA.WeatherVaults.Nexus.ShadowPhanTom_Studio_2048_sda.jpg"
+    },
+    {
+      "source": "https://sda.studio/application/files/3017/8976/4817/2024.12.04.02.023.-234.Huejotzingo.Mexico.SDA.WeatherVaults.Nexus.ShadowPhanTom_Studio_2048_sda.jpg",
+      "output": "application/files/3017/8976/4817/2024.12.04.02.023.-234.Huejotzingo.Mexico.SDA.WeatherVaults.Nexus.ShadowPhanTom_Studio_2048_sda.jpg"
+    },
+    {
+      "source": "https://sda.studio/application/files/4717/3779/1366/2024.SDA24.Stickers.006_f2e5a283-c773-4081-b1e6-1b38b0aea5f0_NeuralAlchemist.jpeg",
+      "output": "application/files/4717/3779/1366/2024.SDA24.Stickers.006_f2e5a283-c773-4081-b1e6-1b38b0aea5f0_NeuralAlchemist.jpeg"
     }
   ],
   "references": [
