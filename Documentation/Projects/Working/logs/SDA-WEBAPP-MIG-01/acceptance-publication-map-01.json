@@ -1,0 +1,77 @@
+{
+  "purpose": "Resolve historical pending labels against exact independent LOCAL PASS and published implementation commit",
+  "createdUtc": "2026-11-22T06:02:19.035Z",
+  "continuation": {
+    "function": "SDA-WEBAPP-MIG-01-I",
+    "phase": "Documentation-only continuation under latest user instruction",
+    "worker": "/root/sol_worker",
+    "configuration": "gpt-6.1-sol/medium requested and explicit launch guarantee; actual telemetry unavailable",
+    "scope": "Separate capacity correction and independent local PASS-to-published-commit mapping; preserve all accepted files/source/workflows and prior lifecycle/history",
+    "authority": "Latest explicit user instruction relayed by coordinator; same registered function and owned evidence location; no new capacity/role/scope decision or lifecycle reset",
+    "lifecycle": "New documents frozen for independent affected R1-R8; no commit/push before that gate",
+    "effectsExcluded": "No runtime/source/workflow/accepted JSON edit, product test suite, cloud/load/DNS/TLS/identity/retirement effect"
+  },
+  "publishedImplementation": {
+    "commit": "d4d873225c1399811a2392c79288ef26de4bc148",
+    "tree": "01d325ea1b5a819a318dc4b28ff406675ec0e0bd",
+    "branch": "agents/sda-website-migration-setup",
+    "url": "https://github.com/B-D-D-B/PublishGraph.Foundation/commit/d4d873225c1399811a2392c79288ef26de4bc148"
+  },
+  "committedEvidence": {
+    "independentReview": {
+      "path": "Documentation/Projects/Working/logs/SDA-WEBAPP-MIG-01/independent-result-review-02.json",
+      "gitBlob": "1ae2e78aad62b2231959ad2bde9b8290a618385a",
+      "sha256": "1a356632b5dbfbfd7ffc50339231bdfce20d5b16ea06da8caf2e1e328bfa81f8",
+      "bytes": 1743
+    },
+    "acceptedResult": {
+      "path": "Documentation/Projects/Working/logs/SDA-WEBAPP-MIG-01/result-freeze-02.json",
+      "gitBlob": "edb4e4b7ae00de8107561bdfa2416fb7b2843cd6",
+      "sha256": "e40ae82c51f9eef982e9bd638b913037cdce8206198251b3cfcd12de2e17760f",
+      "bytes": 37436
+    },
+    "acceptedOwnerPacket": {
+      "path": "Documentation/Projects/Working/logs/SDA-WEBAPP-MIG-01/owner-handoff-02.json",
+      "gitBlob": "b134b5c4b412a71d25a987e42cb21f2c77accc7f",
+      "sha256": "022af5259238a6358e0a68d46f3e75ad4ef4dbc9a7e40d0ed48eefb9d44ca64e",
+      "bytes": 12802
+    },
+    "reviewedWorkingPreimage": {
+      "path": "Documentation/Projects/Working/logs/SDA-WEBAPP-MIG-01/W3-accepted-preimage.md",
+      "gitBlob": "00fb745360f7b00193f3468393d1a289a54c11b2",
+      "sha256": "9dd60d0bd791f09bd7661cc77e790b266cf0adac8568b894456a5d4a3917b92c",
+      "bytes": 39075
+    }
+  },
+  "acceptance": {
+    "disposition": "PASS",
+    "reviewer": "/root/astra_reviewer",
+    "dimensions": {
+      "R1": "pass: static behavior and corrected app-only identity guard",
+      "R2": "pass: scoped local requirements covered; downstream dependencies explicitly blocked",
+      "R3": "pass: exact route/content/header/error and owner packet contracts",
+      "R4": "pass: authenticated client/principal/app/plan invariants bound",
+      "R5": "pass: focused positive/negative guard tests and adverse history preserved",
+      "R6": "pass: app-only RBAC and preserved ownership; no permission expansion",
+      "R7": "pass: proportionate implementation and necessary outputs",
+      "R8": "pass:115 identities,104 unchanged entries and exact ZIP independently verified"
+    },
+    "closedFindings": [
+      "F01",
+      "F02"
+    ],
+    "primaryFinalAssertions": {
+      "pass": 2384,
+      "fail": 0,
+      "total": 2384
+    },
+    "limits": "No actual owner release packet or cloud READY, Linux integration, OAuth, DNS/TLS, capacity or full migration acceptance. No deletion."
+  },
+  "historicalPendingLabel": {
+    "path": "owner-handoff-02.json#/status",
+    "value": "F01/F02 corrected exact local result proposed; independent affected R1-R8 pending; no live effects",
+    "interpretation": "This immutable preparation label is historical. The exact independent review above awards LOCAL PASS and F01/F02 closure, published in the implementation commit. It does not award actual owner release, CAP-01 or any cloud readiness."
+  },
+  "preservation": "All referenced digests and Git object IDs were computed from the fixed published commit and compared with current protected bytes. No earlier evidence is modified.",
+  "consumer": "Coordinator and infrastructure owner use this mapping to distinguish independent LOCAL acceptance from historical preparation labels and future cloud gates."
+}

@@ -1,0 +1,94 @@
+{
+  "purpose": "Correct provisional Frame startup capacity input without rewriting the accepted owner packet",
+  "createdUtc": "2026-11-22T06:02:19.035Z",
+  "continuation": {
+    "function": "SDA-WEBAPP-MIG-01-I",
+    "phase": "Documentation-only continuation under latest user instruction",
+    "worker": "/root/sol_worker",
+    "configuration": "gpt-6.1-sol/medium requested and explicit launch guarantee; actual telemetry unavailable",
+    "scope": "Separate capacity correction and independent local PASS-to-published-commit mapping; preserve all accepted files/source/workflows and prior lifecycle/history",
+    "authority": "Latest explicit user instruction relayed by coordinator; same registered function and owned evidence location; no new capacity/role/scope decision or lifecycle reset",
+    "lifecycle": "New documents frozen for independent affected R1-R8; no commit/push before that gate",
+    "effectsExcluded": "No runtime/source/workflow/accepted JSON edit, product test suite, cloud/load/DNS/TLS/identity/retirement effect"
+  },
+  "protectedOwnerPacket": {
+    "path": "Documentation/Projects/Working/logs/SDA-WEBAPP-MIG-01/owner-handoff-02.json",
+    "gitBlob": "b134b5c4b412a71d25a987e42cb21f2c77accc7f",
+    "sha256": "022af5259238a6358e0a68d46f3e75ad4ef4dbc9a7e40d0ed48eefb9d44ca64e",
+    "bytes": 12802
+  },
+  "localAcceptanceMapping": "acceptance-publication-map-01.json",
+  "override": {
+    "onlyField": "capacity.combinedFixtureInputs.startupSample",
+    "historicalValue": "50firstparty resources7540651decoded LIVE/local identical. liveencoded2354423/transfer2368697;localencoded3344535/transfer3358733 (~42%more BrotliFastest transfer). Use~3.36MB/viewer local transfer and10coldviewer~33.6MB fixture before Feeds/media/CPU compression; not fullgraph9.66MB.",
+    "historicalLocalTransferBytes": 3358733,
+    "historicalTenColdApproxMB": 33.6,
+    "rule": "Treat the old3,358,733B/~33.6MB local transfer scenario as historical. Use the provisional corrected values below for this startupSample field only. Other accepted owner-packet fields, gates and obligations remain unchanged."
+  },
+  "correctedProvisionalStartupSample": {
+    "provenance": "Latest user-reported Frame candidate measurements relayed by coordinator; Frame independent review remains pending; this worker has not measured or independently verified the candidate ZIP",
+    "frameCandidateZipSha256Reported": "a169b50be285539ff1ddf2903732ab493674721feb0b545fbe1286b27c94c7b1",
+    "firstPartyResourceCount": 50,
+    "live": {
+      "encodedBytes": 2354423,
+      "decodedBytes": 7540651,
+      "transferBytes": 2368697
+    },
+    "localCandidate": {
+      "encodedBytes": 2354423,
+      "decodedBytes": 7540651,
+      "transferBytes": 2368697
+    },
+    "tenColdViewerArithmetic": {
+      "viewerCount": 10,
+      "transferBytes": 23686970,
+      "decimalMB": 23.68697,
+      "roundedDecimalMB": 23.69,
+      "interpretation": "Simple unshared ten-cold-viewer arithmetic (~23.69MB), not measured combined load or a peak/capacity guarantee."
+    },
+    "scope": "Frame first-party startup cohort. External Feeds/media traffic is excluded. Website document/assets, shared cache reuse across the three homepage iframes, CPU/compression cost and external latency require separate combined measurement. Do not multiply three iframe graphs independently without cache evidence.",
+    "frameHtmlDocumentAllowance": {
+      "inclusionWithin50ResourceCohort": "UNVERIFIED in the user-reported inputs available here",
+      "condition": "If the Frame HTML document is excluded from the reported cohort, add its measured transfer bytes to the per-Frame-viewer2368697B allowance and ten times that document allowance to23686970B for ten cold Frame viewers. Do not assume zero or add it twice if inclusion is later proved.",
+      "separateWebsiteAllowance": "Website HTML/assets are separate combined-fixture inputs and do not substitute for the conditional Frame HTML document allowance.",
+      "measurementStatus": "No new measurement or resolved inclusion claim; actual combined homepage three-iframe document count/cache behavior remains an owner fixture concern."
+    }
+  },
+  "additionalUserReportedFrameMetadata": {
+    "status": "Supporting pending Frame evidence only; not independently accepted website/Frame/CAP-01 results",
+    "expandedRawInventory": {
+      "canonical": 302,
+      "legacy": 299,
+      "includes": ".br/.gz variants; raw expanded inventory is not startup count, decoded startup bytes or wire transfer"
+    },
+    "known404ChecksReported": "415/416 known404; retained exactly as supplied, without reconstructing an unprovided denominator or HTTP status semantics",
+    "bootIntegrityChecks": 41,
+    "bootIntegrityDisposition": "unchanged as reported",
+    "variantBoundary": "Legacy variant has no feed-switch menu; preserve variant-specific acceptance and do not assign canonical menu-switch journeys to it."
+  },
+  "acceptanceBoundary": "NO CAP-01 or cloud/capacity acceptance. Frame independent review, actual owner release, hostname/OAuth/environment/infra/TLS-DNS/Linux/capacity gates remain pending. This addendum changes no threshold, rate, role, runtime behavior or authorization.",
+  "checks": {
+    "metadataOnly": true,
+    "sharedLiveLocalNumbers": true,
+    "arithmeticVerified": true,
+    "noProductSuitesOrLoadRun": true
+  },
+  "consumer": "Infrastructure owner and coordinator use the corrected provisional startup scenario in later combined fixture design; retain immutable owner-handoff02 as accepted historical source.",
+  "correctionHistory": [
+    {
+      "finding": "F03",
+      "severity": "low",
+      "dimensions": [
+        "R2",
+        "R4"
+      ],
+      "reviewer": "/root/astra_reviewer",
+      "priorDisposition": "REMEDIATE: conditional Frame HTML allowance omitted; startup arithmetic otherwise correct",
+      "reviewedPreimage": {
+        "path": "capacity-addendum-01-reviewed-preimage.json",
+        "sha256": "7ff7535547363995612f7f795d1db5ae53fc7a1851bec21b78fdfd44114f1609"
+      },
+      "correction": "Clarified Frame HTML inclusion is unverified and its measured transfer must be added if excluded; no number, threshold, source/runtime or acceptance decision changed."
+    }
+  ]
+}
