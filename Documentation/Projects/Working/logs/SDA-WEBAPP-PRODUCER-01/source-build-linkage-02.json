@@ -1,0 +1,157 @@
+{
+  "function": "SDA-WEBAPP-PRODUCER-01",
+  "lifecycle": "Bounded producer/source-build outcome complete with independent PASS; deployment/consumer activation remains blocked",
+  "sourcePublication": {
+    "repository": "B-D-D-B/PublishGraph.Foundation",
+    "sourceCommit": "d92846a5f0e4951cc333d949ccf22fe64bd8f01b",
+    "sourceTree": "cdff3b8dfd9c77771424357705844b938afe6f3c",
+    "url": "https://github.com/B-D-D-B/PublishGraph.Foundation/commit/d92846a5f0e4951cc333d949ccf22fe64bd8f01b",
+    "branch": "agents/sda-website-migration-setup",
+    "identities": [
+      {
+        "path": ".github/workflows/build-sda-website.yml",
+        "sha256": "c1cc496b3b07daa350dfd8e3720123e7250510b957bc236ed7ebb2c373f1a90b",
+        "gitBlob": "3506b6cdf22aa269ec65b22fece7360f8445c163"
+      },
+      {
+        "path": "Static/SDA-WebApp/tools/producer.cjs",
+        "sha256": "34a300b3e561be7f46b47f6284e4c7d51fc2f72290003fb772a29f159a849ac8",
+        "gitBlob": "2fa17877ac8fc41d2c7ad2a90d5d71eaba0cb870"
+      },
+      {
+        "path": "Static/SDA-WebApp/tools/check-producer.cjs",
+        "sha256": "0d1d166e61763704c508f6e603dbb3d3ef15f68284ccd4e0295ac849f581629f",
+        "gitBlob": "0ca1d17d33b1f05a0e9cc41f43e9b60378d7e833"
+      },
+      {
+        "path": "Static/SDA-WebApp/tools/artifact-protocol.json",
+        "sha256": "cdb8ac1509a2b3d30811d40cb81c62fd2901fc9f01cb1b2ddaced511ec66bc39",
+        "gitBlob": "76be527627793075ee7e61adcd416a96825853ff"
+      },
+      {
+        "path": "Static/SDA-WebApp/tools/validate-artifact-protocol.cjs",
+        "sha256": "56a527a537a195f68fcdca07c83315984b446e1d1faa2374cd9334b40b4f9773",
+        "gitBlob": "5d372d655d51ce81f2fa3531e308966ace83f6df"
+      },
+      {
+        "path": "Static/SDA-WebApp/tools/package.cjs",
+        "sha256": "4b8c64d649e39b0abc2c85efdf80b4213ce9c75ff6489bcae0ec8cc32e55c1be",
+        "gitBlob": "c473869403b91d07bbd5d7055a13b3067181686b"
+      },
+      {
+        "path": ".github/workflows/deploy-sda-website.yml",
+        "sha256": "07d6c5532a91c8fbf2d85ad28637d7d8ebb3aa587fdf86a2065d3c6ee17fbe2f",
+        "gitBlob": "54c1488fee2c7e540f588af3ed64a2ccfe47816b"
+      },
+      {
+        "path": ".github/sda-website-release-bindings.json",
+        "sha256": "82a24e98181e3593026aed76bbabfe7fdcb9aeb05fe23d739a599e6257fd9578",
+        "gitBlob": "b56bcc52b6e8cfd170f49deda6dbd0653b7f5107"
+      }
+    ],
+    "meaning": "This is the exact build source revision. The later metadata-only publication commit is separate and is not the artifact source."
+  },
+  "independentAcceptance": {
+    "path": "independent-source-build-acceptance-02.json",
+    "sha256": "3c14d7f9c4413e247630c7c358d4aab4c2103f4ec580a348d21bf9c550f2caa5",
+    "reviewer": "/root/astra_reviewer",
+    "worker": "/root/sol_worker",
+    "gateId": "SDA-WEBAPP-PRODUCER-01-SOURCE-BUILD-R1-R8-02",
+    "reviewedAtUtc": "2026-11-22T09:06:07.507Z",
+    "dimensions": {
+      "R1": "pass: exact push run completed successfully; observed clean source and accepted package bytes verified",
+      "R2": "pass: publication, source/toolchain, bundle/evidence, expiry and bounded effect obligations covered",
+      "R3": "pass: exact two-file consumer bundle; independent supplemental evidence and all protocol linkages verified",
+      "R4": "pass: commit/tree/input/toolchain/run/artifact/archive/payload/receipt identities agree",
+      "R5": "pass: actual first-attempt successful lifecycle; earlier failed validation and STOPPED history preserved; expiry currently valid",
+      "R6": "pass: source/build only; protected deploy workflow and inactive bindings unchanged; no Azure or OIDC",
+      "R7": "pass: bounded producer and retained evidence serve existing release lifecycle without extra authority",
+      "R8": "pass:17 frozen identities,467 source inputs,452 content files,458 inner entries,2 outer entries and1 evidence archive entry independently verified; native jobs/artifacts corroborated"
+    },
+    "closedFindings": [
+      "SDA-WEBAPP-PRODUCER-01-F01",
+      "SDA-WEBAPP-PRODUCER-01-F02"
+    ],
+    "scope": "Actual exact corrective source publication and Linux hosted source/build artifact acceptance only"
+  },
+  "protocolValidation": {
+    "path": "accepted-protocol-result-02.json",
+    "sha256": "ed2929f7c261ccb5387266ba6121566addeaca11fa15edf7b178847ae6f24ea8",
+    "expectedPath": "source-build-expected-02.json",
+    "expectedSha256": "a06501db505d494ea17375c6f4554232c3e4c83637e7aa1d13015af22af5fcef",
+    "observationsPath": "source-build-observations-02.json",
+    "observationsFileSha256": "82c36987c3f8ff612827438bce022996d2a9370be9c049d649d13b0f4791339f",
+    "observationsCanonicalSha256": "6a91a6855d33f3d9ce269d7fb7060129853bd74bfd5290f267cd921477d6e9e2",
+    "method": "Unchanged accepted validator read already-downloaded exact outer ZIP/two-filebundle and reviewer-owned rawreceipt; actual outer2 and inner458 inventories verified. Fresh expected/packet files completed mechanically from exact independent receipt, original candidates preserved. No new network/download/effect."
+  },
+  "run": {
+    "id": 45005419661,
+    "attempt": 1,
+    "url": "https://github.com/B-D-D-B/PublishGraph.Foundation/actions/runs/45005419661",
+    "event": "push",
+    "sourceCommit": "d92846a5f0e4951cc333d949ccf22fe64bd8f01b",
+    "path": ".github/workflows/build-sda-website.yml",
+    "branch": "agents/sda-website-migration-setup",
+    "status": "completed",
+    "conclusion": "success"
+  },
+  "artifacts": [
+    {
+      "id": 14747831820,
+      "name": "sda-website-d92846a5f0e4951cc333d949ccf22fe64bd8f01b-45005419661-1",
+      "archiveSha256": "5ef14b5853bfceda00d67ac1059947dbc655622a22793e4f5f7cc7363d7f2a29",
+      "bytes": 143293366,
+      "createdAtUtc": "2026-11-22T09:01:16Z",
+      "expiresAtUtc": "2026-11-29T09:01:13Z",
+      "expiredAtObservation": false,
+      "metadataUrl": "https://api.github.com/repos/B-D-D-B/PublishGraph.Foundation/actions/artifacts/14747831820"
+    },
+    {
+      "id": 14747014913,
+      "name": "sda-website-d92846a5f0e4951cc333d949ccf22fe64bd8f01b-45005419661-1-evidence",
+      "archiveSha256": "ca1a8bbedac3b79fcac3a34ca191185d21cc93c650bc8aedeec9e8d52b30f227",
+      "bytes": 153723,
+      "createdAtUtc": "2026-11-22T09:01:18Z",
+      "expiresAtUtc": "2026-11-29T09:01:17Z",
+      "expiredAtObservation": false,
+      "metadataUrl": "https://api.github.com/repos/B-D-D-B/PublishGraph.Foundation/actions/artifacts/14747014913"
+    }
+  ],
+  "payload": {
+    "zipSha256": "0df5b8ad9471c06ee302596c6e73a1a9db450c3d754265dcebe531a54c2d8c9a",
+    "packageReceiptSha256": "b9dd9e68ff277323c132c4e0fc0e8b82892079563c85a7cd5ae232bd6c5dfc99",
+    "producerEvidenceSha256": "773dae7c2d3891dd91f5f4fb272593ee7a5fa22f9b640c2ccd2bf420584dea31",
+    "sourceInputsSha256": "f09316be1a63f5ce04619b7c97b59cddc86c45a90676fbbefffe4a9853d8bc76",
+    "toolchainSha256": "4a8d7fb9a458796e42fb2d60e03986486b2b6c88345f6dc30e5a3df113e59ead",
+    "archiveInventorySha256": "8804bb3df56481138e5d77800d125a6975dbbe0d974336e8de6e3664cb952de9",
+    "sourceDirty": false,
+    "preAndPostRawStatusEmpty": true,
+    "preBuildIgnoredInputsEmpty": true,
+    "sourceInputs": 467,
+    "contentFiles": 452,
+    "innerEntries": 458,
+    "bundleEntries": 2,
+    "evidenceEntries": 1
+  },
+  "localEvidence": {
+    "effectPacketSha256": "b785eb3d178372dc14a664f77def36b5ecd23c13a43e952ceeda13e0ec83a485",
+    "effectResultFreezeSha256": "76b17b1811cdcebc7d1b8edbdd29f5584d00b223dab08b7ff0ff33c294feab18",
+    "rawBundleArchivePath": "artifacts/SDA-WEBAPP-PRODUCER-01/observed-02/bundle-artifact.zip",
+    "rawEvidenceArchivePath": "artifacts/SDA-WEBAPP-PRODUCER-01/observed-02/evidence-artifact.zip",
+    "note": "Large immutable rawarchives and localcandidatepreimages remain outsideGit index. Retrieve future candidate bytes only by exact IDs/digests and revalidate availability,expiry and scope.467inputrows are in exact evidenceartifact, not duplicated in this record."
+  },
+  "priorFailure": {
+    "runId": 45004667922,
+    "state": "STOPPED history retained; not rerun or erased",
+    "effectResultFreezeSha256": "edc18fedddc952ecbd5267ffc887820151b88d294c85b327b7ef66ce6706d287"
+  },
+  "metadataPublication": {
+    "paths": "Only five new JSONfiles below Documentation/Projects/Working/logs/SDA-WEBAPP-PRODUCER-01/",
+    "triggerExcluded": true,
+    "proof": "Every staged path compared against exact buildworkflow paths: workflowfile,Static/SDA-WebApp/**,Static/SDA-Standalone/**,.gitattributes,.gitignore,global.json,Directory.Build.props,Directory.Packages.props,NuGet.Config. None match. Sole DEPLOY remainsworkflow_dispatch only.",
+    "thirdBuildAuthorized": false
+  },
+  "limits": "No App Service runtime/deployment, capacity, immutable hosted-image guarantee, future availability or retention durability, environment/app consumer wrapper, binding activation, Azure/OIDC or full migration acceptance. Native expiry and runner versions are observed facts. Future use must revalidate availability and scope.",
+  "configuration": "Sol6.1medium/Astra6medium explicit launch guarantees; actual model runtime telemetry unavailable",
+  "recordedUtc": "2026-11-22T09:08:43.838Z"
+}
