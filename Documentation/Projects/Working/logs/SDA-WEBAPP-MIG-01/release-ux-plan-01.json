@@ -1,0 +1,299 @@
+{
+  "function": "SDA-WEBAPP-MIG-01-I",
+  "phase": "Affected release UX plan only after new explicit user directive",
+  "createdUtc": "2026-11-22T06:52:10.257Z",
+  "registration": {
+    "worker": "/root/sol_worker",
+    "reviewer": "/root/astra_reviewer",
+    "requestedWorker": "gpt-6.1-sol/medium explicit launch guarantee; actual telemetry unavailable",
+    "requestedReviewer": "gpt-6-astra/medium explicit launch guarantee required; actual telemetry unavailable",
+    "track": "Normal",
+    "rationale": "Conform to explicit accepted release constraints using fixed service bindings and existing app-only identity/SCM guards; no new host/auth/capacity/role or promotion semantics are chosen. Missing provider/evidence inputs block activation.",
+    "continuity": "Same registered function; prior local runtime PASS, F01/F02/F03 closures and published history retained. This is an affected readiness revision, not a reset or replacement initial execution.",
+    "lifecycle": "Frozen proposed local correction; implementation waits for exact independent D1-D8 READY; future activation/dispatch remains separately blocked."
+  },
+  "userRequirements": [
+    "Exactly one manual deployment workflow for this repository/service, workflow_dispatch with only environment choice dev|test|prod.",
+    "Choice selects fixed reviewed GitHub environment/subscription/RG/app/plan/app-only OIDC/FIC plus immutable accepted Actions artifact run ID/name/hash and stage receipts. No freeform target/ref/run input, arbitrary dispatch ref, rebuild-at-deploy, broad identity, coordinator CLI/Kudu, or fake approval boolean.",
+    "Preserve owner literal-false SCM/basic-publishing checks and runtime/host contracts until exact owner host/settings/SCM and affected READY. Preserve Dev-to-Test-to-Prod, DOMAIN-01, default-host/custom-domain/cutover and capacity/auth gates.",
+    "Do not invent absent app/provider/environment/artifact outputs. Current bindings must stay inactive, including unresolved sda-website-* versus owner sda-* agreement. No dispatch, environment creation, cloud/Terraform/retirement effect.",
+    "Authorized local commit/push follows independent affected R1-R8 of the aggregate correction."
+  ],
+  "authoritySnapshot": [
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation/AGENTS.md",
+      "sha256": "d3b2d81b9351aaed4b8644a223829787d73cc98c9efb31aa0968dce33d9d9339"
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/BDDB.AITooling/guidance/standard-practices.md",
+      "sha256": "a0182beeb6266a0627007ec0a2d255e3feba60578c640e67a020218709507bce"
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/BDDB.AITooling/guidance/worker-review-cycle.md",
+      "sha256": "c9dda120c85d4b03976172d8104be52c30c2cc02ad87db556074b85b48e22ff8"
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/BDDB.AITooling/guidance/technical-audit-rubric.md",
+      "sha256": "e9cc31452998747d3a7efde04ccef40dec346a8305be6efdb05873ce6cb869ef"
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/BDDB.AITooling/guidance/result-audit-rubric.md",
+      "sha256": "a259be47851e260c2bb3ef12f71112f7ecf83d49c85a8ed091494ee169b2cb51"
+    }
+  ],
+  "baseline": {
+    "branch": "agents/sda-website-migration-setup",
+    "commit": "90b090cd3b5a5abfe2c0548a571663218953648a",
+    "upstream": "origin/agents/sda-website-migration-setup",
+    "repository": {
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "id": "R_kgDOUbgZaw",
+      "nameWithOwner": "B-D-D-B/PublishGraph.Foundation"
+    },
+    "protectedRuntimeTree": "2a849332d7d6e3367b5b194c01cf21e4c2a5dabe",
+    "sourceIdentities": [
+      {
+        "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/.github/workflows/deploy-sda-website.yml",
+        "relativePath": ".github/workflows/deploy-sda-website.yml",
+        "sha256": "03e1d967172e4ee11e5d2861bc837503ce0b74ff612370d23d360149efd0455a",
+        "gitBlob": "7c9186ecc404bc0c267b336abe7e4bf4c5ee3ead"
+      },
+      {
+        "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Static/SDA-WebApp/tools/release-target.cjs",
+        "relativePath": "Static/SDA-WebApp/tools/release-target.cjs",
+        "sha256": "18397f600bf767d09e1f4b64a3f8f71f69b077bfa5fcbb3c40282bdb88171de8",
+        "gitBlob": "23fd57c513abde5c86a16b854c5ea16883fd7977"
+      },
+      {
+        "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Static/SDA-WebApp/tools/check-release-target.cjs",
+        "relativePath": "Static/SDA-WebApp/tools/check-release-target.cjs",
+        "sha256": "4f9ebeb05f220e34898e189fbd3ca89eb3e24316bde0a032bd882c26c10ec5dd",
+        "gitBlob": "edc121a995cfad488954f6e9007c705d457f79e7"
+      },
+      {
+        "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Static/SDA-WebApp/tools/check-workflow.cjs",
+        "relativePath": "Static/SDA-WebApp/tools/check-workflow.cjs",
+        "sha256": "aea599c3668a4c8f3ae5f475effb9348e120c28dfbb90a8c805807ad3e2fcc83",
+        "gitBlob": "0206ffd0e75af0c94195de316c565e714adcee65"
+      },
+      {
+        "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Static/SDA-WebApp/tools/common.cjs",
+        "relativePath": "Static/SDA-WebApp/tools/common.cjs",
+        "sha256": "b328c3d093d458e0326e16f4653ba6c65d8d368848409876c5dfca4c5e701ba0",
+        "gitBlob": "690908fdd24c6d6d84bb7d5b95b562d1063d80d2"
+      },
+      {
+        "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Static/SDA-WebApp/README.md",
+        "relativePath": "Static/SDA-WebApp/README.md",
+        "sha256": "dbe5eb98c665faaaac2c20455e411c6db828ede69356edc81034d0a97cf6a4f5",
+        "gitBlob": "d6e0aba73886f05cfa0df5b5432db0759b51544b"
+      },
+      {
+        "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/.gitattributes",
+        "relativePath": ".gitattributes",
+        "sha256": "91022b0ce5958783be7b8e8fcdea1729a9f23becea9b038c2df7868d39cf70f6",
+        "gitBlob": "39ff214e9e972552d18cc052e2c91274840761f1"
+      },
+      {
+        "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Documentation/Projects/Working/logs/SDA-WEBAPP-MIG-01/owner-handoff-02.json",
+        "relativePath": "Documentation/Projects/Working/logs/SDA-WEBAPP-MIG-01/owner-handoff-02.json",
+        "sha256": "022af5259238a6358e0a68d46f3e75ad4ef4dbc9a7e40d0ed48eefb9d44ca64e",
+        "gitBlob": "b134b5c4b412a71d25a987e42cb21f2c77accc7f"
+      },
+      {
+        "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Documentation/Projects/Working/logs/SDA-WEBAPP-MIG-01/capacity-addendum-01.json",
+        "relativePath": "Documentation/Projects/Working/logs/SDA-WEBAPP-MIG-01/capacity-addendum-01.json",
+        "sha256": "82537d85319d5e6cd68e3a0ca8972e643f283c9af06526e21da657e7618ef71d",
+        "gitBlob": "b6fdee07f28163b98ebbcd1fe94a7cc980ae2c55"
+      },
+      {
+        "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Documentation/Projects/Working/logs/SDA-WEBAPP-MIG-01/acceptance-publication-map-01.json",
+        "relativePath": "Documentation/Projects/Working/logs/SDA-WEBAPP-MIG-01/acceptance-publication-map-01.json",
+        "sha256": "955cb3918b744e2fe6a41d96f74bb08ee2450ce6aa04df3a7d136b1f24e2ccbe",
+        "gitBlob": "39aa237cc2dedf5313fe2eeef1c7d6ef006e20cc"
+      },
+      {
+        "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Documentation/Projects/Working/logs/SDA-WEBAPP-MIG-01/independent-result-review-02.json",
+        "relativePath": "Documentation/Projects/Working/logs/SDA-WEBAPP-MIG-01/independent-result-review-02.json",
+        "sha256": "1a356632b5dbfbfd7ffc50339231bdfce20d5b16ea06da8caf2e1e328bfa81f8",
+        "gitBlob": "1ae2e78aad62b2231959ad2bde9b8290a618385a"
+      },
+      {
+        "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Documentation/Projects/Working/logs/SDA-WEBAPP-MIG-01/result-freeze-02.json",
+        "relativePath": "Documentation/Projects/Working/logs/SDA-WEBAPP-MIG-01/result-freeze-02.json",
+        "sha256": "e40ae82c51f9eef982e9bd638b913037cdce8206198251b3cfcd12de2e17760f",
+        "gitBlob": "edb4e4b7ae00de8107561bdfa2416fb7b2843cd6"
+      },
+      {
+        "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Static/SDA-WebApp/Program.cs",
+        "relativePath": "Static/SDA-WebApp/Program.cs",
+        "sha256": "5eda323ae16646840401d197c2e47e59e734d11136b166a7ea92835a6d6d2966",
+        "gitBlob": "b7fcdf31ec1ba40d13b604b7e090ed2109e35731"
+      },
+      {
+        "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Static/SDA-WebApp/SDA.Website.csproj",
+        "relativePath": "Static/SDA-WebApp/SDA.Website.csproj",
+        "sha256": "096d7f7151530e7a45b06c4309c98670f7e37112f74803652cf43b2ed66096bb",
+        "gitBlob": "ed54625d5a6c77a92e6d234d800dbbd89836c151"
+      },
+      {
+        "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Static/SDA-WebApp/content-contract.json",
+        "relativePath": "Static/SDA-WebApp/content-contract.json",
+        "sha256": "e1f45d775db89ae580694c16daea38550db0ce133472ea6388f83efee175e99e",
+        "gitBlob": "2eb382cce97873c2bb665eeb5b3382b1eb7b92b9"
+      }
+    ],
+    "downloadAction": {
+      "repository": "actions/download-artifact",
+      "tag": "refs/tags/v4",
+      "commit": "d3f86a106a0bac45b974a628896c90dbdf5c8093",
+      "provenance": "read-only GitHub tag ref resolved mechanically; pin exact commit during implementation"
+    }
+  },
+  "observedProblems": [
+    "Existing dispatch choice is already limited, but GitHub environment variables can independently select targets and packet bytes.",
+    "Native Actions dispatch ref is not refused; deployment rebuilds/packages source instead of consuming a preaccepted fixed run/artifact payload.",
+    "The local accepted ZIP is not an accepted Actions run artifact, and no actual target app/OIDC/environment agreement/stage release packet exists.",
+    "Current app-only authenticated-client/principal binding and literal-false FTP/SCM policy checks must remain effective."
+  ],
+  "ownedPaths": {
+    "existing": [
+      ".github/workflows/deploy-sda-website.yml",
+      "Static/SDA-WebApp/tools/release-target.cjs",
+      "Static/SDA-WebApp/tools/check-release-target.cjs",
+      "Static/SDA-WebApp/tools/check-workflow.cjs",
+      "Static/SDA-WebApp/README.md"
+    ],
+    "new": [
+      ".github/sda-website-release-bindings.json",
+      "Static/SDA-WebApp/tools/release-binding.cjs",
+      "Static/SDA-WebApp/tools/check-release-binding.cjs"
+    ],
+    "evidence": "New unique immutable receipts only under Documentation/Projects/Working/logs/SDA-WEBAPP-MIG-01/; attributed phase in existing Working only if needed, retaining guarded preimage.",
+    "excluded": "No Static/SDA-Standalone, Program.cs, project/content contract, package/build tooling, accepted owner02/addendum/mapping/history, root attributes, other service workflow, producer/build workflow, shared Terraform or original checkout edit."
+  },
+  "proposedBinding": {
+    "path": ".github/sda-website-release-bindings.json",
+    "version": 1,
+    "repository": "B-D-D-B/PublishGraph.Foundation",
+    "workflowPath": ".github/workflows/deploy-sda-website.yml",
+    "allowedWorkflowRef": "refs/heads/main",
+    "knownInfrastructure": {
+      "dev": {
+        "subscriptionId": "cc1fa56e-a8ce-411f-bb5c-58e96d9ac4f8",
+        "resourceGroup": "sda-dev",
+        "planId": "/subscriptions/cc1fa56e-a8ce-411f-bb5c-58e96d9ac4f8/resourceGroups/sda-dev/providers/Microsoft.Web/serverfarms/ASP-sda-dev-fusion",
+        "observedSku": "F1",
+        "requiredSku": "B1",
+        "region": "westus3",
+        "capacity": 1,
+        "linux": true
+      },
+      "test": {
+        "subscriptionId": "5c813ecc-3c19-44de-b676-304116fc869d",
+        "resourceGroup": "sda-test",
+        "planId": "/subscriptions/5c813ecc-3c19-44de-b676-304116fc869d/resourceGroups/sda-test/providers/Microsoft.Web/serverfarms/ASP-sda-test-fusion",
+        "observedSku": "F1",
+        "requiredSku": "B1",
+        "region": "westus3",
+        "capacity": 1,
+        "linux": true
+      },
+      "prod": {
+        "subscriptionId": "b7690041-454b-472b-b340-3d8dde115103",
+        "resourceGroup": "sda-prod",
+        "planId": "/subscriptions/b7690041-454b-472b-b340-3d8dde115103/resourceGroups/sda-prod/providers/Microsoft.Web/serverfarms/ASP-sda-prod-fusion",
+        "observedSku": "B3",
+        "requiredSku": "B3",
+        "region": "westus3",
+        "capacity": 1,
+        "linux": true
+      }
+    },
+    "environments": {
+      "dev": null,
+      "test": null,
+      "prod": null
+    },
+    "meaning": "Null means unavailable/inactive; resolver fails before GitHub environment selection, artifact download, Azure login or deployment. No enable/approved/ready flag can activate a null or incomplete binding.",
+    "futureCompleteBinding": "An independently reviewed source change must bind the exact existing GitHub environment and main-only deployment branch policy, actual app/default-host/settings/SCM owner receipt, tenant/client/principal/FIC/app role pair, accepted owner packet bytes/hash, auth/capacity/domain readiness, prior-environment acceptance, immutable Actions producer run/artifact ID/name/archive digest/payload ZIP hash/source commit and accepted result receipt. These values are not populated by this implementation.",
+    "receiptBoundary": "Receipt paths must stay under the owned Working logs release-evidence directory, be relative normalized files without symlinks/traversal, and have fixed SHA256 in the binding. Validate actual bytes plus expected function/gate/environment/app/package/source/disposition identities, not digest format or generic approval booleans. No new real receipt is fabricated."
+  },
+  "workflowDesign": {
+    "singleWorkflow": "Revise the existing workflow only. One environment input, no target/ref/artifact/run/identity override and no new manual or build workflow.",
+    "controlRef": "Fixed refs/heads/main, confirmed current repository default. Reject other branches/tags/SHAs/forks/event/input keys before checkout of deploy code, named GitHub environment, artifact or OIDC. Checkout github.sha only after this refusal. Future activation also requires actual preexisting main-only GitHub environment policy as an owner prerequisite; native UI ref selector is not an alternate release route.",
+    "resolveJob": "No OIDC permission. Read the committed fixed binding; current null entries fail immediately. For a future complete reviewed entry, verify source-pinned receipt bytes and exact read-only GitHub run/artifact/environment metadata using actions:read and contents:read. Existing environment must be observed and branch policy equal the reviewed main-only contract before the deploy job names it; 403/404 or missing policy stops, never creates or repairs an environment.",
+    "deployJob": "Needs successful resolver; GitHub environment name and OIDC/target values come only from that fixed selection, not repository/environment vars or user inputs. Keep contents:read/actions:read/id-token:write only where required, serialization per chosen environment and cancel-in-progress:false. Revalidate the same committed selection and receipt hashes in this job.",
+    "immutableArtifact": "Use the pinned download-artifact commit with exact accepted artifact ID/run/repository, never latest or name-only search. Before download require exact run success/conclusion/source commit/producer workflow and exact artifact ID/name/run/digest/nonexpired metadata. After download require the fixed website.zip and receipt inventory, no symlinks/traversal/unlisted conflicting payloads, and cryptographic payload ZIP/receipt hashes from the committed binding. Bind artifact acceptance and all stage receipts to this exact payload and source. A download action digest warning alone is not acceptance.",
+    "preloginOrder": "Ref/input/inactive-binding refusal -> source receipt identity/semantics -> GitHub environment/artifact metadata -> exact artifact download -> payload ZIP/receipt identity -> owner actual host/settings/SCM/auth/domain/capacity/prior-stage evidence -> Azure login. There is no build, restore, package, runtime suite or artifact upload in the deployment workflow.",
+    "existingGuard": "Reuse authenticated client-to-accepted-principal/app role and owner observed-plan evidence logic. Derive its target/identity packet only from validated committed selection. Remove externally supplied SDA_AUTH_READY or other approval toggles; actual fixed auth-disposition receipt is checked instead. Do not synthesize a true approval flag to satisfy the old interface. Preserve the exact actual!==false FTP/SCM guards, app-only reads and no shared-plan/Graph permission expansion.",
+    "deploymentBoundary": "Keep the existing deployment vector confined to the Actions job and exact verified ZIP/target, with an immediate payload hash recheck before deploy. No coordinator CLI/Kudu command or live workflow dispatch is executed in this campaign. Do not relax current startup/settings/SCM checks or choose an alternative SCM mechanism without exact owner contract and affected READY."
+  },
+  "interfaces": {
+    "resolver": "node Static/SDA-WebApp/tools/release-binding.cjs --resolve --environment <dev|test|prod> --output <fresh selection.json>. Workflow hardcodes the committed binding path; CLI reads actual GitHub event/repository/ref context and readonly GitHub metadata. Test exports accept synthetic contexts/transports; no production mock flag.",
+    "artifactCheck": "node Static/SDA-WebApp/tools/release-binding.cjs --verify-artifact --environment <enum> --directory <fresh accepted artifact directory> --output <fresh ready.json>. Revalidate fixed contract/receipt/payload hashes and produce only validated selection fields for the existing app-only guard; no caller target or arbitrary binding override.",
+    "existingGuard": "node Static/SDA-WebApp/tools/release-target.cjs --verify retains app-only Azure observations; data is supplied from the validated fixed selection/receipt object, not mutable Actions target variables. Focused fixture exports remain pure; command-line execution has no bypass/injected transport.",
+    "tests": [
+      "node Static/SDA-WebApp/tools/check-release-binding.cjs --output <fresh release-binding-check.json>",
+      "node Static/SDA-WebApp/tools/check-release-target.cjs --output <fresh release-target-check.json>",
+      "node Static/SDA-WebApp/tools/check-workflow.cjs --output <fresh workflow-check.json>"
+    ],
+    "outputs": "One service-specific committed binding and one small resolver/artifact validator, one focused mock checker, revisions to the existing app guard/checker/workflow/README, and necessary immutable check/review receipts. No general promotion controller/framework."
+  },
+  "orderedExecutionAfterReady": [
+    "Revalidate exact source/authority/HEAD hashes and clean owned paths; retain reviewed preimages before context-matching writes. New paths must not exist unexpectedly.",
+    "Create the single null/inactive fixed binding with known subscription/RG/plan facts; do not fill any missing app/environment/OIDC/artifact/stage value.",
+    "Implement minimal resolver/artifact validation and adapt existing app guard without weakening authenticated identity binding or literal-false policy assertions. Implement focused synthetic positive/negative checks.",
+    "Revise the one manual workflow to the fixed main-ref/two-job preenvironment resolver and immutable artifact consumer. Remove all build/package/upload-at-deploy steps and target/packet/approval variables. Pin new official download action to mechanically captured commit.",
+    "Run only the three focused node checker interfaces and syntax checks, retaining failures. Reuse accepted runtime/browser/content/package evidence because runtime and package sources are untouched. No full runtime suite unless a concrete new affected issue requires it.",
+    "Freeze complete changed source/evidence, exact source/authority/binding hashes and actual focused results for one independent affected R1-R8 review. Current inactive binding is the expected real outcome, not a successful deployment.",
+    "Only after scoped PASS, use already read commit/sync skills and existing user authorization to stage exact accepted owned paths, verify index/committed bytes, preserve hooks/signing, and push this isolated branch. No amend/force or default-branch merge. Preserve ignored private artifacts and immutable history."
+  ],
+  "acceptanceMatrix": [
+    {
+      "requirement": "One manual environment-only deployment UX",
+      "checks": "Inspect the complete workflow dispatch input key set; exactly environment choice dev/test/prod. Assert sole website manual workflow, no ref/run/target inputs or alternate deployment route."
+    },
+    {
+      "requirement": "Fixed target/OIDC/environment selection",
+      "checks": "Synthetic complete Dev/Test/Prod bindings select only their frozen target/identity/environment; arbitrary vars/input target overrides cannot change them. Wrong app/subscription/RG/plan/client/principal/FIC or environment branch policy fails before login."
+    },
+    {
+      "requirement": "No arbitrary dispatch ref",
+      "checks": "Main succeeds for synthetic fully accepted binding; feature/tag/SHA/fork/other event/additional input fails before checkout/environment/artifact/OIDC. Missing real environment or branch policy fails, not auto-create."
+    },
+    {
+      "requirement": "Current incomplete state safe",
+      "checks": "All three real committed null bindings fail with zero GitHub environment/job/login/deploy invocation. Candidate names and required B1 do not count as actual owner outputs."
+    },
+    {
+      "requirement": "Accepted immutable artifact only",
+      "checks": "Synthetic exact producer run/artifact metadata and ZIP hash pass. Wrong run/id/name/repo/source commit/producer/digest/conclusion/expired status, missing/deleted artifact, altered ZIP/receipt, unlisted file, symlink/traversal or latest-artifact fallback fails before Azure login. No compile/package command exists in the deployment path."
+    },
+    {
+      "requirement": "Actual stage/owner receipts, no fake toggles",
+      "checks": "Correct source-hashed receipt objects bind selected environment/app/payload/source and expected accepted gate. Missing DOMAIN-01, host/settings/SCM/auth/capacity/prior-environment/default-host/custom-domain stage evidence, wrong hash/status/scope or ready:true alone fails before login. Dev-before-Test and Test-before-Prod exact predecessor evidence required under owner stage contract."
+    },
+    {
+      "requirement": "Preserved existing security/host contract",
+      "checks": "Retain authenticated client/principal and app-only role positive/negative fixtures, no shared-plan/Graph calls; owner actual observed F1 cannot satisfy B1; FTP/SCM must remain literal false (true or string false fail). No new role, identity or host setting."
+    },
+    {
+      "requirement": "Bounded unchanged runtime/publication",
+      "checks": "Git changed-path assertions exclude all runtime/accepted artifacts/other owners. Exact preimage/index/blob hashes bind reviewed source and evidence; clean upstream publication. No runtime, cloud, capacity or full migration PASS inferred."
+    }
+  ],
+  "externalGates": {
+    "environmentAgreement": "sda-website-* versus sda-* unresolved; no environments created and no inferred FIC.",
+    "actualInfrastructure": "Actual app IDs/default hosts/startup port/settings/Always On/SCM/OIDC mapping and owner observed B1/B1/B3 verification receipts unavailable. Preserve existing known IDs and required versus observed SKU distinction.",
+    "artifactProducer": "No accepted immutable Actions run/artifact exists for the website package. This phase adds no producer workflow or fake run metadata; producer/owner must supply an exact independently accepted run/name/ID/digest/payload/receipt before future binding activation.",
+    "stageAuthority": "Actual owner DOMAIN-01 and exact complete owner plan/stage identities, auth/hostname/certificate/DNS/capacity and previous environment acceptance remain unresolved. Default-host and custom-domain/cutover checks remain owner gates; this workflow does not bypass them.",
+    "activation": "Any future non-null binding, ref/environment agreement, owner hosting/SCM change or alternate deployment method requires affected exact D1-D8 READY with actual evidence before dependent effect; current local implementation cannot activate deployment.",
+    "workflowToken": "Local gh repo-scoped token access and synthetic mocks do not prove workflow GITHUB_TOKEN can read artifact/run or environment/protection-policy endpoints. contents:read/actions:read are proposed minimal repository-token permissions, not an observed successful workflow grant. Before activation the owner must bind actual supported endpoint permissions and exact token-context results. Any inaccessible401/403 read fails closed before a named environment/OIDC; no PAT, broad identity, permission guessing or automatic expansion. Additional permission needs affected READY; current bindings remain null."
+  },
+  "finiteRecovery": "For an observed path/syntax/argument/line-ending/action-ref helper failure, inspect raw error and partial state. Only within new mutable owned helpers/workflow and unchanged meaning/oracle, no product start and exact baseline guards, retain failed attempt/preimage, apply one evidence-supported mechanical correction and rerun affected focused checks into fresh receipts. Never overwrite immutable outputs, guess provider values, broaden permissions, adopt a changed baseline, repeat unchanged failed operation, or turn a missing external prerequisite into an approval flag. Stop affected work on uncertain state or correction without progress; changed authority/scope/oracle/risk needs affected READY.",
+  "reviewAndHandoff": "Exact D1-D8 READY is requested for bounded LOCAL inactive-binding source correction only. Freeze one aggregate local result for the same independent Astra R1-R8 reviewer; no per-helper independent gates. Outputs serve repository release maintainers, sole infrastructure owner and coordinator. Prior accepted runtime/evidence is reused and unchanged. This plan awards no execution/cloud/runtime/capacity acceptance.",
+  "telemetry": "[Status: Frozen] | [Lifecycle: affected release UX plan pending exact D1-D8; no implementation] | [Model: gpt-6.1-sol/medium launch guarantee; actual telemetry unavailable] | [File: Documentation/Projects/Working/logs/SDA-WEBAPP-MIG-01/release-ux-plan-01.json] | [Tests: 0/0/0]"
+}

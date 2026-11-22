@@ -1,20 +1,48 @@
 'use strict';
-const cp = require('node:child_process');
+const vm = require('node:vm');
 const { fs, path, project, sha, argument, writeNew } = require('./common.cjs');
-const source = fs.readFileSync(path.resolve(project, '../../.github/workflows/deploy-sda-website.yml'), 'utf8');
-const rows = [], check = (name, pass) => rows.push({ name, pass: !!pass });
-check('manual-only', /\n  workflow_dispatch:/.test(source) && !/\n  (push|pull_request|schedule|workflow_run):/.test(source));
-check('three-environments', /options: \[dev, test, prod\]/.test(source) && /environment: sda-website-\$\{\{ inputs.environment \}\}/.test(source));
-check('oidc-minimum-permissions', /contents: read/.test(source) && /id-token: write/.test(source) && !/(contents|packages|actions): write/.test(source));
-check('serialized-per-environment', /group: sda-website-\$\{\{ inputs.environment \}\}/.test(source) && /cancel-in-progress: false/.test(source));
+const workflow = path.resolve(project, '../../.github/workflows/deploy-sda-website.yml');
+const source = fs.readFileSync(workflow, 'utf8'), rows = [];
+const check = (name, pass, detail) => rows.push({ name, pass: !!pass, ...(pass ? {} : { detail }) });
+const dispatch = source.slice(source.indexOf('  workflow_dispatch:'), source.indexOf('\npermissions:'));
+const inputKeys = [...dispatch.matchAll(/^ {6}([a-zA-Z_][\w-]*):$/gm)].map(match => match[1]);
+check('exact-environment-only-input', JSON.stringify(inputKeys) === JSON.stringify(['environment']) && /type: choice/.test(dispatch) && /options: \[dev, test, prod\]/.test(dispatch));
+check('manual-only', /\non:\n  workflow_dispatch:/.test(source) && !/\n  (push|pull_request|schedule|workflow_run):/.test(source));
+const workflowFiles = fs.readdirSync(path.dirname(workflow)).filter(name => /\.ya?ml$/.test(name));
+const websiteManual = workflowFiles.filter(name => { const bytes = fs.readFileSync(path.join(path.dirname(workflow), name), 'utf8'); return /workflow_dispatch/.test(bytes) && /sda-website|Deploy SDA website/.test(bytes); });
+check('one-website-manual-workflow', websiteManual.length === 1 && websiteManual[0] === path.basename(workflow));
+check('no-mutable-target-or-approval-variables', !/vars\.|secrets\.|SDA_AUTH_READY|publish-profile|deployment_token|AZURE_STATIC_WEB_APPS/i.test(source));
+check('no-deployment-rebuild-or-artifact-upload', !/dotnet (?:build|publish)|setup-dotnet|package\.cjs|upload-artifact|npm (?:ci|install)/.test(source));
+check('per-environment-serialization', /group: sda-website-\$\{\{ inputs.environment \}\}/.test(source) && /cancel-in-progress: false/.test(source));
+const resolver = source.slice(source.indexOf('  resolve:'), source.indexOf('  deploy:'));
+check('resolver-before-named-environment-and-oidc', !/\n    environment:|id-token:/.test(resolver) && /needs: resolve/.test(source) && /environment: \$\{\{ needs.resolve.outputs.github_environment \}\}/.test(source));
+check('minimal-job-permissions', /contents: read/.test(resolver) && /actions: read/.test(resolver) && (source.match(/id-token: write/g) || []).length === 1 && !/(contents|actions|deployments): write/.test(source));
+check('exact-immutable-artifact-selector', /artifact-ids: \$\{\{ needs.resolve.outputs.artifact_id \}\}/.test(source) && /run-id: \$\{\{ needs.resolve.outputs.artifact_run_id \}\}/.test(source) && !/\blatest\b/.test(source));
+check('ref-refusal-before-checkout', source.indexOf('process.env.GITHUB_REF') < source.indexOf('uses: actions/checkout@') && /ref: \$\{\{ github.sha \}\}/.test(source));
+check('fixed-receipts-payload-before-azure-login', source.indexOf('--verify-artifact') < source.indexOf('uses: azure/login@') && source.indexOf('--resolve') < source.indexOf('  deploy:'));
+check('fixed-resolver-oidc-outputs-only', ['client_id', 'tenant_id', 'subscription_id'].every(key => source.includes('needs.resolve.outputs.' + key)));
+check('rehash-immediately-before-actions-deployment', source.lastIndexOf('--verify-artifact') > source.indexOf('release-target.cjs --verify') && source.lastIndexOf('--verify-artifact') < source.indexOf('az webapp deploy') && /--src-path release\/accepted\/website.zip/.test(source));
 const uses = [...source.matchAll(/uses: ([^\s]+)@([^\s]+)/g)];
-check('all-actions-immutable', uses.length === 4 && uses.every(match => /^[a-f0-9]{40}$/.test(match[2])));
-check('no-profile-token-secret', !/publish-profile|AZURE_STATIC_WEB_APPS|deployment_token|secrets\./i.test(source));
-check('explicit-zip-target', /az webapp deploy --subscription/.test(source) && /--resource-group/.test(source) && /--name/.test(source) && /--type zip/.test(source));
-check('guard-before-login-and-deploy', source.indexOf('--preflight') < source.indexOf('uses: azure/login@') && source.indexOf('--verify') < source.indexOf('az webapp deploy'));
-check('owner-packet-bytes-bound-and-guard-tested', /SDA_HOSTING_PACKET_BASE64:/.test(source) && /check-release-target.cjs/.test(source));
-const child = cp.spawnSync(process.execPath, [path.join(__dirname, 'release-target.cjs'), '--preflight'], { encoding: 'utf8', env: Object.fromEntries(Object.entries(process.env).filter(([key]) => !key.startsWith('SDA_') && !key.startsWith('AZURE_'))) });
-check('missing-config-fails-before-cloud', child.status !== 0 && /Required reviewed environment variable missing/.test(child.stderr));
-const result = { workflowSha256: sha(Buffer.from(source)), counts: { pass: rows.filter(r => r.pass).length, fail: rows.filter(r => !r.pass).length, total: rows.length }, rows };
+check('actions-commit-pinned', uses.length === 4 && uses.every(match => /^[a-f0-9]{40}$/.test(match[2])));
+const contract = JSON.parse(fs.readFileSync(path.resolve(project, '../../.github/sda-website-release-bindings.json')));
+check('real-bindings-null-inactive', Object.keys(contract.environments).length === 3 && Object.values(contract.environments).every(value => value === null));
+check('fixed-main-service-contract', contract.allowedWorkflowRef === 'refs/heads/main' && contract.repository === 'B-D-D-B/PublishGraph.Foundation' && contract.workflowPath === '.github/workflows/deploy-sda-website.yml');
+const match = /node <<'NODE'\n([\s\S]*?)\n\s+NODE/.exec(source);
+check('inline-precheckout-gate-exists', !!match);
+if (match) {
+  const code = match[1].split('\n').map(line => line.replace(/^ {10}/, '')).join('\n');
+  function inline(env, inputs) { return vm.runInNewContext(code, { process: { env: { GITHUB_EVENT_PATH: 'fixture', ...env } }, require: name => { if (name !== 'node:fs') throw Error('Unexpected inline dependency'); return { readFileSync: () => JSON.stringify({ inputs }) }; } }); }
+  const good = { GITHUB_REPOSITORY: contract.repository, GITHUB_REF: 'refs/heads/main', GITHUB_EVENT_NAME: 'workflow_dispatch' };
+  for (const environment of ['dev', 'test', 'prod']) { try { inline(good, { environment }); check('inline-valid-choice:' + environment, true); } catch (error) { check('inline-valid-choice:' + environment, false, error.message); } }
+  for (const [name, env, inputs] of [
+    ['feature-ref', { ...good, GITHUB_REF: 'refs/heads/feature' }, { environment: 'dev' }],
+    ['tag-ref', { ...good, GITHUB_REF: 'refs/tags/main' }, { environment: 'dev' }],
+    ['fork-repo', { ...good, GITHUB_REPOSITORY: 'fork/repo' }, { environment: 'dev' }],
+    ['nonmanual-event', { ...good, GITHUB_EVENT_NAME: 'push' }, { environment: 'dev' }],
+    ['extra-target-input', good, { environment: 'dev', target: 'other' }],
+    ['invalid-environment', good, { environment: 'production' }]
+  ]) { try { inline(env, inputs); check('inline-reject:' + name, false); } catch { check('inline-reject:' + name, true); } }
+}
+const result = { mode: 'Workflow source/static checks and synthetic inline gate execution only; no actual Actions token or provider proof', workflowSha256: sha(Buffer.from(source)), bindingSha256: sha(fs.readFileSync(path.resolve(project, '../../.github/sda-website-release-bindings.json'))), counts: { pass: rows.filter(r => r.pass).length, fail: rows.filter(r => !r.pass).length, total: rows.length }, rows };
 const output = argument('--output'); if (!output) throw Error('--output required'); writeNew(output, result);
-console.log(JSON.stringify(result)); if (result.counts.fail) process.exitCode = 1;
+console.log(JSON.stringify({ counts: result.counts, failures: rows.filter(r => !r.pass) })); if (result.counts.fail) process.exitCode = 1;

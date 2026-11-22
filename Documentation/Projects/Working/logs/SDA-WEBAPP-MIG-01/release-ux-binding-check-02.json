@@ -1,0 +1,210 @@
+{
+  "mode": "Synthetic fixtures only; no actual Actions token permission, provider output, stage acceptance or cloud call is proven",
+  "counts": {
+    "pass": 50,
+    "fail": 0,
+    "total": 50
+  },
+  "rows": [
+    {
+      "name": "real-inactive:dev",
+      "pass": true
+    },
+    {
+      "name": "synthetic-fixed-complete:dev",
+      "pass": true
+    },
+    {
+      "name": "real-inactive:test",
+      "pass": true
+    },
+    {
+      "name": "synthetic-fixed-complete:test",
+      "pass": true
+    },
+    {
+      "name": "real-inactive:prod",
+      "pass": true
+    },
+    {
+      "name": "synthetic-fixed-complete:prod",
+      "pass": true
+    },
+    {
+      "name": "arbitrary-ref:refs/heads/feature",
+      "pass": true
+    },
+    {
+      "name": "arbitrary-ref:refs/tags/main",
+      "pass": true
+    },
+    {
+      "name": "arbitrary-ref:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "pass": true
+    },
+    {
+      "name": "fork-repository",
+      "pass": true
+    },
+    {
+      "name": "extra-dispatch-input",
+      "pass": true
+    },
+    {
+      "name": "nonmanual-event",
+      "pass": true
+    },
+    {
+      "name": "wrong-app-binding",
+      "pass": true
+    },
+    {
+      "name": "wrong-subscription-binding",
+      "pass": true
+    },
+    {
+      "name": "wrong-rg-binding",
+      "pass": true
+    },
+    {
+      "name": "wrong-plan-binding",
+      "pass": true
+    },
+    {
+      "name": "wrong-fic-subject",
+      "pass": true
+    },
+    {
+      "name": "missing-artifact-id",
+      "pass": true
+    },
+    {
+      "name": "receipt-byte-drift",
+      "pass": true
+    },
+    {
+      "name": "receipt-path-traversal",
+      "pass": true
+    },
+    {
+      "name": "missing-domain-evidence",
+      "pass": true
+    },
+    {
+      "name": "missing-capacity-evidence",
+      "pass": true
+    },
+    {
+      "name": "ready-boolean-is-not-proof",
+      "pass": true
+    },
+    {
+      "name": "wrong-receipt-environment",
+      "pass": true
+    },
+    {
+      "name": "wrong-receipt-payload",
+      "pass": true
+    },
+    {
+      "name": "missing-host-settings",
+      "pass": true
+    },
+    {
+      "name": "literal-false-scm:true",
+      "pass": true
+    },
+    {
+      "name": "literal-false-scm:false",
+      "pass": true
+    },
+    {
+      "name": "prior-domain-stage-missing",
+      "pass": true
+    },
+    {
+      "name": "different-predecessor-payload",
+      "pass": true
+    },
+    {
+      "name": "wrong-run-id",
+      "pass": true
+    },
+    {
+      "name": "wrong-run-repository",
+      "pass": true
+    },
+    {
+      "name": "wrong-producer-workflow",
+      "pass": true
+    },
+    {
+      "name": "wrong-run-conclusion",
+      "pass": true
+    },
+    {
+      "name": "wrong-run-source",
+      "pass": true
+    },
+    {
+      "name": "wrong-artifact-name",
+      "pass": true
+    },
+    {
+      "name": "wrong-artifact-id",
+      "pass": true
+    },
+    {
+      "name": "wrong-artifact-run-link",
+      "pass": true
+    },
+    {
+      "name": "wrong-artifact-source",
+      "pass": true
+    },
+    {
+      "name": "expired-artifact",
+      "pass": true
+    },
+    {
+      "name": "wrong-archive-digest",
+      "pass": true
+    },
+    {
+      "name": "wrong-environment-policy",
+      "pass": true
+    },
+    {
+      "name": "wrong-environment-ref",
+      "pass": true
+    },
+    {
+      "name": "inaccessible-metadata:403",
+      "pass": true
+    },
+    {
+      "name": "inaccessible-metadata:404",
+      "pass": true
+    },
+    {
+      "name": "exact-payload-files",
+      "pass": true
+    },
+    {
+      "name": "artifact-symlink-rejected",
+      "pass": true
+    },
+    {
+      "name": "artifact-path-traversal-rejected",
+      "pass": true
+    },
+    {
+      "name": "payload-byte-drift",
+      "pass": true
+    },
+    {
+      "name": "unlisted-artifact-file",
+      "pass": true
+    }
+  ]
+}

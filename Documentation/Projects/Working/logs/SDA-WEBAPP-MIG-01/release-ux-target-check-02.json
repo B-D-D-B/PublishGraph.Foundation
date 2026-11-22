@@ -1,0 +1,87 @@
+{
+  "mode": "Synthetic fixed selections and in-memory app-only responses; zero cloud calls",
+  "guardSha256": "07c24cc4549782fc8d71eef528fbe92034f8ed0de15389679e2edec665598b04",
+  "counts": {
+    "pass": 19,
+    "fail": 0,
+    "total": 19
+  },
+  "rows": [
+    {
+      "name": "complete-fixed-app-only-path:dev",
+      "pass": true
+    },
+    {
+      "name": "complete-fixed-app-only-path:test",
+      "pass": true
+    },
+    {
+      "name": "complete-fixed-app-only-path:prod",
+      "pass": true
+    },
+    {
+      "name": "mismatched-client-fails-before-azure",
+      "pass": true
+    },
+    {
+      "name": "unrelated-narrow-principal-fails-before-azure",
+      "pass": true
+    },
+    {
+      "name": "authenticated-client-mismatch",
+      "pass": true
+    },
+    {
+      "name": "observed-role-principal-mismatch",
+      "pass": true
+    },
+    {
+      "name": "inherited-broad-role-rejected",
+      "pass": true
+    },
+    {
+      "name": "actual-app-plan-mismatch",
+      "pass": true
+    },
+    {
+      "name": "owner-current-f1-is-not-required-b1",
+      "pass": true
+    },
+    {
+      "name": "missing-owner-plan-evidence",
+      "pass": true
+    },
+    {
+      "name": "missing-owner-identity-evidence",
+      "pass": true
+    },
+    {
+      "name": "wrong-fic-subject",
+      "pass": true
+    },
+    {
+      "name": "auth-receipt-drift",
+      "pass": true
+    },
+    {
+      "name": "basic-publishing-not-literal-false:true",
+      "pass": true
+    },
+    {
+      "name": "basic-publishing-not-literal-false:false",
+      "pass": true
+    },
+    {
+      "name": "owner-packet-byte-drift",
+      "pass": true
+    },
+    {
+      "name": "no-shared-plan-or-directory-cli",
+      "pass": true
+    },
+    {
+      "name": "no-approval-boolean-switch",
+      "pass": true
+    }
+  ]
+}

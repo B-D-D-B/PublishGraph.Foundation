@@ -1,0 +1,36 @@
+{
+  "function": "SDA-WEBAPP-MIG-01-I",
+  "purpose": "Coordinator-attributed independent R1-R8 LOCAL inactive release UX acceptance",
+  "worker": "/root/sol_worker",
+  "reviewer": "/root/astra_reviewer",
+  "disposition": "PASS",
+  "dimensions": {
+    "R1": "pass",
+    "R2": "pass",
+    "R3": "pass",
+    "R4": "pass",
+    "R5": "pass",
+    "R6": "pass",
+    "R7": "pass",
+    "R8": "pass"
+  },
+  "findings": [],
+  "acceptedFreeze": {
+    "path": "Documentation/Projects/Working/logs/SDA-WEBAPP-MIG-01/release-ux-result-freeze-01.json",
+    "sha256": "1e2da58a6497935ab581e9c8e1ef9321d3fce12bd7f38aab666d65ee522d6d1e"
+  },
+  "acceptedBinding": {
+    "path": ".github/sda-website-release-bindings.json",
+    "sha256": "82a24e98181e3593026aed76bbabfe7fdcb9aeb05fe23d739a599e6257fd9578"
+  },
+  "verifiedByReviewer": "18 source/evidence identities,10 protected identities,5 authorities,base and changed requirement coverage",
+  "focusedChecks": {
+    "pass": 95,
+    "fail": 0,
+    "total": 95
+  },
+  "configuration": "Astra medium explicit dispatch guarantee; host telemetry unavailable",
+  "continuity": "Prior runtimePASS/F01/F02/F03 closures retained; usage-limit interruption/resume did not reset function or execution",
+  "limits": "Local inactive implementation only. Three null bindings. No actual token permission, environment agreement/provider/output/artifact/owner-stage release authority, activation/dispatch/merge/environment creation/cloud/capacity acceptance.",
+  "publication": "Explicit user/coordinator authorization to commit/push exact accepted owned source/evidence; hooks/signing preserved, no amend/force; actual commit/remote mapping recorded from Git tool receipt"
+}

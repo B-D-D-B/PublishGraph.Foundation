@@ -1,64 +1,56 @@
 'use strict';
-// Synthetic in-memory ARM responses only. No CLI, token, Graph or cloud call is made.
-const crypto = require('node:crypto');
+// Focused synthetic app-only guard checks; no Azure/Graph/token or deployment calls.
+const { fixture, context } = require('./check-release-binding.cjs');
+const { resolveBinding } = require('./release-binding.cjs');
 const { verifyTarget, validatePacket } = require('./release-target.cjs');
 const { argument, writeNew, fs, path, sha } = require('./common.cjs');
 const guid = digit => `${digit.repeat(8)}-${digit.repeat(4)}-${digit.repeat(4)}-${digit.repeat(4)}-${digit.repeat(12)}`;
-function fixture(environment = 'dev') {
-  const subscription = guid('1'), client = guid('2'), principal = guid('3'), tenant = guid('4'), role = guid('5');
-  const app = `/subscriptions/${subscription}/resourceGroups/sda-${environment}/providers/Microsoft.Web/sites/sda-website-web-${environment}`;
-  const plan = `/subscriptions/${subscription}/resourceGroups/sda-${environment}/providers/Microsoft.Web/serverfarms/ASP-sda-${environment}-fusion`;
-  const packet = { version: 1, environment, subscriptionId: subscription, appId: app, authDispositionSha256: 'a'.repeat(64), identity: { tenantId: tenant, clientId: client, principalId: principal, roleDefinitionId: role, roleScope: app, mappingEvidenceSha256: 'b'.repeat(64), issuer: 'https://token.actions.githubusercontent.com', audience: 'api://AzureADTokenExchange', subject: `repo:B-D-D-B/PublishGraph.Foundation:environment:sda-website-${environment}` }, plan: { id: plan, observedSku: environment === 'prod' ? 'B3' : 'B1', requiredSku: environment === 'prod' ? 'B3' : 'B1', linux: true, capacity: 1, region: 'westus3', verificationEvidenceSha256: 'c'.repeat(64), verifiedAtUtc: '2026-11-22T00:00:00Z' } };
-  const env = { SDA_ENVIRONMENT: environment, AZURE_CLIENT_ID: client, AZURE_TENANT_ID: tenant, AZURE_SUBSCRIPTION_ID: subscription, SDA_APP_NAME: `sda-website-web-${environment}`, SDA_RESOURCE_GROUP: `sda-${environment}`, SDA_APP_ID: app, SDA_PLAN_ID: plan, SDA_PRINCIPAL_ID: principal, SDA_DEPLOY_ROLE_ID: role, SDA_AUTH_DISPOSITION_SHA256: packet.authDispositionSha256, SDA_AUTH_READY: 'true' };
-  return { packet, env };
-}
-function seal(f) { const bytes = Buffer.from(JSON.stringify(f.packet)); f.env.SDA_HOSTING_PACKET_BASE64 = bytes.toString('base64'); f.env.SDA_HOSTING_PACKET_SHA256 = crypto.createHash('sha256').update(bytes).digest('hex'); return f; }
-function runner(f, change) {
-  const calls = [];
-  const execute = args => {
-    calls.push(args);
-    let value;
+function selection(environment = 'dev') { const f = fixture(); return resolveBinding(f.contract, environment, context(environment), f.read); }
+function runner(s, change) {
+  const calls = [], b = s.binding;
+  return { calls, execute: args => {
+    calls.push(args); let value;
     const command = args.slice(0, 3).join(' ');
-    if (args[0] === 'account' && args[1] === 'show') value = { tenant: f.packet.identity.tenantId, subscription: f.packet.subscriptionId, user: { type: 'servicePrincipal', name: f.packet.identity.clientId } };
-    else if (args[0] === 'webapp' && args[1] === 'show') value = { id: f.packet.appId, plan: f.packet.plan.id, kind: 'app,linux', httpsOnly: true };
+    if (args[0] === 'account' && args[1] === 'show') value = { tenant: b.oidc.tenantId, subscription: b.target.subscriptionId, user: { type: 'servicePrincipal', name: b.oidc.clientId } };
+    else if (args[0] === 'webapp' && args[1] === 'show') value = { id: b.target.appId, plan: b.target.planId, kind: 'app,linux', httpsOnly: true };
     else if (command === 'webapp config show') value = { alwaysOn: true, stack: 'DOTNETCORE|10.0', tls: '1.2', ftps: 'Disabled' };
     else if (command === 'role assignment list') {
-      if (args[args.indexOf('--scope') + 1] !== f.packet.appId || args[args.indexOf('--assignee') + 1] !== f.packet.identity.principalId) throw Error('Role query escaped accepted app/principal');
-      value = [{ scope: f.packet.appId, principalId: f.packet.identity.principalId, roleDefinitionId: '/providers/Microsoft.Authorization/roleDefinitions/' + f.packet.identity.roleDefinitionId }];
-    } else if (args[0] === 'rest' && args.includes('--url') && args[args.indexOf('--url') + 1].startsWith('https://management.azure.com' + f.packet.appId + '/basicPublishingCredentialsPolicies/')) value = false;
+      if (args[args.indexOf('--scope') + 1] !== b.target.appId || args[args.indexOf('--assignee') + 1] !== b.oidc.principalId) throw Error('Role request escaped fixed app/principal');
+      value = [{ scope: b.target.appId, principalId: b.oidc.principalId, roleDefinitionId: '/providers/Microsoft.Authorization/roleDefinitions/' + b.oidc.roleDefinitionId }];
+    } else if (args[0] === 'rest' && args[args.indexOf('--url') + 1].startsWith('https://management.azure.com' + b.target.appId + '/basicPublishingCredentialsPolicies/')) value = false;
     else throw Error('Unpermitted CLI request: ' + command);
     return change ? change(args, value) : value;
-  };
-  return { calls, execute };
+  } };
 }
+function packetChange(s, change) { const packet = JSON.parse(Buffer.from(s.ownerPacketBase64, 'base64')); change(packet); const bytes = Buffer.from(JSON.stringify(packet)); s.ownerPacketBase64 = bytes.toString('base64'); s.binding.receipts.ownerPacket.sha256 = sha(bytes); }
 const rows = [], check = (name, pass, detail) => rows.push({ name, pass: !!pass, ...(pass ? {} : { detail }) });
 for (const environment of ['dev', 'test', 'prod']) {
-  const f = seal(fixture(environment)), mock = runner(f);
-  try { const result = verifyTarget(f.env, mock.execute); check('complete-app-only-path:' + environment, result.principalId === f.packet.identity.principalId && mock.calls.length === 6, mock.calls); }
-  catch (error) { check('complete-app-only-path:' + environment, false, error.message); }
+  const s = selection(environment), mock = runner(s);
+  try { verifyTarget(s, mock.execute); check('complete-fixed-app-only-path:' + environment, mock.calls.length === 6); }
+  catch (error) { check('complete-fixed-app-only-path:' + environment, false, error.message); }
 }
-function reject(name, changeFixture, changeResponse, expected, beforeAzure = false) {
-  const f = fixture(); changeFixture(f); seal(f);
-  const mock = runner(f, changeResponse);
-  try { verifyTarget(f.env, mock.execute); check(name, false, 'Guard accepted invalid release'); }
+function reject(name, changeSelection, changeResponse, expected, beforeAzure = false) {
+  const s = selection(); changeSelection(s); const mock = runner(s, changeResponse);
+  try { verifyTarget(s, mock.execute); check(name, false, 'Invalid selection accepted'); }
   catch (error) { check(name, expected.test(error.message) && (!beforeAzure || mock.calls.length === 0), { error: error.message, calls: mock.calls }); }
 }
-reject('mismatched-client-fails-before-azure', f => { f.env.AZURE_CLIENT_ID = guid('6'); }, null, /mapping mismatch/, true);
-reject('unrelated-narrow-principal-fails-before-azure', f => { f.env.SDA_PRINCIPAL_ID = guid('6'); }, null, /mapping mismatch/, true);
-reject('authenticated-client-not-accepted-owner-client', () => {}, (args, value) => args[0] === 'account' ? { ...value, user: { type: 'servicePrincipal', name: guid('6') } } : value, /Authenticated OIDC client/);
+reject('mismatched-client-fails-before-azure', s => { s.binding.oidc.clientId = guid('6'); }, null, /mapping mismatch/, true);
+reject('unrelated-narrow-principal-fails-before-azure', s => { s.binding.oidc.principalId = guid('6'); }, null, /mapping mismatch/, true);
+reject('authenticated-client-mismatch', () => {}, (args, value) => args[0] === 'account' ? { ...value, user: { type: 'servicePrincipal', name: guid('6') } } : value, /Authenticated OIDC client/);
 reject('observed-role-principal-mismatch', () => {}, (args, value) => args[0] === 'role' ? value.map(role => ({ ...role, principalId: guid('6') })) : value, /Bound deployment principal/);
 reject('inherited-broad-role-rejected', () => {}, (args, value) => args[0] === 'role' ? value.map(role => ({ ...role, scope: '/subscriptions/' + guid('1') })) : value, /Bound deployment principal/);
 reject('actual-app-plan-mismatch', () => {}, (args, value) => args[0] === 'webapp' && args[1] === 'show' ? { ...value, plan: value.plan + '-other' } : value, /actual app/);
-reject('owner-observed-f1-does-not-prove-required-b1', f => { f.packet.plan.observedSku = 'F1'; }, null, /required actual Linux/, true);
-reject('missing-owner-plan-evidence-rejected', f => { delete f.packet.plan.verificationEvidenceSha256; }, null, /required actual Linux/, true);
-reject('missing-owner-identity-evidence-rejected', f => { delete f.packet.identity.mappingEvidenceSha256; }, null, /mapping mismatch/, true);
-reject('wrong-federated-environment-rejected', f => { f.packet.identity.subject = 'repo:B-D-D-B/PublishGraph.Foundation:environment:sda-dev'; }, null, /federated subject/, true);
-reject('auth-disposition-mismatch-rejected', f => { f.env.SDA_AUTH_DISPOSITION_SHA256 = 'd'.repeat(64); }, null, /auth disposition mismatch/, true);
-reject('basic-publishing-enabled-rejected', () => {}, (args, value) => args[0] === 'rest' ? true : value, /Basic publishing/);
-const drift = seal(fixture()); drift.env.SDA_HOSTING_PACKET_BASE64 = Buffer.from(JSON.stringify({ ...drift.packet, environment: 'prod' })).toString('base64');
-try { validatePacket(drift.env); check('packet-byte-drift-rejected', false); } catch (error) { check('packet-byte-drift-rejected', /bytes do not match/.test(error.message)); }
+reject('owner-current-f1-is-not-required-b1', s => packetChange(s, packet => { packet.plan.observedSku = 'F1'; }), null, /required actual Linux/, true);
+reject('missing-owner-plan-evidence', s => packetChange(s, packet => { delete packet.plan.verificationEvidenceSha256; }), null, /required actual Linux/, true);
+reject('missing-owner-identity-evidence', s => packetChange(s, packet => { delete packet.identity.mappingEvidenceSha256; }), null, /mapping mismatch/, true);
+reject('wrong-fic-subject', s => packetChange(s, packet => { packet.identity.subject += '-other'; }), null, /federated subject/, true);
+reject('auth-receipt-drift', s => { s.authReceiptBase64 = Buffer.from('{}').toString('base64'); }, null, /auth receipt byte mismatch/, true);
+for (const bad of [true, 'false']) reject('basic-publishing-not-literal-false:' + bad, () => {}, (args, value) => args[0] === 'rest' ? bad : value, /Basic publishing/);
+const drift = selection(); drift.ownerPacketBase64 = Buffer.from('{}').toString('base64');
+try { validatePacket(drift); check('owner-packet-byte-drift', false); } catch (error) { check('owner-packet-byte-drift', /bytes do not match/.test(error.message)); }
 const source = fs.readFileSync(path.join(__dirname, 'release-target.cjs'));
-check('no-shared-plan-or-directory-cli-path', !/appservice['"]|['"]ad['"]|get-access-token/.test(source.toString()));
-const result = { mode: 'synthetic fixtures and in-memory mocked app-only CLI; zero cloud calls', guardSha256: sha(source), counts: { pass: rows.filter(r => r.pass).length, fail: rows.filter(r => !r.pass).length, total: rows.length }, rows };
+check('no-shared-plan-or-directory-cli', !/appservice['"]|['"]ad['"]|get-access-token/.test(source.toString()));
+check('no-approval-boolean-switch', !source.toString().includes('SDA_AUTH_READY'));
+const result = { mode: 'Synthetic fixed selections and in-memory app-only responses; zero cloud calls', guardSha256: sha(source), counts: { pass: rows.filter(r => r.pass).length, fail: rows.filter(r => !r.pass).length, total: rows.length }, rows };
 const output = argument('--output'); if (!output) throw Error('--output required'); writeNew(output, result);
 console.log(JSON.stringify({ counts: result.counts, failures: rows.filter(row => !row.pass) })); if (result.counts.fail) process.exitCode = 1;

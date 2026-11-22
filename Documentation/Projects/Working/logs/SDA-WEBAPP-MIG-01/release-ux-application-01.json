@@ -1,0 +1,97 @@
+{
+  "function": "SDA-WEBAPP-MIG-01-I",
+  "phase": "Exact READY release UX local inactive-binding correction delivered",
+  "worker": "/root/sol_worker",
+  "reviewer": "/root/astra_reviewer",
+  "planSha256": "8200cab4da23d3126c60dc0e35faa5aaa81245f538190f3139804faf39c13b56",
+  "sourceBase": "90b090cd3b5a5abfe2c0548a571663218953648a",
+  "source": [
+    {
+      "path": ".github/workflows/deploy-sda-website.yml",
+      "sha256": "07d6c5532a91c8fbf2d85ad28637d7d8ebb3aa587fdf86a2065d3c6ee17fbe2f",
+      "bytes": 4381
+    },
+    {
+      "path": "Static/SDA-WebApp/tools/release-target.cjs",
+      "sha256": "07c24cc4549782fc8d71eef528fbe92034f8ed0de15389679e2edec665598b04",
+      "bytes": 8087
+    },
+    {
+      "path": "Static/SDA-WebApp/tools/check-release-target.cjs",
+      "sha256": "4a0256fd70780e4372e71a5a81fea714a72bcf9bec9ce5b9c28ab17a55eb7d0d",
+      "bytes": 6106
+    },
+    {
+      "path": "Static/SDA-WebApp/tools/check-workflow.cjs",
+      "sha256": "58a052d29251aa079dacada3ee0073254f7105220bdfda3241e994b3395839db",
+      "bytes": 6184
+    },
+    {
+      "path": "Static/SDA-WebApp/README.md",
+      "sha256": "ab4e937d460e46796ea6d693d6462797fb24a7222a7435bb895a03b7cf83c39d",
+      "bytes": 8299
+    },
+    {
+      "path": ".github/sda-website-release-bindings.json",
+      "sha256": "82a24e98181e3593026aed76bbabfe7fdcb9aeb05fe23d739a599e6257fd9578",
+      "bytes": 1458
+    },
+    {
+      "path": "Static/SDA-WebApp/tools/release-binding.cjs",
+      "sha256": "1071cb4705a7791ee5e8cfdddd90f991268bfa1175919b9421eec76034efa652",
+      "bytes": 13615
+    },
+    {
+      "path": "Static/SDA-WebApp/tools/check-release-binding.cjs",
+      "sha256": "56fb436550a2660f16ea1db824e26c18a437c7a8624d058703d4ee2500a2d316",
+      "bytes": 14230
+    }
+  ],
+  "checks": [
+    {
+      "path": "Documentation/Projects/Working/logs/SDA-WEBAPP-MIG-01/release-ux-binding-check-02.json",
+      "sha256": "9d86e365d4c553633be71f879a7e507bc1318aab8af154f2cc6b558b74477085",
+      "counts": {
+        "pass": 50,
+        "fail": 0,
+        "total": 50
+      }
+    },
+    {
+      "path": "Documentation/Projects/Working/logs/SDA-WEBAPP-MIG-01/release-ux-target-check-02.json",
+      "sha256": "f6713edfe6503f8a449aecebf74d411f17bba1138055e570f17b1e7e8b194537",
+      "counts": {
+        "pass": 19,
+        "fail": 0,
+        "total": 19
+      }
+    },
+    {
+      "path": "Documentation/Projects/Working/logs/SDA-WEBAPP-MIG-01/release-ux-workflow-check-02.json",
+      "sha256": "283e407a8cadae1e39a0f119d5352b2cc302cfbc3a73a849bbd8094fd75916df",
+      "counts": {
+        "pass": 26,
+        "fail": 0,
+        "total": 26
+      }
+    }
+  ],
+  "primaryFocusedVector": {
+    "pass": 95,
+    "fail": 0,
+    "total": 95
+  },
+  "syntaxChecks": [
+    "Static/SDA-WebApp/tools/release-target.cjs",
+    "Static/SDA-WebApp/tools/check-release-target.cjs",
+    "Static/SDA-WebApp/tools/check-workflow.cjs",
+    "Static/SDA-WebApp/tools/release-binding.cjs",
+    "Static/SDA-WebApp/tools/check-release-binding.cjs"
+  ],
+  "realBindingOutcome": "dev/test/prod remain null and fail before named environment, artifact download, Azure login or deployment",
+  "implementation": "One environment-only manual workflow, fixed main ref and source binding, preenvironment no-OIDC resolver, immutable Actions run/artifact/receipt checks, no deployment rebuild/upload/target vars/approval bool; existing owner client/principal/app-only/false publishing guards retained",
+  "preservation": "All10 non-owned baseline source/evidence identities and5 authorities reverified unchanged; no runtime/static/package source edit. Accepted runtime/browser/content/package evidence and F01/F02/F03 closures retained; no full runtime suite rerun.",
+  "history": "Explicit usage-limit interruption/resume retained in release-ux-resume-01; same execution/function/READY, no reset. Earlier passing focused receipts preserved; final counts use only latest50+19+26.",
+  "limitations": "Actual GITHUB_TOKEN endpoint permissions, environment agreement/actual provider/owner/source artifact run/stage receipts remain unavailable. Mocks do not prove token support. No real binding activation, dispatch, environment creation, merge, cloud/Terraform/SCM policy/capacity or retirement effect.",
+  "next": "Freeze aggregate for independent affected R1-R8 before authorized commit/push; no worker PASS"
+}
