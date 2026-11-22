@@ -95,11 +95,25 @@ fail('reject duplicate artifact', () => p.observedArtifacts(run, [artifacts[0], 
 fail('reject oversized evidence download', () => { const rows = clone(artifacts); rows[1].size_in_bytes = p.evidenceCap + 1; p.observedArtifacts(run, rows, fixed, now); });
 fail('reject outside output', () => p.outputPath('other/report.json'));
 fail('reject output traversal', () => p.outputPath('artifacts/SDA-WEBAPP-PRODUCER-01/../escape.json'));
+function sdkEnvironment(source) {
+  const jobEnv = /^    env:\n((?:      .*\n)+)/m.exec(source);
+  assert.ok(jobEnv, 'Static job environment required');
+  assert.doesNotMatch(jobEnv[1], /\$\{\{[^\n]*\brunner\./, 'Runner context unavailable in job-level env');
+  const steps = source.split(/^      - /m).slice(1).filter(step => /uses: actions\/setup-dotnet@|run: node Static\/SDA-WebApp\/tools\/(?:producer|package)\.cjs/.test(step));
+  assert.equal(steps.length, 5, 'Expected install and four build/helper steps');
+  for (const step of steps) {
+    assert.match(step, /^        env:\n/m, 'SDK environment must be step-level');
+    for (const field of ['DOTNET_INSTALL_DIR', 'DOTNET_ROOT'])
+      assert.equal(step.split('          ' + field + ': ${{ runner.temp }}/sda-dotnet-10.0.404\n').length - 1, 1, 'Inconsistent isolated SDK path: ' + field);
+  }
+  return steps;
+}
 function workflowContract(source) {
   assert.match(source, /on:\n  push:\n    branches: \[main, agents\/sda-website-migration-setup\]/);
   assert.match(source, /permissions:\n  contents: read\n/); assert.match(source, /timeout-minutes: 25/);
   assert.match(source, /ref: \$\{\{ github.sha \}\}/); assert.match(source, /persist-credentials: false/);
   assert.match(source, /DOTNET_INSTALL_DIR: \$\{\{ runner.temp \}\}\/sda-dotnet-10.0.404/);
+  sdkEnvironment(source);
   assert.match(source, /node-version: '22.9.0'/); assert.match(source, /dotnet-version: '10.0.404'/);
   for (const file of ['global.json', 'Directory.Build.props', 'Directory.Packages.props', 'NuGet.Config']) assert.ok(source.includes('      - ' + file + '\n'), 'Root control path trigger missing: ' + file);
   assert.equal((source.match(/retention-days: 7/g) || []).length, 2);
@@ -108,6 +122,15 @@ function workflowContract(source) {
 }
 const workflowText = fs.readFileSync(path.join(p.root, p.workflow), 'utf8');
 check('actual fixed push-only workflow static contract', () => workflowContract(workflowText));
+check('F02 supported step-level SDK context and five consistent paths', () => assert.equal(sdkEnvironment(workflowText).length, 5));
+fail('F02 reject runner context in job environment', () => sdkEnvironment(workflowText.replace('    env:\n', '    env:\n      DOTNET_ROOT: ${{ runner.temp }}/sda-dotnet-10.0.404\n')));
+const priorFailedWorkflow = workflowText.replace(/^          DOTNET_INSTALL_DIR: .*\n/gm, '').replace(/^          DOTNET_ROOT: .*\n/gm, '').replace('    env:\n', '    env:\n      DOTNET_INSTALL_DIR: ${{ runner.temp }}/sda-dotnet-10.0.404\n      DOTNET_ROOT: ${{ runner.temp }}/sda-dotnet-10.0.404\n');
+fail('F02 reject known failed job-level SDK layout', () => sdkEnvironment(priorFailedWorkflow));
+sdkEnvironment(workflowText).forEach((step, index) => {
+  fail('F02 reject missing isolated install path step ' + index, () => sdkEnvironment(workflowText.replace(step, step.replace(/^          DOTNET_INSTALL_DIR: .*\n/m, ''))));
+  fail('F02 reject missing SDK root step ' + index, () => sdkEnvironment(workflowText.replace(step, step.replace(/^          DOTNET_ROOT: .*\n/m, ''))));
+  fail('F02 reject inconsistent SDK root step ' + index, () => sdkEnvironment(workflowText.replace(step, step.replace('DOTNET_ROOT: ${{ runner.temp }}/sda-dotnet-10.0.404', 'DOTNET_ROOT: /wrong/sdk'))));
+});
 for (const file of ['global.json', 'Directory.Build.props', 'Directory.Packages.props', 'NuGet.Config'])
   fail('static reject missing root control trigger ' + file, () => workflowContract(workflowText.replace('      - ' + file + '\n', '')));
 for (const marker of ['workflow_dispatch:', 'pull_request:', 'id-token: write', 'environment: prod', 'secrets.TOKEN', 'azure/login@bad', 'cache: npm'])

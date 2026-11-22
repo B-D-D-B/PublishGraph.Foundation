@@ -1,0 +1,69 @@
+{
+  "function": "SDA-WEBAPP-PRODUCER-01",
+  "phase": "Separate exact push/build effect actual result for independent R1-R8",
+  "packet": {
+    "path": "artifacts/SDA-WEBAPP-PRODUCER-01/effect-plan-01.json",
+    "sha256": "50fa38cc0426b570b4276df02a70538e791f3fce384d67cf4cc7de055f7897c5"
+  },
+  "readiness": {
+    "path": "artifacts/SDA-WEBAPP-PRODUCER-01/effect-readiness-01.json",
+    "sha256": "d5c899296106f8f2072d5a4bbccaef16c81953c1afbc5a59a6d619fb1e031e3b",
+    "scope": "Distinct Astra exact D1-D8 READY bounded attempt only, not actual build acceptance"
+  },
+  "publication": {
+    "commit": "221126ac8f285681ae83e210dc8d3d5364f029a3",
+    "tree": "9e5bf0c70f115da5617b5e62619f8a49d18bf441",
+    "remoteRef": "refs/heads/agents/sda-website-migration-setup",
+    "oldSha": "3849ad4bce027849b3cc78a2b8c28d29d2157a97",
+    "pushedSha": "221126ac8f285681ae83e210dc8d3d5364f029a3",
+    "pushExitCode": 0,
+    "pushCount": 1,
+    "sync": "0\t0",
+    "clean": true,
+    "url": "https://github.com/B-D-D-B/PublishGraph.Foundation/commit/221126ac8f285681ae83e210dc8d3d5364f029a3"
+  },
+  "run": {
+    "id": 45004667922,
+    "url": "https://github.com/B-D-D-B/PublishGraph.Foundation/actions/runs/45004667922",
+    "event": "push",
+    "attempt": 1,
+    "headSha": "221126ac8f285681ae83e210dc8d3d5364f029a3",
+    "branch": "agents/sda-website-migration-setup",
+    "path": ".github/workflows/build-sda-website.yml",
+    "status": "completed",
+    "conclusion": "failure",
+    "createdAt": "2026-11-22T08:50:24Z",
+    "updatedAt": "2026-11-22T08:50:24Z",
+    "jobs": 0,
+    "artifacts": 0
+  },
+  "outcome": "PUSH SUCCEEDED; ACTUAL WORKFLOW FAILED BEFORE JOB START; NO ARTIFACT ACCEPTANCE",
+  "failure": {
+    "kind": "GitHub workflow validation",
+    "annotations": "Annotations 1 error Invalid workflow file: .github/workflows/build-sda-website.yml#L1 (Line: 29, Col: 27): Unrecognized named-value: 'runner'. Located at position 1 within expression: runner.temp, (Line: 30, Col: 20): Unrecognized named-value: 'runner'. Located at position 1 within expression: runner.temp Show more Show less",
+    "logs": "gh run view --log-failed returned log not found; no runner jobs existed",
+    "sourceLocations": [
+      {
+        "path": ".github/workflows/build-sda-website.yml",
+        "line": 29
+      },
+      {
+        "path": ".github/workflows/build-sda-website.yml",
+        "line": 30
+      }
+    ],
+    "cause": "Job-level env expressions use runner.temp where runner context is unavailable. Existing static checks did not validate GitHub context availability at each YAML location."
+  },
+  "effectLimits": {
+    "manualDispatches": 0,
+    "reruns": 0,
+    "cancels": 0,
+    "deletes": 0,
+    "artifactDownloads": 0,
+    "cloudOrDeploy": 0,
+    "sourceEditsAfterAcceptedLocalCommit": 0
+  },
+  "dependentAcceptance": "STOPPED. Actual clean runner/source/toolchain/package/upload/expiry evidence and independent source-build/artifact acceptance unavailable. Local package remains dirty and cannot substitute. Prior local R PASS is limited to its checks; actual workflow parse failure is retained, not hidden or self-repaired.",
+  "possibleRemediation": "Affected reviewed correction to supported step-level runner context can preserve isolated SDK design. No source change, second commit/push/run or new acceptance authorized by this exhausted exact attempt; coordinator must obtain applicable affected readiness.",
+  "recordedUtc": "2026-11-22T08:52:35.488Z"
+}

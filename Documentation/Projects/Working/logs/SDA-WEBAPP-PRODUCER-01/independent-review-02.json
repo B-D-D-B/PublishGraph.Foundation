@@ -1,0 +1,30 @@
+{
+  "function": "SDA-WEBAPP-PRODUCER-01",
+  "reviewer": "/root/astra_reviewer",
+  "worker": "/root/sol_worker",
+  "disposition": "PASS",
+  "scope": "Corrective LOCAL result ONLY; no second effect READY or actual producer acceptance",
+  "freeze": {
+    "path": "Documentation/Projects/Working/logs/SDA-WEBAPP-PRODUCER-01/result-freeze-03.json",
+    "sha256": "bff6882cf5cc917a4fce1415f71ecde0998c3b7fad1f7ec587ca881a486f392d"
+  },
+  "dimensions": {
+    "R1": "PASS",
+    "R2": "PASS",
+    "R3": "PASS",
+    "R4": "PASS",
+    "R5": "PASS",
+    "R6": "PASS",
+    "R7": "PASS",
+    "R8": "PASS"
+  },
+  "finding": {
+    "id": "F02",
+    "disposition": "CLOSED LOCALLY",
+    "description": "Supported step-level SDK context placement and18 regressions; actual new run still separately gated"
+  },
+  "independentVerification": "Coordinator relayed30 source/evidence24 protected5 authorities3external identities/coverage verified;133focused+syntax; unchanged helper/protocol/qualified dirty build reuse accepted. First failed effect STOPPED retained.",
+  "configuration": "Astra6medium explicit launch guarantee; actual telemetry unavailable",
+  "publication": "LOCAL corrective commit authorized; NO PUSH until new exact committed revision effect DREADY",
+  "recordedUtc": "2026-11-22T08:57:44.444Z"
+}

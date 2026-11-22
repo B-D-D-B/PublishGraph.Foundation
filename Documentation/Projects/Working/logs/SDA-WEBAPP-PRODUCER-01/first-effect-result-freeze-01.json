@@ -1,0 +1,75 @@
+{
+  "function": "SDA-WEBAPP-PRODUCER-01",
+  "scope": "Actual failed bounded publication/build effect, independent R1-R8 requested; no self-awarded acceptance",
+  "effectPacketSha256": "50fa38cc0426b570b4276df02a70538e791f3fce384d67cf4cc7de055f7897c5",
+  "sourceCommit": "221126ac8f285681ae83e210dc8d3d5364f029a3",
+  "sourceTree": "9e5bf0c70f115da5617b5e62619f8a49d18bf441",
+  "producerWorkflowSha256": "1c00cf0582874171974907ed290cb209182a93dba9c0af1eee87d8c8ca13a518",
+  "identities": [
+    {
+      "path": "artifacts/SDA-WEBAPP-PRODUCER-01/effect-plan-01.json",
+      "bytes": 168672,
+      "sha256": "50fa38cc0426b570b4276df02a70538e791f3fce384d67cf4cc7de055f7897c5"
+    },
+    {
+      "path": "artifacts/SDA-WEBAPP-PRODUCER-01/local-publication-01.json",
+      "bytes": 488,
+      "sha256": "6e8466c8b11f90ae89a1d7efd470ef8612bf0b118652b9555e9e9fa26648a0f7"
+    },
+    {
+      "path": "artifacts/SDA-WEBAPP-PRODUCER-01/index-publication-01.json",
+      "bytes": 4110,
+      "sha256": "567f655a42e8a6b03d62cba5755b480dc82de4dc724bfcb9096cf164eed80775"
+    },
+    {
+      "path": "artifacts/SDA-WEBAPP-PRODUCER-01/effect-readiness-01.json",
+      "bytes": 602,
+      "sha256": "d5c899296106f8f2072d5a4bbccaef16c81953c1afbc5a59a6d619fb1e031e3b"
+    },
+    {
+      "path": "artifacts/SDA-WEBAPP-PRODUCER-01/push-observation-01.json",
+      "bytes": 17243,
+      "sha256": "2d6bafd3f34d7a3a260c7940fe1e09b193094123c1b5852e8ed22415cb7d7699"
+    },
+    {
+      "path": "artifacts/SDA-WEBAPP-PRODUCER-01/failed-run-observation-01.json",
+      "bytes": 17133,
+      "sha256": "25f2b26db69912918ab0c402bfb57d225417207f44a80e1e0c4892e0b16abd56"
+    },
+    {
+      "path": "artifacts/SDA-WEBAPP-PRODUCER-01/failed-run-page-01.html",
+      "bytes": 140700,
+      "sha256": "f20e7297c4885d6216bb7817f553879428a398986b99fd57182f63a50c99ce0a"
+    },
+    {
+      "path": "artifacts/SDA-WEBAPP-PRODUCER-01/failed-run-annotations-01.html",
+      "bytes": 2915,
+      "sha256": "00654b70fe4cc3cd3c3f2f6b280f27e78550054d2fa4f29de261d8640cf34639"
+    },
+    {
+      "path": "artifacts/SDA-WEBAPP-PRODUCER-01/effect-result-01.json",
+      "bytes": 3462,
+      "sha256": "67154c13962d2515170867d52fc2388a8baccfa6f73207d25b09673a1586ec17"
+    }
+  ],
+  "outcome": "PUSH SUCCEEDED; ACTUAL WORKFLOW FAILED BEFORE JOB START; NO ARTIFACT ACCEPTANCE",
+  "run": {
+    "id": 45004667922,
+    "url": "https://github.com/B-D-D-B/PublishGraph.Foundation/actions/runs/45004667922",
+    "event": "push",
+    "attempt": 1,
+    "headSha": "221126ac8f285681ae83e210dc8d3d5364f029a3",
+    "branch": "agents/sda-website-migration-setup",
+    "path": ".github/workflows/build-sda-website.yml",
+    "status": "completed",
+    "conclusion": "failure",
+    "createdAt": "2026-11-22T08:50:24Z",
+    "updatedAt": "2026-11-22T08:50:24Z",
+    "jobs": 0,
+    "artifacts": 0
+  },
+  "limits": "STOPPED. Actual clean runner/source/toolchain/package/upload/expiry evidence and independent source-build/artifact acceptance unavailable. Local package remains dirty and cannot substitute. Prior local R PASS is limited to its checks; actual workflow parse failure is retained, not hidden or self-repaired.",
+  "sourceClean": true,
+  "remoteSync": "0\t0",
+  "recordedUtc": "2026-11-22T08:52:35.505Z"
+}

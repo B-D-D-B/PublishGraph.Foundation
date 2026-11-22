@@ -1,0 +1,19 @@
+{
+  "packetSha256": "50fa38cc0426b570b4276df02a70538e791f3fce384d67cf4cc7de055f7897c5",
+  "reviewer": "/root/astra_reviewer",
+  "disposition": "READY",
+  "dimensions": {
+    "D1": "PASS",
+    "D2": "PASS",
+    "D3": "PASS",
+    "D4": "PASS",
+    "D5": "PASS",
+    "D6": "PASS",
+    "D7": "PASS",
+    "D8": "PASS"
+  },
+  "scope": "One bounded exact push/build attempt only; Actions eligibility unproven",
+  "immediateRevalidation": "Exact source HEAD/tree/workflow467inputs/clean/remote preimage/actor match",
+  "beforePushUtc": "2026-11-22T08:50:19.494Z",
+  "deadlineUtc": "2026-11-22T09:35:19.494Z"
+}
