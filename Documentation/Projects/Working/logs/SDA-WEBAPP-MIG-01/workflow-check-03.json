@@ -1,0 +1,46 @@
+{
+  "workflowSha256": "57d9af09f85c44307a12d576d539d910b3ea5ff4bc085c54278a38dfa2719008",
+  "counts": {
+    "pass": 9,
+    "fail": 0,
+    "total": 9
+  },
+  "rows": [
+    {
+      "name": "manual-only",
+      "pass": true
+    },
+    {
+      "name": "three-environments",
+      "pass": true
+    },
+    {
+      "name": "oidc-minimum-permissions",
+      "pass": true
+    },
+    {
+      "name": "serialized-per-environment",
+      "pass": true
+    },
+    {
+      "name": "all-actions-immutable",
+      "pass": true
+    },
+    {
+      "name": "no-profile-token-secret",
+      "pass": true
+    },
+    {
+      "name": "explicit-zip-target",
+      "pass": true
+    },
+    {
+      "name": "guard-before-login-and-deploy",
+      "pass": true
+    },
+    {
+      "name": "missing-config-fails-before-cloud",
+      "pass": true
+    }
+  ]
+}

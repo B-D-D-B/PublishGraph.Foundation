@@ -1,0 +1,659 @@
+{
+  "function": "SDA-WEBAPP-MIG-01-I",
+  "scope": "LOCAL static adapter/content/package/workflow preparation only; F01/F02 correction",
+  "status": "frozen for independent affected R1-R8; no worker PASS",
+  "previousResultSha256": "ad12fa46aeb55eceac4e92ce82aa81892dfed13ce501c125c7e9f06b6ac9c0ee",
+  "findings": [
+    "F01",
+    "F02"
+  ],
+  "changedPaths": [
+    "Static/SDA-WebApp/tools/release-target.cjs",
+    "Static/SDA-WebApp/tools/check-workflow.cjs",
+    "Static/SDA-WebApp/README.md",
+    ".github/workflows/deploy-sda-website.yml",
+    "Documentation/Projects/Working/SDA-WEBAPP-MIG-01-Working.md"
+  ],
+  "unchangedPriorEntries": 104,
+  "publicSourceAndEvidence": [
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/.github/workflows/deploy-sda-website.yml",
+      "sha256": "03e1d967172e4ee11e5d2861bc837503ce0b74ff612370d23d360149efd0455a",
+      "bytes": 3395
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Documentation/Projects/Working/SDA-WEBAPP-MIG-01-Working.md",
+      "sha256": "9dd60d0bd791f09bd7661cc77e790b266cf0adac8568b894456a5d4a3917b92c",
+      "bytes": 39075
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Documentation/Projects/Working/logs/SDA-WEBAPP-MIG-01/.gitignore",
+      "sha256": "e8210f483ac9c55a333e78fb1c3fe9016f2d74fff90fc10d2e42c03c9d596eda",
+      "bytes": 241
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Documentation/Projects/Working/logs/SDA-WEBAPP-MIG-01/W1-ready-preimage.md",
+      "sha256": "7cb555fcfb3a5f0353fb1fc1554f424dfd692f6f5b0c416ff8f8e7281f990d4b",
+      "bytes": 26163
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Documentation/Projects/Working/logs/SDA-WEBAPP-MIG-01/W2-before-result-append.md",
+      "sha256": "a7a198879b4a454427e3ae639d0fb8ad4952520e974ca6e5f6eb61a2de8fefe8",
+      "bytes": 26971
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Documentation/Projects/Working/logs/SDA-WEBAPP-MIG-01/action-pins-02.json",
+      "sha256": "17617d1ccd0cd4450793712d62d84889389d591dfc8c843dcf24cd8dedf02ac0",
+      "bytes": 1933
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Documentation/Projects/Working/logs/SDA-WEBAPP-MIG-01/action-ref-inspection-01.json",
+      "sha256": "580d01069ec1c326f6bafdd5d1030fd2fbb911459348b60988c35727f11b90e7",
+      "bytes": 1108
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Documentation/Projects/Working/logs/SDA-WEBAPP-MIG-01/browser-01/result.json",
+      "sha256": "73859d9fc9cd8f0a71c5f0def5ab4a40cccd6e6a22c88eef7f862c8dfc4aa969",
+      "bytes": 2853
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Documentation/Projects/Working/logs/SDA-WEBAPP-MIG-01/browser-02/result.json",
+      "sha256": "b54e1d981789e6bf516e8a7b6080e3450567e1c769c28d8bed83874d57590b80",
+      "bytes": 2042
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Documentation/Projects/Working/logs/SDA-WEBAPP-MIG-01/browser-03/result.json",
+      "sha256": "b485f3982a1dc4e6eebc47d679beba497ad57aad102d97c4a073c609b3eef030",
+      "bytes": 2451
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Documentation/Projects/Working/logs/SDA-WEBAPP-MIG-01/build-01.txt",
+      "sha256": "460823c54c324e7a1d8b33e537dadcc45ab075a30e97b6d38728cb2f465b385f",
+      "bytes": 438
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Documentation/Projects/Working/logs/SDA-WEBAPP-MIG-01/content-bind-01.json",
+      "sha256": "edd24fdf59cfc5ad35a8ae847eacaedbb71c8ef3cd888cf2024b9b945c13906f",
+      "bytes": 99610
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Documentation/Projects/Working/logs/SDA-WEBAPP-MIG-01/diff-check-crlf-01.txt",
+      "sha256": "7c0c0046b5f96065857d4a93a4e014878e47d12e162b42081e62a2d33b028e68",
+      "bytes": 161
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Documentation/Projects/Working/logs/SDA-WEBAPP-MIG-01/error-fixtures-01.json",
+      "sha256": "208ce8e45a2ce53e6bb00181ebc9170a1f2c28a7f82dadebce011a79aa780e4a",
+      "bytes": 8736
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Documentation/Projects/Working/logs/SDA-WEBAPP-MIG-01/live-http-01.json",
+      "sha256": "c8c12a17aff85aeb6a3543352a8c6c63c52b1bccee5d54cc9701817a4ee3a2d9",
+      "bytes": 6740
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Documentation/Projects/Working/logs/SDA-WEBAPP-MIG-01/live-inventory-01.json",
+      "sha256": "a02d4f97ecf52a635073f94df0cd52ebf198f2f763e735b5b2f7561c5b4d586b",
+      "bytes": 573621
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Documentation/Projects/Working/logs/SDA-WEBAPP-MIG-01/local-01/result.json",
+      "sha256": "79e9b1796998ede6f84768481a367163c2be04373990cd276d16b0d0af87d017",
+      "bytes": 303175
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Documentation/Projects/Working/logs/SDA-WEBAPP-MIG-01/local-02/result.json",
+      "sha256": "200253bf72c6f5b9a9a2dcb784cd53bb96459177e5cc2ff9d6f3767a05359fcd",
+      "bytes": 303175
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Documentation/Projects/Working/logs/SDA-WEBAPP-MIG-01/npm-ci-01.txt",
+      "sha256": "3260cc5ece6e0e6514c3bf9ff712915c9f260e898ca5760a2f984929899cbecd",
+      "bytes": 78
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Documentation/Projects/Working/logs/SDA-WEBAPP-MIG-01/owner-handoff-01.json",
+      "sha256": "23bfbeb414bf97dab9645790f513f243d393dab12a1e4d5ebe86fac027c68e64",
+      "bytes": 7414
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Documentation/Projects/Working/logs/SDA-WEBAPP-MIG-01/owner-handoff-02.json",
+      "sha256": "022af5259238a6358e0a68d46f3e75ad4ef4dbc9a7e40d0ed48eefb9d44ca64e",
+      "bytes": 12802
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Documentation/Projects/Working/logs/SDA-WEBAPP-MIG-01/package-01/package.json",
+      "sha256": "5a30527b629c896900ee42f740cfbbc0d4c870c92c4002bb2aaa480f3bd30f43",
+      "bytes": 105021
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Documentation/Projects/Working/logs/SDA-WEBAPP-MIG-01/package-01/publish.txt",
+      "sha256": "2ab998ac9bb62131e80f91237062bb351f81f22c3de7cb9b3b43f61d219a3dad",
+      "bytes": 430
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Documentation/Projects/Working/logs/SDA-WEBAPP-MIG-01/package-02/package.json",
+      "sha256": "689453b03b9165a25006c73e218f165b4c937a0a01d12e63d58abab68a001213",
+      "bytes": 209050
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Documentation/Projects/Working/logs/SDA-WEBAPP-MIG-01/package-02/publish.txt",
+      "sha256": "f47e7c6cee83967184fcc91d7ad2c255b9e2f94a2a611634c0c4346848e55051",
+      "bytes": 430
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Documentation/Projects/Working/logs/SDA-WEBAPP-MIG-01/package-runtime-02/result.json",
+      "sha256": "9d886f8b7b7570a2cd464d96312dd14c2c56acbf5c4102d63b7e777ba547e4ee",
+      "bytes": 303367
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Documentation/Projects/Working/logs/SDA-WEBAPP-MIG-01/plan-freeze-01.json",
+      "sha256": "50cf141e4e894f9b763818ca571ce63dd6bcfdd32c7a427a5864f6d3d3e9d6aa",
+      "bytes": 1685
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Documentation/Projects/Working/logs/SDA-WEBAPP-MIG-01/planning-baseline-01.json",
+      "sha256": "43899f379e72588f410d9edaef0da0319792f242e016e19d369144cb17199bcb",
+      "bytes": 8538
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Documentation/Projects/Working/logs/SDA-WEBAPP-MIG-01/release-guard-check-01.json",
+      "sha256": "2a5b044b4b7dee3680334e42343de68820f6045a3120aa964ebc505c8a8373f3",
+      "bytes": 1681
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Documentation/Projects/Working/logs/SDA-WEBAPP-MIG-01/remediation-registration-01.json",
+      "sha256": "62a2d9931431c67d0a411c6e728c720188cc1bed765d40bef5c805dbefb39014",
+      "bytes": 1497
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Documentation/Projects/Working/logs/SDA-WEBAPP-MIG-01/result-freeze-01.json",
+      "sha256": "ad12fa46aeb55eceac4e92ce82aa81892dfed13ce501c125c7e9f06b6ac9c0ee",
+      "bytes": 35275
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Documentation/Projects/Working/logs/SDA-WEBAPP-MIG-01/source-import-01.json",
+      "sha256": "339dfd34f74abfe6bef3c21bdd9e246f4ef7a087fe3916f572e608ba508dda1f",
+      "bytes": 154328
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Documentation/Projects/Working/logs/SDA-WEBAPP-MIG-01/workflow-check-01.json",
+      "sha256": "b5cc9fa7a587a80504c6f21d87cc8f37fd54459a9bfc9f2c3227819f620635d5",
+      "bytes": 826
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Documentation/Projects/Working/logs/SDA-WEBAPP-MIG-01/workflow-check-02.json",
+      "sha256": "188b89f10fd7efcbdc8e89f879f62511cdc3191d64da1404c513cc1fa8689a80",
+      "bytes": 825
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Documentation/Projects/Working/logs/SDA-WEBAPP-MIG-01/workflow-check-03.json",
+      "sha256": "188b89f10fd7efcbdc8e89f879f62511cdc3191d64da1404c513cc1fa8689a80",
+      "bytes": 825
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Documentation/Projects/Working/logs/SDA-WEBAPP-MIG-01/workflow-check-04.json",
+      "sha256": "405e4eb6afe8ad10836cbdd58c474cc1148abe7d706d83fcde36724f82bf8b32",
+      "bytes": 918
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Static/SDA-Standalone/application/files/3017/8976/4817/2024.12.04.02.023.-234.Huejotzingo.Mexico.SDA.WeatherVaults.Nexus.ShadowPhanTom_Studio_2048_sda.jpg",
+      "sha256": "8d17f225cec3c907cb6a7a8a0e94b74fafb34fb569637e87eb50f72ce5618d41",
+      "bytes": 1147057
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Static/SDA-Standalone/application/files/4717/3779/1366/2024.SDA24.Stickers.006_f2e5a283-c773-4081-b1e6-1b38b0aea5f0_NeuralAlchemist.jpeg",
+      "sha256": "5c98e34ac527e1be8d213dc6a0cd33a88040e4b920e3e042c1288912a84389c7",
+      "bytes": 57455606
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Static/SDA-Standalone/application/files/5717/3779/6062/jGR3MPa5wndYvABgUiUh--0--1wdkp_7.8125x-real-esrgan-x4-plus_2048_sda.jpg",
+      "sha256": "89f92677f0d860150f5239ed221e64abbef10d9e82a21827986e6196c92bafe7",
+      "bytes": 347701
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Static/SDA-Standalone/application/files/6017/8976/4398/SDA_Commissions_and_royalties-02.jpg",
+      "sha256": "d1cc8a44f8ef58f6b87fdf50104353bfc6f14986f13719db01bf3e1324d1957d",
+      "bytes": 863280
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Static/SDA-Standalone/application/files/8917/3675/7556/X7VFbwOU2m0gQUA1pUuq--1--k9ugd_watermark.jpg",
+      "sha256": "7960337145ef583da33de3ff9e306196c439124d7c7491b368e28df9fca25afb",
+      "bytes": 785723
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Static/SDA-Standalone/application/files/9917/4026/3334/Ways_to_collect_3.3.jpg",
+      "sha256": "df25dff0a6532230b0ed9519b62552af4b76a927c91547a06b94c19071e65802",
+      "bytes": 1354480
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Static/SDA-Standalone/application/files/thumbnails/large/3017/8976/4817/2024.12.04.02.023.-234.Huejotzingo.Mexico.SDA.WeatherVaults.Nexus.ShadowPhanTom_Studio_2048_sda.jpg",
+      "sha256": "87e8f6c9920d01dd071c693c98189f8ef12966a9ec2dc4223661c3e51b888d01",
+      "bytes": 374739
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Static/SDA-Standalone/application/files/thumbnails/large/5717/3779/6062/jGR3MPa5wndYvABgUiUh--0--1wdkp_7.8125x-real-esrgan-x4-plus_2048_sda.jpg",
+      "sha256": "29f3c8e55fb2b087353f5a185e2f672969f2cbea9f527dc2e216fadc033baf58",
+      "bytes": 140503
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Static/SDA-Standalone/application/files/thumbnails/large/6017/8976/4398/SDA_Commissions_and_royalties-02.jpg",
+      "sha256": "a924155ffb9e7bc06e975d765f382c84813d70104009d0f8df1e98d22c11df07",
+      "bytes": 191909
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Static/SDA-Standalone/application/files/thumbnails/large/8917/3675/7556/X7VFbwOU2m0gQUA1pUuq--1--k9ugd_watermark.jpg",
+      "sha256": "31c31a81b19f725715cc5ee907e5e7833903f36fbff4b2303ab022ab8cbd2bf6",
+      "bytes": 160147
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Static/SDA-Standalone/application/files/thumbnails/large/9917/4026/3334/Ways_to_collect_3.3.jpg",
+      "sha256": "1579eebbd91a044f3d1103d69f0cd8ff585fa61786fcb01a390c06d9bf2567ea",
+      "bytes": 101935
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Static/SDA-Standalone/application/files/thumbnails/medium/3017/8976/4817/2024.12.04.02.023.-234.Huejotzingo.Mexico.SDA.WeatherVaults.Nexus.ShadowPhanTom_Studio_2048_sda.jpg",
+      "sha256": "db1ef09296868fe771355f64a8e805dce6aef5ea09070a806ba34fd3b3e386b2",
+      "bytes": 251105
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Static/SDA-Standalone/application/files/thumbnails/medium/5717/3779/6062/jGR3MPa5wndYvABgUiUh--0--1wdkp_7.8125x-real-esrgan-x4-plus_2048_sda.jpg",
+      "sha256": "6ce60892bbedf35fefa0d35aa9f2e0d53f4b55cfc35d25dac9cd47266cc832f2",
+      "bytes": 105016
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Static/SDA-Standalone/application/files/thumbnails/medium/6017/8976/4398/SDA_Commissions_and_royalties-02.jpg",
+      "sha256": "c390138bacc60509e719847dad6d778d97659ea03bfc3ec81e46b7b65d02b009",
+      "bytes": 133374
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Static/SDA-Standalone/application/files/thumbnails/medium/8917/3675/7556/X7VFbwOU2m0gQUA1pUuq--1--k9ugd_watermark.jpg",
+      "sha256": "4ebafc696460e0a4ead913ed0d9ccee56cae3a59785e6a7e97268000a1ef8e3e",
+      "bytes": 117218
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Static/SDA-Standalone/application/files/thumbnails/medium/9917/4026/3334/Ways_to_collect_3.3.jpg",
+      "sha256": "b1fa6791a3a5c43ee3cdc9b5d7473b7900915811075b870636dbde65af376a80",
+      "bytes": 72459
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Static/SDA-Standalone/application/files/thumbnails/small/3017/8976/4817/2024.12.04.02.023.-234.Huejotzingo.Mexico.SDA.WeatherVaults.Nexus.ShadowPhanTom_Studio_2048_sda.jpg",
+      "sha256": "b25c95a9c0c7bd48673822dc0640cd6aca971aae0eb8b1c855cd07d6d0f8f1bf",
+      "bytes": 151523
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Static/SDA-Standalone/application/files/thumbnails/small/5717/3779/6062/jGR3MPa5wndYvABgUiUh--0--1wdkp_7.8125x-real-esrgan-x4-plus_2048_sda.jpg",
+      "sha256": "8c7ca3034b0c2ad9508ba7e22629ed0ace8b4d7363f69a679bce8989b2f4a7b9",
+      "bytes": 72964
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Static/SDA-Standalone/application/files/thumbnails/small/6017/8976/4398/SDA_Commissions_and_royalties-02.jpg",
+      "sha256": "e9125d43cc455c5a1b9692a03c1b63ed2e521332709fab41bd9473586d6b1223",
+      "bytes": 88648
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Static/SDA-Standalone/application/files/thumbnails/small/8917/3675/7556/X7VFbwOU2m0gQUA1pUuq--1--k9ugd_watermark.jpg",
+      "sha256": "04cf1c8747040a7617710b98988b138751f3d7479288ffe67fb649fc51abea56",
+      "bytes": 78579
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Static/SDA-Standalone/application/files/thumbnails/small/9917/4026/3334/Ways_to_collect_3.3.jpg",
+      "sha256": "393440884b6492071446d9207a31d39aa2d59fe856a0cf78c66550a264322bb1",
+      "bytes": 47360
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Static/SDA-Standalone/assets/contact.js",
+      "sha256": "6e6639c6a34542ce201cb920dbad7c8d518bda893d6b141b4d7ae355c61d726c",
+      "bytes": 5036
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Static/SDA-Standalone/assets/placeholders/artists-dreamscape.png",
+      "sha256": "211872feb79b29a9772cc4852d2939dfeb2d9cc2f57679dde2a8c06fc6909742",
+      "bytes": 1635761
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Static/SDA-Standalone/assets/placeholders/sda-frame.png",
+      "sha256": "f0b2ceca973299ef067ef5bd800e525345d8537b35fcf8bb350e9238bb5ace64",
+      "bytes": 2186294
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Static/SDA-Standalone/index.html",
+      "sha256": "3701564b46684aaf939d91216fae70a9907d72fe0f771b7769cf760add49191d",
+      "bytes": 22629
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Static/SDA-Standalone/index.php/about.html",
+      "sha256": "6cfb3aa3aed60b6e374ebbd7b40a9d2469f9302f6f034e7c617fdcc26be8566b",
+      "bytes": 17204
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Static/SDA-Standalone/index.php/about/sda-history.html",
+      "sha256": "6653e7deeb2cfb12ce79c326643930bf58a3a1a8c1a34d1a430574fa7a555a2d",
+      "bytes": 18811
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Static/SDA-Standalone/index.php/about/sda-timeline.html",
+      "sha256": "a1c77af43f04c2cf921c32da56fbe54a1e173f38fcbda0d9dbf78dda83e60b31",
+      "bytes": 20264
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Static/SDA-Standalone/index.php/about/singularity-charter.html",
+      "sha256": "82c962443c79299b346a214b8aa8097c8ba2e01c0de95a8321e2a9bfdd31e3b2",
+      "bytes": 21949
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Static/SDA-Standalone/index.php/about/singularity-charter/press-release.html",
+      "sha256": "6938eb6dc1aafdcc75ec91055f696c632fdf1bccff034dfa1a21c9a55c7649c9",
+      "bytes": 18646
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Static/SDA-Standalone/index.php/art.html",
+      "sha256": "8e38e2fb5f1ce6441ebcbde796795175a146431e0330bb6cf13cd32cd187807d",
+      "bytes": 33275
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Static/SDA-Standalone/index.php/art/frames.html",
+      "sha256": "b732c3575a13d313f9ed7b95dfeb69231b3e930e2eb1859946ddbced0fb3d6e7",
+      "bytes": 41092
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Static/SDA-Standalone/index.php/art/galleries.html",
+      "sha256": "0e34b52888b4e341acfe0ba2a2f22e019283a291311f0bca8879e0d2a6b6d202",
+      "bytes": 21225
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Static/SDA-Standalone/index.php/art/galleries/advanced-aether-adworks.html",
+      "sha256": "79a43df3e5bb0a35967c8b7d73ad9cb23cd276727e9293beda89d6b8b1f74be1",
+      "bytes": 14167
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Static/SDA-Standalone/index.php/art/projects.html",
+      "sha256": "be998212c4f55ddbab4c41227065aa30389a46598b243c4a3e7899cddca7ee93",
+      "bytes": 24699
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Static/SDA-Standalone/index.php/art/projects/advanced-aether-adworks.html",
+      "sha256": "63eedbd9a9364d18fa6599b39a34a450e0c41fb76ecee210eb27c63a359ea204",
+      "bytes": 14161
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Static/SDA-Standalone/index.php/art/sda-collection.html",
+      "sha256": "2a3b7c3a7ac79d0cf19793cfbf7d60f2c87154015fe769bfaee0d3622d337024",
+      "bytes": 13828
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Static/SDA-Standalone/index.php/artists.html",
+      "sha256": "b0a2d324504647d7634b194973f3bfbeb2669e6808d904e08eaba27646c118b8",
+      "bytes": 29754
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Static/SDA-Standalone/index.php/artists/exposure.html",
+      "sha256": "d11cdde69ec964bcf579b1b770c04505c886432d53ef1fb10259135c3b798577",
+      "bytes": 32747
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Static/SDA-Standalone/index.php/artists/income.html",
+      "sha256": "211b5738d81d043f8257d52c4c8ecf9c6bd77087695b97a8efd4530a440648a2",
+      "bytes": 31793
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Static/SDA-Standalone/index.php/businesses.html",
+      "sha256": "f1f0bfccba40e2a54d052c9bda3c73c7da6cdb45a7e70aa8dcc6fb3331ff78a3",
+      "bytes": 31920
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Static/SDA-Standalone/index.php/collectors.html",
+      "sha256": "32ad0f7fe94e42370fefc47319f5e2d03ca82d558e90b2fd3fb3cfcefb1fb60a",
+      "bytes": 51089
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Static/SDA-Standalone/index.php/collectors/commissions.html",
+      "sha256": "23e9a66ceff9047e1f7bdc02fc04da7f4080090eeb1ca9878cedd2f551c747c2",
+      "bytes": 20177
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Static/SDA-Standalone/index.php/collectors/investor-bundles.html",
+      "sha256": "85aa8a72b0e4f284b2c27591b83525c2dae7f4addb75abddb9d2ea93bca43fe9",
+      "bytes": 13966
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Static/SDA-Standalone/index.php/collectors/nft-marketplaces.html",
+      "sha256": "713d3f896245144aac1879dc25505987e9dca9ccbfd58bdae4a5a57ae23535f4",
+      "bytes": 13958
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Static/SDA-Standalone/index.php/collectors/specifications.html",
+      "sha256": "cd5df84e1e108e0638c6bd2594fb43ac48866bdefaded3d03c46e4cb503ce858",
+      "bytes": 29236
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Static/SDA-Standalone/index.php/contact.html",
+      "sha256": "34f0958a11bb74c48c2c3eb9fa10d03fd923fd8200d63100229a5495aa328dcb",
+      "bytes": 28805
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Static/SDA-Standalone/index.php/feeds-sdaframe.html",
+      "sha256": "f032ef2391998b7a9d66e26a1918ce92a0ac6abf4658370dd087b84a6faa7267",
+      "bytes": 24113
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Static/SDA-Standalone/index.php/membership.html",
+      "sha256": "d76f6b52296e93f76a58e74536c91c4fa1c19d538058ce575709b6717a360966",
+      "bytes": 27985
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Static/SDA-Standalone/index.php/membership/agents.html",
+      "sha256": "4e231fe3aaa9ff06f75f125af965143febd09ecccf86320f6c3ad997cc25aa83",
+      "bytes": 21941
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Static/SDA-Standalone/index.php/membership/amplifiers.html",
+      "sha256": "e391a521406bc897225a219bfa8e5f7c8a44e9fb01653a47e86c4503815211d7",
+      "bytes": 22004
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Static/SDA-Standalone/index.php/membership/artists.html",
+      "sha256": "b32b4e9aa0126ee1f4bfe199a057c3188cee32688c300a4341959e689bf0e455",
+      "bytes": 25187
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Static/SDA-Standalone/index.php/membership/curators.html",
+      "sha256": "41f33a0b361ce81d425120abbc872b93567352c6e626759f79dc030a044b486f",
+      "bytes": 25890
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Static/SDA-Standalone/index.php/membership/moderators.html",
+      "sha256": "9c062b9674c26ddff6fc7321d4e90f8acb95eafc363ae61b3f064c71d5c2d1f7",
+      "bytes": 21971
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Static/SDA-Standalone/index.php/membership/operators.html",
+      "sha256": "8014e6ea118cc345aab2e8c71abe098540dc149291b2c531d0a890c3bf729e5e",
+      "bytes": 23877
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Static/SDA-Standalone/index.php/membership/welcome.html",
+      "sha256": "2bd6501cf5bdf22f5807ad693bc3aaf71ebfcb10820907d46d98bfe98e9dcb4b",
+      "bytes": 17284
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Static/SDA-Standalone/index.php/nft-proposal.html",
+      "sha256": "a64a52a3bb1fc02f31c06875670f91c5fc103a7717b5dc6ee062e6fd659a5290",
+      "bytes": 26494
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Static/SDA-Standalone/index.php/pulses.html",
+      "sha256": "cecb25ed48816e44c67b229d207f9a65621ba800fdf4ae20fabfd973dedb7f06",
+      "bytes": 15961
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Static/SDA-Standalone/index.php/pulses/bddb.html",
+      "sha256": "662ca340a320ce8777229e232bb911bd11b6413a98d4a02297874f118e000aba",
+      "bytes": 16195
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Static/SDA-Standalone/index.php/pulses/point-break.html",
+      "sha256": "ea3083140f13ba544e6fc2c8a4131ec052db550708386aa628f4197db0ab770c",
+      "bytes": 16240
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Static/SDA-Standalone/index.php/pulses/sda-frame.html",
+      "sha256": "3479fc8d871d25e3cfdc401054ec799eea3ea16976834b50a644f7d7f1a71954",
+      "bytes": 16230
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Static/SDA-Standalone/index.php/pulses/sda-fusion.html",
+      "sha256": "6bb0bbdb8f13e930352187d518450edef5262da544984afdc129e235f5d48704",
+      "bytes": 16237
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Static/SDA-Standalone/index.php/pulses/sda-skydeck.html",
+      "sha256": "823b93bb307addb742c5dd303c3abf85efe412712195de22a93a7931a90226c9",
+      "bytes": 16242
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Static/SDA-Standalone/index.php/pulses/sda-studio.html",
+      "sha256": "e976a4493e88b98024c38d1e427dc88b0c3ce1630c7c931ee97b7827dd54bec0",
+      "bytes": 16237
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Static/SDA-Standalone/index.php/pulses/sovereign-trust.html",
+      "sha256": "69f863c4590539110a21b976715799f45c317472606f2ab039638d2e6bc172b6",
+      "bytes": 16152
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Static/SDA-Standalone/index.php/sda-technology.html",
+      "sha256": "3d56ac3bb35a56e87c7cf414ebb12ed10e1b9ee25df6e45332fdcd647e274328",
+      "bytes": 21951
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Static/SDA-Standalone/staticwebapp.config.json",
+      "sha256": "bc6e2d97303c227cecc2003eb7468cf61c549a825c847be412a077191480194e",
+      "bytes": 5048
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Static/SDA-WebApp/Program.cs",
+      "sha256": "5eda323ae16646840401d197c2e47e59e734d11136b166a7ea92835a6d6d2966",
+      "bytes": 4133
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Static/SDA-WebApp/README.md",
+      "sha256": "dbe5eb98c665faaaac2c20455e411c6db828ede69356edc81034d0a97cf6a4f5",
+      "bytes": 6871
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Static/SDA-WebApp/SDA.Website.csproj",
+      "sha256": "096d7f7151530e7a45b06c4309c98670f7e37112f74803652cf43b2ed66096bb",
+      "bytes": 503
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Static/SDA-WebApp/content-contract.json",
+      "sha256": "e1f45d775db89ae580694c16daea38550db0ce133472ea6388f83efee175e99e",
+      "bytes": 296020
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Static/SDA-WebApp/tools/bind-content.cjs",
+      "sha256": "bc2b86a4ed0b9f42b3da04ba0bb5cc73019f505f7711bf67774476bb13ab47b8",
+      "bytes": 626
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Static/SDA-WebApp/tools/browser-check.cjs",
+      "sha256": "bb06edfd353aa416b2815af2dd27c166464f2d2e61c2bb84df018755e21efc66",
+      "bytes": 6718
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Static/SDA-WebApp/tools/check-host.cjs",
+      "sha256": "b4f811a2e3b19da1b4deb9b5ac73f89656790d8abb4594656a1b6ab237f375aa",
+      "bytes": 5671
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Static/SDA-WebApp/tools/check-release-target.cjs",
+      "sha256": "4f9ebeb05f220e34898e189fbd3ca89eb3e24316bde0a032bd882c26c10ec5dd",
+      "bytes": 7566
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Static/SDA-WebApp/tools/check-workflow.cjs",
+      "sha256": "aea599c3668a4c8f3ae5f475effb9348e120c28dfbb90a8c805807ad3e2fcc83",
+      "bytes": 2431
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Static/SDA-WebApp/tools/common.cjs",
+      "sha256": "b328c3d093d458e0326e16f4653ba6c65d8d368848409876c5dfca4c5e701ba0",
+      "bytes": 1558
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Static/SDA-WebApp/tools/package.cjs",
+      "sha256": "4b8c64d649e39b0abc2c85efdf80b4213ce9c75ff6489bcae0ec8cc32e55c1be",
+      "bytes": 4512
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Static/SDA-WebApp/tools/release-target.cjs",
+      "sha256": "18397f600bf767d09e1f4b64a3f8f71f69b077bfa5fcbb3c40282bdb88171de8",
+      "bytes": 6304
+    }
+  ],
+  "artifact": {
+    "receiptPath": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Documentation/Projects/Working/logs/SDA-WEBAPP-MIG-01/package-02/package.json",
+    "receiptSha256": "689453b03b9165a25006c73e218f165b4c937a0a01d12e63d58abab68a001213",
+    "zip": {
+      "path": "C:\\GitHub\\SiliconDreamArtists\\PublishGraph.Foundation.worktrees\\sda-website-migration-setup\\Documentation\\Projects\\Working\\logs\\SDA-WEBAPP-MIG-01\\package-02\\website.zip",
+      "sha256": "42f07af3f6239c5a4205e419d201cbf4b06ba2216dc3da03740f25fc89706a4f",
+      "bytes": 143084287
+    },
+    "archiveFiles": 458,
+    "contentCount": 452
+  },
+  "checks": [
+    {
+      "path": "Documentation/Projects/Working/logs/SDA-WEBAPP-MIG-01/package-runtime-02/result.json",
+      "counts": {
+        "pass": 2342,
+        "fail": 0,
+        "total": 2342
+      },
+      "reuse": "runtime/content/binary unchanged"
+    },
+    {
+      "path": "Documentation/Projects/Working/logs/SDA-WEBAPP-MIG-01/browser-03/result.json",
+      "counts": {
+        "pass": 15,
+        "fail": 0,
+        "total": 15
+      },
+      "reuse": "runtime/content/iframe/browser dependencies unchanged"
+    },
+    {
+      "path": "Documentation/Projects/Working/logs/SDA-WEBAPP-MIG-01/workflow-check-04.json",
+      "counts": {
+        "pass": 10,
+        "fail": 0,
+        "total": 10
+      }
+    },
+    {
+      "path": "Documentation/Projects/Working/logs/SDA-WEBAPP-MIG-01/release-guard-check-01.json",
+      "counts": {
+        "pass": 17,
+        "fail": 0,
+        "total": 17
+      }
+    }
+  ],
+  "primaryFinalAssertionVector": {
+    "pass": 2384,
+    "fail": 0,
+    "total": 2384
+  },
+  "ownerPacket": {
+    "path": "Documentation/Projects/Working/logs/SDA-WEBAPP-MIG-01/owner-handoff-02.json",
+    "sha256": "022af5259238a6358e0a68d46f3e75ad4ef4dbc9a7e40d0ed48eefb9d44ca64e"
+  },
+  "remainingDependencies": [
+    "Actual Linux/App Service integration not executed",
+    "OAuth disposition/replacement and hostname confirmation pending",
+    "Infrastructure app IDs/OIDC environment agreement/TLS-DNS/capacity/port gates pending",
+    "Old SWA and disabled Function retained; no cloud effects",
+    "Inherited accepted whitespace retained"
+  ],
+  "publication": "No commit/push pending independent scoped PASS; explicit manifest-only staging; ignore private/large artifacts"
+}

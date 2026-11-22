@@ -1,0 +1,34 @@
+# SDA website Linux host
+
+This .NET 10 Web App serves the accepted 452-file website at the site root. The pinned [content contract](content-contract.json) binds the accepted LIVE artifact, per-file SHA256, observed route aliases and logical headers. It preserves the contact form as disabled and serves the captured disabled API error. It makes no backend call and sends no mail.
+
+OAuth is **not implemented**. Existing SWA OAuth is a separate unresolved migration dependency. This host must not receive a deployment or public traffic until the owner supplies an accepted OAuth disposition or replacement and the affected review gate. Existing SWA and disabled contact Function remain intact. Local static acceptance does not establish full migration acceptance.
+
+The runtime content lives in [SDA-Standalone](../SDA-Standalone/). Historical development tests there describe older captures and must not rebuild the accepted runtime content. Packaging selects only the 452 pinned runtime files; developer tools and evidence are excluded. The included staticwebapp.config.json remains publicly hidden with its observed 404 response. There is no PHP runtime or catch-all homepage fallback.
+
+Prerequisites: .NET SDK 10.0.404, Node 22 or later, PowerShell 7 (`pwsh`, also present on the Ubuntu 24.04 GitHub runner). Browser checks use the standalone site's pinned Playwright and installed Edge, with pinned Chromium as the documented fallback. Run from the repository root, using fresh output directories:
+
+```powershell
+node Static/SDA-WebApp/tools/bind-content.cjs --output artifacts/website/content.json
+dotnet build Static/SDA-WebApp/SDA.Website.csproj -c Release
+node Static/SDA-WebApp/tools/check-host.cjs --run artifacts/website/local
+npm ci --prefix Static/SDA-Standalone --ignore-scripts
+node Static/SDA-WebApp/tools/browser-check.cjs --run artifacts/website/browser
+node Static/SDA-WebApp/tools/check-workflow.cjs --output artifacts/website/workflow.json
+node Static/SDA-WebApp/tools/check-release-target.cjs --output artifacts/website/release-guard.json
+node Static/SDA-WebApp/tools/package.cjs --output artifacts/website/package/website.zip --receipt artifacts/website/package/package.json
+```
+
+All tools refuse existing receipts. Package checks re-open the ZIP and verify every runtime entity. The framework-dependent DLL is platform neutral; a Windows executable/apphost is not required or packaged. To run the extracted package locally, set `SDA_CONTENT_ROOT` to its `wwwroot` subdirectory and run `dotnet SDA.Website.dll --urls http://127.0.0.1:4173` from the extracted package directory.
+
+For the ordinary Linux App Service .NET 10 stack, proposed startup is `dotnet /home/site/wwwroot/SDA.Website.dll`, `SDA_CONTENT_ROOT=/home/site/wwwroot/wwwroot` and `ASPNETCORE_URLS=http://0.0.0.0:8080`. The infrastructure owner must verify the actual built-in image port/startup contract before release. Disable build-on-deploy (`SCM_DO_BUILD_DURING_DEPLOYMENT=false`). The ZIP includes published binaries and accepted content; it is not an Oryx source build. Always On, HTTPS-only, TLS >=1.2, disabled FTPS/basic publishing and existing B1/B1/B3 plan identity are required. Static hosting needs no vault role or mail credential; runtime managed identity selection remains with the infrastructure owner.
+
+The [manual workflow](../../.github/workflows/deploy-sda-website.yml) prepares `sda-website-dev`, `sda-website-test` and `sda-website-prod` GitHub environments. Those environments do not currently exist. The infrastructure owner's different `sda-dev/test/prod` subject candidates require agreement and affected review before creation or dispatch. Configure no substitute identity silently. The workflow uses pinned actions, per-environment serialization and app-scoped OIDC, with all target IDs and reviewed packet digests required before deployment. It has no automatic trigger. The owner must bind environment branch protections, federated subject, exact deployment principal/role, target app/plan/runtime and auth disposition together. No Conductor identity is reused.
+
+Supply the exact accepted owner release-packet bytes as the nonsecret GitHub environment variable `SDA_HOSTING_PACKET_BASE64`, and their SHA256 as `SDA_HOSTING_PACKET_SHA256`. The guard hashes the decoded bytes before reading fields; a digest string alone is insufficient. The version1 packet binds environment/subscription/app ID, tenant/client/principal/role mapping and its accepted evidence hash, exact OIDC issuer/audience/subject, and actual observed plan ID/SKU/Linux/region/capacity with a timestamp and owner verification evidence hash. Required B1 is not evidence of an observed upgrade: Dev/Test currentlyF1 must remain blocked until the owner supplies accepted B1 observation. Auth-disposition evidence is bound in the same packet. The owner must collect fresh verification within its protected release boundary and satisfy DOMAIN-01 and all environment-specific stage prerequisites before issuing that accepted packet. Dev domain acceptance precedes Test where required by the owner's exact plan; this workflow supplies no override.
+
+The release identity reads only its app/config/basic-publishing policies and app-scoped role assignments. It compares the authenticated Azure client ID with the accepted client/principal pair before checking that principal's roles. It never reads the shared serverFarm or directory/Graph, and receives no extra permission to do so. Shared plan facts and client/principal mapping are owner-verification responsibilities bound by the accepted packet. The focused guard checker uses synthetic in-memory responses and proves correct mapping succeeds, mismatches fail, and no shared-plan request is needed; it performs no cloud calls.
+
+The final package receipt supplies content bytes, ZIP bytes and exact hashes for capacity/release planning. Proposed load sample after owner approval: five minutes of representative home, clean Art, contact and static-asset GETs at a specified bounded concurrency; no contact submission. The owner must select concurrency and p95/error/CPU/memory limits accounting for shared Fusion/Frame/other apps before capacity acceptance. No capacity or uptime guarantee is inferred from Always On or local tests.
+
+DNS, certificates and rollback are exclusively infrastructure-owner actions. All four production names and confirmed Dev/Test names require trusted SNI/certificates and exact per-name DNS forward/inverse packets. Existing four production A aliases target SWA; apex needs an observed App Service inbound IP plus verification TXT, and www needs a protected A-alias-to-CNAME replacement with the exact original alias inverse. Prebound DNS01/BYOC certificate eligibility or an explicitly accepted gap is unresolved. Local host checks cannot prove those prerequisites or authorize cutover, retirement or deletion.

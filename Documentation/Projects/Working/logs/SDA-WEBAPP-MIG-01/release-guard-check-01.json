@@ -1,0 +1,79 @@
+{
+  "mode": "synthetic fixtures and in-memory mocked app-only CLI; zero cloud calls",
+  "guardSha256": "18397f600bf767d09e1f4b64a3f8f71f69b077bfa5fcbb3c40282bdb88171de8",
+  "counts": {
+    "pass": 17,
+    "fail": 0,
+    "total": 17
+  },
+  "rows": [
+    {
+      "name": "complete-app-only-path:dev",
+      "pass": true
+    },
+    {
+      "name": "complete-app-only-path:test",
+      "pass": true
+    },
+    {
+      "name": "complete-app-only-path:prod",
+      "pass": true
+    },
+    {
+      "name": "mismatched-client-fails-before-azure",
+      "pass": true
+    },
+    {
+      "name": "unrelated-narrow-principal-fails-before-azure",
+      "pass": true
+    },
+    {
+      "name": "authenticated-client-not-accepted-owner-client",
+      "pass": true
+    },
+    {
+      "name": "observed-role-principal-mismatch",
+      "pass": true
+    },
+    {
+      "name": "inherited-broad-role-rejected",
+      "pass": true
+    },
+    {
+      "name": "actual-app-plan-mismatch",
+      "pass": true
+    },
+    {
+      "name": "owner-observed-f1-does-not-prove-required-b1",
+      "pass": true
+    },
+    {
+      "name": "missing-owner-plan-evidence-rejected",
+      "pass": true
+    },
+    {
+      "name": "missing-owner-identity-evidence-rejected",
+      "pass": true
+    },
+    {
+      "name": "wrong-federated-environment-rejected",
+      "pass": true
+    },
+    {
+      "name": "auth-disposition-mismatch-rejected",
+      "pass": true
+    },
+    {
+      "name": "basic-publishing-enabled-rejected",
+      "pass": true
+    },
+    {
+      "name": "packet-byte-drift-rejected",
+      "pass": true
+    },
+    {
+      "name": "no-shared-plan-or-directory-cli-path",
+      "pass": true
+    }
+  ]
+}

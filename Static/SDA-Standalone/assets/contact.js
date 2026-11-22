@@ -7,7 +7,8 @@
   var mapping={'63':'membership','66':'artist','64':'commission','65':'sda-frame','89':'collectors','90':'other'};
   var subjects=Array.from(form.querySelectorAll('input[type="checkbox"]')),token='',busy=false,widgetId;
   var uncertain='We could not confirm the result. Your inquiry may have been accepted; retrying may send a duplicate.';
-  function configured(){try{var u=new URL(form.dataset.endpoint);return form.dataset.enabled==='true'&&!!form.dataset.sitekey&&(u.protocol==='https:'||(u.protocol==='http:'&&['127.0.0.1','localhost'].includes(u.hostname)&&['127.0.0.1','localhost'].includes(location.hostname)));}catch(e){return false;}}
+  function endpoint(){try{if(form.dataset.endpoint!=='/api/contact')return null;var u=new URL(form.dataset.endpoint,location.origin),local=location.protocol==='http:'&&['127.0.0.1','localhost','[::1]'].includes(location.hostname);return (location.protocol==='https:'||local)&&u.origin===location.origin&&u.pathname==='/api/contact'&&!u.username&&!u.password&&!u.search&&!u.hash?u.href:null;}catch(e){return null;}}
+  function configured(){return form.dataset.enabled==='true'&&!!form.dataset.sitekey&&!!endpoint();}
   function ready(){button.disabled=busy||!configured()||!token;}
   var fieldLabels={firstName:'First name',lastName:'Last name',email:'Email address',subjects:'Subjects',message:'Message',challengeToken:'Verification challenge'},fieldFeedback=false;
   function say(text){status.textContent=text;fieldFeedback=false;}
@@ -31,7 +32,7 @@
     Object.keys(fields).forEach(function(k){data[k]=form.elements.namedItem(fields[k]).value;});
     var controller=new AbortController(),timer=setTimeout(function(){controller.abort();},30000);
     try {
-      var response=await fetch(form.dataset.endpoint,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(data),signal:controller.signal,credentials:'omit',redirect:'error'});
+      var response=await fetch(endpoint(),{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(data),signal:controller.signal,credentials:'omit',redirect:'error'});
       var result=await response.json();
       if(response.status===202&&result&&result.ok===true&&result.status==='accepted'&&typeof result.requestId==='string'&&result.requestId&&Object.keys(result).sort().join(',')==='ok,requestId,status'){
         form.reset();subjectValidity();say('Your inquiry was accepted for sending. Thank you.');

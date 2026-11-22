@@ -1,0 +1,44 @@
+{
+  "function": "SDA-WEBAPP-MIG-01-I",
+  "reviewer": "/root/astra_reviewer",
+  "disposition": "REMEDIATE",
+  "reviewedResultSha256": "ad12fa46aeb55eceac4e92ce82aa81892dfed13ce501c125c7e9f06b6ac9c0ee",
+  "findings": [
+    {
+      "id": "F01",
+      "severity": "medium",
+      "dimensions": [
+        "R1",
+        "R3",
+        "R6"
+      ],
+      "location": "release-target.cjs:26",
+      "requirement": "app-scoped Website Contributor cannot read shared serverFarm",
+      "outcome": "consume exact accepted owner plan verification packet; no permission expansion"
+    },
+    {
+      "id": "F02",
+      "severity": "medium",
+      "dimensions": [
+        "R1",
+        "R4",
+        "R5"
+      ],
+      "location": "release-target.cjs:28",
+      "requirement": "role principal must bind authenticated client; packet digest variables must bind actual packet bytes",
+      "outcome": "accepted owner client/principal mapping and focused mocked positive/negative complete guard tests"
+    }
+  ],
+  "dimensions": {
+    "R1": "finding",
+    "R2": "finding",
+    "R3": "finding",
+    "R4": "finding",
+    "R5": "finding",
+    "R6": "finding",
+    "R7": "pass",
+    "R8": "pass"
+  },
+  "unchangedAcceptedEvidence": "109 source/evidence identities,452 entities,458ZIP entries verified by reviewer; static behavior good; preserve package02 and all source/browser evidence",
+  "authority": "coordinator explicitly authorized bounded correction within exact W1 READY; no live effects or new permissions"
+}

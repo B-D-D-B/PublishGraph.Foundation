@@ -1,0 +1,9 @@
+# Local immutable preservation and release artifacts; never publish auth nonces/cookies.
+boundary-http-01.json
+registration-preimage.bin
+source-preimages-*/
+package-*/publish/
+package-*/*.zip
+package-extracted-*/
+**/host.txt
+browser-*/*.png

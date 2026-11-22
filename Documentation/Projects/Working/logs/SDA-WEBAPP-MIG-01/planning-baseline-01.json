@@ -1,0 +1,152 @@
+{
+  "capturedUtc": "2026-11-22T05:18:11.789Z",
+  "branch": "agents/sda-website-migration-setup",
+  "commit": "b8f8546b12e008dd7aeca541022deff50a0e187b",
+  "identities": [
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation/AGENTS.md",
+      "sha256": "d3b2d81b9351aaed4b8644a223829787d73cc98c9efb31aa0968dce33d9d9339"
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/BDDB.AITooling/guidance/standard-practices.md",
+      "sha256": "a0182beeb6266a0627007ec0a2d255e3feba60578c640e67a020218709507bce"
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/BDDB.AITooling/guidance/worker-review-cycle.md",
+      "sha256": "c9dda120c85d4b03976172d8104be52c30c2cc02ad87db556074b85b48e22ff8"
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/BDDB.AITooling/guidance/technical-audit-rubric.md",
+      "sha256": "e9cc31452998747d3a7efde04ccef40dec346a8305be6efdb05873ce6cb869ef"
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/BDDB.AITooling/guidance/result-audit-rubric.md",
+      "sha256": "a259be47851e260c2bb3ef12f71112f7ecf83d49c85a8ed091494ee169b2cb51"
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/BDDB.Infrastructure/Documentation/Projects/Working/SDA-B3-SITES-PLAN-01-Working.md",
+      "sha256": "3860836fde7ed22c078a879f2f10ff4f6dd329b98fd2669e75809af66e094a90"
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/BDDB.Infrastructure/Documentation/Projects/Working/logs/SDA-WEBSITE-MAINFRAME-01/artifact-manifest.json",
+      "sha256": "07baae018675574b9d7b060ff1373af1128e6c6eb49fb43390c751aebd04425f"
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/BDDB.Infrastructure/Documentation/Projects/Working/logs/SDA-WEBSITE-MAINFRAME-01/independent-result-review-01.md",
+      "sha256": "f49913a7d74dc6ae5a64ea19d5a75dc7a096481d20a05b10d146968616f7976d"
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/BDDB.Infrastructure/Documentation/Projects/Working/logs/SDA-WEBSITE-MAINFRAME-01/result-manifest.json",
+      "sha256": "0c0151d09687071dae2b98d39382f4ceec58054edfd52232ba46dffe31298f61"
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/BDDB.Infrastructure/Documentation/Projects/Working/logs/SDA-WEBSITE-MAINFRAME-01/final-guards.json",
+      "sha256": "4d1266fcc35708add7bad4e021b696f8f325a4fde7042b3cdbbee922bc1a1829"
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/BDDB.Infrastructure/Documentation/Projects/Working/logs/SDA-WEBSITE-MAINFRAME-01/postdeploy-http.json",
+      "sha256": "64b995746fa53f20c52adfb95ea33ea2cdcccf6baa53e5f21b1216562604b99e"
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/BDDB.Infrastructure/Documentation/Projects/Working/logs/SDA-WEBSITE-MAINFRAME-01/handoff-binding.json",
+      "sha256": "1c429b566aa88c0927c4db17bd2da3daceec5009eae86aff178256309b7cc085"
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Documentation/Projects/Working/SDA-WEBAPP-MIG-01-Working.md",
+      "sha256": "4a9ba3eddbd134ee5aed772e3c42a0ce21ab5fe75a7b92175b67a952a5469bd3"
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Static/SDA-Standalone/README.md",
+      "sha256": "867c0b00ebe14925494e0267dbd0f46181f357f42962cdc420e9a8015d716201"
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Static/SDA-Standalone/staticwebapp.config.json",
+      "sha256": "3fb4b1d55302b1ebd66e49df3174fc42ce7e17f657c97d6e2dd3f376ee67547c"
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Functions/SDA.Contact/README.md",
+      "sha256": "f1d300f1abff06213566db9cbd9645cf713ce973ae2eeaf91fd8f038d9f70737"
+    }
+  ],
+  "artifact": {
+    "root": "C:/Users/sfost/AppData/Local/Temp/sda-website-mainframe-01-artifact",
+    "count": 452,
+    "verified": 452,
+    "invalid": [],
+    "sourceDifferenceCount": 67,
+    "sourceDifference": [
+      "application/files/3017/8976/4817/2024.12.04.02.023.-234.Huejotzingo.Mexico.SDA.WeatherVaults.Nexus.ShadowPhanTom_Studio_2048_sda.jpg",
+      "application/files/4717/3779/1366/2024.SDA24.Stickers.006_f2e5a283-c773-4081-b1e6-1b38b0aea5f0_NeuralAlchemist.jpeg",
+      "application/files/5717/3779/6062/jGR3MPa5wndYvABgUiUh--0--1wdkp_7.8125x-real-esrgan-x4-plus_2048_sda.jpg",
+      "application/files/6017/8976/4398/SDA_Commissions_and_royalties-02.jpg",
+      "application/files/8917/3675/7556/X7VFbwOU2m0gQUA1pUuq--1--k9ugd_watermark.jpg",
+      "application/files/9917/4026/3334/Ways_to_collect_3.3.jpg",
+      "application/files/thumbnails/large/3017/8976/4817/2024.12.04.02.023.-234.Huejotzingo.Mexico.SDA.WeatherVaults.Nexus.ShadowPhanTom_Studio_2048_sda.jpg",
+      "application/files/thumbnails/large/5717/3779/6062/jGR3MPa5wndYvABgUiUh--0--1wdkp_7.8125x-real-esrgan-x4-plus_2048_sda.jpg",
+      "application/files/thumbnails/large/6017/8976/4398/SDA_Commissions_and_royalties-02.jpg",
+      "application/files/thumbnails/large/8917/3675/7556/X7VFbwOU2m0gQUA1pUuq--1--k9ugd_watermark.jpg",
+      "application/files/thumbnails/large/9917/4026/3334/Ways_to_collect_3.3.jpg",
+      "application/files/thumbnails/medium/3017/8976/4817/2024.12.04.02.023.-234.Huejotzingo.Mexico.SDA.WeatherVaults.Nexus.ShadowPhanTom_Studio_2048_sda.jpg",
+      "application/files/thumbnails/medium/5717/3779/6062/jGR3MPa5wndYvABgUiUh--0--1wdkp_7.8125x-real-esrgan-x4-plus_2048_sda.jpg",
+      "application/files/thumbnails/medium/6017/8976/4398/SDA_Commissions_and_royalties-02.jpg",
+      "application/files/thumbnails/medium/8917/3675/7556/X7VFbwOU2m0gQUA1pUuq--1--k9ugd_watermark.jpg",
+      "application/files/thumbnails/medium/9917/4026/3334/Ways_to_collect_3.3.jpg",
+      "application/files/thumbnails/small/3017/8976/4817/2024.12.04.02.023.-234.Huejotzingo.Mexico.SDA.WeatherVaults.Nexus.ShadowPhanTom_Studio_2048_sda.jpg",
+      "application/files/thumbnails/small/5717/3779/6062/jGR3MPa5wndYvABgUiUh--0--1wdkp_7.8125x-real-esrgan-x4-plus_2048_sda.jpg",
+      "application/files/thumbnails/small/6017/8976/4398/SDA_Commissions_and_royalties-02.jpg",
+      "application/files/thumbnails/small/8917/3675/7556/X7VFbwOU2m0gQUA1pUuq--1--k9ugd_watermark.jpg",
+      "application/files/thumbnails/small/9917/4026/3334/Ways_to_collect_3.3.jpg",
+      "assets/contact.js",
+      "assets/placeholders/artists-dreamscape.png",
+      "assets/placeholders/sda-frame.png",
+      "index.html",
+      "index.php/about.html",
+      "index.php/about/sda-history.html",
+      "index.php/about/sda-timeline.html",
+      "index.php/about/singularity-charter.html",
+      "index.php/about/singularity-charter/press-release.html",
+      "index.php/art.html",
+      "index.php/art/frames.html",
+      "index.php/art/galleries.html",
+      "index.php/art/galleries/advanced-aether-adworks.html",
+      "index.php/art/projects.html",
+      "index.php/art/projects/advanced-aether-adworks.html",
+      "index.php/art/sda-collection.html",
+      "index.php/artists.html",
+      "index.php/artists/exposure.html",
+      "index.php/artists/income.html",
+      "index.php/businesses.html",
+      "index.php/collectors.html",
+      "index.php/collectors/commissions.html",
+      "index.php/collectors/investor-bundles.html",
+      "index.php/collectors/nft-marketplaces.html",
+      "index.php/collectors/specifications.html",
+      "index.php/contact.html",
+      "index.php/feeds-sdaframe.html",
+      "index.php/membership.html",
+      "index.php/membership/agents.html",
+      "index.php/membership/amplifiers.html",
+      "index.php/membership/artists.html",
+      "index.php/membership/curators.html",
+      "index.php/membership/moderators.html",
+      "index.php/membership/operators.html",
+      "index.php/membership/welcome.html",
+      "index.php/nft-proposal.html",
+      "index.php/pulses.html",
+      "index.php/pulses/bddb.html",
+      "index.php/pulses/point-break.html",
+      "index.php/pulses/sda-frame.html",
+      "index.php/pulses/sda-fusion.html",
+      "index.php/pulses/sda-skydeck.html",
+      "index.php/pulses/sda-studio.html",
+      "index.php/pulses/sovereign-trust.html",
+      "index.php/sda-technology.html",
+      "staticwebapp.config.json"
+    ]
+  },
+  "versions": {
+    "node": "v22.9.0",
+    "dotnet": "10.0.404"
+  },
+  "limits": "Requested gpt-6.1-sol medium has explicit launch guarantee; actual host telemetry unavailable. No cloud mutation. Prior acceptance does not establish current live equality."
+}

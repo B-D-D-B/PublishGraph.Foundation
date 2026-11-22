@@ -1,0 +1,36 @@
+{
+  "scope": "index-only exact byte preservation of five reviewed text receipts; no source/root attribute change",
+  "approved119Paths": true,
+  "corrected": [
+    {
+      "path": "Documentation/Projects/Working/logs/SDA-WEBAPP-MIG-01/build-01.txt",
+      "worktreeSha256": "460823c54c324e7a1d8b33e537dadcc45ab075a30e97b6d38728cb2f465b385f",
+      "normalizedIndexSha256": "6ffad534deaf9554d7c8e6dea7fe23340c99e9483551282f6aa5c87cb72cc456"
+    },
+    {
+      "path": "Documentation/Projects/Working/logs/SDA-WEBAPP-MIG-01/diff-check-crlf-01.txt",
+      "worktreeSha256": "7c0c0046b5f96065857d4a93a4e014878e47d12e162b42081e62a2d33b028e68",
+      "normalizedIndexSha256": "faf5a04e764c6381ce8782f16ffa886a2e5cb999d69c16ccdc2703510b065b2c"
+    },
+    {
+      "path": "Documentation/Projects/Working/logs/SDA-WEBAPP-MIG-01/npm-ci-01.txt",
+      "worktreeSha256": "3260cc5ece6e0e6514c3bf9ff712915c9f260e898ca5760a2f984929899cbecd",
+      "normalizedIndexSha256": "fbbadb6df7ad28e4f45e8fb6f07fe53b163758d24f4bd0a1ee2c446921b28f9a"
+    },
+    {
+      "path": "Documentation/Projects/Working/logs/SDA-WEBAPP-MIG-01/package-01/publish.txt",
+      "worktreeSha256": "2ab998ac9bb62131e80f91237062bb351f81f22c3de7cb9b3b43f61d219a3dad",
+      "normalizedIndexSha256": "07ec2b82b9dc093f1b40a7506b1d0f0eeef2cd606c0b9e45bbcbd4f20b022fad"
+    },
+    {
+      "path": "Documentation/Projects/Working/logs/SDA-WEBAPP-MIG-01/package-02/publish.txt",
+      "worktreeSha256": "f47e7c6cee83967184fcc91d7ad2c255b9e2f94a2a611634c0c4346848e55051",
+      "normalizedIndexSha256": "231e0881246dd4dea5d58201d7521ba05cfb745c9786698275f97b6485a57b07"
+    }
+  ],
+  "retainedFailures": "Initial exact-index check found CRLF normalization; per-command autocrlf=false cannot override existing eol=lf attributes. Initial25MB blob verifier failed on large JPEG; streamed hashing is now used. No commit/push had occurred.",
+  "authorization": "Coordinator explicitly authorized bounded raw hash-object/update-index correction after inspection",
+  "unchangedSource": true,
+  "hooksSigning": "No commit attempted yet; no bypass flags",
+  "next": "Stream all452 runtime and119 reviewed/publication entries before commit; repeat from committed blobs before push"
+}

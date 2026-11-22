@@ -1,0 +1,95 @@
+{
+  "capturedUtc": "2026-11-22T05:34:04.336Z",
+  "channel": "msedge",
+  "contractSha256": "e1f45d775db89ae580694c16daea38550db0ce133472ea6388f83efee175e99e",
+  "counts": {
+    "pass": 15,
+    "fail": 0,
+    "total": 15
+  },
+  "rows": [
+    {
+      "name": "home-rendered",
+      "pass": true
+    },
+    {
+      "name": "home-iframe-src-query-exact",
+      "pass": true
+    },
+    {
+      "name": "home-to-art-navigation",
+      "pass": true
+    },
+    {
+      "name": "nested-route-reload",
+      "pass": true
+    },
+    {
+      "name": "contact-disabled-public-config",
+      "pass": true
+    },
+    {
+      "name": "contact-native-validation",
+      "pass": true
+    },
+    {
+      "name": "contact-editable-valid",
+      "pass": true
+    },
+    {
+      "name": "contact-unavailable-feedback",
+      "pass": true
+    },
+    {
+      "name": "contact-no-api-or-challenge-request",
+      "pass": true
+    },
+    {
+      "name": "contact-no-recipient-fallback",
+      "pass": true
+    },
+    {
+      "name": "mobile-menu-toggle-visible",
+      "pass": true
+    },
+    {
+      "name": "mobile-menu-opens",
+      "pass": true
+    },
+    {
+      "name": "inherited-mobile-overflow-retained",
+      "pass": true
+    },
+    {
+      "name": "no-local-network-failure",
+      "pass": true
+    },
+    {
+      "name": "no-new-browser-exception",
+      "pass": true
+    }
+  ],
+  "network": [
+    {
+      "url": "https://frame.sda.studio/?feed=logos&disableaudio=true&disablemenu=true",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://frame.sda.studio/?feed=built&disableaudio=true&disablemenu=true",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://frame.sda.studio/?feed=surrealism&disableaudio=true&disablemenu=true",
+      "error": "net::ERR_ABORTED"
+    }
+  ],
+  "consoleErrors": [],
+  "remoteChecks": [
+    {
+      "name": "representative-frame-render",
+      "outcome": "observed",
+      "url": "https://frame.sda.studio/?feed=logos&disableaudio=true&disablemenu=true",
+      "mediaElements": 2
+    }
+  ]
+}

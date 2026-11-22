@@ -1,0 +1,32 @@
+{
+  "purpose": "Independent R1-R8 LOCAL delivered-result acceptance; coordinator-attributed exact decision",
+  "function": "SDA-WEBAPP-MIG-01-I",
+  "worker": "/root/sol_worker",
+  "reviewer": "/root/astra_reviewer",
+  "requestedReviewer": "gpt-6-astra/medium explicit launch guarantee; host telemetry unavailable",
+  "resultSha256": "e40ae82c51f9eef982e9bd638b913037cdce8206198251b3cfcd12de2e17760f",
+  "workingPreimageSha256": "9dd60d0bd791f09bd7661cc77e790b266cf0adac8568b894456a5d4a3917b92c",
+  "ownerPacketSha256": "022af5259238a6358e0a68d46f3e75ad4ef4dbc9a7e40d0ed48eefb9d44ca64e",
+  "disposition": "PASS",
+  "closedFindings": [
+    "F01",
+    "F02"
+  ],
+  "dimensions": {
+    "R1": "pass: static behavior and corrected app-only identity guard",
+    "R2": "pass: scoped local requirements covered; downstream dependencies explicitly blocked",
+    "R3": "pass: exact route/content/header/error and owner packet contracts",
+    "R4": "pass: authenticated client/principal/app/plan invariants bound",
+    "R5": "pass: focused positive/negative guard tests and adverse history preserved",
+    "R6": "pass: app-only RBAC and preserved ownership; no permission expansion",
+    "R7": "pass: proportionate implementation and necessary outputs",
+    "R8": "pass:115 identities,104 unchanged entries and exact ZIP independently verified"
+  },
+  "primaryFinalAssertions": {
+    "pass": 2384,
+    "fail": 0,
+    "total": 2384
+  },
+  "limits": "No actual owner release packet or cloud READY, Linux integration, OAuth, DNS/TLS, capacity or full migration acceptance. No deletion.",
+  "publication": "Coordinator explicitly directed authorized commit/sync of accepted scoped snapshot plus attributed review receipt; no amend/force/hook/signing bypass"
+}
