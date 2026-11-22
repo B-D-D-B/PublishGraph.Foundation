@@ -1,0 +1,17 @@
+{
+  "outcome": "scoped-preservation-and-control-inventory-pass",
+  "assertions": 39,
+  "authorities": 5,
+  "protected": 27,
+  "sourceBase": "76d87308d919e23accb8098a0f919bbf35d05698",
+  "runtimeTree": "2a849332d7d6e3367b5b194c01cf21e4c2a5dabe",
+  "registeredRecordUnchanged": true,
+  "threeRealBindingsNull": true,
+  "controlHashPrerequisitesRemoved": true,
+  "manualWorkflowAndProducerBytesUnchanged": true,
+  "publicationHeld": "No push or skipCI: owned consumerpaths match automatic build filter",
+  "contract": {
+    "path": "Static/SDA-WebApp/tools/deploy-contract.json",
+    "sha256": "f408352a1efdf7bd46a2fdefadd458aa18c77d2683f53b7ccfc4115cab55aac2"
+  }
+}

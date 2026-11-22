@@ -1,7 +1,7 @@
 'use strict';
 // Every complete binding, owner receipt, artifact and API response below is synthetic.
 const fs = require('node:fs'), path = require('node:path'), os = require('node:os');
-const { resolveBinding, verifyGithub, verifyArtifact, sha } = require('./release-binding.cjs');
+const { resolveBinding, verifyGithub, verifyArtifact, readOwned, sha } = require('./release-binding.cjs');
 const { argument, writeNew } = require('./common.cjs');
 const bindingFile = path.resolve(__dirname, '../../../.github/sda-website-release-bindings.json');
 const realContract = JSON.parse(fs.readFileSync(bindingFile));
@@ -13,7 +13,7 @@ function fixture() {
   function put(environment, name, data, disposition = data.disposition) {
     const file = `Documentation/Projects/Working/logs/SDA-WEBAPP-MIG-01/release-evidence/fixture/${environment}/${name}.json`;
     const bytes = Buffer.from(JSON.stringify(data)); files.set(file, bytes);
-    return { path: file, sha256: sha(bytes), gateId: data.gateId, functionId: data.functionId, disposition };
+    return { path: file, gateId: data.gateId, functionId: data.functionId, disposition };
   }
   for (const environment of ['dev', 'test', 'prod']) {
     const known = contract.knownInfrastructure[environment], appName = 'fixture-website-' + environment;
@@ -24,9 +24,9 @@ function fixture() {
     const artifact = { runId: 100, id: 200, name: 'fixture-accepted-website', sourceCommit, archiveSha256: 'b'.repeat(64), zipSha256: sha(zip), packageReceiptSha256: sha(packageBytes), producerWorkflowPath: '.github/workflows/fixture-build.yml' };
     const base = kind => ({ kind, environment, appId: target.appId, sourceCommit, artifactSha256: artifact.zipSha256, functionId: 'fixture-' + kind, gateId: 'fixture-' + kind, disposition: 'PASS' });
     const auth = put(environment, 'auth', base('auth-disposition'));
-    const packet = { version: 1, environment, subscriptionId: known.subscriptionId, appId: target.appId, authDispositionSha256: auth.sha256,
-      identity: { ...oidc, roleScope: target.appId, mappingEvidenceSha256: 'c'.repeat(64) },
-      plan: { id: known.planId, observedSku: known.requiredSku, requiredSku: known.requiredSku, linux: true, region: 'westus3', capacity: 1, verificationEvidenceSha256: 'd'.repeat(64), verifiedAtUtc: '2026-11-22T00:00:00Z' } };
+    const packet = { ...base('owner-hosting-packet'), version: 1, subscriptionId: known.subscriptionId,
+      identity: { ...oidc, roleScope: target.appId },
+      plan: { id: known.planId, observedSku: known.requiredSku, requiredSku: known.requiredSku, linux: true, region: 'westus3', capacity: 1, verifiedAtUtc: '2026-11-22T00:00:00Z' } };
     const owner = { ...base('owner-stage-readiness'), disposition: 'READY', hosting: { stack: 'DOTNETCORE|10.0', alwaysOn: true, httpsOnly: true, minimumTlsVersion: '1.2', ftpsState: 'Disabled', startup: 'dotnet /home/site/wwwroot/SDA.Website.dll', contentRoot: '/home/site/wwwroot/wwwroot', aspnetcoreUrls: 'http://0.0.0.0:8080', buildOnDeploy: false, ftpBasicPublishing: false, scmBasicPublishing: false } };
     contract.environments[environment] = { githubEnvironment, target, oidc, artifact, receipts: { ownerPacket: put(environment, 'owner-packet', packet), auth,
       artifactAcceptance: put(environment, 'artifact', base('artifact-acceptance')), ownerReadiness: put(environment, 'owner', owner),
@@ -40,7 +40,7 @@ function fixture() {
       stage, disposition: 'PASS', functionId: 'fixture-prior', gateId: 'fixture-' + stage }), stage }));
   }
   const read = name => { if (!files.has(name)) throw Error('Fixture receipt unavailable'); return files.get(name); };
-  function changeReceipt(environment, name, modify) { const d = contract.environments[environment].receipts[name], data = JSON.parse(files.get(d.path)); modify(data); const bytes = Buffer.from(JSON.stringify(data)); files.set(d.path, bytes); d.sha256 = sha(bytes); }
+  function changeReceipt(environment, name, modify) { const d = contract.environments[environment].receipts[name], data = JSON.parse(files.get(d.path)); modify(data); const bytes = Buffer.from(JSON.stringify(data)); files.set(d.path, bytes); }
   return { contract, files, read, changeReceipt, zip, packageBytes };
 }
 function apiFixture(selection, change) {
@@ -63,6 +63,22 @@ async function run() {
     try { const s = resolveBinding(f.contract, environment, context(environment), f.read), api = apiFixture(s); await verifyGithub(s, api.api); check('synthetic-fixed-complete:' + environment, api.calls.length === 4); }
     catch (error) { check('synthetic-fixed-complete:' + environment, false, error.message); }
   }
+  for (const variant of ['formatting', 'legacy-optional-hashes']) {
+    const f = fixture();
+    if (variant === 'formatting') for (const [file, bytes] of f.files) f.files.set(file, Buffer.from(JSON.stringify(Object.fromEntries(Object.entries(JSON.parse(bytes)).reverse()), null, 4) + '\n'));
+    else for (const binding of Object.values(f.contract.environments)) {
+      for (const descriptor of [...Object.values(binding.receipts).filter(value => !Array.isArray(value)), ...binding.receipts.priorEnvironment]) descriptor.sha256 = 'legacy-ignored-control-hash';
+      f.changeReceipt(binding.githubEnvironment.split('-').pop(), 'ownerPacket', packet => { packet.authDispositionSha256 = 'ignored'; packet.identity.mappingEvidenceSha256 = 'ignored'; packet.plan.verificationEvidenceSha256 = 'ignored'; });
+    }
+    try { for (const environment of ['dev', 'test', 'prod']) resolveBinding(f.contract, environment, context(environment), f.read); check('hashless-control-positive:' + variant, true); }
+    catch (error) { check('hashless-control-positive:' + variant, false, error.message); }
+  }
+  for (const [name, stat] of [['link', { isSymbolicLink: () => true }], ['nonfile', { isSymbolicLink: () => false, isFile: () => false }]]) {
+    const original = fs.lstatSync; fs.lstatSync = () => stat;
+    try { readOwned('Documentation/Projects/Working/logs/SDA-WEBAPP-MIG-01/release-evidence/synthetic.json'); check('control-file-reject:' + name, false); }
+    catch (error) { check('control-file-reject:' + name, /Linked|regular file/.test(error.message)); }
+    finally { fs.lstatSync = original; }
+  }
   function reject(name, modify, expected = /./, environment = 'dev', ctx = context(environment)) {
     const f = fixture(); modify(f);
     try { resolveBinding(f.contract, environment, ctx, f.read); check(name, false, 'Invalid binding accepted'); }
@@ -78,10 +94,18 @@ async function run() {
   reject('wrong-plan-binding', f => { f.contract.environments.dev.target.planId += '-other'; }, /infrastructure/);
   reject('wrong-fic-subject', f => { f.contract.environments.dev.oidc.subject += '-other'; }, /FIC/);
   reject('missing-artifact-id', f => { delete f.contract.environments.dev.artifact.id; }, /artifact provenance/);
-  reject('receipt-byte-drift', f => { f.files.set(f.contract.environments.dev.receipts.auth.path, Buffer.from('{}')); }, /byte mismatch/);
+  reject('receipt-semantic-drift', f => { f.files.set(f.contract.environments.dev.receipts.auth.path, Buffer.from('{}')); }, /acceptance mismatch/);
   reject('receipt-path-traversal', f => { f.contract.environments.dev.receipts.auth.path = '../owner.json'; }, /Unsafe/);
-  reject('missing-domain-evidence', f => { delete f.contract.environments.dev.receipts.domainReadiness; }, /receipt identity/);
-  reject('missing-capacity-evidence', f => { delete f.contract.environments.dev.receipts.capacityReadiness; }, /receipt identity/);
+  reject('missing-domain-evidence', f => { delete f.contract.environments.dev.receipts.domainReadiness; }, /receipt descriptor/);
+  reject('missing-capacity-evidence', f => { delete f.contract.environments.dev.receipts.capacityReadiness; }, /receipt descriptor/);
+  for (const name of ['ownerPacket', 'auth', 'ownerReadiness']) reject('missing-semantic-owner-auth-control:' + name, f => { delete f.contract.environments.dev.receipts[name]; }, /receipt descriptor/);
+  for (const value of [null, [], 1]) reject('control-object-required:' + JSON.stringify(value), f => { f.files.set(f.contract.environments.dev.receipts.auth.path, Buffer.from(JSON.stringify(value))); }, /JSON object/);
+  for (const [field, value] of [['kind', 'other'], ['disposition', 'READY'], ['functionId', 'other'], ['gateId', 'other'], ['environment', 'prod'], ['appId', 'other'], ['sourceCommit', 'f'.repeat(40)], ['artifactSha256', 'f'.repeat(64)]])
+    reject('auth-semantic:' + field, f => { f.changeReceipt('dev', 'auth', data => { data[field] = value; }); }, /acceptance mismatch/);
+  for (const [field, value] of [['kind', 'other'], ['disposition', 'MISSING'], ['functionId', 'other'], ['gateId', 'other'], ['sourceCommit', 'f'.repeat(40)], ['artifactSha256', 'f'.repeat(64)]])
+    reject('owner-packet-semantic:' + field, f => { f.changeReceipt('dev', 'ownerPacket', data => { data[field] = value; }); }, /acceptance mismatch/);
+  reject('wrong-domain-gate', f => { const d = f.contract.environments.dev.receipts.domainReadiness; d.gateId = 'other'; f.changeReceipt('dev', 'domainReadiness', data => { data.gateId = 'other'; }); }, /DOMAIN-01/);
+  reject('wrong-capacity-disposition', f => { f.changeReceipt('dev', 'capacityReadiness', data => { data.disposition = 'MISSING'; }); }, /acceptance mismatch/);
   reject('ready-boolean-is-not-proof', f => { f.changeReceipt('dev', 'auth', data => { delete data.disposition; data.ready = true; }); }, /acceptance mismatch/);
   reject('wrong-receipt-environment', f => { f.changeReceipt('dev', 'artifactAcceptance', data => { data.environment = 'prod'; }); }, /acceptance mismatch/);
   reject('wrong-receipt-payload', f => { f.changeReceipt('dev', 'artifactAcceptance', data => { data.artifactSha256 = 'f'.repeat(64); }); }, /acceptance mismatch/);
@@ -117,6 +141,13 @@ async function run() {
   try { verifyArtifact(selection, directory); check('payload-byte-drift', false); } catch { check('payload-byte-drift', true); }
   fs.writeFileSync(path.join(directory, 'website.zip'), f.zip); fs.writeFileSync(path.join(directory, 'extra.json'), '{}');
   try { verifyArtifact(selection, directory); check('unlisted-artifact-file', false); } catch { check('unlisted-artifact-file', true); }
+  const payloadFs = bytes => ({ ...fs, readdirSync: () => ['package.json', 'website.zip'], lstatSync: () => ({ isFile: () => true, isSymbolicLink: () => false }), readFileSync: name => name.endsWith('website.zip') ? f.zip : bytes });
+  try { verifyArtifact(selection, directory, payloadFs(Buffer.from('corrupted receipt'))); check('package-receipt-byte-integrity', false); } catch { check('package-receipt-byte-integrity', true); }
+  for (const field of ['sourceCommit', 'package']) {
+    const data = JSON.parse(f.packageBytes); data[field] = field === 'sourceCommit' ? 'f'.repeat(40) : { sha256: 'f'.repeat(64) }; const bytes = Buffer.from(JSON.stringify(data));
+    const modified = structuredClone(selection); modified.binding.artifact.packageReceiptSha256 = sha(bytes);
+    try { verifyArtifact(modified, directory, payloadFs(bytes)); check('package-receipt-provenance:' + field, false); } catch { check('package-receipt-provenance:' + field, true); }
+  }
   const result = { mode: 'Synthetic fixtures only; no actual Actions token permission, provider output, stage acceptance or cloud call is proven', counts: { pass: rows.filter(r => r.pass).length, fail: rows.filter(r => !r.pass).length, total: rows.length }, rows };
   const output = argument('--output'); if (!output) throw Error('--output required'); writeNew(output, result);
   console.log(JSON.stringify({ counts: result.counts, failures: rows.filter(r => !r.pass) })); if (result.counts.fail) process.exitCode = 1;

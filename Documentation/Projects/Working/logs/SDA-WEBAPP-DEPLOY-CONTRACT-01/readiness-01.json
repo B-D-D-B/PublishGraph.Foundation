@@ -1,0 +1,19 @@
+{
+  "function": "SDA-WEBAPP-DEPLOY-CONTRACT-01",
+  "planSha256": "028ebdb013e1e4c9224db33b2802ae2a0bf4e17eacee27ea783f3a53265ff1aa",
+  "reviewer": "/root/astra_reviewer",
+  "disposition": "READY",
+  "dimensions": {
+    "D1": "PASS",
+    "D2": "PASS",
+    "D3": "PASS",
+    "D4": "PASS",
+    "D5": "PASS",
+    "D6": "PASS",
+    "D7": "PASS",
+    "D8": "PASS"
+  },
+  "delivery": "Coordinator relayed5authorities6sourcebaselines27protected+registration/base/runtime verified; Normal explicit user semantics no new trust root.",
+  "scope": "6existing+1newsource local only; independent R before LOCALcommit, publication held",
+  "configuration": "gpt-6.1-sol/medium and gpt-6-astra/medium explicit launch guarantees; actual runtime telemetry unavailable"
+}

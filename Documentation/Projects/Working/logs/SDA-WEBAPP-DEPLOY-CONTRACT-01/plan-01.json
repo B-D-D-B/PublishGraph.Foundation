@@ -1,0 +1,434 @@
+{
+  "function": "SDA-WEBAPP-DEPLOY-CONTRACT-01",
+  "phase": "PLAN ONLY; remove deployment control pins while preserving automatic provenance and inactive guards",
+  "createdUtc": "2026-11-22T09:43:33.484Z",
+  "authoritySnapshot": [
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation/AGENTS.md",
+      "sha256": "d3b2d81b9351aaed4b8644a223829787d73cc98c9efb31aa0968dce33d9d9339",
+      "unchanged": true
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/BDDB.AITooling/guidance/standard-practices.md",
+      "sha256": "a0182beeb6266a0627007ec0a2d255e3feba60578c640e67a020218709507bce",
+      "unchanged": true
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/BDDB.AITooling/guidance/worker-review-cycle.md",
+      "sha256": "c9dda120c85d4b03976172d8104be52c30c2cc02ad87db556074b85b48e22ff8",
+      "unchanged": true
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/BDDB.AITooling/guidance/technical-audit-rubric.md",
+      "sha256": "e9cc31452998747d3a7efde04ccef40dec346a8305be6efdb05873ce6cb869ef",
+      "unchanged": true
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/BDDB.AITooling/guidance/result-audit-rubric.md",
+      "sha256": "a259be47851e260c2bb3ef12f71112f7ecf83d49c85a8ed091494ee169b2cb51",
+      "unchanged": true
+    }
+  ],
+  "registration": {
+    "path": "Documentation/Projects/Working/SDA-WEBAPP-MIG-01-Working.md",
+    "sha256": "baf7d380bf2284368c255526eb068f7b0d2aa07c45db5a1040e7d53674b49da4",
+    "priorCommittedPrefixBytes": 46103,
+    "priorCommittedPrefixSha256": "8f83c96f67bf601d7af762636646c182d1acf0ee510f121db57d1b38f6caa89e",
+    "prefixPreserved": true,
+    "worker": "/root/sol_worker",
+    "reviewer": "/root/astra_reviewer",
+    "track": "Normal",
+    "rationale": "Explicit user change to accepted source-owned deployment controls. Committed fixed-main source remains authority; no new trust root, approval token, provider outputs, permission or cloud semantics.",
+    "configuration": "gpt-6.1-sol/medium and gpt-6-astra/medium explicit launch guarantees; actual runtime telemetry unavailable",
+    "lifecycle": "New bounded function registered before dispatch, not a reset of preceding producer/migration findings. Exact D1-D8 before implementation; one frozen R1-R8 before LOCAL commit. Publication held under latest no-effect directive."
+  },
+  "baseline": {
+    "commit": "76d87308d919e23accb8098a0f919bbf35d05698",
+    "branch": "agents/sda-website-migration-setup",
+    "runtimeTree": "2a849332d7d6e3367b5b194c01cf21e4c2a5dabe",
+    "sourceIdentities": [
+      {
+        "path": "Static/SDA-WebApp/tools/release-binding.cjs",
+        "bytes": 13615,
+        "sha256": "1071cb4705a7791ee5e8cfdddd90f991268bfa1175919b9421eec76034efa652",
+        "gitBlob": "c9655932168350bf9c78c9d5a213425bbfb471f6"
+      },
+      {
+        "path": "Static/SDA-WebApp/tools/release-target.cjs",
+        "bytes": 8087,
+        "sha256": "07c24cc4549782fc8d71eef528fbe92034f8ed0de15389679e2edec665598b04",
+        "gitBlob": "9515562dc26f1547b2d616dd440f1b3a25b29548"
+      },
+      {
+        "path": "Static/SDA-WebApp/tools/check-release-binding.cjs",
+        "bytes": 14230,
+        "sha256": "56fb436550a2660f16ea1db824e26c18a437c7a8624d058703d4ee2500a2d316",
+        "gitBlob": "3bfcc11ad13fe5a0cfdd1006c7334f7ba1ff3f88"
+      },
+      {
+        "path": "Static/SDA-WebApp/tools/check-release-target.cjs",
+        "bytes": 6106,
+        "sha256": "4a0256fd70780e4372e71a5a81fea714a72bcf9bec9ce5b9c28ab17a55eb7d0d",
+        "gitBlob": "896d9f9363d1ab269d2873e190863b832764755d"
+      },
+      {
+        "path": "Static/SDA-WebApp/tools/check-workflow.cjs",
+        "bytes": 6184,
+        "sha256": "58a052d29251aa079dacada3ee0073254f7105220bdfda3241e994b3395839db",
+        "gitBlob": "c2692d597fcf2a28e2d234898887985ed37e9604"
+      },
+      {
+        "path": "Static/SDA-WebApp/README.md",
+        "bytes": 8299,
+        "sha256": "ab4e937d460e46796ea6d693d6462797fb24a7222a7435bb895a03b7cf83c39d",
+        "gitBlob": "6fab936f34163e22d636f6d0efc539dd7a6e1a2a"
+      }
+    ],
+    "protectedIdentities": [
+      {
+        "path": ".github/workflows/deploy-sda-website.yml",
+        "bytes": 4381,
+        "sha256": "07d6c5532a91c8fbf2d85ad28637d7d8ebb3aa587fdf86a2065d3c6ee17fbe2f",
+        "gitBlob": "54c1488fee2c7e540f588af3ed64a2ccfe47816b"
+      },
+      {
+        "path": ".github/sda-website-release-bindings.json",
+        "bytes": 1458,
+        "sha256": "82a24e98181e3593026aed76bbabfe7fdcb9aeb05fe23d739a599e6257fd9578",
+        "gitBlob": "b56bcc52b6e8cfd170f49deda6dbd0653b7f5107"
+      },
+      {
+        "path": "Static/SDA-WebApp/tools/package.cjs",
+        "bytes": 4512,
+        "sha256": "4b8c64d649e39b0abc2c85efdf80b4213ce9c75ff6489bcae0ec8cc32e55c1be",
+        "gitBlob": "c473869403b91d07bbd5d7055a13b3067181686b"
+      },
+      {
+        "path": "Static/SDA-WebApp/tools/common.cjs",
+        "bytes": 1558,
+        "sha256": "b328c3d093d458e0326e16f4653ba6c65d8d368848409876c5dfca4c5e701ba0",
+        "gitBlob": "690908fdd24c6d6d84bb7d5b95b562d1063d80d2"
+      },
+      {
+        "path": "Static/SDA-WebApp/SDA.Website.csproj",
+        "bytes": 503,
+        "sha256": "096d7f7151530e7a45b06c4309c98670f7e37112f74803652cf43b2ed66096bb",
+        "gitBlob": "ed54625d5a6c77a92e6d234d800dbbd89836c151"
+      },
+      {
+        "path": "Static/SDA-WebApp/Program.cs",
+        "bytes": 4133,
+        "sha256": "5eda323ae16646840401d197c2e47e59e734d11136b166a7ea92835a6d6d2966",
+        "gitBlob": "b7fcdf31ec1ba40d13b604b7e090ed2109e35731"
+      },
+      {
+        "path": "Static/SDA-WebApp/content-contract.json",
+        "bytes": 296020,
+        "sha256": "e1f45d775db89ae580694c16daea38550db0ce133472ea6388f83efee175e99e",
+        "gitBlob": "2eb382cce97873c2bb665eeb5b3382b1eb7b92b9"
+      },
+      {
+        "path": ".gitignore",
+        "bytes": 162,
+        "sha256": "283439fac1fca3f77cd5ffd8a2de4928c5c955429e227ce8612fab831fb57b0c",
+        "gitBlob": "7aec3dc4aef0809c686bbc83d87cb986aa39dc37"
+      },
+      {
+        "path": ".gitattributes",
+        "bytes": 1344,
+        "sha256": "91022b0ce5958783be7b8e8fcdea1729a9f23becea9b038c2df7868d39cf70f6",
+        "gitBlob": "39ff214e9e972552d18cc052e2c91274840761f1"
+      },
+      {
+        "path": "Documentation/Projects/Working/logs/SDA-WEBAPP-MIG-01/release-ux-independent-review-01.json",
+        "bytes": 1688,
+        "sha256": "c1593d6f4c4b2676aa68e845d7466a5690ae8e6ea00101ce5027ab0a3b994ef8",
+        "gitBlob": "d02d5578ebdf8f246301cd1b0c4234c784b3a7d5"
+      },
+      {
+        "path": "Documentation/Projects/Working/logs/SDA-WEBAPP-MIG-01/owner-handoff-02.json",
+        "bytes": 12802,
+        "sha256": "022af5259238a6358e0a68d46f3e75ad4ef4dbc9a7e40d0ed48eefb9d44ca64e",
+        "gitBlob": "b134b5c4b412a71d25a987e42cb21f2c77accc7f"
+      },
+      {
+        "path": "Documentation/Projects/Working/logs/SDA-WEBAPP-MIG-01/capacity-addendum-01.json",
+        "bytes": 6244,
+        "sha256": "82537d85319d5e6cd68e3a0ca8972e643f283c9af06526e21da657e7618ef71d",
+        "gitBlob": "b6fdee07f28163b98ebbcd1fe94a7cc980ae2c55"
+      },
+      {
+        "path": "Static/SDA-WebApp/tools/ARTIFACT-PROTOCOL.md",
+        "bytes": 6428,
+        "sha256": "9a34ab7f995ce25d722da3e4e8d38de239f0579be2f931e950b8bfe428ccee7d",
+        "gitBlob": "cb98592c42352c8ce02b8979f383408d6b1331a5"
+      },
+      {
+        "path": "Static/SDA-WebApp/tools/artifact-protocol.json",
+        "bytes": 3453,
+        "sha256": "cdb8ac1509a2b3d30811d40cb81c62fd2901fc9f01cb1b2ddaced511ec66bc39",
+        "gitBlob": "76be527627793075ee7e61adcd416a96825853ff"
+      },
+      {
+        "path": "Static/SDA-WebApp/tools/validate-artifact-protocol.cjs",
+        "bytes": 16035,
+        "sha256": "56a527a537a195f68fcdca07c83315984b446e1d1faa2374cd9334b40b4f9773",
+        "gitBlob": "5d372d655d51ce81f2fa3531e308966ace83f6df"
+      },
+      {
+        "path": "Static/SDA-WebApp/tools/check-artifact-protocol.cjs",
+        "bytes": 15874,
+        "sha256": "db3d03bc06711e793f9a72f852361c020792586fa464f3bb8d7d5ed11186a826",
+        "gitBlob": "c382e6e7e12f1a070a941e35a7a548222c0513af"
+      },
+      {
+        "path": "Documentation/Projects/Working/logs/SDA-WEBAPP-ARTIFACT-01/result-freeze-01.json",
+        "bytes": 11934,
+        "sha256": "94b3914c09e30b9c9dd36a3ebf48deeca0dab7476796a787a14abd716153c9b7",
+        "gitBlob": "0a7eef32712861cfa36407f5ac160361204191eb"
+      },
+      {
+        "path": "Documentation/Projects/Working/logs/SDA-WEBAPP-ARTIFACT-01/independent-review-01.json",
+        "bytes": 2464,
+        "sha256": "ac0105ed25ce2c5f2905260ed25b54f5d3ca8ffa1d62113d2e86e91a950f63a4",
+        "gitBlob": "9a40a9a112bd8172f2f7bfed0599f44c4e4a635d"
+      },
+      {
+        "path": "global.json",
+        "bytes": 109,
+        "sha256": "ce61f5ae207d33d00594c77c5999c7f0dc66434e85a85f38090335d588438974",
+        "gitBlob": "e1c5e9980fedfa6ce8a2a67c128634c78c392f46"
+      },
+      {
+        "path": "Directory.Build.props",
+        "bytes": 319,
+        "sha256": "aec8391f6be4e0087736ee398a572540b1de9e0b8f609e717976034bd8bf0d6e",
+        "gitBlob": "ad3c9d4367ed18982cf067802f7e0e9bf840cae5"
+      },
+      {
+        "path": "Directory.Packages.props",
+        "bytes": 633,
+        "sha256": "3c48ef7a724fe48d05559ea0e3fcf78bfae6971b50749708595e495a81d9683e",
+        "gitBlob": "c2bb30af4da5765f1073d18753cd385e8c2a1223"
+      },
+      {
+        "path": "NuGet.Config",
+        "bytes": 217,
+        "sha256": "f545a7e2ea14ac53cdfb91217cae67b8ff14275313f6298f9a3331d205b6c948",
+        "gitBlob": "4d736c19ec5ff475609182bf1152633c566d1458"
+      },
+      {
+        "path": ".github/workflows/build-sda-website.yml",
+        "bytes": 4254,
+        "sha256": "c1cc496b3b07daa350dfd8e3720123e7250510b957bc236ed7ebb2c373f1a90b",
+        "gitBlob": "3506b6cdf22aa269ec65b22fece7360f8445c163"
+      },
+      {
+        "path": "Static/SDA-WebApp/tools/producer.cjs",
+        "bytes": 19764,
+        "sha256": "34a300b3e561be7f46b47f6284e4c7d51fc2f72290003fb772a29f159a849ac8",
+        "gitBlob": "2fa17877ac8fc41d2c7ad2a90d5d71eaba0cb870"
+      },
+      {
+        "path": "Static/SDA-WebApp/tools/check-producer.cjs",
+        "bytes": 19464,
+        "sha256": "0d1d166e61763704c508f6e603dbb3d3ef15f68284ccd4e0295ac849f581629f",
+        "gitBlob": "0ca1d17d33b1f05a0e9cc41f43e9b60378d7e833"
+      },
+      {
+        "path": "Documentation/Projects/Working/logs/SDA-WEBAPP-PRODUCER-01/independent-source-build-acceptance-02.json",
+        "bytes": 4248,
+        "sha256": "3c14d7f9c4413e247630c7c358d4aab4c2103f4ec580a348d21bf9c550f2caa5",
+        "gitBlob": "161a93ee4eff7f44cf718c8455128b9c90da02cc"
+      },
+      {
+        "path": "Documentation/Projects/Working/logs/SDA-WEBAPP-PRODUCER-01/source-build-linkage-02.json",
+        "bytes": 9153,
+        "sha256": "23b8250230c38bc06d345d17fc8e4b322e6690f7539951ca760a186275e7749c",
+        "gitBlob": "dd8dc79045f67072d5d7c4fcf955c1c5a852d1a8"
+      }
+    ],
+    "dirtyPaths": "M Documentation/Projects/Working/SDA-WEBAPP-MIG-01-Working.md"
+  },
+  "ownedPaths": {
+    "existingSource": [
+      "Static/SDA-WebApp/tools/release-binding.cjs",
+      "Static/SDA-WebApp/tools/release-target.cjs",
+      "Static/SDA-WebApp/tools/check-release-binding.cjs",
+      "Static/SDA-WebApp/tools/check-release-target.cjs",
+      "Static/SDA-WebApp/tools/check-workflow.cjs",
+      "Static/SDA-WebApp/README.md"
+    ],
+    "newSource": [
+      "Static/SDA-WebApp/tools/deploy-contract.json"
+    ],
+    "newEvidencePrefix": "Documentation/Projects/Working/logs/SDA-WEBAPP-DEPLOY-CONTRACT-01/",
+    "registeredRecord": "Documentation/Projects/Working/SDA-WEBAPP-MIG-01-Working.md",
+    "generatedIgnoredPrefix": "artifacts/SDA-WEBAPP-DEPLOY-CONTRACT-01/",
+    "excluded": "No deploy YAML or null binding edit needed; no producer/helper/protocol/validator/package/runtime/static/root/Infrastructure/old owner02/accepted receipt mutation. If an unforeseen YAML or accepted-contract edit is necessary, stop affected change for exact review."
+  },
+  "inventory": [
+    {
+      "classification": "ACTIVE MANUAL CONTROL PIN; remove",
+      "file": "Static/SDA-WebApp/tools/release-binding.cjs",
+      "locations": [
+        {
+          "line": 40,
+          "text": "requireValue(descriptor && digest(descriptor.sha256), 'Missing fixed receipt identity');"
+        },
+        {
+          "line": 43,
+          "text": "requireValue(sha(bytes) === descriptor.sha256, 'Release receipt byte mismatch');"
+        }
+      ],
+      "behavior": "receipt descriptor.sha256 format and raw byte equality gate every committed control receipt including owner/auth/artifactAcceptance/owner/domain/capacity/prior stage. Remove descriptor digest requirement/equality; preserve scoped path and JSON object/semantic receipt validation."
+    },
+    {
+      "classification": "ACTIVE MANUAL CONTROL PIN; remove",
+      "file": "Static/SDA-WebApp/tools/release-target.cjs",
+      "locations": [
+        {
+          "line": 10,
+          "text": "SDA_DEPLOY_ROLE_ID: b.oidc.roleDefinitionId, SDA_HOSTING_PACKET_SHA256: b.receipts.ownerPacket.sha256,"
+        },
+        {
+          "line": 11,
+          "text": "SDA_HOSTING_PACKET_BASE64: selection.ownerPacketBase64, SDA_AUTH_DISPOSITION_SHA256: b.receipts.auth.sha256 };"
+        },
+        {
+          "line": 15,
+          "text": "const required = ['SDA_ENVIRONMENT', 'AZURE_CLIENT_ID', 'AZURE_TENANT_ID', 'AZURE_SUBSCRIPTION_ID', 'SDA_APP_NAME', 'SDA_RESOURCE_GROUP', 'SDA_APP_ID', 'SDA_PLAN_ID', 'SDA_PRINCIPAL_ID', 'SDA_DEPLOY_ROLE_ID', 'SDA_HOSTING_PACKET_SHA256', 'SDA_HOSTING_PACKET_BASE64', 'SDA_AUTH_DISPOSITION_SHA256'];"
+        },
+        {
+          "line": 19,
+          "text": "if (crypto.createHash('sha256').update(authBytes).digest('hex') !== env.SDA_AUTH_DISPOSITION_SHA256) throw Error('Accepted auth receipt byte mismatch');"
+        },
+        {
+          "line": 25,
+          "text": "for (const key of ['SDA_HOSTING_PACKET_SHA256', 'SDA_AUTH_DISPOSITION_SHA256']) if (!digest(env[key])) throw Error('Invalid reviewed packet digest: ' + key);"
+        },
+        {
+          "line": 27,
+          "text": "if (crypto.createHash('sha256').update(bytes).digest('hex') !== env.SDA_HOSTING_PACKET_SHA256.toLowerCase()) throw Error('Owner hosting packet bytes do not match accepted digest');"
+        },
+        {
+          "line": 35,
+          "text": "|| !equal(identity.roleScope, expectedId) || !digest(identity.mappingEvidenceSha256)) throw Error('Owner packet client/principal/role mapping mismatch');"
+        },
+        {
+          "line": 43,
+          "text": "|| plan.region !== 'westus3' || plan.capacity !== 1 || !digest(plan.verificationEvidenceSha256)"
+        },
+        {
+          "line": 45,
+          "text": "if (!equal(packet.authDispositionSha256, env.SDA_AUTH_DISPOSITION_SHA256)) throw Error('Owner packet auth disposition mismatch');"
+        }
+      ],
+      "behavior": "Remove SHA environment outputs/required variables and auth/owner raw-byte equality, packet.authDispositionSha256 correlation, digest-format-only mappingEvidenceSha256 and plan.verificationEvidenceSha256 prerequisites. These format markers are not actual identity/plan proof. Do not replace with another manual digest/token/boolean."
+    },
+    {
+      "classification": "AUDIT ONLY; remove ambiguous binding output",
+      "file": "Static/SDA-WebApp/tools/check-workflow.cjs",
+      "locations": [
+        {
+          "line": 46,
+          "text": "const result = { mode: 'Workflow source/static checks and synthetic inline gate execution only; no actual Actions token or provider proof', workflowSha256: sha(Buffer.from(source)), bindingSha256: sha(fs.readFileSync(path.resolve(project, '../../.github/sda-website-release-bindings.json'))), counts: { pass: rows.filter(r => r.pass).length, fail: rows.filter(r => !r.pass).length, total: rows.length }, rows };"
+        }
+      ],
+      "behavior": "No existing BindingSha256 or whole-binding hash-equality gate. bindingSha256 is output-only audit metadata. Remove field for UX clarity; workflow/helper audit SHA outputs may remain clearly audit-only."
+    },
+    {
+      "classification": "AUTOMATIC INTEGRITY/PROVENANCE; preserve",
+      "files": [
+        "Static/SDA-WebApp/tools/release-binding.cjs",
+        ".github/workflows/deploy-sda-website.yml",
+        "Static/SDA-WebApp/tools/artifact-protocol.json",
+        "Static/SDA-WebApp/tools/validate-artifact-protocol.cjs"
+      ],
+      "behavior": "Keep fixed accepted runID/artifactID/name, producer workflow/sourceCommit, actual archive digest, ZIP/packageReceipt hashes and source/package receipt equality. Keep artifactSha256/sourceCommit semantic payload scope checks on all acceptance/readiness/prior controls. Keep content hashes, action commit pins, github.sha checkout, producer source/toolchain/inventory and independent source-build receipt identities. These are automatically captured provenance, not manual control-byte gates."
+    },
+    {
+      "classification": "HISTORICAL IMMUTABLE/AUDIT; preserve",
+      "behavior": "Old owner02, capacity addendum, migration/producer plan/freezes/failed run/source-build acceptance and all recorded hashes remain historical accepted evidence. New successor contract/handoff documents current semantics; no historical rewrite."
+    }
+  ],
+  "design": {
+    "receiptReader": {
+      "descriptor": "Source-owned path plus existing functionId/gateId/disposition for semantic receipts; no sha256 required or consulted. Legacy optional hash fields may be ignored, not validated. New contract examples omit them.",
+      "pathAndType": "Keep fixed owned release-evidence prefix, normalized relative path, no traversal/links; JSON must be non-null non-array object. Keep real readOwned path nonlink/file checks. No arbitrary external path/read or new secret/token.",
+      "semantics": "Keep kind/disposition/function/gate/environment/app/sourceCommit/artifactSha256 checks, passOnly on auth/artifact/prior acceptance, DOMAIN-01, capacity and exact previous stages. JSON formatting/property order changes do not gate."
+    },
+    "ownerPacket": {
+      "successor": "Separate source-owned deploy-contract.json documents successor owner-hosting packet and descriptor, does not mutate owner02/Infrastructure or claim actual owner delivery. All bindings remain null.",
+      "scope": "Use ownerPacket as a semantic owner-hosting-packet receipt: required existing receipt function/gate/disposition/environment/app plus explicit sourceCommit/artifactSha256 equal accepted binding. This makes payload scope direct instead of indirect auth-byte digest correlation. Same fixed-main source trust; semantic gate IDs identify real owner readiness, not new approval tokens.",
+      "identity": "Retain exact tenant/client/principal/role/scope/FIC issuer/audience/subject equality against fixed binding. Remove mappingEvidenceSha256 dummy format marker. Actual authenticated client and observed app-scoped principal roles still checked; no directory/shared plan permissions.",
+      "plan": "Retain owner observed planID, required and observed B1/B1/B3, Linux, westus3, capacity1 and valid verifiedAtUtc; actual app ARM serverFarm association remains checked. Remove verificationEvidenceSha256 dummy marker. Source-versioned semantic owner readiness and actual observations remain prerequisites; no currentF1 assertion upgraded toB1.",
+      "auth": "Keep independently parsed auth-disposition PASS with exact descriptor gate/function/env/app/source/payload equality. Remove raw auth hashing and packet.authDispositionSha256 gate; owner packet explicit source/payload scope and separate accepted auth scope bind the same payload without new hash pin."
+    },
+    "targetEnvironment": "Remove SDA_HOSTING_PACKET_SHA256 and SDA_AUTH_DISPOSITION_SHA256. Keep actual target/OIDC identifiers and ownerPacketBase64 data; no replacement hash/manual token. validatePacket continues all meaningful owner/auth checks before any provider call.",
+    "scopePreservation": "Retain fixed main/manual environment-only context, null fail-before environment/API/auth, exact GitHub environment policy, app-only account/app/config/role/FTP/SCM6-call guards, literalfalse policies, Dev→Test→Prod default-host/custom-domain evidence. No actual cloud fixtures."
+  },
+  "successorContract": {
+    "path": "Static/SDA-WebApp/tools/deploy-contract.json",
+    "content": [
+      "service/function/successor relationship and provenance classification",
+      "No manual binding/control hash prerequisite; source-owned descriptor and semantic owner/auth/readiness shapes",
+      "Explicit owner-hosting packet source/artifact scope and real identity/plan/time fields",
+      "Retained immutable Actions artifact descriptor plus automatic verification semantics",
+      "Null/inactive status and unresolved actual owner/environment/token/OAuth/DOMAIN/CAP/host outputs",
+      "Separate previous owner02/accepted producer references as immutable history, not active pins",
+      "Owned-source handoff only; no owner Terraform output/app/environment/FIC invention"
+    ],
+    "bindingPopulation": "None. No new actual app/identity values or activation. Examples exclusively clearly synthetic shapes, not provider evidence."
+  },
+  "readme": "Update deployment-control explanation to semantic source-owned records and automatic artifact integrity; remove claim owner-packet byte hashing. Correct stale no-producer statement by referencing actual accepted source-build record as historical evidence only; do not imply env/app wrapper or deploy readiness.",
+  "acceptanceMap": [
+    {
+      "requirement": "No manual control hash gate",
+      "checks": "Complete synthetic dev/test/prod bindings and prior stages succeed with no receipt descriptor.sha256, no packet auth hash, no mapping/plan hash markers or SHA env variables. Pretty-print/reorder benign controlJSON passes. Stale optional legacy controlhashes do not gate. Checker output has no ambiguous bindingSha256. No replacement approved/ready boolean or digest variable."
+    },
+    {
+      "requirement": "Semantic readiness retained",
+      "checks": "Missing/nonobject/unsafe/linked control file; missing/wrong kind/disposition/function/gate/env/app/source/artifact; auth notPASS; missing DOMAIN-01/capacity/hostsettings/prior default-host/custom-domain fail before provider/API as appropriate. Direct owner packet source/payload and actual planID/SKU/Linux/region/capacity/time/identity mismatches fail. Clearly synthetic fixture-only data."
+    },
+    {
+      "requirement": "Automatic immutable integrity retained",
+      "checks": "Existing run/repository/source/producer/artifactID/name/archive/expiry mismatch negatives still fail. ZIP/packageReceipt byte corruption and package source/package hash mismatch fail. Control payload artifact equality preserved including predecessor payload. Current accepted sourcebuild/protocol is protected, not re-executed or modified."
+    },
+    {
+      "requirement": "App-only/inactive preserved",
+      "checks": "Correct reviewed synthetic client-principal pair succeeds; wrong authenticated client/principal/role scope/appplan/config/FIC fails. Literalfalse FTP/SCM true/stringfalse fails. No shared serverFarm/Graph calls. Real3null bindings fail before named environment/download/OIDC; environment dropdown/manual/main guards and no deploy rebuild remain."
+    },
+    {
+      "requirement": "Protected bytes/source scope/publication",
+      "checks": "Mechanical old protected identities/runtime tree/rootcontrols/producer+accepted receipts unchanged. Changed paths subset6existingconsumer/docs+1newcontract+newlogs/registration. Only proportional synthetic binding/target/workflow checks+syntax+staticcontrolscan, no runtime/build/browser/actualGitHub/Azure/deploy effect."
+    }
+  ],
+  "commands": [
+    "node --check Static/SDA-WebApp/tools/release-binding.cjs",
+    "node --check Static/SDA-WebApp/tools/release-target.cjs",
+    "node --check Static/SDA-WebApp/tools/check-release-binding.cjs",
+    "node --check Static/SDA-WebApp/tools/check-release-target.cjs",
+    "node --check Static/SDA-WebApp/tools/check-workflow.cjs",
+    "node Static/SDA-WebApp/tools/check-release-binding.cjs --output artifacts/SDA-WEBAPP-DEPLOY-CONTRACT-01/binding-01.json",
+    "node Static/SDA-WebApp/tools/check-release-target.cjs --output artifacts/SDA-WEBAPP-DEPLOY-CONTRACT-01/target-01.json",
+    "node Static/SDA-WebApp/tools/check-workflow.cjs --output artifacts/SDA-WEBAPP-DEPLOY-CONTRACT-01/workflow-01.json"
+  ],
+  "executionOrder": [
+    "Await distinct exact D1-D8 READY for this plan",
+    "Retain baseline source preimages, implement only owned consumer/checker/README/successor JSON changes; no YAML needed",
+    "Run syntax and focused pure/synthetic acceptance+negative cases into fresh outputs; record all adverse outcomes",
+    "Freeze aggregate with exact changes/new contract/protected/runtime/authority hashes and actual scoped counts for one distinct Astra R1-R8",
+    "After scoped PASS, read current commit/sync skills and prepare exact-byte LOCAL commit only with narrow attributed verdict; return source contract hash and localcommit identity",
+    "STOP publication. No push, skip-CI flag, dispatch, merge, binding population, GitHub execution/permission change or Azure/cloud effect authorized. Existing push authorization is narrowed by latest directive."
+  ],
+  "publicationBoundary": {
+    "allowed": "Read-only local Git inspection and post-PASS LOCAL commit only",
+    "held": true,
+    "reason": "Existing build-sda-website.yml automatically runs on sourcebranch/main pushes touching Static/SDA-WebApp/**. These consumer changes match that trigger; any push could cause an unauthorized actual CIeffect under latest user no-effect instruction.",
+    "forbidden": "No [skipci]/skip-ci workaround, changed trigger, empty remote branch, alternate ref, manual dispatch, merge, rebase rewrite, Azure/TF/provider effects. Future publication requires explicit user effect authorization and applicable exact review."
+  },
+  "finiteRecovery": "Retain failed attempt/partial-output/sourcepreimage before action. One evidence-supported mechanical correction to owned new/consumer files with unchanged semantic oracle and protected baseline may rerun only affected focused checks into fresh outputs. Stop on unclear state/no-progress/protected drift/needed producer,protocol,YAML or owner-record change; obtain affected review rather than weaken automatic provenance or fake semantic owner evidence.",
+  "limits": "Plan only; no implementation checks yet. All owner/environment/OAuth/vanity/TLS/DOMAIN/CAP/host/token gates remain unresolved; no current source-build receipt is an env/app acceptance wrapper. Old findings and exact failed-effect history preserved.",
+  "telemetry": "[Status: Frozen] | [Lifecycle: SDA-WEBAPP-DEPLOY-CONTRACT-01 awaiting exact D1-D8; no implementation/publication] | [Model: Sol6.1medium launch guarantee, actual telemetry unavailable] | [Tests:0/0/0]"
+}

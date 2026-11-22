@@ -22,13 +22,18 @@ function runner(s, change) {
     return change ? change(args, value) : value;
   } };
 }
-function packetChange(s, change) { const packet = JSON.parse(Buffer.from(s.ownerPacketBase64, 'base64')); change(packet); const bytes = Buffer.from(JSON.stringify(packet)); s.ownerPacketBase64 = bytes.toString('base64'); s.binding.receipts.ownerPacket.sha256 = sha(bytes); }
+function packetChange(s, change) { const packet = JSON.parse(Buffer.from(s.ownerPacketBase64, 'base64')); change(packet); const bytes = Buffer.from(JSON.stringify(packet)); s.ownerPacketBase64 = bytes.toString('base64'); }
 const rows = [], check = (name, pass, detail) => rows.push({ name, pass: !!pass, ...(pass ? {} : { detail }) });
 for (const environment of ['dev', 'test', 'prod']) {
   const s = selection(environment), mock = runner(s);
   try { verifyTarget(s, mock.execute); check('complete-fixed-app-only-path:' + environment, mock.calls.length === 6); }
   catch (error) { check('complete-fixed-app-only-path:' + environment, false, error.message); }
 }
+const formatting = selection();
+formatting.ownerPacketBase64 = Buffer.from(JSON.stringify(JSON.parse(Buffer.from(formatting.ownerPacketBase64, 'base64')), null, 4) + '\n').toString('base64');
+formatting.authReceiptBase64 = Buffer.from(JSON.stringify(JSON.parse(Buffer.from(formatting.authReceiptBase64, 'base64')), null, 4) + '\n').toString('base64');
+try { const mock = runner(formatting); verifyTarget(formatting, mock.execute); check('benign-control-formatting-no-pin', mock.calls.length === 6); }
+catch (error) { check('benign-control-formatting-no-pin', false, error.message); }
 function reject(name, changeSelection, changeResponse, expected, beforeAzure = false) {
   const s = selection(); changeSelection(s); const mock = runner(s, changeResponse);
   try { verifyTarget(s, mock.execute); check(name, false, 'Invalid selection accepted'); }
@@ -41,16 +46,21 @@ reject('observed-role-principal-mismatch', () => {}, (args, value) => args[0] ==
 reject('inherited-broad-role-rejected', () => {}, (args, value) => args[0] === 'role' ? value.map(role => ({ ...role, scope: '/subscriptions/' + guid('1') })) : value, /Bound deployment principal/);
 reject('actual-app-plan-mismatch', () => {}, (args, value) => args[0] === 'webapp' && args[1] === 'show' ? { ...value, plan: value.plan + '-other' } : value, /actual app/);
 reject('owner-current-f1-is-not-required-b1', s => packetChange(s, packet => { packet.plan.observedSku = 'F1'; }), null, /required actual Linux/, true);
-reject('missing-owner-plan-evidence', s => packetChange(s, packet => { delete packet.plan.verificationEvidenceSha256; }), null, /required actual Linux/, true);
-reject('missing-owner-identity-evidence', s => packetChange(s, packet => { delete packet.identity.mappingEvidenceSha256; }), null, /mapping mismatch/, true);
+for (const [field, value] of [['sourceCommit', 'f'.repeat(40)], ['artifactSha256', 'f'.repeat(64)], ['kind', 'other'], ['gateId', 'other'], ['disposition', 'MISSING']])
+  reject('owner-packet-semantic:' + field, s => packetChange(s, packet => { packet[field] = value; }), null, /semantic scope/, true);
+for (const [field, value] of [['id', 'other'], ['requiredSku', 'F1'], ['linux', false], ['region', 'westus2'], ['capacity', 2], ['verifiedAtUtc', 'not-a-time']])
+  reject('owner-plan-observation:' + field, s => packetChange(s, packet => { packet.plan[field] = value; }), null, /required actual Linux/, true);
+reject('missing-owner-plan-time', s => packetChange(s, packet => { delete packet.plan.verifiedAtUtc; }), null, /required actual Linux/, true);
+reject('missing-owner-identity-principal', s => packetChange(s, packet => { delete packet.identity.principalId; }), null, /mapping mismatch/, true);
 reject('wrong-fic-subject', s => packetChange(s, packet => { packet.identity.subject += '-other'; }), null, /federated subject/, true);
-reject('auth-receipt-drift', s => { s.authReceiptBase64 = Buffer.from('{}').toString('base64'); }, null, /auth receipt byte mismatch/, true);
+reject('auth-receipt-semantic-drift', s => { s.authReceiptBase64 = Buffer.from('{}').toString('base64'); }, null, /auth receipt scope/, true);
 for (const bad of [true, 'false']) reject('basic-publishing-not-literal-false:' + bad, () => {}, (args, value) => args[0] === 'rest' ? bad : value, /Basic publishing/);
 const drift = selection(); drift.ownerPacketBase64 = Buffer.from('{}').toString('base64');
-try { validatePacket(drift); check('owner-packet-byte-drift', false); } catch (error) { check('owner-packet-byte-drift', /bytes do not match/.test(error.message)); }
+try { validatePacket(drift); check('owner-packet-semantic-drift', false); } catch (error) { check('owner-packet-semantic-drift', /Owner packet semantic/.test(error.message)); }
 const source = fs.readFileSync(path.join(__dirname, 'release-target.cjs'));
 check('no-shared-plan-or-directory-cli', !/appservice['"]|['"]ad['"]|get-access-token/.test(source.toString()));
 check('no-approval-boolean-switch', !source.toString().includes('SDA_AUTH_READY'));
+check('no-control-hash-environment-or-marker-gates', !/SDA_HOSTING_PACKET_SHA256|SDA_AUTH_DISPOSITION_SHA256|authDispositionSha256|mappingEvidenceSha256|verificationEvidenceSha256|createHash/.test(source.toString()));
 const result = { mode: 'Synthetic fixed selections and in-memory app-only responses; zero cloud calls', guardSha256: sha(source), counts: { pass: rows.filter(r => r.pass).length, fail: rows.filter(r => !r.pass).length, total: rows.length }, rows };
 const output = argument('--output'); if (!output) throw Error('--output required'); writeNew(output, result);
 console.log(JSON.stringify({ counts: result.counts, failures: rows.filter(row => !row.pass) })); if (result.counts.fail) process.exitCode = 1;

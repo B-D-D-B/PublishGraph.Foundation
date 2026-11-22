@@ -21,6 +21,7 @@ function readOwned(name) {
     current = path.join(current, part);
     requireValue(!fs.lstatSync(current).isSymbolicLink(), 'Linked release evidence is forbidden');
   }
+  requireValue(fs.lstatSync(current).isFile(), 'Release evidence must be a regular file');
   return fs.readFileSync(current);
 }
 function contextFromActions() {
@@ -37,11 +38,12 @@ function validateContext(contract, environment, context) {
     && context.inputs.environment === environment, 'Dispatch repository/ref/event/input is not permitted');
 }
 function receipt(descriptor, readFile) {
-  requireValue(descriptor && digest(descriptor.sha256), 'Missing fixed receipt identity');
+  requireValue(descriptor && typeof descriptor === 'object' && !Array.isArray(descriptor), 'Missing committed receipt descriptor');
   relativeFile(descriptor.path, evidencePrefix);
   const bytes = readFile(descriptor.path);
-  requireValue(sha(bytes) === descriptor.sha256, 'Release receipt byte mismatch');
-  return { bytes, data: JSON.parse(bytes) };
+  const data = JSON.parse(bytes);
+  requireValue(data && typeof data === 'object' && !Array.isArray(data), 'Release receipt must be a JSON object');
+  return { bytes, data };
 }
 function acceptedReceipt(descriptor, kind, environment, binding, readFile, extra = {}) {
   const value = receipt(descriptor, readFile), data = value.data;
@@ -71,7 +73,7 @@ function resolveBinding(contract, environment, context, readFile = readOwned) {
     && typeof artifact.name === 'string' && /^[a-zA-Z0-9._-]+$/.test(artifact.name) && commit(artifact.sourceCommit)
     && digest(artifact.archiveSha256) && digest(artifact.zipSha256) && digest(artifact.packageReceiptSha256)
     && /^\.github\/workflows\/[a-zA-Z0-9._-]+\.ya?ml$/.test(artifact.producerWorkflowPath), 'Missing exact accepted Actions artifact provenance');
-  const packet = receipt(binding.receipts.ownerPacket, readFile);
+  const packet = acceptedReceipt(binding.receipts.ownerPacket, 'owner-hosting-packet', environment, binding, readFile);
   const auth = acceptedReceipt(binding.receipts.auth, 'auth-disposition', environment, binding, readFile, { passOnly: true });
   acceptedReceipt(binding.receipts.artifactAcceptance, 'artifact-acceptance', environment, binding, readFile, { passOnly: true });
   const owner = acceptedReceipt(binding.receipts.ownerReadiness, 'owner-stage-readiness', environment, binding, readFile);

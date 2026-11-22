@@ -27,6 +27,17 @@ check('actions-commit-pinned', uses.length === 4 && uses.every(match => /^[a-f0-
 const contract = JSON.parse(fs.readFileSync(path.resolve(project, '../../.github/sda-website-release-bindings.json')));
 check('real-bindings-null-inactive', Object.keys(contract.environments).length === 3 && Object.values(contract.environments).every(value => value === null));
 check('fixed-main-service-contract', contract.allowedWorkflowRef === 'refs/heads/main' && contract.repository === 'B-D-D-B/PublishGraph.Foundation' && contract.workflowPath === '.github/workflows/deploy-sda-website.yml');
+const successor = JSON.parse(fs.readFileSync(path.join(__dirname, 'deploy-contract.json')));
+check('successor-semantic-control-descriptor-no-pin', successor.version === 1 && successor.status === 'inactive'
+  && JSON.stringify(successor.controlDescriptor.required) === JSON.stringify(['path', 'functionId', 'gateId', 'disposition']));
+check('successor-automatic-artifact-integrity-retained', successor.automaticIntegrity.preserved === true
+  && ['runId', 'id', 'name', 'sourceCommit', 'producerWorkflowPath', 'archiveSha256', 'zipSha256', 'packageReceiptSha256'].every(key => successor.automaticIntegrity.artifactDescriptorFields.includes(key)));
+check('successor-owner-scope-kind-and-literal-false', successor.receipts.ownerPacket.kind === 'owner-hosting-packet'
+  && successor.controlDescriptor.commonSemanticFields.includes('sourceCommit') && successor.controlDescriptor.commonSemanticFields.includes('artifactSha256')
+  && JSON.stringify(successor.targetGuards.literalFalsePublishing) === JSON.stringify(['ftp', 'scm']));
+check('successor-no-push-or-activation', successor.publication.held === true && successor.publication.forbidden.includes('push') && successor.publication.forbidden.includes('binding activation'));
+const resolverSource = fs.readFileSync(path.join(__dirname, 'release-binding.cjs'), 'utf8');
+check('resolver-no-manual-control-digest-gate', !/descriptor\.sha256|Missing fixed receipt identity|Release receipt byte mismatch/.test(resolverSource));
 const match = /node <<'NODE'\n([\s\S]*?)\n\s+NODE/.exec(source);
 check('inline-precheckout-gate-exists', !!match);
 if (match) {
@@ -43,6 +54,6 @@ if (match) {
     ['invalid-environment', good, { environment: 'production' }]
   ]) { try { inline(env, inputs); check('inline-reject:' + name, false); } catch { check('inline-reject:' + name, true); } }
 }
-const result = { mode: 'Workflow source/static checks and synthetic inline gate execution only; no actual Actions token or provider proof', workflowSha256: sha(Buffer.from(source)), bindingSha256: sha(fs.readFileSync(path.resolve(project, '../../.github/sda-website-release-bindings.json'))), counts: { pass: rows.filter(r => r.pass).length, fail: rows.filter(r => !r.pass).length, total: rows.length }, rows };
+const result = { mode: 'Workflow source/static checks and synthetic inline gate execution only; no actual Actions token or provider proof', workflowSha256: sha(Buffer.from(source)), counts: { pass: rows.filter(r => r.pass).length, fail: rows.filter(r => !r.pass).length, total: rows.length }, rows };
 const output = argument('--output'); if (!output) throw Error('--output required'); writeNew(output, result);
 console.log(JSON.stringify({ counts: result.counts, failures: rows.filter(r => !r.pass) })); if (result.counts.fail) process.exitCode = 1;

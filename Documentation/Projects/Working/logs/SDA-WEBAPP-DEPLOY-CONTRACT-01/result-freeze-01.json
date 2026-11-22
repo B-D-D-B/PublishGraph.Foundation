@@ -1,0 +1,342 @@
+{
+  "function": "SDA-WEBAPP-DEPLOY-CONTRACT-01",
+  "scope": "LOCAL aggregate for independent R1-R8; no self-awarded acceptance",
+  "planSha256": "028ebdb013e1e4c9224db33b2802ae2a0bf4e17eacee27ea783f3a53265ff1aa",
+  "baseCommit": "76d87308d919e23accb8098a0f919bbf35d05698",
+  "sourceAndEvidence": [
+    {
+      "path": "Static/SDA-WebApp/tools/release-binding.cjs",
+      "bytes": 13848,
+      "sha256": "d15792290e89f960afe468a0cf7955637db9fd7511ea0e157f054b800aa3822b"
+    },
+    {
+      "path": "Static/SDA-WebApp/tools/release-target.cjs",
+      "bytes": 7758,
+      "sha256": "d219c026eec39fc003d02a4498e85d9e2c8f6e4421752457e7264e9928ad75f3"
+    },
+    {
+      "path": "Static/SDA-WebApp/tools/check-release-binding.cjs",
+      "bytes": 18178,
+      "sha256": "7486b332273869e91999a535b86515d5e41aad72150024109bf37395c7ee01bf"
+    },
+    {
+      "path": "Static/SDA-WebApp/tools/check-release-target.cjs",
+      "bytes": 7455,
+      "sha256": "209c846423f9c3258dd55a34dd6b2b2901295caa21d9e2cc1bd9ed88a169f984"
+    },
+    {
+      "path": "Static/SDA-WebApp/tools/check-workflow.cjs",
+      "bytes": 7543,
+      "sha256": "02422143c1d3f2197786e01a8e225cab42e4ef24a001cfee6f1a2f6f42eba085"
+    },
+    {
+      "path": "Static/SDA-WebApp/README.md",
+      "bytes": 9433,
+      "sha256": "a69caab6293d3e6f1c40359a77b6e2e201f6db8676d3070a438c6f612a9624aa"
+    },
+    {
+      "path": "Static/SDA-WebApp/tools/deploy-contract.json",
+      "bytes": 8121,
+      "sha256": "f408352a1efdf7bd46a2fdefadd458aa18c77d2683f53b7ccfc4115cab55aac2"
+    },
+    {
+      "path": "Documentation/Projects/Working/SDA-WEBAPP-MIG-01-Working.md",
+      "bytes": 48775,
+      "sha256": "baf7d380bf2284368c255526eb068f7b0d2aa07c45db5a1040e7d53674b49da4"
+    },
+    {
+      "path": "Documentation/Projects/Working/logs/SDA-WEBAPP-DEPLOY-CONTRACT-01/application-01.json",
+      "bytes": 2544,
+      "sha256": "6997b25f13d1ef457bb5208acb176a0f48308aba7e4e4501c9d78257244ac457"
+    },
+    {
+      "path": "Documentation/Projects/Working/logs/SDA-WEBAPP-DEPLOY-CONTRACT-01/binding-01.json",
+      "bytes": 5870,
+      "sha256": "bf4c616cf2a420597ef75ceef7f4be06da2e94f6c5a5a1f69311ac46037d8759"
+    },
+    {
+      "path": "Documentation/Projects/Working/logs/SDA-WEBAPP-DEPLOY-CONTRACT-01/binding-02.json",
+      "bytes": 6157,
+      "sha256": "4696ece4c2d7d3be38b4d7d9475fde4a68f11c63eefb976015aec1242bfdc98a"
+    },
+    {
+      "path": "Documentation/Projects/Working/logs/SDA-WEBAPP-DEPLOY-CONTRACT-01/guards-01.json",
+      "bytes": 664,
+      "sha256": "36db9c34fdbc1e55c82711db1b0a80f2a25fa8a4c5c2c37b2fafd987489cd0df"
+    },
+    {
+      "path": "Documentation/Projects/Working/logs/SDA-WEBAPP-DEPLOY-CONTRACT-01/plan-01.json",
+      "bytes": 27066,
+      "sha256": "028ebdb013e1e4c9224db33b2802ae2a0bf4e17eacee27ea783f3a53265ff1aa"
+    },
+    {
+      "path": "Documentation/Projects/Working/logs/SDA-WEBAPP-DEPLOY-CONTRACT-01/readiness-01.json",
+      "bytes": 753,
+      "sha256": "6af0f019f1b49f23c95eeac81a6a87c1b8ba434c46094c2f1c211a1565a5a2c8"
+    },
+    {
+      "path": "Documentation/Projects/Working/logs/SDA-WEBAPP-DEPLOY-CONTRACT-01/source-preimages-01.json",
+      "bytes": 77003,
+      "sha256": "5ff99423a641a594274bf73de71c5c93c05d1fe19be1de6b2b9c7dc5ee477cb7"
+    },
+    {
+      "path": "Documentation/Projects/Working/logs/SDA-WEBAPP-DEPLOY-CONTRACT-01/target-01.json",
+      "bytes": 2866,
+      "sha256": "be1aec1e4bb11e86b81922ade3f3a8ec1368f42b3c22b304225def470ab9e14c"
+    },
+    {
+      "path": "Documentation/Projects/Working/logs/SDA-WEBAPP-DEPLOY-CONTRACT-01/workflow-01.json",
+      "bytes": 2809,
+      "sha256": "2daa064b44a7a53f09c8a31e3011ed3f637c947f8defd3ce73873506ab54101f"
+    }
+  ],
+  "authoritySnapshot": [
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation/AGENTS.md",
+      "sha256": "d3b2d81b9351aaed4b8644a223829787d73cc98c9efb31aa0968dce33d9d9339",
+      "unchanged": true
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/BDDB.AITooling/guidance/standard-practices.md",
+      "sha256": "a0182beeb6266a0627007ec0a2d255e3feba60578c640e67a020218709507bce",
+      "unchanged": true
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/BDDB.AITooling/guidance/worker-review-cycle.md",
+      "sha256": "c9dda120c85d4b03976172d8104be52c30c2cc02ad87db556074b85b48e22ff8",
+      "unchanged": true
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/BDDB.AITooling/guidance/technical-audit-rubric.md",
+      "sha256": "e9cc31452998747d3a7efde04ccef40dec346a8305be6efdb05873ce6cb869ef",
+      "unchanged": true
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/BDDB.AITooling/guidance/result-audit-rubric.md",
+      "sha256": "a259be47851e260c2bb3ef12f71112f7ecf83d49c85a8ed091494ee169b2cb51",
+      "unchanged": true
+    }
+  ],
+  "protectedIdentities": [
+    {
+      "path": ".github/workflows/deploy-sda-website.yml",
+      "bytes": 4381,
+      "sha256": "07d6c5532a91c8fbf2d85ad28637d7d8ebb3aa587fdf86a2065d3c6ee17fbe2f",
+      "gitBlob": "54c1488fee2c7e540f588af3ed64a2ccfe47816b"
+    },
+    {
+      "path": ".github/sda-website-release-bindings.json",
+      "bytes": 1458,
+      "sha256": "82a24e98181e3593026aed76bbabfe7fdcb9aeb05fe23d739a599e6257fd9578",
+      "gitBlob": "b56bcc52b6e8cfd170f49deda6dbd0653b7f5107"
+    },
+    {
+      "path": "Static/SDA-WebApp/tools/package.cjs",
+      "bytes": 4512,
+      "sha256": "4b8c64d649e39b0abc2c85efdf80b4213ce9c75ff6489bcae0ec8cc32e55c1be",
+      "gitBlob": "c473869403b91d07bbd5d7055a13b3067181686b"
+    },
+    {
+      "path": "Static/SDA-WebApp/tools/common.cjs",
+      "bytes": 1558,
+      "sha256": "b328c3d093d458e0326e16f4653ba6c65d8d368848409876c5dfca4c5e701ba0",
+      "gitBlob": "690908fdd24c6d6d84bb7d5b95b562d1063d80d2"
+    },
+    {
+      "path": "Static/SDA-WebApp/SDA.Website.csproj",
+      "bytes": 503,
+      "sha256": "096d7f7151530e7a45b06c4309c98670f7e37112f74803652cf43b2ed66096bb",
+      "gitBlob": "ed54625d5a6c77a92e6d234d800dbbd89836c151"
+    },
+    {
+      "path": "Static/SDA-WebApp/Program.cs",
+      "bytes": 4133,
+      "sha256": "5eda323ae16646840401d197c2e47e59e734d11136b166a7ea92835a6d6d2966",
+      "gitBlob": "b7fcdf31ec1ba40d13b604b7e090ed2109e35731"
+    },
+    {
+      "path": "Static/SDA-WebApp/content-contract.json",
+      "bytes": 296020,
+      "sha256": "e1f45d775db89ae580694c16daea38550db0ce133472ea6388f83efee175e99e",
+      "gitBlob": "2eb382cce97873c2bb665eeb5b3382b1eb7b92b9"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 162,
+      "sha256": "283439fac1fca3f77cd5ffd8a2de4928c5c955429e227ce8612fab831fb57b0c",
+      "gitBlob": "7aec3dc4aef0809c686bbc83d87cb986aa39dc37"
+    },
+    {
+      "path": ".gitattributes",
+      "bytes": 1344,
+      "sha256": "91022b0ce5958783be7b8e8fcdea1729a9f23becea9b038c2df7868d39cf70f6",
+      "gitBlob": "39ff214e9e972552d18cc052e2c91274840761f1"
+    },
+    {
+      "path": "Documentation/Projects/Working/logs/SDA-WEBAPP-MIG-01/release-ux-independent-review-01.json",
+      "bytes": 1688,
+      "sha256": "c1593d6f4c4b2676aa68e845d7466a5690ae8e6ea00101ce5027ab0a3b994ef8",
+      "gitBlob": "d02d5578ebdf8f246301cd1b0c4234c784b3a7d5"
+    },
+    {
+      "path": "Documentation/Projects/Working/logs/SDA-WEBAPP-MIG-01/owner-handoff-02.json",
+      "bytes": 12802,
+      "sha256": "022af5259238a6358e0a68d46f3e75ad4ef4dbc9a7e40d0ed48eefb9d44ca64e",
+      "gitBlob": "b134b5c4b412a71d25a987e42cb21f2c77accc7f"
+    },
+    {
+      "path": "Documentation/Projects/Working/logs/SDA-WEBAPP-MIG-01/capacity-addendum-01.json",
+      "bytes": 6244,
+      "sha256": "82537d85319d5e6cd68e3a0ca8972e643f283c9af06526e21da657e7618ef71d",
+      "gitBlob": "b6fdee07f28163b98ebbcd1fe94a7cc980ae2c55"
+    },
+    {
+      "path": "Static/SDA-WebApp/tools/ARTIFACT-PROTOCOL.md",
+      "bytes": 6428,
+      "sha256": "9a34ab7f995ce25d722da3e4e8d38de239f0579be2f931e950b8bfe428ccee7d",
+      "gitBlob": "cb98592c42352c8ce02b8979f383408d6b1331a5"
+    },
+    {
+      "path": "Static/SDA-WebApp/tools/artifact-protocol.json",
+      "bytes": 3453,
+      "sha256": "cdb8ac1509a2b3d30811d40cb81c62fd2901fc9f01cb1b2ddaced511ec66bc39",
+      "gitBlob": "76be527627793075ee7e61adcd416a96825853ff"
+    },
+    {
+      "path": "Static/SDA-WebApp/tools/validate-artifact-protocol.cjs",
+      "bytes": 16035,
+      "sha256": "56a527a537a195f68fcdca07c83315984b446e1d1faa2374cd9334b40b4f9773",
+      "gitBlob": "5d372d655d51ce81f2fa3531e308966ace83f6df"
+    },
+    {
+      "path": "Static/SDA-WebApp/tools/check-artifact-protocol.cjs",
+      "bytes": 15874,
+      "sha256": "db3d03bc06711e793f9a72f852361c020792586fa464f3bb8d7d5ed11186a826",
+      "gitBlob": "c382e6e7e12f1a070a941e35a7a548222c0513af"
+    },
+    {
+      "path": "Documentation/Projects/Working/logs/SDA-WEBAPP-ARTIFACT-01/result-freeze-01.json",
+      "bytes": 11934,
+      "sha256": "94b3914c09e30b9c9dd36a3ebf48deeca0dab7476796a787a14abd716153c9b7",
+      "gitBlob": "0a7eef32712861cfa36407f5ac160361204191eb"
+    },
+    {
+      "path": "Documentation/Projects/Working/logs/SDA-WEBAPP-ARTIFACT-01/independent-review-01.json",
+      "bytes": 2464,
+      "sha256": "ac0105ed25ce2c5f2905260ed25b54f5d3ca8ffa1d62113d2e86e91a950f63a4",
+      "gitBlob": "9a40a9a112bd8172f2f7bfed0599f44c4e4a635d"
+    },
+    {
+      "path": "global.json",
+      "bytes": 109,
+      "sha256": "ce61f5ae207d33d00594c77c5999c7f0dc66434e85a85f38090335d588438974",
+      "gitBlob": "e1c5e9980fedfa6ce8a2a67c128634c78c392f46"
+    },
+    {
+      "path": "Directory.Build.props",
+      "bytes": 319,
+      "sha256": "aec8391f6be4e0087736ee398a572540b1de9e0b8f609e717976034bd8bf0d6e",
+      "gitBlob": "ad3c9d4367ed18982cf067802f7e0e9bf840cae5"
+    },
+    {
+      "path": "Directory.Packages.props",
+      "bytes": 633,
+      "sha256": "3c48ef7a724fe48d05559ea0e3fcf78bfae6971b50749708595e495a81d9683e",
+      "gitBlob": "c2bb30af4da5765f1073d18753cd385e8c2a1223"
+    },
+    {
+      "path": "NuGet.Config",
+      "bytes": 217,
+      "sha256": "f545a7e2ea14ac53cdfb91217cae67b8ff14275313f6298f9a3331d205b6c948",
+      "gitBlob": "4d736c19ec5ff475609182bf1152633c566d1458"
+    },
+    {
+      "path": ".github/workflows/build-sda-website.yml",
+      "bytes": 4254,
+      "sha256": "c1cc496b3b07daa350dfd8e3720123e7250510b957bc236ed7ebb2c373f1a90b",
+      "gitBlob": "3506b6cdf22aa269ec65b22fece7360f8445c163"
+    },
+    {
+      "path": "Static/SDA-WebApp/tools/producer.cjs",
+      "bytes": 19764,
+      "sha256": "34a300b3e561be7f46b47f6284e4c7d51fc2f72290003fb772a29f159a849ac8",
+      "gitBlob": "2fa17877ac8fc41d2c7ad2a90d5d71eaba0cb870"
+    },
+    {
+      "path": "Static/SDA-WebApp/tools/check-producer.cjs",
+      "bytes": 19464,
+      "sha256": "0d1d166e61763704c508f6e603dbb3d3ef15f68284ccd4e0295ac849f581629f",
+      "gitBlob": "0ca1d17d33b1f05a0e9cc41f43e9b60378d7e833"
+    },
+    {
+      "path": "Documentation/Projects/Working/logs/SDA-WEBAPP-PRODUCER-01/independent-source-build-acceptance-02.json",
+      "bytes": 4248,
+      "sha256": "3c14d7f9c4413e247630c7c358d4aab4c2103f4ec580a348d21bf9c550f2caa5",
+      "gitBlob": "161a93ee4eff7f44cf718c8455128b9c90da02cc"
+    },
+    {
+      "path": "Documentation/Projects/Working/logs/SDA-WEBAPP-PRODUCER-01/source-build-linkage-02.json",
+      "bytes": 9153,
+      "sha256": "23b8250230c38bc06d345d17fc8e4b322e6690f7539951ca760a186275e7749c",
+      "gitBlob": "dd8dc79045f67072d5d7c4fcf955c1c5a852d1a8"
+    }
+  ],
+  "changedCoverage": [
+    "Documentation/Projects/Working/SDA-WEBAPP-MIG-01-Working.md",
+    "Static/SDA-WebApp/README.md",
+    "Static/SDA-WebApp/tools/check-release-binding.cjs",
+    "Static/SDA-WebApp/tools/check-release-target.cjs",
+    "Static/SDA-WebApp/tools/check-workflow.cjs",
+    "Static/SDA-WebApp/tools/release-binding.cjs",
+    "Static/SDA-WebApp/tools/release-target.cjs",
+    "Documentation/Projects/Working/logs/SDA-WEBAPP-DEPLOY-CONTRACT-01/application-01.json",
+    "Documentation/Projects/Working/logs/SDA-WEBAPP-DEPLOY-CONTRACT-01/binding-01.json",
+    "Documentation/Projects/Working/logs/SDA-WEBAPP-DEPLOY-CONTRACT-01/binding-02.json",
+    "Documentation/Projects/Working/logs/SDA-WEBAPP-DEPLOY-CONTRACT-01/guards-01.json",
+    "Documentation/Projects/Working/logs/SDA-WEBAPP-DEPLOY-CONTRACT-01/plan-01.json",
+    "Documentation/Projects/Working/logs/SDA-WEBAPP-DEPLOY-CONTRACT-01/readiness-01.json",
+    "Documentation/Projects/Working/logs/SDA-WEBAPP-DEPLOY-CONTRACT-01/source-preimages-01.json",
+    "Documentation/Projects/Working/logs/SDA-WEBAPP-DEPLOY-CONTRACT-01/target-01.json",
+    "Documentation/Projects/Working/logs/SDA-WEBAPP-DEPLOY-CONTRACT-01/workflow-01.json",
+    "Static/SDA-WebApp/tools/deploy-contract.json"
+  ],
+  "tests": {
+    "syntax": {
+      "pass": 5,
+      "fail": 0
+    },
+    "binding": {
+      "pass": 79,
+      "fail": 0,
+      "total": 79,
+      "receipt": "Documentation/Projects/Working/logs/SDA-WEBAPP-DEPLOY-CONTRACT-01/binding-02.json"
+    },
+    "target": {
+      "pass": 32,
+      "fail": 0,
+      "total": 32,
+      "receipt": "Documentation/Projects/Working/logs/SDA-WEBAPP-DEPLOY-CONTRACT-01/target-01.json"
+    },
+    "workflow": {
+      "pass": 31,
+      "fail": 0,
+      "total": 31,
+      "receipt": "Documentation/Projects/Working/logs/SDA-WEBAPP-DEPLOY-CONTRACT-01/workflow-01.json"
+    },
+    "aggregateFocused": {
+      "pass": 142,
+      "fail": 0,
+      "total": 142
+    },
+    "guards": {
+      "assertions": 39,
+      "receipt": "Documentation/Projects/Working/logs/SDA-WEBAPP-DEPLOY-CONTRACT-01/guards-01.json"
+    }
+  },
+  "contract": {
+    "path": "Static/SDA-WebApp/tools/deploy-contract.json",
+    "sha256": "f408352a1efdf7bd46a2fdefadd458aa18c77d2683f53b7ccfc4115cab55aac2"
+  },
+  "limits": "Actual owner/environment/app/OIDC/auth/domain/capacity/priorstage outputs not supplied; examples/fixtures synthetic. Sourcebuild receipt remains no env/app acceptance wrapper. Nullguards/deploydisabled unchanged. Source publication HELD by latest no-effect directive because consumer paths trigger producer. Await independent R1-R8 before LOCALcommit only.",
+  "recordedUtc": "2026-11-22T09:50:11.744Z"
+}
