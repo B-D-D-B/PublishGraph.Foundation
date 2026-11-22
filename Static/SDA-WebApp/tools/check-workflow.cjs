@@ -35,7 +35,20 @@ check('successor-automatic-artifact-integrity-retained', successor.automaticInte
 check('successor-owner-scope-kind-and-literal-false', successor.receipts.ownerPacket.kind === 'owner-hosting-packet'
   && successor.controlDescriptor.commonSemanticFields.includes('sourceCommit') && successor.controlDescriptor.commonSemanticFields.includes('artifactSha256')
   && JSON.stringify(successor.targetGuards.literalFalsePublishing) === JSON.stringify(['ftp', 'scm']));
-check('successor-no-push-or-activation', successor.publication.held === true && successor.publication.forbidden.includes('push') && successor.publication.forbidden.includes('binding activation'));
+check('historical-contract-hold-retained', successor.publication.held === true && successor.publication.forbidden.includes('push') && successor.publication.forbidden.includes('binding activation'));
+const staging = JSON.parse(fs.readFileSync(path.join(__dirname, 'staging-contract.json')));
+check('fixed-two-stages-no-extra-input', JSON.stringify(staging.stages) === JSON.stringify(['default-host', 'custom-domain']) && staging.stageField === 'binding.stage' && inputKeys.length === 1);
+check('default-functional-gaps-scoped', staging.defaultHost.authDispositionPassRequired === false && staging.defaultHost.vanityDomain01Required === false
+  && JSON.stringify(staging.defaultHost.predecessorStages) === JSON.stringify(['default-host']));
+check('custom-full-functional-controls-retained', staging.customDomain.authDispositionPassRequired === true && staging.customDomain.vanityDomain01Required === true
+  && JSON.stringify(staging.customDomain.predecessorStages) === JSON.stringify(['default-host', 'custom-domain']));
+check('four-stage-scoped-owner-artifact-cap-controls', JSON.stringify(staging.stageScopedControls) === JSON.stringify(['ownerPacket', 'ownerReadiness', 'artifactAcceptance', 'capacityReadiness']));
+check('owner-selected-actual-default-host-tuple', /ownerPacket\.defaultHostname/.test(staging.defaultHostnameBinding) && /target\.defaultHostname/.test(staging.defaultHostnameBinding) && /actual app\.defaultHostName/.test(staging.defaultHostnameBinding));
+check('explicit-gap-punchlist-no-equivalence-claim', JSON.stringify(staging.defaultHostKnownGaps.map(x => x.id)) === JSON.stringify(['content-routes', 'oauth', 'vanity-domain-tls', 'availability'])
+  && /No full migration, LIVE equivalence/.test(staging.claims) && /No security waiver/.test(staging.security));
+const hostSource = fs.readFileSync(path.resolve(project, 'Program.cs'), 'utf8');
+check('protected-api-remains-disabled-no-backend', hostSource.includes('requestPath.StartsWith("/api/", StringComparison.Ordinal)') && hostSource.includes('do not read the body, invoke a backend, or send mail')
+  && !/SmtpClient|MailMessage|SendMailAsync|GetSecret|AUTH_READY/.test(hostSource));
 const resolverSource = fs.readFileSync(path.join(__dirname, 'release-binding.cjs'), 'utf8');
 check('resolver-no-manual-control-digest-gate', !/descriptor\.sha256|Missing fixed receipt identity|Release receipt byte mismatch/.test(resolverSource));
 const match = /node <<'NODE'\n([\s\S]*?)\n\s+NODE/.exec(source);

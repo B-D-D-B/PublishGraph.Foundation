@@ -1,0 +1,430 @@
+{
+  "mode": "Synthetic fixtures only; no actual Actions token permission, provider output, stage acceptance or cloud call is proven",
+  "counts": {
+    "pass": 105,
+    "fail": 0,
+    "total": 105
+  },
+  "rows": [
+    {
+      "name": "real-inactive:dev",
+      "pass": true
+    },
+    {
+      "name": "synthetic-fixed-complete:dev",
+      "pass": true
+    },
+    {
+      "name": "real-inactive:test",
+      "pass": true
+    },
+    {
+      "name": "synthetic-fixed-complete:test",
+      "pass": true
+    },
+    {
+      "name": "real-inactive:prod",
+      "pass": true
+    },
+    {
+      "name": "synthetic-fixed-complete:prod",
+      "pass": true
+    },
+    {
+      "name": "default-host-without-auth-domain-customprior:dev",
+      "pass": true
+    },
+    {
+      "name": "default-host-explicit-gap-punchlist:dev",
+      "pass": true
+    },
+    {
+      "name": "default-host-without-auth-domain-customprior:test",
+      "pass": true
+    },
+    {
+      "name": "default-host-explicit-gap-punchlist:test",
+      "pass": true
+    },
+    {
+      "name": "default-host-without-auth-domain-customprior:prod",
+      "pass": true
+    },
+    {
+      "name": "default-host-explicit-gap-punchlist:prod",
+      "pass": true
+    },
+    {
+      "name": "stage-reject:unknown-stage",
+      "pass": true
+    },
+    {
+      "name": "stage-reject:missing-stage",
+      "pass": true
+    },
+    {
+      "name": "stage-reject:cross-stage:ownerPacket",
+      "pass": true
+    },
+    {
+      "name": "stage-reject:missing-default-control:ownerPacket",
+      "pass": true
+    },
+    {
+      "name": "stage-reject:cross-stage:ownerReadiness",
+      "pass": true
+    },
+    {
+      "name": "stage-reject:missing-default-control:ownerReadiness",
+      "pass": true
+    },
+    {
+      "name": "stage-reject:cross-stage:artifactAcceptance",
+      "pass": true
+    },
+    {
+      "name": "stage-reject:missing-default-control:artifactAcceptance",
+      "pass": true
+    },
+    {
+      "name": "stage-reject:cross-stage:capacityReadiness",
+      "pass": true
+    },
+    {
+      "name": "stage-reject:missing-default-control:capacityReadiness",
+      "pass": true
+    },
+    {
+      "name": "stage-reject:missing-prior-default",
+      "pass": true
+    },
+    {
+      "name": "stage-reject:wrong-prior-stage",
+      "pass": true
+    },
+    {
+      "name": "stage-reject:duplicate-prior-default",
+      "pass": true
+    },
+    {
+      "name": "stage-reject:prior-proof-stage-mismatch",
+      "pass": true
+    },
+    {
+      "name": "stage-reject:prior-proof-wrong-environment",
+      "pass": true
+    },
+    {
+      "name": "stage-reject:different-prior-zip",
+      "pass": true
+    },
+    {
+      "name": "stage-reject:different-prior-source",
+      "pass": true
+    },
+    {
+      "name": "stage-reject:custom-still-needs-auth",
+      "pass": true
+    },
+    {
+      "name": "stage-reject:custom-still-needs-domain",
+      "pass": true
+    },
+    {
+      "name": "stage-reject:custom-still-needs-prior-custom",
+      "pass": true
+    },
+    {
+      "name": "hashless-control-positive:formatting",
+      "pass": true
+    },
+    {
+      "name": "hashless-control-positive:legacy-optional-hashes",
+      "pass": true
+    },
+    {
+      "name": "control-file-reject:link",
+      "pass": true
+    },
+    {
+      "name": "control-file-reject:nonfile",
+      "pass": true
+    },
+    {
+      "name": "arbitrary-ref:refs/heads/feature",
+      "pass": true
+    },
+    {
+      "name": "arbitrary-ref:refs/tags/main",
+      "pass": true
+    },
+    {
+      "name": "arbitrary-ref:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "pass": true
+    },
+    {
+      "name": "fork-repository",
+      "pass": true
+    },
+    {
+      "name": "extra-dispatch-input",
+      "pass": true
+    },
+    {
+      "name": "nonmanual-event",
+      "pass": true
+    },
+    {
+      "name": "wrong-app-binding",
+      "pass": true
+    },
+    {
+      "name": "wrong-subscription-binding",
+      "pass": true
+    },
+    {
+      "name": "wrong-rg-binding",
+      "pass": true
+    },
+    {
+      "name": "wrong-plan-binding",
+      "pass": true
+    },
+    {
+      "name": "wrong-fic-subject",
+      "pass": true
+    },
+    {
+      "name": "missing-artifact-id",
+      "pass": true
+    },
+    {
+      "name": "receipt-semantic-drift",
+      "pass": true
+    },
+    {
+      "name": "receipt-path-traversal",
+      "pass": true
+    },
+    {
+      "name": "missing-domain-evidence",
+      "pass": true
+    },
+    {
+      "name": "missing-capacity-evidence",
+      "pass": true
+    },
+    {
+      "name": "missing-semantic-owner-auth-control:ownerPacket",
+      "pass": true
+    },
+    {
+      "name": "missing-semantic-owner-auth-control:auth",
+      "pass": true
+    },
+    {
+      "name": "missing-semantic-owner-auth-control:ownerReadiness",
+      "pass": true
+    },
+    {
+      "name": "control-object-required:null",
+      "pass": true
+    },
+    {
+      "name": "control-object-required:[]",
+      "pass": true
+    },
+    {
+      "name": "control-object-required:1",
+      "pass": true
+    },
+    {
+      "name": "auth-semantic:kind",
+      "pass": true
+    },
+    {
+      "name": "auth-semantic:disposition",
+      "pass": true
+    },
+    {
+      "name": "auth-semantic:functionId",
+      "pass": true
+    },
+    {
+      "name": "auth-semantic:gateId",
+      "pass": true
+    },
+    {
+      "name": "auth-semantic:environment",
+      "pass": true
+    },
+    {
+      "name": "auth-semantic:appId",
+      "pass": true
+    },
+    {
+      "name": "auth-semantic:sourceCommit",
+      "pass": true
+    },
+    {
+      "name": "auth-semantic:artifactSha256",
+      "pass": true
+    },
+    {
+      "name": "owner-packet-semantic:kind",
+      "pass": true
+    },
+    {
+      "name": "owner-packet-semantic:disposition",
+      "pass": true
+    },
+    {
+      "name": "owner-packet-semantic:functionId",
+      "pass": true
+    },
+    {
+      "name": "owner-packet-semantic:gateId",
+      "pass": true
+    },
+    {
+      "name": "owner-packet-semantic:sourceCommit",
+      "pass": true
+    },
+    {
+      "name": "owner-packet-semantic:artifactSha256",
+      "pass": true
+    },
+    {
+      "name": "wrong-domain-gate",
+      "pass": true
+    },
+    {
+      "name": "wrong-capacity-disposition",
+      "pass": true
+    },
+    {
+      "name": "ready-boolean-is-not-proof",
+      "pass": true
+    },
+    {
+      "name": "wrong-receipt-environment",
+      "pass": true
+    },
+    {
+      "name": "wrong-receipt-payload",
+      "pass": true
+    },
+    {
+      "name": "missing-host-settings",
+      "pass": true
+    },
+    {
+      "name": "literal-false-scm:true",
+      "pass": true
+    },
+    {
+      "name": "literal-false-scm:false",
+      "pass": true
+    },
+    {
+      "name": "prior-domain-stage-missing",
+      "pass": true
+    },
+    {
+      "name": "different-predecessor-payload",
+      "pass": true
+    },
+    {
+      "name": "wrong-run-id",
+      "pass": true
+    },
+    {
+      "name": "wrong-run-repository",
+      "pass": true
+    },
+    {
+      "name": "wrong-producer-workflow",
+      "pass": true
+    },
+    {
+      "name": "wrong-run-conclusion",
+      "pass": true
+    },
+    {
+      "name": "wrong-run-source",
+      "pass": true
+    },
+    {
+      "name": "wrong-artifact-name",
+      "pass": true
+    },
+    {
+      "name": "wrong-artifact-id",
+      "pass": true
+    },
+    {
+      "name": "wrong-artifact-run-link",
+      "pass": true
+    },
+    {
+      "name": "wrong-artifact-source",
+      "pass": true
+    },
+    {
+      "name": "expired-artifact",
+      "pass": true
+    },
+    {
+      "name": "wrong-archive-digest",
+      "pass": true
+    },
+    {
+      "name": "wrong-environment-policy",
+      "pass": true
+    },
+    {
+      "name": "wrong-environment-ref",
+      "pass": true
+    },
+    {
+      "name": "inaccessible-metadata:403",
+      "pass": true
+    },
+    {
+      "name": "inaccessible-metadata:404",
+      "pass": true
+    },
+    {
+      "name": "exact-payload-files",
+      "pass": true
+    },
+    {
+      "name": "artifact-symlink-rejected",
+      "pass": true
+    },
+    {
+      "name": "artifact-path-traversal-rejected",
+      "pass": true
+    },
+    {
+      "name": "payload-byte-drift",
+      "pass": true
+    },
+    {
+      "name": "unlisted-artifact-file",
+      "pass": true
+    },
+    {
+      "name": "package-receipt-byte-integrity",
+      "pass": true
+    },
+    {
+      "name": "package-receipt-provenance:sourceCommit",
+      "pass": true
+    },
+    {
+      "name": "package-receipt-provenance:package",
+      "pass": true
+    }
+  ]
+}

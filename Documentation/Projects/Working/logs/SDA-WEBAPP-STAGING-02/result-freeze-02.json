@@ -1,0 +1,430 @@
+{
+  "function": "SDA-WEBAPP-STAGING-02",
+  "scope": "Corrected LOCAL stage aggregate for distinctR1-R8; no self-awarded closure or execution",
+  "planSha256": "37dca51064d215349ada8eadb9532882082cec9f890a924cb59c3ddac58cd76f",
+  "baseCommit": "255e1fce072b193aec002811186fd21d70b23726",
+  "sourceAndEvidence": [
+    {
+      "path": "Static/SDA-WebApp/tools/release-binding.cjs",
+      "bytes": 14524,
+      "sha256": "3bde8ee9b957a25b3ad47f1e7790b0799293b0c478805ffa735015768745e332"
+    },
+    {
+      "path": "Static/SDA-WebApp/tools/release-target.cjs",
+      "bytes": 8173,
+      "sha256": "04b73f250cd54ac84941fa74247b30e4d3ceee6a167f7a5aa3036a9ad5fb6bc3"
+    },
+    {
+      "path": "Static/SDA-WebApp/tools/check-release-binding.cjs",
+      "bytes": 22488,
+      "sha256": "3ff4dac3d2eff6598d34fdca2af7fc5b9951954d6ad34a2c6b46419c2266eefa"
+    },
+    {
+      "path": "Static/SDA-WebApp/tools/check-release-target.cjs",
+      "bytes": 10187,
+      "sha256": "474e95fda4d30fb81c8c899991cdccdcc514ba1b659f7f9e7a30771e14c038a0"
+    },
+    {
+      "path": "Static/SDA-WebApp/tools/check-workflow.cjs",
+      "bytes": 9507,
+      "sha256": "392433b6c14b5b8c699f7d476235e3f89f8b32307936a8feae94bd9dadcfb581"
+    },
+    {
+      "path": "Static/SDA-WebApp/README.md",
+      "bytes": 10796,
+      "sha256": "095b3d8b9c6d5c59806cde908fff3528d8ad075a9e115adb57cb765982dd0beb"
+    },
+    {
+      "path": "Static/SDA-WebApp/tools/staging-contract.json",
+      "bytes": 4157,
+      "sha256": "614bd2626fd068688eded1cb7623ddd535a3df61a6dec8b37a1b6e3b046f8a5b"
+    },
+    {
+      "path": "Documentation/Projects/Working/SDA-WEBAPP-MIG-01-Working.md",
+      "bytes": 50238,
+      "sha256": "f282b80dfb14052b267fd2977073b84e1c584bc0d39349656541b3c062bbf8f9"
+    },
+    {
+      "path": "Documentation/Projects/Working/logs/SDA-WEBAPP-STAGING-02/application-01.json",
+      "bytes": 3415,
+      "sha256": "b3472981837a005f5b28998e216802b7a1c270f6389c3a4eaf0daeb6c78fb432"
+    },
+    {
+      "path": "Documentation/Projects/Working/logs/SDA-WEBAPP-STAGING-02/application-02.json",
+      "bytes": 2764,
+      "sha256": "a2c92eaa09e47525578b2518ab2a21043acb051e08d1f12afdb4507b49de659a"
+    },
+    {
+      "path": "Documentation/Projects/Working/logs/SDA-WEBAPP-STAGING-02/binding-01.json",
+      "bytes": 8510,
+      "sha256": "e71416679579eb8375513e032b7d0cca5be86abe87601ead6e25a9ced77afa4f"
+    },
+    {
+      "path": "Documentation/Projects/Working/logs/SDA-WEBAPP-STAGING-02/binding-02.json",
+      "bytes": 9107,
+      "sha256": "13c4cdb9d3f413b5c7829955db2788f640209e452db2fe3f6dde0581b38d4bdf"
+    },
+    {
+      "path": "Documentation/Projects/Working/logs/SDA-WEBAPP-STAGING-02/F01-doc-preimages-01.json",
+      "bytes": 32285,
+      "sha256": "a8daa17d513e6ecb5c107f819f2517804f83da4bab16cf6bb4346eb89aea7610"
+    },
+    {
+      "path": "Documentation/Projects/Working/logs/SDA-WEBAPP-STAGING-02/F01-preimages-01.json",
+      "bytes": 73029,
+      "sha256": "61db742608c789b46a2c515f39cd52b3c14decbc7a6c0d201bf3937aea9336d1"
+    },
+    {
+      "path": "Documentation/Projects/Working/logs/SDA-WEBAPP-STAGING-02/guards-01.json",
+      "bytes": 1096,
+      "sha256": "f8d3f63450faa2bf92a0bf71b81fb61cc850968f179b2e439f8a784ff3c68b18"
+    },
+    {
+      "path": "Documentation/Projects/Working/logs/SDA-WEBAPP-STAGING-02/guards-02.json",
+      "bytes": 889,
+      "sha256": "61550fe893d49223ef85228e585c0488d2e23579786fe3d385c52d60a2c2f684"
+    },
+    {
+      "path": "Documentation/Projects/Working/logs/SDA-WEBAPP-STAGING-02/plan-01.json",
+      "bytes": 27214,
+      "sha256": "37dca51064d215349ada8eadb9532882082cec9f890a924cb59c3ddac58cd76f"
+    },
+    {
+      "path": "Documentation/Projects/Working/logs/SDA-WEBAPP-STAGING-02/readiness-01.json",
+      "bytes": 822,
+      "sha256": "992eeb545d27a15ffef745f99e99e494984d974c9a5d3060515b644a8eaa746c"
+    },
+    {
+      "path": "Documentation/Projects/Working/logs/SDA-WEBAPP-STAGING-02/result-freeze-01.json",
+      "bytes": 15074,
+      "sha256": "957badb1bae4619f94d33624ed36c2f9c6822f3258c8c04e29375ad96c9bf3b5"
+    },
+    {
+      "path": "Documentation/Projects/Working/logs/SDA-WEBAPP-STAGING-02/source-preimages-01.json",
+      "bytes": 87255,
+      "sha256": "ed9a0b7a0ea2efb0a65430c8b3a6bfc6b9231cfc08d99903686e26bed60d60ed"
+    },
+    {
+      "path": "Documentation/Projects/Working/logs/SDA-WEBAPP-STAGING-02/target-01.json",
+      "bytes": 3817,
+      "sha256": "37cce3a913984c776a80ff121ec27dfa49d2d58ec0056e96c186b83ae0aee371"
+    },
+    {
+      "path": "Documentation/Projects/Working/logs/SDA-WEBAPP-STAGING-02/target-02.json",
+      "bytes": 4910,
+      "sha256": "8c53e580a06dd4aa128232748422451a50360493278db0cd6fbc3ca917f66b59"
+    },
+    {
+      "path": "Documentation/Projects/Working/logs/SDA-WEBAPP-STAGING-02/workflow-01.json",
+      "bytes": 3341,
+      "sha256": "3516facfce7041208bee59429cd6adc2ce9e0c9206f7a63986a41e3928ea0bbb"
+    },
+    {
+      "path": "Documentation/Projects/Working/logs/SDA-WEBAPP-STAGING-02/workflow-02.json",
+      "bytes": 3431,
+      "sha256": "b889642344c7b98410fc5a4c0205700e3b278e1eadd67fed6b43f2bcb195e264"
+    }
+  ],
+  "authoritySnapshot": [
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation/AGENTS.md",
+      "sha256": "d3b2d81b9351aaed4b8644a223829787d73cc98c9efb31aa0968dce33d9d9339",
+      "unchanged": true
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/BDDB.AITooling/guidance/standard-practices.md",
+      "sha256": "a0182beeb6266a0627007ec0a2d255e3feba60578c640e67a020218709507bce",
+      "unchanged": true
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/BDDB.AITooling/guidance/worker-review-cycle.md",
+      "sha256": "c9dda120c85d4b03976172d8104be52c30c2cc02ad87db556074b85b48e22ff8",
+      "unchanged": true
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/BDDB.AITooling/guidance/technical-audit-rubric.md",
+      "sha256": "e9cc31452998747d3a7efde04ccef40dec346a8305be6efdb05873ce6cb869ef",
+      "unchanged": true
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/BDDB.AITooling/guidance/result-audit-rubric.md",
+      "sha256": "a259be47851e260c2bb3ef12f71112f7ecf83d49c85a8ed091494ee169b2cb51",
+      "unchanged": true
+    }
+  ],
+  "protectedIdentities": [
+    {
+      "path": ".github/workflows/deploy-sda-website.yml",
+      "bytes": 4381,
+      "sha256": "07d6c5532a91c8fbf2d85ad28637d7d8ebb3aa587fdf86a2065d3c6ee17fbe2f",
+      "gitBlob": "54c1488fee2c7e540f588af3ed64a2ccfe47816b"
+    },
+    {
+      "path": ".github/sda-website-release-bindings.json",
+      "bytes": 1458,
+      "sha256": "82a24e98181e3593026aed76bbabfe7fdcb9aeb05fe23d739a599e6257fd9578",
+      "gitBlob": "b56bcc52b6e8cfd170f49deda6dbd0653b7f5107"
+    },
+    {
+      "path": "Static/SDA-WebApp/tools/package.cjs",
+      "bytes": 4512,
+      "sha256": "4b8c64d649e39b0abc2c85efdf80b4213ce9c75ff6489bcae0ec8cc32e55c1be",
+      "gitBlob": "c473869403b91d07bbd5d7055a13b3067181686b"
+    },
+    {
+      "path": "Static/SDA-WebApp/tools/common.cjs",
+      "bytes": 1558,
+      "sha256": "b328c3d093d458e0326e16f4653ba6c65d8d368848409876c5dfca4c5e701ba0",
+      "gitBlob": "690908fdd24c6d6d84bb7d5b95b562d1063d80d2"
+    },
+    {
+      "path": "Static/SDA-WebApp/SDA.Website.csproj",
+      "bytes": 503,
+      "sha256": "096d7f7151530e7a45b06c4309c98670f7e37112f74803652cf43b2ed66096bb",
+      "gitBlob": "ed54625d5a6c77a92e6d234d800dbbd89836c151"
+    },
+    {
+      "path": "Static/SDA-WebApp/Program.cs",
+      "bytes": 4133,
+      "sha256": "5eda323ae16646840401d197c2e47e59e734d11136b166a7ea92835a6d6d2966",
+      "gitBlob": "b7fcdf31ec1ba40d13b604b7e090ed2109e35731"
+    },
+    {
+      "path": "Static/SDA-WebApp/content-contract.json",
+      "bytes": 296020,
+      "sha256": "e1f45d775db89ae580694c16daea38550db0ce133472ea6388f83efee175e99e",
+      "gitBlob": "2eb382cce97873c2bb665eeb5b3382b1eb7b92b9"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 162,
+      "sha256": "283439fac1fca3f77cd5ffd8a2de4928c5c955429e227ce8612fab831fb57b0c",
+      "gitBlob": "7aec3dc4aef0809c686bbc83d87cb986aa39dc37"
+    },
+    {
+      "path": ".gitattributes",
+      "bytes": 1344,
+      "sha256": "91022b0ce5958783be7b8e8fcdea1729a9f23becea9b038c2df7868d39cf70f6",
+      "gitBlob": "39ff214e9e972552d18cc052e2c91274840761f1"
+    },
+    {
+      "path": "Documentation/Projects/Working/logs/SDA-WEBAPP-MIG-01/release-ux-independent-review-01.json",
+      "bytes": 1688,
+      "sha256": "c1593d6f4c4b2676aa68e845d7466a5690ae8e6ea00101ce5027ab0a3b994ef8",
+      "gitBlob": "d02d5578ebdf8f246301cd1b0c4234c784b3a7d5"
+    },
+    {
+      "path": "Documentation/Projects/Working/logs/SDA-WEBAPP-MIG-01/owner-handoff-02.json",
+      "bytes": 12802,
+      "sha256": "022af5259238a6358e0a68d46f3e75ad4ef4dbc9a7e40d0ed48eefb9d44ca64e",
+      "gitBlob": "b134b5c4b412a71d25a987e42cb21f2c77accc7f"
+    },
+    {
+      "path": "Documentation/Projects/Working/logs/SDA-WEBAPP-MIG-01/capacity-addendum-01.json",
+      "bytes": 6244,
+      "sha256": "82537d85319d5e6cd68e3a0ca8972e643f283c9af06526e21da657e7618ef71d",
+      "gitBlob": "b6fdee07f28163b98ebbcd1fe94a7cc980ae2c55"
+    },
+    {
+      "path": "Static/SDA-WebApp/tools/ARTIFACT-PROTOCOL.md",
+      "bytes": 6428,
+      "sha256": "9a34ab7f995ce25d722da3e4e8d38de239f0579be2f931e950b8bfe428ccee7d",
+      "gitBlob": "cb98592c42352c8ce02b8979f383408d6b1331a5"
+    },
+    {
+      "path": "Static/SDA-WebApp/tools/artifact-protocol.json",
+      "bytes": 3453,
+      "sha256": "cdb8ac1509a2b3d30811d40cb81c62fd2901fc9f01cb1b2ddaced511ec66bc39",
+      "gitBlob": "76be527627793075ee7e61adcd416a96825853ff"
+    },
+    {
+      "path": "Static/SDA-WebApp/tools/validate-artifact-protocol.cjs",
+      "bytes": 16035,
+      "sha256": "56a527a537a195f68fcdca07c83315984b446e1d1faa2374cd9334b40b4f9773",
+      "gitBlob": "5d372d655d51ce81f2fa3531e308966ace83f6df"
+    },
+    {
+      "path": "Static/SDA-WebApp/tools/check-artifact-protocol.cjs",
+      "bytes": 15874,
+      "sha256": "db3d03bc06711e793f9a72f852361c020792586fa464f3bb8d7d5ed11186a826",
+      "gitBlob": "c382e6e7e12f1a070a941e35a7a548222c0513af"
+    },
+    {
+      "path": "Documentation/Projects/Working/logs/SDA-WEBAPP-ARTIFACT-01/result-freeze-01.json",
+      "bytes": 11934,
+      "sha256": "94b3914c09e30b9c9dd36a3ebf48deeca0dab7476796a787a14abd716153c9b7",
+      "gitBlob": "0a7eef32712861cfa36407f5ac160361204191eb"
+    },
+    {
+      "path": "Documentation/Projects/Working/logs/SDA-WEBAPP-ARTIFACT-01/independent-review-01.json",
+      "bytes": 2464,
+      "sha256": "ac0105ed25ce2c5f2905260ed25b54f5d3ca8ffa1d62113d2e86e91a950f63a4",
+      "gitBlob": "9a40a9a112bd8172f2f7bfed0599f44c4e4a635d"
+    },
+    {
+      "path": "global.json",
+      "bytes": 109,
+      "sha256": "ce61f5ae207d33d00594c77c5999c7f0dc66434e85a85f38090335d588438974",
+      "gitBlob": "e1c5e9980fedfa6ce8a2a67c128634c78c392f46"
+    },
+    {
+      "path": "Directory.Build.props",
+      "bytes": 319,
+      "sha256": "aec8391f6be4e0087736ee398a572540b1de9e0b8f609e717976034bd8bf0d6e",
+      "gitBlob": "ad3c9d4367ed18982cf067802f7e0e9bf840cae5"
+    },
+    {
+      "path": "Directory.Packages.props",
+      "bytes": 633,
+      "sha256": "3c48ef7a724fe48d05559ea0e3fcf78bfae6971b50749708595e495a81d9683e",
+      "gitBlob": "c2bb30af4da5765f1073d18753cd385e8c2a1223"
+    },
+    {
+      "path": "NuGet.Config",
+      "bytes": 217,
+      "sha256": "f545a7e2ea14ac53cdfb91217cae67b8ff14275313f6298f9a3331d205b6c948",
+      "gitBlob": "4d736c19ec5ff475609182bf1152633c566d1458"
+    },
+    {
+      "path": ".github/workflows/build-sda-website.yml",
+      "bytes": 4254,
+      "sha256": "c1cc496b3b07daa350dfd8e3720123e7250510b957bc236ed7ebb2c373f1a90b",
+      "gitBlob": "3506b6cdf22aa269ec65b22fece7360f8445c163"
+    },
+    {
+      "path": "Static/SDA-WebApp/tools/producer.cjs",
+      "bytes": 19764,
+      "sha256": "34a300b3e561be7f46b47f6284e4c7d51fc2f72290003fb772a29f159a849ac8",
+      "gitBlob": "2fa17877ac8fc41d2c7ad2a90d5d71eaba0cb870"
+    },
+    {
+      "path": "Static/SDA-WebApp/tools/check-producer.cjs",
+      "bytes": 19464,
+      "sha256": "0d1d166e61763704c508f6e603dbb3d3ef15f68284ccd4e0295ac849f581629f",
+      "gitBlob": "0ca1d17d33b1f05a0e9cc41f43e9b60378d7e833"
+    },
+    {
+      "path": "Documentation/Projects/Working/logs/SDA-WEBAPP-PRODUCER-01/independent-source-build-acceptance-02.json",
+      "bytes": 4248,
+      "sha256": "3c14d7f9c4413e247630c7c358d4aab4c2103f4ec580a348d21bf9c550f2caa5",
+      "gitBlob": "161a93ee4eff7f44cf718c8455128b9c90da02cc"
+    },
+    {
+      "path": "Documentation/Projects/Working/logs/SDA-WEBAPP-PRODUCER-01/source-build-linkage-02.json",
+      "bytes": 9153,
+      "sha256": "23b8250230c38bc06d345d17fc8e4b322e6690f7539951ca760a186275e7749c",
+      "gitBlob": "dd8dc79045f67072d5d7c4fcf955c1c5a852d1a8"
+    },
+    {
+      "path": "Static/SDA-WebApp/tools/deploy-contract.json",
+      "bytes": 8121,
+      "sha256": "f408352a1efdf7bd46a2fdefadd458aa18c77d2683f53b7ccfc4115cab55aac2",
+      "gitBlob": "f6484294fdc82593f71a6c9d95730eadb1c204a7"
+    },
+    {
+      "path": "Documentation/Projects/Working/logs/SDA-WEBAPP-DEPLOY-CONTRACT-01/independent-review-01.json",
+      "bytes": 1723,
+      "sha256": "46296a5594c9aab8c5291103847b1b8cf2e7f8ac8392554d670977faa3477825",
+      "gitBlob": "92bc6168dd00a5f641055a24364d62dba5e84d1c"
+    }
+  ],
+  "registeredHistoryTree": "76a752b13baaae61ad7e72b65856f7f0b3296d9f",
+  "changedCoverage": [
+    "Documentation/Projects/Working/SDA-WEBAPP-MIG-01-Working.md",
+    "Static/SDA-WebApp/README.md",
+    "Static/SDA-WebApp/tools/check-release-binding.cjs",
+    "Static/SDA-WebApp/tools/check-release-target.cjs",
+    "Static/SDA-WebApp/tools/check-workflow.cjs",
+    "Static/SDA-WebApp/tools/release-binding.cjs",
+    "Static/SDA-WebApp/tools/release-target.cjs",
+    "Documentation/Projects/Working/logs/SDA-WEBAPP-STAGING-02/F01-doc-preimages-01.json",
+    "Documentation/Projects/Working/logs/SDA-WEBAPP-STAGING-02/F01-preimages-01.json",
+    "Documentation/Projects/Working/logs/SDA-WEBAPP-STAGING-02/application-01.json",
+    "Documentation/Projects/Working/logs/SDA-WEBAPP-STAGING-02/application-02.json",
+    "Documentation/Projects/Working/logs/SDA-WEBAPP-STAGING-02/binding-01.json",
+    "Documentation/Projects/Working/logs/SDA-WEBAPP-STAGING-02/binding-02.json",
+    "Documentation/Projects/Working/logs/SDA-WEBAPP-STAGING-02/guards-01.json",
+    "Documentation/Projects/Working/logs/SDA-WEBAPP-STAGING-02/guards-02.json",
+    "Documentation/Projects/Working/logs/SDA-WEBAPP-STAGING-02/plan-01.json",
+    "Documentation/Projects/Working/logs/SDA-WEBAPP-STAGING-02/readiness-01.json",
+    "Documentation/Projects/Working/logs/SDA-WEBAPP-STAGING-02/result-freeze-01.json",
+    "Documentation/Projects/Working/logs/SDA-WEBAPP-STAGING-02/source-preimages-01.json",
+    "Documentation/Projects/Working/logs/SDA-WEBAPP-STAGING-02/target-01.json",
+    "Documentation/Projects/Working/logs/SDA-WEBAPP-STAGING-02/target-02.json",
+    "Documentation/Projects/Working/logs/SDA-WEBAPP-STAGING-02/workflow-01.json",
+    "Documentation/Projects/Working/logs/SDA-WEBAPP-STAGING-02/workflow-02.json",
+    "Static/SDA-WebApp/tools/staging-contract.json"
+  ],
+  "tests": {
+    "syntax": {
+      "pass": 5,
+      "fail": 0
+    },
+    "binding": {
+      "pass": 111,
+      "fail": 0,
+      "total": 111,
+      "receipt": "Documentation/Projects/Working/logs/SDA-WEBAPP-STAGING-02/binding-02.json"
+    },
+    "target": {
+      "pass": 52,
+      "fail": 0,
+      "total": 52,
+      "receipt": "Documentation/Projects/Working/logs/SDA-WEBAPP-STAGING-02/target-02.json"
+    },
+    "workflow": {
+      "pass": 38,
+      "fail": 0,
+      "total": 38,
+      "receipt": "Documentation/Projects/Working/logs/SDA-WEBAPP-STAGING-02/workflow-02.json"
+    },
+    "aggregateFocused": {
+      "pass": 201,
+      "fail": 0,
+      "total": 201
+    },
+    "guards": {
+      "assertions": 44,
+      "receipt": "Documentation/Projects/Working/logs/SDA-WEBAPP-STAGING-02/guards-02.json"
+    }
+  },
+  "contract": {
+    "path": "Static/SDA-WebApp/tools/staging-contract.json",
+    "sha256": "614bd2626fd068688eded1cb7623ddd535a3df61a6dec8b37a1b6e3b046f8a5b"
+  },
+  "punchlist": [
+    {
+      "id": "content-routes",
+      "state": "OPEN",
+      "meaning": "Content/route completeness and LIVE equivalence remain unaccepted; temporary404s allowed for this staging scope"
+    },
+    {
+      "id": "oauth",
+      "state": "OPEN",
+      "meaning": "OAuth functionality may be absent/fail; no successful auth emulation/private-content exposure; later disposition/replacement remains open"
+    },
+    {
+      "id": "vanity-domain-tls",
+      "state": "OPEN",
+      "meaning": "DOMAIN-01, four Prod names, Dev/Test vanity agreement, DNS/TLS/cert/cutover remain later owner gates; default-host TLS still mandatory"
+    },
+    {
+      "id": "availability",
+      "state": "ACCEPTED STAGING LIMIT",
+      "meaning": "Outages permitted; no zero-downtime/old-new coexistence guarantee; old resources retained, no deletion"
+    }
+  ],
+  "reviewHistory": {
+    "reviewer": "/root/astra_reviewer",
+    "disposition": "REMEDIATE",
+    "finding": "F01medium: missingselected/owner/actualdefaultHost correlation; unrelated validhost accepted. Prior R4/R7/R8 PASS. Independent closure pending.",
+    "preimagesAndAdverse": "Documentation/Projects/Working/logs/SDA-WEBAPP-STAGING-02/F01-preimages-01.json",
+    "docPreimages": "Documentation/Projects/Working/logs/SDA-WEBAPP-STAGING-02/F01-doc-preimages-01.json"
+  },
+  "priorFreeze": {
+    "path": "Documentation/Projects/Working/logs/SDA-WEBAPP-STAGING-02/result-freeze-01.json",
+    "sha256": "957badb1bae4619f94d33624ed36c2f9c6822f3258c8c04e29375ad96c9bf3b5"
+  },
+  "limits": "Real owner app/host/settings/SCM/identity/FIC/plan/CAP/environment/token evidence and env/app/stage artifactwrapper/prior runtime acceptance unavailable. Bindings remain null; no actualdeployment/dispatch/cloud/fullmigration/equivalence/securitywaiver. Scoped localR required before LOCALcommit; separate exact effectD required before sourcepush/automaticproducer observation.",
+  "recordedUtc": "2026-11-22T17:49:59.651Z"
+}

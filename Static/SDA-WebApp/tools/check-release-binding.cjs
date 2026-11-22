@@ -7,7 +7,7 @@ const bindingFile = path.resolve(__dirname, '../../../.github/sda-website-releas
 const realContract = JSON.parse(fs.readFileSync(bindingFile));
 const guid = digit => `${digit.repeat(8)}-${digit.repeat(4)}-${digit.repeat(4)}-${digit.repeat(4)}-${digit.repeat(12)}`;
 const context = environment => ({ repository: realContract.repository, ref: 'refs/heads/main', eventName: 'workflow_dispatch', inputs: { environment } });
-function fixture() {
+function fixture(stage = 'custom-domain') {
   const contract = structuredClone(realContract), files = new Map(), zip = Buffer.from('synthetic accepted ZIP byte fixture');
   const sourceCommit = 'a'.repeat(40), packageBytes = Buffer.from(JSON.stringify({ sourceCommit, package: { sha256: sha(zip) } }));
   function put(environment, name, data, disposition = data.disposition) {
@@ -22,20 +22,24 @@ function fixture() {
     const githubEnvironment = 'sda-website-' + environment;
     const oidc = { tenantId: guid('2'), clientId: guid('3'), principalId: guid('4'), roleDefinitionId: guid('5'), issuer: 'https://token.actions.githubusercontent.com', audience: 'api://AzureADTokenExchange', subject: `repo:${contract.repository}:environment:${githubEnvironment}` };
     const artifact = { runId: 100, id: 200, name: 'fixture-accepted-website', sourceCommit, archiveSha256: 'b'.repeat(64), zipSha256: sha(zip), packageReceiptSha256: sha(packageBytes), producerWorkflowPath: '.github/workflows/fixture-build.yml' };
-    const base = kind => ({ kind, environment, appId: target.appId, sourceCommit, artifactSha256: artifact.zipSha256, functionId: 'fixture-' + kind, gateId: 'fixture-' + kind, disposition: 'PASS' });
+    const base = kind => ({ kind, stage, environment, appId: target.appId, sourceCommit, artifactSha256: artifact.zipSha256, functionId: 'fixture-' + kind, gateId: 'fixture-' + kind, disposition: 'PASS' });
     const auth = put(environment, 'auth', base('auth-disposition'));
-    const packet = { ...base('owner-hosting-packet'), version: 1, subscriptionId: known.subscriptionId,
+    const packet = { ...base('owner-hosting-packet'), version: 1, subscriptionId: known.subscriptionId, defaultHostname: target.defaultHostname,
       identity: { ...oidc, roleScope: target.appId },
       plan: { id: known.planId, observedSku: known.requiredSku, requiredSku: known.requiredSku, linux: true, region: 'westus3', capacity: 1, verifiedAtUtc: '2026-11-22T00:00:00Z' } };
     const owner = { ...base('owner-stage-readiness'), disposition: 'READY', hosting: { stack: 'DOTNETCORE|10.0', alwaysOn: true, httpsOnly: true, minimumTlsVersion: '1.2', ftpsState: 'Disabled', startup: 'dotnet /home/site/wwwroot/SDA.Website.dll', contentRoot: '/home/site/wwwroot/wwwroot', aspnetcoreUrls: 'http://0.0.0.0:8080', buildOnDeploy: false, ftpBasicPublishing: false, scmBasicPublishing: false } };
-    contract.environments[environment] = { githubEnvironment, target, oidc, artifact, receipts: { ownerPacket: put(environment, 'owner-packet', packet), auth,
+    contract.environments[environment] = { stage, githubEnvironment, target, oidc, artifact, receipts: { ownerPacket: put(environment, 'owner-packet', packet), auth,
       artifactAcceptance: put(environment, 'artifact', base('artifact-acceptance')), ownerReadiness: put(environment, 'owner', owner),
       domainReadiness: put(environment, 'domain', { ...base('domain-readiness'), gateId: 'DOMAIN-01' }),
       capacityReadiness: put(environment, 'capacity', { ...base('capacity-stage-readiness'), disposition: 'READY' }), priorEnvironment: [] } };
+    if (stage === 'default-host') {
+      files.delete(auth.path); files.delete(contract.environments[environment].receipts.domainReadiness.path);
+      delete contract.environments[environment].receipts.auth; delete contract.environments[environment].receipts.domainReadiness;
+    }
   }
   for (const environment of ['test', 'prod']) {
     const previous = environment === 'test' ? 'dev' : 'test', b = contract.environments[previous];
-    contract.environments[environment].receipts.priorEnvironment = ['default-host', 'custom-domain'].map(stage => ({ ...put(previous, stage, {
+    contract.environments[environment].receipts.priorEnvironment = (stage === 'default-host' ? ['default-host'] : ['default-host', 'custom-domain']).map(stage => ({ ...put(previous, stage, {
       kind: 'environment-acceptance', environment: previous, appId: b.target.appId, artifactSha256: b.artifact.zipSha256, sourceCommit,
       stage, disposition: 'PASS', functionId: 'fixture-prior', gateId: 'fixture-' + stage }), stage }));
   }
@@ -62,6 +66,42 @@ async function run() {
     const f = fixture();
     try { const s = resolveBinding(f.contract, environment, context(environment), f.read), api = apiFixture(s); await verifyGithub(s, api.api); check('synthetic-fixed-complete:' + environment, api.calls.length === 4); }
     catch (error) { check('synthetic-fixed-complete:' + environment, false, error.message); }
+  }
+  for (const environment of ['dev', 'test', 'prod']) {
+    const f = fixture('default-host');
+    try {
+      const s = resolveBinding(f.contract, environment, context(environment), f.read), api = apiFixture(s); await verifyGithub(s, api.api);
+      check('default-host-without-auth-domain-customprior:' + environment, s.acceptanceScope === 'default-host-only' && !s.authReceiptBase64 && api.calls.length === 4
+        && s.binding.receipts.priorEnvironment.length === (environment === 'dev' ? 0 : 1));
+      check('default-host-explicit-gap-punchlist:' + environment, JSON.stringify(s.punchlist.map(x => x.id)) === JSON.stringify(['content-routes', 'oauth', 'vanity-domain-tls', 'availability'])
+        && s.punchlist.every(x => typeof x.meaning === 'string' && x.meaning.length > 0));
+    } catch (error) { check('default-host-without-auth-domain-customprior:' + environment, false, error.message); }
+  }
+  function rejectStage(name, modify, stage = 'default-host', environment = 'test') {
+    const f = fixture(stage); modify(f, environment);
+    try { resolveBinding(f.contract, environment, context(environment), f.read); check('stage-reject:' + name, false); }
+    catch { check('stage-reject:' + name, true); }
+  }
+  rejectStage('unknown-stage', (f, env) => { f.contract.environments[env].stage = 'anything'; });
+  rejectStage('missing-stage', (f, env) => { delete f.contract.environments[env].stage; });
+  for (const control of ['ownerPacket', 'ownerReadiness', 'artifactAcceptance', 'capacityReadiness']) {
+    rejectStage('cross-stage:' + control, (f, env) => f.changeReceipt(env, control, data => { data.stage = 'custom-domain'; }));
+    rejectStage('missing-default-control:' + control, (f, env) => { delete f.contract.environments[env].receipts[control]; });
+  }
+  rejectStage('missing-prior-default', (f, env) => { f.contract.environments[env].receipts.priorEnvironment = []; });
+  rejectStage('wrong-prior-stage', (f, env) => { f.contract.environments[env].receipts.priorEnvironment[0].stage = 'custom-domain'; });
+  rejectStage('duplicate-prior-default', (f, env) => { const list = f.contract.environments[env].receipts.priorEnvironment; list.push(list[0]); });
+  rejectStage('prior-proof-stage-mismatch', (f, env) => { const d = f.contract.environments[env].receipts.priorEnvironment[0], data = JSON.parse(f.files.get(d.path)); data.stage = 'custom-domain'; f.files.set(d.path, Buffer.from(JSON.stringify(data))); });
+  rejectStage('prior-proof-wrong-environment', (f, env) => { const d = f.contract.environments[env].receipts.priorEnvironment[0], data = JSON.parse(f.files.get(d.path)); data.environment = 'prod'; f.files.set(d.path, Buffer.from(JSON.stringify(data))); });
+  rejectStage('different-prior-zip', f => { f.contract.environments.dev.artifact.zipSha256 = 'f'.repeat(64); });
+  rejectStage('different-prior-source', f => { f.contract.environments.dev.artifact.sourceCommit = 'f'.repeat(40); });
+  rejectStage('custom-still-needs-auth', (f, env) => { delete f.contract.environments[env].receipts.auth; }, 'custom-domain');
+  rejectStage('custom-still-needs-domain', (f, env) => { delete f.contract.environments[env].receipts.domainReadiness; }, 'custom-domain');
+  rejectStage('custom-still-needs-prior-custom', (f, env) => { f.contract.environments[env].receipts.priorEnvironment.pop(); }, 'custom-domain');
+  for (const stage of ['default-host', 'custom-domain']) {
+    rejectStage('F01-unrelated-selected-host:' + stage, (f, env) => { f.contract.environments[env].target.defaultHostname = 'unrelated-host.azurewebsites.net'; }, stage);
+    rejectStage('F01-missing-owner-host:' + stage, (f, env) => f.changeReceipt(env, 'ownerPacket', data => { delete data.defaultHostname; }), stage);
+    rejectStage('F01-wrong-owner-host:' + stage, (f, env) => f.changeReceipt(env, 'ownerPacket', data => { data.defaultHostname = 'unrelated-host.azurewebsites.net'; }), stage);
   }
   for (const variant of ['formatting', 'legacy-optional-hashes']) {
     const f = fixture();

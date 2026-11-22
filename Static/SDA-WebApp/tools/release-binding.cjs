@@ -4,6 +4,7 @@ const root = path.resolve(__dirname, '../../..');
 const bindingPath = path.join(root, '.github/sda-website-release-bindings.json');
 const evidencePrefix = 'Documentation/Projects/Working/logs/SDA-WEBAPP-MIG-01/release-evidence/';
 const environments = ['dev', 'test', 'prod'];
+const stageContract = require('./staging-contract.json');
 const sha = bytes => crypto.createHash('sha256').update(bytes).digest('hex');
 const digest = value => /^[a-f0-9]{64}$/.test(value || '');
 const commit = value => /^[a-f0-9]{40}$/.test(value || '');
@@ -53,12 +54,15 @@ function acceptedReceipt(descriptor, kind, environment, binding, readFile, extra
     && data.environment === environment && same(data.appId, binding.target.appId)
     && data.artifactSha256 === binding.artifact.zipSha256 && data.sourceCommit === binding.artifact.sourceCommit, 'Receipt gate/scope/environment/artifact acceptance mismatch');
   if (extra.passOnly) requireValue(data.disposition === 'PASS', 'A delivered-result PASS receipt is required');
+  if (extra.stage) requireValue(data.stage === extra.stage, 'Receipt deployment stage mismatch');
   return value;
 }
 function resolveBinding(contract, environment, context, readFile = readOwned) {
   validateContext(contract, environment, context);
   const binding = contract.environments[environment];
   requireValue(binding !== null && typeof binding === 'object', 'INACTIVE: exact owner/environment/artifact/stage binding is unavailable');
+  const stage = binding.stage;
+  requireValue(['default-host', 'custom-domain'].includes(stage), 'Explicit default-host or custom-domain stage required');
   const known = contract.knownInfrastructure[environment], target = binding.target, oidc = binding.oidc, artifact = binding.artifact;
   requireValue(known && target && oidc && artifact && binding.receipts, 'Incomplete fixed release binding');
   requireValue(/^sda-(?:website-)?(?:dev|test|prod)$/.test(binding.githubEnvironment)
@@ -73,13 +77,16 @@ function resolveBinding(contract, environment, context, readFile = readOwned) {
     && typeof artifact.name === 'string' && /^[a-zA-Z0-9._-]+$/.test(artifact.name) && commit(artifact.sourceCommit)
     && digest(artifact.archiveSha256) && digest(artifact.zipSha256) && digest(artifact.packageReceiptSha256)
     && /^\.github\/workflows\/[a-zA-Z0-9._-]+\.ya?ml$/.test(artifact.producerWorkflowPath), 'Missing exact accepted Actions artifact provenance');
-  const packet = acceptedReceipt(binding.receipts.ownerPacket, 'owner-hosting-packet', environment, binding, readFile);
-  const auth = acceptedReceipt(binding.receipts.auth, 'auth-disposition', environment, binding, readFile, { passOnly: true });
-  acceptedReceipt(binding.receipts.artifactAcceptance, 'artifact-acceptance', environment, binding, readFile, { passOnly: true });
-  const owner = acceptedReceipt(binding.receipts.ownerReadiness, 'owner-stage-readiness', environment, binding, readFile);
-  const domain = acceptedReceipt(binding.receipts.domainReadiness, 'domain-readiness', environment, binding, readFile);
-  requireValue(domain.data.gateId === 'DOMAIN-01', 'DOMAIN-01 evidence is required before deployment');
-  acceptedReceipt(binding.receipts.capacityReadiness, 'capacity-stage-readiness', environment, binding, readFile);
+  const packet = acceptedReceipt(binding.receipts.ownerPacket, 'owner-hosting-packet', environment, binding, readFile, { stage });
+  let auth;
+  if (stage === 'custom-domain') {
+    auth = acceptedReceipt(binding.receipts.auth, 'auth-disposition', environment, binding, readFile, { passOnly: true });
+    const domain = acceptedReceipt(binding.receipts.domainReadiness, 'domain-readiness', environment, binding, readFile);
+    requireValue(domain.data.gateId === 'DOMAIN-01', 'DOMAIN-01 evidence is required before custom-domain deployment');
+  }
+  acceptedReceipt(binding.receipts.artifactAcceptance, 'artifact-acceptance', environment, binding, readFile, { passOnly: true, stage });
+  const owner = acceptedReceipt(binding.receipts.ownerReadiness, 'owner-stage-readiness', environment, binding, readFile, { stage });
+  acceptedReceipt(binding.receipts.capacityReadiness, 'capacity-stage-readiness', environment, binding, readFile, { stage });
   const host = owner.data.hosting;
   requireValue(host && host.stack === 'DOTNETCORE|10.0' && host.alwaysOn === true && host.httpsOnly === true
     && ['1.2', '1.3'].includes(host.minimumTlsVersion) && host.ftpsState === 'Disabled'
@@ -89,20 +96,22 @@ function resolveBinding(contract, environment, context, readFile = readOwned) {
   const prior = binding.receipts.priorEnvironment;
   requireValue(Array.isArray(prior), 'Prior environment stage evidence missing');
   const previous = environment === 'test' ? 'dev' : environment === 'prod' ? 'test' : null;
-  requireValue(prior.length === (previous ? 2 : 0), 'Dev-to-Test-to-Prod stage evidence missing');
+  const requiredStages = stage === 'default-host' ? ['default-host'] : ['default-host', 'custom-domain'];
+  requireValue(prior.length === (previous ? requiredStages.length : 0), 'Dev-to-Test-to-Prod stage evidence missing');
   if (previous) {
     const predecessor = contract.environments[previous];
     requireValue(predecessor && predecessor.artifact.zipSha256 === artifact.zipSha256
       && predecessor.artifact.sourceCommit === artifact.sourceCommit, 'Predecessor accepted a different immutable payload');
-    for (const stage of ['default-host', 'custom-domain']) {
-      const descriptor = prior.find(item => item.stage === stage);
-      requireValue(descriptor && prior.filter(item => item.stage === stage).length === 1, 'Prior default-host/custom-domain evidence missing');
-      const proof = acceptedReceipt(descriptor, 'environment-acceptance', previous, predecessor, readFile, { passOnly: true });
-      requireValue(proof.data.stage === stage, 'Prior environment stage mismatch');
+    for (const priorStage of requiredStages) {
+      const descriptor = prior.find(item => item.stage === priorStage);
+      requireValue(descriptor && prior.filter(item => item.stage === priorStage).length === 1, 'Prior required default-host/custom-domain evidence missing');
+      acceptedReceipt(descriptor, 'environment-acceptance', previous, predecessor, readFile, { passOnly: true, stage: priorStage });
     }
   }
   const selection = { environment, repository: contract.repository, githubEnvironment: binding.githubEnvironment, binding,
-    ownerPacketBase64: packet.bytes.toString('base64'), authReceiptBase64: auth.bytes.toString('base64') };
+    acceptanceScope: stage === 'default-host' ? 'default-host-only' : 'custom-domain',
+    punchlist: stage === 'default-host' ? structuredClone(stageContract.defaultHostKnownGaps) : [],
+    ownerPacketBase64: packet.bytes.toString('base64'), ...(auth ? { authReceiptBase64: auth.bytes.toString('base64') } : {}) };
   require('./release-target.cjs').validatePacket(selection);
   return selection;
 }

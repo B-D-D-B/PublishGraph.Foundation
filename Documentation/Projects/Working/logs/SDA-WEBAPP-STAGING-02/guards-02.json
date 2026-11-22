@@ -1,0 +1,18 @@
+{
+  "outcome": "corrected-stage-host-tuple-and-preservation-pass",
+  "assertions": 44,
+  "protected": 29,
+  "authorities": 5,
+  "base": "255e1fce072b193aec002811186fd21d70b23726",
+  "runtimeTree": "2a849332d7d6e3367b5b194c01cf21e4c2a5dabe",
+  "oldHistoryTree": "76a752b13baaae61ad7e72b65856f7f0b3296d9f",
+  "registrationUnchanged": true,
+  "bindings": "All3null",
+  "workflowProducerContactRuntime": "Protected exact",
+  "hostTuple": "Selected==explicitownerpacket==actualapp defaultHostname; query added field in existing appread, still sixcalls/no newpermission",
+  "producerInventory": "Protected actual467buildinputs unchanged; separate consumercontract/source identities bind through future reviewed effectcommit/tree",
+  "contract": {
+    "path": "Static/SDA-WebApp/tools/staging-contract.json",
+    "sha256": "614bd2626fd068688eded1cb7623ddd535a3df61a6dec8b37a1b6e3b046f8a5b"
+  }
+}

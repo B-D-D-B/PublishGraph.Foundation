@@ -5,14 +5,14 @@ const { resolveBinding } = require('./release-binding.cjs');
 const { verifyTarget, validatePacket } = require('./release-target.cjs');
 const { argument, writeNew, fs, path, sha } = require('./common.cjs');
 const guid = digit => `${digit.repeat(8)}-${digit.repeat(4)}-${digit.repeat(4)}-${digit.repeat(4)}-${digit.repeat(12)}`;
-function selection(environment = 'dev') { const f = fixture(); return resolveBinding(f.contract, environment, context(environment), f.read); }
+function selection(environment = 'dev', stage = 'custom-domain') { const f = fixture(stage); return resolveBinding(f.contract, environment, context(environment), f.read); }
 function runner(s, change) {
   const calls = [], b = s.binding;
   return { calls, execute: args => {
     calls.push(args); let value;
     const command = args.slice(0, 3).join(' ');
     if (args[0] === 'account' && args[1] === 'show') value = { tenant: b.oidc.tenantId, subscription: b.target.subscriptionId, user: { type: 'servicePrincipal', name: b.oidc.clientId } };
-    else if (args[0] === 'webapp' && args[1] === 'show') value = { id: b.target.appId, plan: b.target.planId, kind: 'app,linux', httpsOnly: true };
+    else if (args[0] === 'webapp' && args[1] === 'show') value = { id: b.target.appId, plan: b.target.planId, kind: 'app,linux', httpsOnly: true, defaultHostname: b.target.defaultHostname };
     else if (command === 'webapp config show') value = { alwaysOn: true, stack: 'DOTNETCORE|10.0', tls: '1.2', ftps: 'Disabled' };
     else if (command === 'role assignment list') {
       if (args[args.indexOf('--scope') + 1] !== b.target.appId || args[args.indexOf('--assignee') + 1] !== b.oidc.principalId) throw Error('Role request escaped fixed app/principal');
@@ -28,6 +28,39 @@ for (const environment of ['dev', 'test', 'prod']) {
   const s = selection(environment), mock = runner(s);
   try { verifyTarget(s, mock.execute); check('complete-fixed-app-only-path:' + environment, mock.calls.length === 6); }
   catch (error) { check('complete-fixed-app-only-path:' + environment, false, error.message); }
+}
+for (const environment of ['dev', 'test', 'prod']) {
+  const s = selection(environment, 'default-host'), mock = runner(s);
+  try { verifyTarget(s, mock.execute); check('default-host-retains-six-app-only-guards:' + environment, mock.calls.length === 6 && !s.authReceiptBase64); }
+  catch (error) { check('default-host-retains-six-app-only-guards:' + environment, false, error.message); }
+}
+for (const [name, mutate] of [
+  ['missing-stage', s => { delete s.binding.stage; }],
+  ['unknown-stage', s => { s.binding.stage = 'anything'; }],
+  ['cross-stage-owner', s => packetChange(s, packet => { packet.stage = 'custom-domain'; })],
+  ['wrong-client', s => { s.binding.oidc.clientId = guid('6'); }],
+  ['wrong-plan-sku', s => packetChange(s, packet => { packet.plan.observedSku = 'F1'; })]
+]) {
+  const s = selection('dev', 'default-host'); mutate(s); const mock = runner(s);
+  try { verifyTarget(s, mock.execute); check('default-host-invalid-before-provider:' + name, false); }
+  catch { check('default-host-invalid-before-provider:' + name, mock.calls.length === 0); }
+}
+for (const bad of [true, 'false']) {
+  const s = selection('dev', 'default-host'), mock = runner(s, (args, value) => args[0] === 'rest' ? bad : value);
+  try { verifyTarget(s, mock.execute); check('default-host-literal-false:' + bad, false); }
+  catch { check('default-host-literal-false:' + bad, true); }
+}
+for (const stage of ['default-host', 'custom-domain']) {
+  for (const value of [undefined, 'unrelated-host.azurewebsites.net']) {
+    const s = selection('dev', stage); packetChange(s, packet => { packet.defaultHostname = value; }); const mock = runner(s);
+    try { verifyTarget(s, mock.execute); check('F01-owner-host-before-provider:' + stage + ':' + value, false); }
+    catch { check('F01-owner-host-before-provider:' + stage + ':' + value, mock.calls.length === 0); }
+    const actual = selection('dev', stage), actualMock = runner(actual, (args, data) => args[0] === 'webapp' && args[1] === 'show' ? { ...data, defaultHostname: value } : data);
+    try { verifyTarget(actual, actualMock.execute); check('F01-actual-host-mismatch:' + stage + ':' + value, false); }
+    catch (error) { check('F01-actual-host-mismatch:' + stage + ':' + value, /actual app\/default hostname/.test(error.message) && actualMock.calls.length === 3); }
+  }
+  const s = selection('dev', stage), mock = runner(s); verifyTarget(s, mock.execute);
+  check('F01-host-read-in-existing-app-query:' + stage, mock.calls.length === 6 && mock.calls.find(args => args[0] === 'webapp' && args[1] === 'show').includes('{id:id,plan:serverFarmId,kind:kind,httpsOnly:httpsOnly,defaultHostname:defaultHostName}'));
 }
 const formatting = selection();
 formatting.ownerPacketBase64 = Buffer.from(JSON.stringify(JSON.parse(Buffer.from(formatting.ownerPacketBase64, 'base64')), null, 4) + '\n').toString('base64');

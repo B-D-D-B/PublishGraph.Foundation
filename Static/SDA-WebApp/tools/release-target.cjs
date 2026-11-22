@@ -13,22 +13,27 @@ function validatePacket(selection) {
   const required = ['SDA_ENVIRONMENT', 'AZURE_CLIENT_ID', 'AZURE_TENANT_ID', 'AZURE_SUBSCRIPTION_ID', 'SDA_APP_NAME', 'SDA_RESOURCE_GROUP', 'SDA_APP_ID', 'SDA_PLAN_ID', 'SDA_PRINCIPAL_ID', 'SDA_DEPLOY_ROLE_ID', 'SDA_HOSTING_PACKET_BASE64'];
   for (const key of required) if (!env[key]) throw Error('Required reviewed environment variable missing: ' + key);
   if (!['dev', 'test', 'prod'].includes(env.SDA_ENVIRONMENT)) throw Error('Unknown environment');
-  const authBytes = Buffer.from(selection.authReceiptBase64 || '', 'base64');
-  const auth = JSON.parse(authBytes), descriptor = selection.binding.receipts.auth;
-  if (auth.kind !== 'auth-disposition' || auth.disposition !== 'PASS' || auth.environment !== env.SDA_ENVIRONMENT
+  const stage = selection.binding.stage;
+  if (!['default-host', 'custom-domain'].includes(stage)) throw Error('Explicit deployment stage required');
+  if (stage === 'custom-domain') {
+    const authBytes = Buffer.from(selection.authReceiptBase64 || '', 'base64');
+    const auth = JSON.parse(authBytes), descriptor = selection.binding.receipts.auth;
+    if (auth.kind !== 'auth-disposition' || auth.disposition !== 'PASS' || auth.environment !== env.SDA_ENVIRONMENT
       || auth.gateId !== descriptor.gateId || auth.functionId !== descriptor.functionId || !equal(auth.appId, env.SDA_APP_ID)
       || auth.artifactSha256 !== selection.binding.artifact.zipSha256 || auth.sourceCommit !== selection.binding.artifact.sourceCommit)
-    throw Error('Accepted auth receipt scope/disposition mismatch');
+      throw Error('Accepted auth receipt scope/disposition mismatch');
+  }
   const bytes = Buffer.from(env.SDA_HOSTING_PACKET_BASE64, 'base64');
   const packet = JSON.parse(bytes);
   const expectedId = `/subscriptions/${env.AZURE_SUBSCRIPTION_ID}/resourceGroups/${env.SDA_RESOURCE_GROUP}/providers/Microsoft.Web/sites/${env.SDA_APP_NAME}`;
   const ownerDescriptor = selection.binding.receipts.ownerPacket;
-  if (packet.version !== 1 || packet.kind !== 'owner-hosting-packet' || !['READY', 'PASS'].includes(packet.disposition)
+  if (packet.version !== 1 || packet.kind !== 'owner-hosting-packet' || packet.stage !== stage || !['READY', 'PASS'].includes(packet.disposition)
       || packet.disposition !== ownerDescriptor.disposition || typeof ownerDescriptor.functionId !== 'string' || !ownerDescriptor.functionId
       || typeof ownerDescriptor.gateId !== 'string' || !ownerDescriptor.gateId
       || packet.functionId !== ownerDescriptor.functionId || packet.gateId !== ownerDescriptor.gateId
       || packet.environment !== env.SDA_ENVIRONMENT || !equal(expectedId, env.SDA_APP_ID)
       || !equal(packet.appId, expectedId) || !equal(packet.subscriptionId, env.AZURE_SUBSCRIPTION_ID)
+      || !equal(packet.defaultHostname, selection.binding.target.defaultHostname)
       || packet.sourceCommit !== selection.binding.artifact.sourceCommit || packet.artifactSha256 !== selection.binding.artifact.zipSha256)
     throw Error('Owner packet semantic scope/disposition/app/environment mismatch');
   const identity = packet.identity;
@@ -55,11 +60,12 @@ function verifyTarget(selection, execute = executeAz) {
   if (!equal(account.tenant, packet.identity.tenantId) || !equal(account.subscription, packet.subscriptionId)
       || account.user.type !== 'servicePrincipal' || !equal(account.user.name, packet.identity.clientId)) throw Error('Authenticated OIDC client does not match accepted owner identity');
   const scope = ['--resource-group', env.SDA_RESOURCE_GROUP, '--name', env.SDA_APP_NAME];
-  const app = az(['webapp', 'show', ...scope, '--query', '{id:id,plan:serverFarmId,kind:kind,httpsOnly:httpsOnly}']);
+  const app = az(['webapp', 'show', ...scope, '--query', '{id:id,plan:serverFarmId,kind:kind,httpsOnly:httpsOnly,defaultHostname:defaultHostName}']);
   const config = az(['webapp', 'config', 'show', ...scope, '--query', '{alwaysOn:alwaysOn,stack:linuxFxVersion,tls:minTlsVersion,ftps:ftpsState}']);
   // App association is observable with app-only RBAC. The shared plan's actual SKU
   // comes from independently accepted owner evidence; this identity never reads it.
-  if (!equal(app.id, packet.appId) || !equal(app.plan, packet.plan.id) || !app.kind.includes('linux') || app.kind.includes('functionapp') || !app.httpsOnly) throw Error('Hosting packet does not match actual app');
+  if (!equal(app.id, packet.appId) || !equal(app.plan, packet.plan.id) || !equal(app.defaultHostname, packet.defaultHostname)
+      || !app.kind.includes('linux') || app.kind.includes('functionapp') || !app.httpsOnly) throw Error('Hosting packet does not match actual app/default hostname');
   if (!config.alwaysOn || config.stack !== 'DOTNETCORE|10.0' || !['1.2', '1.3'].includes(config.tls) || config.ftps !== 'Disabled') throw Error('Runtime/Always On/TLS/FTPS mismatch');
   const roles = az(['role', 'assignment', 'list', '--assignee', packet.identity.principalId, '--scope', packet.appId, '--include-inherited', '--fill-principal-name', 'false']);
   if (!roles.length || roles.some(role => !equal(role.principalId, packet.identity.principalId) || !equal(role.scope, packet.appId))
