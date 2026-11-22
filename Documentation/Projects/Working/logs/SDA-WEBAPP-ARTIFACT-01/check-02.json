@@ -1,0 +1,248 @@
+{
+  "mode": "Synthetic fixture bytes, clock and archive/API observations only; no actual ZIP inspection, producer workflow/run/artifact, provider or independent acceptance is proven",
+  "contractSha256": "cdb8ac1509a2b3d30811d40cb81c62fd2901fc9f01cb1b2ddaced511ec66bc39",
+  "validatorSha256": "24488463570b293a0097bbeab8d51211e738a5248e185bd14bbb6ef0d8bb1bfb",
+  "counts": {
+    "pass": 59,
+    "fail": 0,
+    "total": 59
+  },
+  "rows": [
+    {
+      "name": "synthetic-complete-source-build-evidence",
+      "pass": true
+    },
+    {
+      "name": "wrong-source-commit",
+      "pass": true
+    },
+    {
+      "name": "wrong-source-tree",
+      "pass": true
+    },
+    {
+      "name": "dirty-pre-status",
+      "pass": true
+    },
+    {
+      "name": "changed-post-head",
+      "pass": true
+    },
+    {
+      "name": "missing-clean-evidence",
+      "pass": true
+    },
+    {
+      "name": "ignored-stale-build-input",
+      "pass": true
+    },
+    {
+      "name": "sourceDirty-true",
+      "pass": true
+    },
+    {
+      "name": "sourceDirty-string-false",
+      "pass": true
+    },
+    {
+      "name": "missing-required-source",
+      "pass": true
+    },
+    {
+      "name": "changed-accepted-builder-source",
+      "pass": true
+    },
+    {
+      "name": "missing-tool-version",
+      "pass": true
+    },
+    {
+      "name": "package-node-mismatch",
+      "pass": true
+    },
+    {
+      "name": "unpinned-action",
+      "pass": true
+    },
+    {
+      "name": "wrong-content-count",
+      "pass": true
+    },
+    {
+      "name": "wrong-content-hash",
+      "pass": true
+    },
+    {
+      "name": "wrong-package-source",
+      "pass": true
+    },
+    {
+      "name": "wrong-package-size",
+      "pass": true
+    },
+    {
+      "name": "wrong-host-source",
+      "pass": true
+    },
+    {
+      "name": "duplicate-inner-entry",
+      "pass": true
+    },
+    {
+      "name": "traversal-entry",
+      "pass": true
+    },
+    {
+      "name": "absolute-entry",
+      "pass": true
+    },
+    {
+      "name": "backslash-entry",
+      "pass": true
+    },
+    {
+      "name": "unlisted-runtime-entry",
+      "pass": true
+    },
+    {
+      "name": "in-progress-run",
+      "pass": true
+    },
+    {
+      "name": "failed-run",
+      "pass": true
+    },
+    {
+      "name": "wrong-run-id",
+      "pass": true
+    },
+    {
+      "name": "wrong-attempt",
+      "pass": true
+    },
+    {
+      "name": "wrong-run-repo",
+      "pass": true
+    },
+    {
+      "name": "wrong-producer-path",
+      "pass": true
+    },
+    {
+      "name": "wrong-artifact-id",
+      "pass": true
+    },
+    {
+      "name": "wrong-artifact-name",
+      "pass": true
+    },
+    {
+      "name": "wrong-artifact-run-link",
+      "pass": true
+    },
+    {
+      "name": "expired-flag",
+      "pass": true
+    },
+    {
+      "name": "missing-expiry",
+      "pass": true
+    },
+    {
+      "name": "expiry-at-current-time",
+      "pass": true
+    },
+    {
+      "name": "past-expiry",
+      "pass": true
+    },
+    {
+      "name": "invalid-time-order",
+      "pass": true
+    },
+    {
+      "name": "future-observation",
+      "pass": true
+    },
+    {
+      "name": "missing-retention",
+      "pass": true
+    },
+    {
+      "name": "upload-id-mismatch",
+      "pass": true
+    },
+    {
+      "name": "archive-vs-inner-digest-confusion",
+      "pass": true
+    },
+    {
+      "name": "corrupt-outer-bytes",
+      "pass": true
+    },
+    {
+      "name": "corrupt-payload-bytes",
+      "pass": true
+    },
+    {
+      "name": "corrupt-raw-package-bytes",
+      "pass": true
+    },
+    {
+      "name": "missing-artifact",
+      "pass": true
+    },
+    {
+      "name": "missing-independent-acceptance",
+      "pass": true
+    },
+    {
+      "name": "outer-unlisted-entry",
+      "pass": true
+    },
+    {
+      "name": "observed-inner-byte-mismatch",
+      "pass": true
+    },
+    {
+      "name": "observed-symlink",
+      "pass": true
+    },
+    {
+      "name": "acceptance-nonPASS",
+      "pass": true
+    },
+    {
+      "name": "acceptance-boolean-not-proof",
+      "pass": true
+    },
+    {
+      "name": "acceptance-wrong-artifact",
+      "pass": true
+    },
+    {
+      "name": "acceptance-wrong-protocol",
+      "pass": true
+    },
+    {
+      "name": "acceptance-wrong-reviewer",
+      "pass": true
+    },
+    {
+      "name": "acceptance-before-observation",
+      "pass": true
+    },
+    {
+      "name": "synthetic-current-consumer-wrapper-and-bundle",
+      "pass": true
+    },
+    {
+      "name": "real452-content-contract-pinned-without-runtime-rerun",
+      "pass": true
+    },
+    {
+      "name": "no-actual-producer-bound",
+      "pass": true
+    }
+  ]
+}

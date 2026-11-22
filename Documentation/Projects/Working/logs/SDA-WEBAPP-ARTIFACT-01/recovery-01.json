@@ -1,0 +1,9 @@
+{
+  "function": "SDA-WEBAPP-ARTIFACT-01",
+  "operation": "Focused synthetic check-01",
+  "failure": "Unsafe or duplicate inventory path thrown by fixture seal before the negative case reached its assertion; stack check-artifact-protocol.cjs seal/reject; no check-01 report was written",
+  "diagnosis": "Fixture sealer called production inventory validation on deliberately malformed negative inventory",
+  "correction": "New checker alone now seals fixture rows mechanically without validating them; production validation still rejects the negative input",
+  "safeState": "Protected14 identities and registration revalidated; no source outside new4files or actual producer/ZIP/API/cloud effect",
+  "next": "Run corrected checker into fresh check-02; retain failed operation history; no count claimed from incomplete attempt"
+}

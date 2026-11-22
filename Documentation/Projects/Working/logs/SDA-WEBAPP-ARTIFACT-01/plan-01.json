@@ -1,0 +1,210 @@
+{
+  "function": "SDA-WEBAPP-ARTIFACT-01",
+  "phase": "Plan only; immutable Actions producer-artifact protocol against accepted consumer",
+  "createdUtc": "2026-11-22T07:54:35.560Z",
+  "registration": {
+    "record": "Documentation/Projects/Working/SDA-WEBAPP-MIG-01-Working.md",
+    "sha256": "92e8a226786b8cf6a5ddca5189c88a524620068f1dfcdfd44fd7da78654a5e17",
+    "preimage": "Coordinator retained original bytes before registration; worker will not alter prior history",
+    "worker": "/root/sol_worker",
+    "reviewer": "/root/astra_reviewer",
+    "configuration": "Sol6.1medium and Astra6medium explicit launch guarantees; actual telemetry unavailable",
+    "track": "Normal",
+    "rationale": "Conformance to accepted immutable consumer, existing package receipt and explicit user evidence requirements; no new trust root, provider, permission, retention guarantee or deployment behavior is chosen.",
+    "lifecycle": "Registered before dispatch; exact D1-D8 READY required before implementation; frozen result requires independent R1-R8 before authorized publication",
+    "continuity": "New bounded function, no reset or reopening of prior migration functions/findings/runtime/workflow acceptance"
+  },
+  "authoritySnapshot": [
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation/AGENTS.md",
+      "sha256": "d3b2d81b9351aaed4b8644a223829787d73cc98c9efb31aa0968dce33d9d9339"
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/BDDB.AITooling/guidance/standard-practices.md",
+      "sha256": "a0182beeb6266a0627007ec0a2d255e3feba60578c640e67a020218709507bce"
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/BDDB.AITooling/guidance/worker-review-cycle.md",
+      "sha256": "c9dda120c85d4b03976172d8104be52c30c2cc02ad87db556074b85b48e22ff8"
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/BDDB.AITooling/guidance/technical-audit-rubric.md",
+      "sha256": "e9cc31452998747d3a7efde04ccef40dec346a8305be6efdb05873ce6cb869ef"
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/BDDB.AITooling/guidance/result-audit-rubric.md",
+      "sha256": "a259be47851e260c2bb3ef12f71112f7ecf83d49c85a8ed091494ee169b2cb51"
+    }
+  ],
+  "sourceBaseline": {
+    "commit": "fa723dc086d4d84abab13ef87f470ccf7c4358db",
+    "branch": "agents/sda-website-migration-setup",
+    "sourceIdentities": [
+      {
+        "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/.github/workflows/deploy-sda-website.yml",
+        "relativePath": ".github/workflows/deploy-sda-website.yml",
+        "sha256": "07d6c5532a91c8fbf2d85ad28637d7d8ebb3aa587fdf86a2065d3c6ee17fbe2f",
+        "gitBlob": "54c1488fee2c7e540f588af3ed64a2ccfe47816b"
+      },
+      {
+        "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/.github/sda-website-release-bindings.json",
+        "relativePath": ".github/sda-website-release-bindings.json",
+        "sha256": "82a24e98181e3593026aed76bbabfe7fdcb9aeb05fe23d739a599e6257fd9578",
+        "gitBlob": "b56bcc52b6e8cfd170f49deda6dbd0653b7f5107"
+      },
+      {
+        "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Static/SDA-WebApp/tools/package.cjs",
+        "relativePath": "Static/SDA-WebApp/tools/package.cjs",
+        "sha256": "4b8c64d649e39b0abc2c85efdf80b4213ce9c75ff6489bcae0ec8cc32e55c1be",
+        "gitBlob": "c473869403b91d07bbd5d7055a13b3067181686b"
+      },
+      {
+        "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Static/SDA-WebApp/tools/common.cjs",
+        "relativePath": "Static/SDA-WebApp/tools/common.cjs",
+        "sha256": "b328c3d093d458e0326e16f4653ba6c65d8d368848409876c5dfca4c5e701ba0",
+        "gitBlob": "690908fdd24c6d6d84bb7d5b95b562d1063d80d2"
+      },
+      {
+        "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Static/SDA-WebApp/tools/release-binding.cjs",
+        "relativePath": "Static/SDA-WebApp/tools/release-binding.cjs",
+        "sha256": "1071cb4705a7791ee5e8cfdddd90f991268bfa1175919b9421eec76034efa652",
+        "gitBlob": "c9655932168350bf9c78c9d5a213425bbfb471f6"
+      },
+      {
+        "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Static/SDA-WebApp/tools/release-target.cjs",
+        "relativePath": "Static/SDA-WebApp/tools/release-target.cjs",
+        "sha256": "07c24cc4549782fc8d71eef528fbe92034f8ed0de15389679e2edec665598b04",
+        "gitBlob": "9515562dc26f1547b2d616dd440f1b3a25b29548"
+      },
+      {
+        "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Static/SDA-WebApp/SDA.Website.csproj",
+        "relativePath": "Static/SDA-WebApp/SDA.Website.csproj",
+        "sha256": "096d7f7151530e7a45b06c4309c98670f7e37112f74803652cf43b2ed66096bb",
+        "gitBlob": "ed54625d5a6c77a92e6d234d800dbbd89836c151"
+      },
+      {
+        "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Static/SDA-WebApp/Program.cs",
+        "relativePath": "Static/SDA-WebApp/Program.cs",
+        "sha256": "5eda323ae16646840401d197c2e47e59e734d11136b166a7ea92835a6d6d2966",
+        "gitBlob": "b7fcdf31ec1ba40d13b604b7e090ed2109e35731"
+      },
+      {
+        "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Static/SDA-WebApp/content-contract.json",
+        "relativePath": "Static/SDA-WebApp/content-contract.json",
+        "sha256": "e1f45d775db89ae580694c16daea38550db0ce133472ea6388f83efee175e99e",
+        "gitBlob": "2eb382cce97873c2bb665eeb5b3382b1eb7b92b9"
+      },
+      {
+        "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/.gitignore",
+        "relativePath": ".gitignore",
+        "sha256": "283439fac1fca3f77cd5ffd8a2de4928c5c955429e227ce8612fab831fb57b0c",
+        "gitBlob": "7aec3dc4aef0809c686bbc83d87cb986aa39dc37"
+      },
+      {
+        "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/.gitattributes",
+        "relativePath": ".gitattributes",
+        "sha256": "91022b0ce5958783be7b8e8fcdea1729a9f23becea9b038c2df7868d39cf70f6",
+        "gitBlob": "39ff214e9e972552d18cc052e2c91274840761f1"
+      },
+      {
+        "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Documentation/Projects/Working/logs/SDA-WEBAPP-MIG-01/release-ux-independent-review-01.json",
+        "relativePath": "Documentation/Projects/Working/logs/SDA-WEBAPP-MIG-01/release-ux-independent-review-01.json",
+        "sha256": "c1593d6f4c4b2676aa68e845d7466a5690ae8e6ea00101ce5027ab0a3b994ef8",
+        "gitBlob": "d02d5578ebdf8f246301cd1b0c4234c784b3a7d5"
+      },
+      {
+        "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Documentation/Projects/Working/logs/SDA-WEBAPP-MIG-01/owner-handoff-02.json",
+        "relativePath": "Documentation/Projects/Working/logs/SDA-WEBAPP-MIG-01/owner-handoff-02.json",
+        "sha256": "022af5259238a6358e0a68d46f3e75ad4ef4dbc9a7e40d0ed48eefb9d44ca64e",
+        "gitBlob": "b134b5c4b412a71d25a987e42cb21f2c77accc7f"
+      },
+      {
+        "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Documentation/Projects/Working/logs/SDA-WEBAPP-MIG-01/capacity-addendum-01.json",
+        "relativePath": "Documentation/Projects/Working/logs/SDA-WEBAPP-MIG-01/capacity-addendum-01.json",
+        "sha256": "82537d85319d5e6cd68e3a0ca8972e643f283c9af06526e21da657e7618ef71d",
+        "gitBlob": "b6fdee07f28163b98ebbcd1fe94a7cc980ae2c55"
+      }
+    ],
+    "protectedRuntimeTree": "2a849332d7d6e3367b5b194c01cf21e4c2a5dabe",
+    "coordinatorOwnedDirtyPath": "Documentation/Projects/Working/SDA-WEBAPP-MIG-01-Working.md"
+  },
+  "primarySources": [
+    "https://docs.github.com/en/rest/actions/artifacts#get-an-artifact",
+    "https://docs.github.com/en/actions/tutorials/store-and-share-data",
+    "https://github.com/actions/upload-artifact"
+  ],
+  "scope": {
+    "outcome": "Freeze a small documented/machine-readable producer evidence contract and a local validator with focused synthetic tests. No producer workflow or run exists or is created.",
+    "newOwnedSource": [
+      "Static/SDA-WebApp/tools/artifact-protocol.json",
+      "Static/SDA-WebApp/tools/ARTIFACT-PROTOCOL.md",
+      "Static/SDA-WebApp/tools/validate-artifact-protocol.cjs",
+      "Static/SDA-WebApp/tools/check-artifact-protocol.cjs"
+    ],
+    "placement": "Keep every new maintained file under tools/, already excluded from Web SDK publish by the unchanged project. Do not add a root project JSON that changes publish inventory.",
+    "evidence": "Documentation/Projects/Working/logs/SDA-WEBAPP-ARTIFACT-01/",
+    "working": "Only an attributed new phase may append to the registered Working record with its exact preimage guarded; prior bytes/history immutable.",
+    "excluded": "Do not edit package.cjs/common.cjs/consumer guards/workflow/null bindings/runtime/static content/project/old owner/addendum/review records, create or run a producer/deploy workflow, dispatch Actions, activate bindings, merge, change Azure/GitHub environments/OIDC/SCM/Terraform or perform network/cloud acceptance."
+  },
+  "observations": {
+    "bundle": "Accepted consumer requires exactly website.zip and package.json. Its run/artifact metadata and ZIP/package receipt hashes are fixed by a future reviewed non-null binding; current three bindings are null.",
+    "packageReceipt": "Existing builder records sourceCommit,sourceDirty,dotnet,node,startup,package path/hash/size,hostFiles,content manifest and actual ZIP archive entry inventory. It does not record source tree, raw clean-state observations, complete producer workflow/run/expiry/independent acceptance. Supplement those facts outside the two-file bundle; no builder or consumer edit is currently necessary.",
+    "historicalPackage": "Existing local accepted package is historical, may have sourceDirty=true and has no Actions run identity. It is not a clean producer artifact or proof that a fresh producer ZIP equals its old hash.",
+    "acceptance": "Current consumer artifact-acceptance receipt is environment/app-specific. Source/build acceptance is separate; no real environment/app wrapper is created before actual owner outputs and its exact review."
+  },
+  "protocolDesign": {
+    "machineContract": "Versioned service-specific JSON describing exact bundle names, required evidence fields, SHA256/OID formats, linkage rules, required source inputs/content inventory, consumer baseline hashes and explicit non-acceptance limits. It contains no actual producer workflow/run/artifact/expiry or approval data. No JSON-schema engine/framework.",
+    "source": "Producer run must build its own exact run.head_sha from this repository, not an arbitrary second checkout ref. Record commit and tree OIDs, producer workflow path and source blob/hash at that commit, reviewed build-input inventory path/Git blob/SHA256/size and its digest, content-contract and accepted runtime manifest identity. Source pre/post HEAD/tree must match run.head_sha/tree and reviewed inputs.",
+    "cleanState": "Retain raw pre/post git status --porcelain=v1 -z --untracked-files=all observations and their hashes, not a clean:true assertion. Both must be empty and sourceDirty must be literal false. Future producer uses fresh isolated checkout/build outputs with no stale ignored build inputs; reviewed ignored output directory (existing artifacts/ rule) avoids dirtying source while package.cjs runs. Actual producer capture/runner details are required future implementation evidence, not invented here.",
+    "toolchain": "Record exact observed dotnet/node/pwsh/git versions, runner OS/architecture/image/version and relevant pinned action/build tool identities. Match package receipt dotnet/node to the independently reviewed expected toolchain record/digest. This phase defines fields, not a fictional runner or an unrequested version migration.",
+    "inventories": "Require normalized relative unique file paths, exact sizes/SHA256 and declared Git source input identities. Match hostFiles against source inventory, content against the accepted452-file content contract and runtime manifest identity, and package archive inventory against observed inner ZIP entries including exact452 wwwroot members. Reject missing/duplicate/unlisted/traversal/backslash/absolute/link entries; preserve literal paths and license-bearing bytes.",
+    "artifactLifecycle": "Producer creates the two payload files and captures build facts. Once its run has actually completed, a read-only observer captures successful completed run metadata, same-repo workflow path/head SHA, exact artifact ID/name/run linkage, archive digest,created_at/expires_at,expired=false and retention request/observed expiry. Do not ask an in-progress producer to prove its own final success. Retain exact build facts/observations as one supplemental producer-evidence JSON outside the deployment bundle; future implementation chooses a reviewed retained capture location and binds its bytes.",
+    "digests": "Outer GitHub artifact archive SHA256 (API digest is sha256:<hex>) is distinct from website.zip SHA256 and raw package.json SHA256. Require observed/downloaded archive bytes to match API/expected digest, exact outer entry inventory of the two consumer files, then validate those files separately. A download action warning is not proof. Do not normalize/re-serialize package.json before hashing.",
+    "retention": "Require explicit positive retention request, actual observed creation/expiry timestamps, observedAtUtc and expired=false. Future observer must reject missing expiry, invalid time order, expiry at/before validation, API expired=true, absent/deleted artifact or identity changes; no inferred permanent retention or stale substitution. Exact current operator validation time is an argument/observation, not a frozen fixture clock in production.",
+    "independentAcceptance": "A source/build R1-R8 result is an external independently supplied PASS receipt whose exact bytes/hash and function/gate/reviewer/source/tree/protocol/producer evidence/run/artifact/archive/ZIP/package identities are linked. Validator checks supplied linkage and reports local contract-check results, never awards independent PASS or creates approval. Missing independent acceptance cannot be replaced by schema success, flags or synthetic proof.",
+    "consumerProjection": "Future owner may construct a separately reviewed env/app artifact-acceptance wrapper only after actual outputs: existing consumer fields kind,gateId,functionId,disposition PASS,environment,appId,sourceCommit,artifactSha256 plus a reference/hash to source/build acceptance. This phase only mock-checks compatibility with clearly synthetic env/app fixtures; no real wrapper, binding activation or consumer change."
+  },
+  "interfaces": {
+    "validator": "node Static/SDA-WebApp/tools/validate-artifact-protocol.cjs --packet <local producer-evidence JSON> --expected <local independently fixed expected identities JSON> --archive <local downloaded artifact archive> --bundle <local two-file directory> --output <fresh contract-check report>. No fetching, upload, build, deployment or approval flag. Production time is captured at invocation; pure validation exports accept a supplied clock and local observation reader for tests.",
+    "localReaders": "Use Node builtins plus the already established PowerShell7/.NET ZipFile read-only inspection pattern if raw ZIP inventory is needed; hash actual local archive/entries without extraction or rebuilding. Bound entry counts/sizes to fixed expected inventory before hashing. No package dependency/framework or bespoke ZIP parser. Pure validation logic can be exercised with synthetic archive observations; CLI cannot mark mocks as real producer evidence.",
+    "focusedCheck": "node Static/SDA-WebApp/tools/check-artifact-protocol.cjs --output <fresh focused report>. Synthetic source/run/artifact/receipt IDs are explicitly labelled fixtures, use an injected clock/local archive observations, and invoke no GitHub/Azure/network/build workflow.",
+    "report": "Record only actual schema/hash/linkage/expiry assertions and source/contract hashes, with scope local-contract-checks. Never name the output independent PASS, owner release, production-ready, CAP or cloud acceptance."
+  },
+  "executionAfterReady": [
+    "Revalidate exact plan, authority, protected source and registered Working preimages; retain originals before any allowed append. New paths must not exist unexpectedly.",
+    "Write one minimal protocol doc and machine-readable contract under excluded tools/. Define all required provenance/linkage without adding a producer workflow or populating real proof.",
+    "Implement a local-only validator and focused checker using builtins/existing local ZIP reader. Keep current package builder/consumer unchanged. If a real contradiction requires an interface/role/trust change, stop that effect and obtain affected exact READY.",
+    "Run node syntax checks and only the focused protocol checker. Do not run existing runtime/browser suites, build a fresh website, call Actions APIs, create an artifact or run a producer. Preserve each actual failure and use fresh reports for affected rechecks.",
+    "Freeze exact source/doc/contract hashes, actual focused outcomes and unchanged consumer/runtime/old evidence identities for one independent R1-R8 result review. Only scoped PASS permits exact owned-file commit/push under continuing user authorization; preserve hooks/signing, no amend/force/merge."
+  ],
+  "acceptanceMap": [
+    {
+      "requirement": "Immutable source/tree/producer identity",
+      "checks": "Synthetic matching source commit/tree/producer workflow blob and run.head_sha passes; wrong repository,commit,tree,workflow path/blob/build input hash,pre/post HEAD/tree or dirty raw status/sourceDirty=true/string false fails."
+    },
+    {
+      "requirement": "Toolchain/content/inventory",
+      "checks": "Exact expected tool versions and package dotnet/node, host/source hashes,452 content identity and actual observed inventories pass; missing/wrong version,content/count/hash,size,path,duplicate,unlisted,absolute/traversal/backslash/link entry fails. Synthetic fixtures may use a deliberately tiny complete test contract while a separate assertion pins the real452 consumer contract."
+    },
+    {
+      "requirement": "Run/artifact/archive/payload linkage",
+      "checks": "Completed successful exact producer run and artifact ID/name/run/source linkage pass; queued/in-progress/failed/wrong run/name/ID/source/producer/repository, archive-vs-inner hash confusion, corrupted outer archive/ZIP/package bytes, package source mismatch or wrong two-file inventory fail."
+    },
+    {
+      "requirement": "Expiry/retention",
+      "checks": "Nonexpired actual creation/expiry/observation and positive retention data pass; missing/deleted,expired=true,past/equal expiry,invalid order/clock or omitted retention/expiry fail with no latest-artifact fallback."
+    },
+    {
+      "requirement": "Independent review and consumer compatibility",
+      "checks": "Exact external source/build PASS receipt bytes and all evidence/run/payload/protocol links pass; absent,non-PASS,wrong reviewer/identity/reference/digest or ready:true/schema success alone fails. Clearly synthetic env/app wrapper matches current acceptedReceipt/verifyArtifact interfaces; no actual owner outputs are needed or invented."
+    },
+    {
+      "requirement": "Preservation and scope",
+      "checks": "Changed path set limited to four new tools files/new evidence/attributed registered phase. Exact existing package/consumer/workflow/null binding/runtime/owner/addendum hashes and runtime Git tree stay unchanged. Focused report states no actual run/token/cloud or independent runtime acceptance."
+    }
+  ],
+  "trustBoundary": "No new trust root, signing system, promotion controller or producer permission is introduced. An independent expected identity record/receipt remains the authority; local validation only checks matching evidence. If implementation exposes an unresolved consequential trust decision, stop the affected design and notify coordinator for track/readiness review.",
+  "finiteRecovery": "For syntax/path/argument/new-helper output or existing local ZipFile-reader mechanical failure, inspect raw error and partial effects first. With no product/producer start, unchanged oracle/semantics and protected baseline, retain failed attempt/preimage, make one evidence-supported localized repair to new owned files and rerun affected checks into fresh outputs. No immutable overwrite, changed baseline adoption, unchanged failure retry, provider proof invention, dependency framework or permission expansion; stop on uncertain state/no progress.",
+  "externalLimits": "Actual producer workflow implementation/pinning, Actions runs/artifacts/toolchain/expiry captures and independent source/build acceptance remain future separate gated work. No Azure outputs needed for this protocol outcome. Actual consumer env/app wrapper, token permissions, environment/provider/SCM/domain/capacity gates remain blocked and unchanged.",
+  "telemetry": "[Status: Frozen] | [Lifecycle: SDA-WEBAPP-ARTIFACT-01 plan pending exact D1-D8; no implementation] | [Model: gpt-6.1-sol/medium launch guarantee; actual telemetry unavailable] | [File: Documentation/Projects/Working/logs/SDA-WEBAPP-ARTIFACT-01/plan-01.json] | [Tests: 0/0/0]"
+}
