@@ -1,0 +1,470 @@
+{
+  "function": "SDA-WEBAPP-PRODUCER-01",
+  "outcome": "focused-checks-pass",
+  "passed": 115,
+  "failed": 0,
+  "total": 115,
+  "results": [
+    {
+      "name": "synthetic context exact push",
+      "pass": true
+    },
+    {
+      "name": "reject synthetic context GITHUB_REPOSITORY",
+      "pass": true
+    },
+    {
+      "name": "reject synthetic context GITHUB_EVENT_NAME",
+      "pass": true
+    },
+    {
+      "name": "reject synthetic context GITHUB_REF",
+      "pass": true
+    },
+    {
+      "name": "reject synthetic context GITHUB_SHA",
+      "pass": true
+    },
+    {
+      "name": "reject synthetic context GITHUB_WORKFLOW_REF",
+      "pass": true
+    },
+    {
+      "name": "reject synthetic context GITHUB_RUN_ID",
+      "pass": true
+    },
+    {
+      "name": "reject synthetic context GITHUB_RUN_ATTEMPT",
+      "pass": true
+    },
+    {
+      "name": "synthetic exact tools and isolated path",
+      "pass": true
+    },
+    {
+      "name": "reject tool field dotnet",
+      "pass": true
+    },
+    {
+      "name": "reject tool field node",
+      "pass": true
+    },
+    {
+      "name": "reject tool field pwsh",
+      "pass": true
+    },
+    {
+      "name": "reject tool field git",
+      "pass": true
+    },
+    {
+      "name": "reject tool field runnerOs",
+      "pass": true
+    },
+    {
+      "name": "reject tool field runnerArch",
+      "pass": true
+    },
+    {
+      "name": "reject tool field runnerImage",
+      "pass": true
+    },
+    {
+      "name": "reject tool field runnerImageVersion",
+      "pass": true
+    },
+    {
+      "name": "reject SDK outside installation",
+      "pass": true
+    },
+    {
+      "name": "actual tiny Git clean snapshot",
+      "pass": true
+    },
+    {
+      "name": "actual tiny Git empty ignored inventory",
+      "pass": true
+    },
+    {
+      "name": "actual tiny Git indexed raw source bytes",
+      "pass": true
+    },
+    {
+      "name": "shared prepare/observe input inventory includes global.json",
+      "pass": true
+    },
+    {
+      "name": "synthetic indexed build control captured global.json",
+      "pass": true
+    },
+    {
+      "name": "reject missing build control global.json",
+      "pass": true
+    },
+    {
+      "name": "reject changed build control global.json",
+      "pass": true
+    },
+    {
+      "name": "shared prepare/observe input inventory includes Directory.Build.props",
+      "pass": true
+    },
+    {
+      "name": "synthetic indexed build control captured Directory.Build.props",
+      "pass": true
+    },
+    {
+      "name": "reject missing build control Directory.Build.props",
+      "pass": true
+    },
+    {
+      "name": "reject changed build control Directory.Build.props",
+      "pass": true
+    },
+    {
+      "name": "shared prepare/observe input inventory includes Directory.Packages.props",
+      "pass": true
+    },
+    {
+      "name": "synthetic indexed build control captured Directory.Packages.props",
+      "pass": true
+    },
+    {
+      "name": "reject missing build control Directory.Packages.props",
+      "pass": true
+    },
+    {
+      "name": "reject changed build control Directory.Packages.props",
+      "pass": true
+    },
+    {
+      "name": "shared prepare/observe input inventory includes NuGet.Config",
+      "pass": true
+    },
+    {
+      "name": "synthetic indexed build control captured NuGet.Config",
+      "pass": true
+    },
+    {
+      "name": "reject missing build control NuGet.Config",
+      "pass": true
+    },
+    {
+      "name": "reject changed build control NuGet.Config",
+      "pass": true
+    },
+    {
+      "name": "reject untracked required source",
+      "pass": true
+    },
+    {
+      "name": "reject raw tracked dirty status",
+      "pass": true
+    },
+    {
+      "name": "reject changed source/index bytes",
+      "pass": true
+    },
+    {
+      "name": "reject raw untracked status",
+      "pass": true
+    },
+    {
+      "name": "reject ignored prebuild cache",
+      "pass": true
+    },
+    {
+      "name": "synthetic native upload ID/digest creates facts only",
+      "pass": true
+    },
+    {
+      "name": "reject upload id \"\"",
+      "pass": true
+    },
+    {
+      "name": "reject upload id \"0\"",
+      "pass": true
+    },
+    {
+      "name": "reject upload id \"-1\"",
+      "pass": true
+    },
+    {
+      "name": "reject upload id \"not-id\"",
+      "pass": true
+    },
+    {
+      "name": "reject upload digest \"\"",
+      "pass": true
+    },
+    {
+      "name": "reject upload digest \"sha256:bad\"",
+      "pass": true
+    },
+    {
+      "name": "reject upload digest \"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"",
+      "pass": true
+    },
+    {
+      "name": "reject upload before verified build",
+      "pass": true
+    },
+    {
+      "name": "reject producer self-completion",
+      "pass": true
+    },
+    {
+      "name": "reject producer self-acceptance",
+      "pass": true
+    },
+    {
+      "name": "reject upload overwrite",
+      "pass": true
+    },
+    {
+      "name": "reject oversized evidence",
+      "pass": true
+    },
+    {
+      "name": "synthetic receipt shape pins actual452 contract",
+      "pass": true
+    },
+    {
+      "name": "reject synthetic package sourceDirty",
+      "pass": true
+    },
+    {
+      "name": "reject synthetic package sourceCommit",
+      "pass": true
+    },
+    {
+      "name": "reject synthetic package dotnet",
+      "pass": true
+    },
+    {
+      "name": "reject synthetic package node",
+      "pass": true
+    },
+    {
+      "name": "reject synthetic package startup",
+      "pass": true
+    },
+    {
+      "name": "reject synthetic ZIP digest confusion",
+      "pass": true
+    },
+    {
+      "name": "reject synthetic content count",
+      "pass": true
+    },
+    {
+      "name": "reject synthetic missing archive content",
+      "pass": true
+    },
+    {
+      "name": "reject synthetic host hash",
+      "pass": true
+    },
+    {
+      "name": "reject synthetic Windows apphost",
+      "pass": true
+    },
+    {
+      "name": "reject synthetic tools leakage",
+      "pass": true
+    },
+    {
+      "name": "synthetic completed run and exact two nonexpired artifacts",
+      "pass": true
+    },
+    {
+      "name": "reject observed run run_attempt",
+      "pass": true
+    },
+    {
+      "name": "reject observed run head_sha",
+      "pass": true
+    },
+    {
+      "name": "reject observed run head_branch",
+      "pass": true
+    },
+    {
+      "name": "reject observed run event",
+      "pass": true
+    },
+    {
+      "name": "reject observed run path",
+      "pass": true
+    },
+    {
+      "name": "reject observed run status",
+      "pass": true
+    },
+    {
+      "name": "reject observed run conclusion",
+      "pass": true
+    },
+    {
+      "name": "reject observed wrong repository",
+      "pass": true
+    },
+    {
+      "name": "reject artifact id",
+      "pass": true
+    },
+    {
+      "name": "reject artifact name",
+      "pass": true
+    },
+    {
+      "name": "reject artifact digest",
+      "pass": true
+    },
+    {
+      "name": "reject artifact expired",
+      "pass": true
+    },
+    {
+      "name": "reject artifact created_at",
+      "pass": true
+    },
+    {
+      "name": "reject artifact expires_at",
+      "pass": true
+    },
+    {
+      "name": "reject artifact size_in_bytes",
+      "pass": true
+    },
+    {
+      "name": "reject artifact wrong run",
+      "pass": true
+    },
+    {
+      "name": "reject artifact wrong source",
+      "pass": true
+    },
+    {
+      "name": "reject missing evidence artifact",
+      "pass": true
+    },
+    {
+      "name": "reject duplicate artifact",
+      "pass": true
+    },
+    {
+      "name": "reject oversized evidence download",
+      "pass": true
+    },
+    {
+      "name": "reject outside output",
+      "pass": true
+    },
+    {
+      "name": "reject output traversal",
+      "pass": true
+    },
+    {
+      "name": "actual fixed push-only workflow static contract",
+      "pass": true
+    },
+    {
+      "name": "static reject missing root control trigger global.json",
+      "pass": true
+    },
+    {
+      "name": "static reject missing root control trigger Directory.Build.props",
+      "pass": true
+    },
+    {
+      "name": "static reject missing root control trigger Directory.Packages.props",
+      "pass": true
+    },
+    {
+      "name": "static reject missing root control trigger NuGet.Config",
+      "pass": true
+    },
+    {
+      "name": "static reject workflow_dispatch:",
+      "pass": true
+    },
+    {
+      "name": "static reject pull_request:",
+      "pass": true
+    },
+    {
+      "name": "static reject id-token: write",
+      "pass": true
+    },
+    {
+      "name": "static reject environment: prod",
+      "pass": true
+    },
+    {
+      "name": "static reject secrets.TOKEN",
+      "pass": true
+    },
+    {
+      "name": "static reject azure/login@bad",
+      "pass": true
+    },
+    {
+      "name": "static reject cache: npm",
+      "pass": true
+    },
+    {
+      "name": "actual tiny ZIP creation",
+      "pass": true
+    },
+    {
+      "name": "actual ZipFile reader positive byte/hash inventory",
+      "pass": true
+    },
+    {
+      "name": "actual reader rejects wrong count",
+      "pass": true
+    },
+    {
+      "name": "actual reader rejects wrong name",
+      "pass": true
+    },
+    {
+      "name": "actual reader rejects wrong size",
+      "pass": true
+    },
+    {
+      "name": "actual observed hash comparison rejects wrong hash",
+      "pass": true
+    },
+    {
+      "name": "actual bounded two-leaf extraction",
+      "pass": true
+    },
+    {
+      "name": "actual bounded extraction rejects size overflow",
+      "pass": true
+    },
+    {
+      "name": "actual traversal ZIP fixture creation",
+      "pass": true
+    },
+    {
+      "name": "actual bounded extraction refuses unexpected traversal name",
+      "pass": true
+    },
+    {
+      "name": "actual link ZIP fixture creation",
+      "pass": true
+    },
+    {
+      "name": "actual reader rejects ZIP link",
+      "pass": true
+    },
+    {
+      "name": "actual extractor rejects ZIP link",
+      "pass": true
+    }
+  ],
+  "limits": "Synthetic context/tool/run/artifact fixtures and tiny actual Git/ZIP checks only. No actual producer run, service truth, independent acceptance, cloud or deployment effect."
+}

@@ -1,0 +1,343 @@
+{
+  "function": "SDA-WEBAPP-PRODUCER-01",
+  "phase": "Exact local implementation plan; separate push-trigger effect remains unready",
+  "createdUtc": "2026-11-22T08:30:20.686Z",
+  "authoritySnapshot": [
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation/AGENTS.md",
+      "sha256": "d3b2d81b9351aaed4b8644a223829787d73cc98c9efb31aa0968dce33d9d9339",
+      "unchanged": true
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/BDDB.AITooling/guidance/standard-practices.md",
+      "sha256": "a0182beeb6266a0627007ec0a2d255e3feba60578c640e67a020218709507bce",
+      "unchanged": true
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/BDDB.AITooling/guidance/worker-review-cycle.md",
+      "sha256": "c9dda120c85d4b03976172d8104be52c30c2cc02ad87db556074b85b48e22ff8",
+      "unchanged": true
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/BDDB.AITooling/guidance/technical-audit-rubric.md",
+      "sha256": "e9cc31452998747d3a7efde04ccef40dec346a8305be6efdb05873ce6cb869ef",
+      "unchanged": true
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/BDDB.AITooling/guidance/result-audit-rubric.md",
+      "sha256": "a259be47851e260c2bb3ef12f71112f7ecf83d49c85a8ed091494ee169b2cb51",
+      "unchanged": true
+    }
+  ],
+  "registration": {
+    "path": "Documentation/Projects/Working/SDA-WEBAPP-MIG-01-Working.md",
+    "sha256": "8f83c96f67bf601d7af762636646c182d1acf0ee510f121db57d1b38f6caa89e",
+    "priorCommittedBytes": 43720,
+    "priorCommittedSha256": "92e8a226786b8cf6a5ddca5189c88a524620068f1dfcdfd44fd7da78654a5e17",
+    "priorPrefixPreserved": true,
+    "worker": "/root/sol_worker",
+    "reviewer": "/root/astra_reviewer",
+    "configuration": "Explicit gpt-6.1-sol/medium worker and gpt-6-astra/medium reviewer launch guarantee; actual runtime telemetry unavailable",
+    "track": "Normal",
+    "rationale": "Latest user authorizes minimal build-only producer conforming to accepted artifact protocol. No new deploy authority, trust root, environment or cloud semantics. Previous documentary-phase exclusion is historical and not a global producer prohibition.",
+    "lifecycle": "Registered before dispatch. Await exact D1-D8 READY before implementation; one frozen local R1-R8 review. Then separately freeze exact publication/push-trigger effect for D1-D8 before push and R1-R8 after captured effect. No previous function/history/findings reset."
+  },
+  "baseline": {
+    "commit": "3849ad4bce027849b3cc78a2b8c28d29d2157a97",
+    "branch": "agents/sda-website-migration-setup",
+    "runtimeTree": "2a849332d7d6e3367b5b194c01cf21e4c2a5dabe",
+    "dirtyPaths": "M Documentation/Projects/Working/SDA-WEBAPP-MIG-01-Working.md",
+    "protectedIdentities": [
+      {
+        "path": ".github/workflows/deploy-sda-website.yml",
+        "sha256": "07d6c5532a91c8fbf2d85ad28637d7d8ebb3aa587fdf86a2065d3c6ee17fbe2f",
+        "gitBlob": "54c1488fee2c7e540f588af3ed64a2ccfe47816b",
+        "bytes": 4381
+      },
+      {
+        "path": ".github/sda-website-release-bindings.json",
+        "sha256": "82a24e98181e3593026aed76bbabfe7fdcb9aeb05fe23d739a599e6257fd9578",
+        "gitBlob": "b56bcc52b6e8cfd170f49deda6dbd0653b7f5107",
+        "bytes": 1458
+      },
+      {
+        "path": "Static/SDA-WebApp/tools/package.cjs",
+        "sha256": "4b8c64d649e39b0abc2c85efdf80b4213ce9c75ff6489bcae0ec8cc32e55c1be",
+        "gitBlob": "c473869403b91d07bbd5d7055a13b3067181686b",
+        "bytes": 4512
+      },
+      {
+        "path": "Static/SDA-WebApp/tools/common.cjs",
+        "sha256": "b328c3d093d458e0326e16f4653ba6c65d8d368848409876c5dfca4c5e701ba0",
+        "gitBlob": "690908fdd24c6d6d84bb7d5b95b562d1063d80d2",
+        "bytes": 1558
+      },
+      {
+        "path": "Static/SDA-WebApp/tools/release-binding.cjs",
+        "sha256": "1071cb4705a7791ee5e8cfdddd90f991268bfa1175919b9421eec76034efa652",
+        "gitBlob": "c9655932168350bf9c78c9d5a213425bbfb471f6",
+        "bytes": 13615
+      },
+      {
+        "path": "Static/SDA-WebApp/tools/release-target.cjs",
+        "sha256": "07c24cc4549782fc8d71eef528fbe92034f8ed0de15389679e2edec665598b04",
+        "gitBlob": "9515562dc26f1547b2d616dd440f1b3a25b29548",
+        "bytes": 8087
+      },
+      {
+        "path": "Static/SDA-WebApp/SDA.Website.csproj",
+        "sha256": "096d7f7151530e7a45b06c4309c98670f7e37112f74803652cf43b2ed66096bb",
+        "gitBlob": "ed54625d5a6c77a92e6d234d800dbbd89836c151",
+        "bytes": 503
+      },
+      {
+        "path": "Static/SDA-WebApp/Program.cs",
+        "sha256": "5eda323ae16646840401d197c2e47e59e734d11136b166a7ea92835a6d6d2966",
+        "gitBlob": "b7fcdf31ec1ba40d13b604b7e090ed2109e35731",
+        "bytes": 4133
+      },
+      {
+        "path": "Static/SDA-WebApp/content-contract.json",
+        "sha256": "e1f45d775db89ae580694c16daea38550db0ce133472ea6388f83efee175e99e",
+        "gitBlob": "2eb382cce97873c2bb665eeb5b3382b1eb7b92b9",
+        "bytes": 296020
+      },
+      {
+        "path": ".gitignore",
+        "sha256": "283439fac1fca3f77cd5ffd8a2de4928c5c955429e227ce8612fab831fb57b0c",
+        "gitBlob": "7aec3dc4aef0809c686bbc83d87cb986aa39dc37",
+        "bytes": 162
+      },
+      {
+        "path": ".gitattributes",
+        "sha256": "91022b0ce5958783be7b8e8fcdea1729a9f23becea9b038c2df7868d39cf70f6",
+        "gitBlob": "39ff214e9e972552d18cc052e2c91274840761f1",
+        "bytes": 1344
+      },
+      {
+        "path": "Documentation/Projects/Working/logs/SDA-WEBAPP-MIG-01/release-ux-independent-review-01.json",
+        "sha256": "c1593d6f4c4b2676aa68e845d7466a5690ae8e6ea00101ce5027ab0a3b994ef8",
+        "gitBlob": "d02d5578ebdf8f246301cd1b0c4234c784b3a7d5",
+        "bytes": 1688
+      },
+      {
+        "path": "Documentation/Projects/Working/logs/SDA-WEBAPP-MIG-01/owner-handoff-02.json",
+        "sha256": "022af5259238a6358e0a68d46f3e75ad4ef4dbc9a7e40d0ed48eefb9d44ca64e",
+        "gitBlob": "b134b5c4b412a71d25a987e42cb21f2c77accc7f",
+        "bytes": 12802
+      },
+      {
+        "path": "Documentation/Projects/Working/logs/SDA-WEBAPP-MIG-01/capacity-addendum-01.json",
+        "sha256": "82537d85319d5e6cd68e3a0ca8972e643f283c9af06526e21da657e7618ef71d",
+        "gitBlob": "b6fdee07f28163b98ebbcd1fe94a7cc980ae2c55",
+        "bytes": 6244
+      },
+      {
+        "path": "Static/SDA-WebApp/tools/ARTIFACT-PROTOCOL.md",
+        "sha256": "9a34ab7f995ce25d722da3e4e8d38de239f0579be2f931e950b8bfe428ccee7d",
+        "gitBlob": "cb98592c42352c8ce02b8979f383408d6b1331a5",
+        "bytes": 6428
+      },
+      {
+        "path": "Static/SDA-WebApp/tools/artifact-protocol.json",
+        "sha256": "cdb8ac1509a2b3d30811d40cb81c62fd2901fc9f01cb1b2ddaced511ec66bc39",
+        "gitBlob": "76be527627793075ee7e61adcd416a96825853ff",
+        "bytes": 3453
+      },
+      {
+        "path": "Static/SDA-WebApp/tools/validate-artifact-protocol.cjs",
+        "sha256": "56a527a537a195f68fcdca07c83315984b446e1d1faa2374cd9334b40b4f9773",
+        "gitBlob": "5d372d655d51ce81f2fa3531e308966ace83f6df",
+        "bytes": 16035
+      },
+      {
+        "path": "Static/SDA-WebApp/tools/check-artifact-protocol.cjs",
+        "sha256": "db3d03bc06711e793f9a72f852361c020792586fa464f3bb8d7d5ed11186a826",
+        "gitBlob": "c382e6e7e12f1a070a941e35a7a548222c0513af",
+        "bytes": 15874
+      },
+      {
+        "path": "Documentation/Projects/Working/logs/SDA-WEBAPP-ARTIFACT-01/result-freeze-01.json",
+        "sha256": "94b3914c09e30b9c9dd36a3ebf48deeca0dab7476796a787a14abd716153c9b7",
+        "gitBlob": "0a7eef32712861cfa36407f5ac160361204191eb",
+        "bytes": 11934
+      },
+      {
+        "path": "Documentation/Projects/Working/logs/SDA-WEBAPP-ARTIFACT-01/independent-review-01.json",
+        "sha256": "ac0105ed25ce2c5f2905260ed25b54f5d3ca8ffa1d62113d2e86e91a950f63a4",
+        "gitBlob": "9a40a9a112bd8172f2f7bfed0599f44c4e4a635d",
+        "bytes": 2464
+      }
+    ]
+  },
+  "ownedPaths": {
+    "newSource": [
+      ".github/workflows/build-sda-website.yml",
+      "Static/SDA-WebApp/tools/producer.cjs",
+      "Static/SDA-WebApp/tools/check-producer.cjs",
+      "Static/SDA-WebApp/tools/PRODUCER.md"
+    ],
+    "newEvidencePrefix": "Documentation/Projects/Working/logs/SDA-WEBAPP-PRODUCER-01/",
+    "registeredRecord": "Documentation/Projects/Working/SDA-WEBAPP-MIG-01-Working.md",
+    "generatedIgnoredPrefix": "artifacts/SDA-WEBAPP-PRODUCER-01/",
+    "rule": "Only new source/evidence and append-only attributed phase record. No existing builder, protocol, validator, consumer, runtime, static content, null binding or old evidence edit. Generated local outputs never staged. No shared/original checkout mutations."
+  },
+  "actionPins": {
+    "officialObservedAtUtc": "2026-11-22T08:30:20.933Z",
+    "refs": [
+      {
+        "repository": "actions/checkout",
+        "tagObserved": "v4",
+        "commit": "11d5960a326750d5838078e36cf38b85af677262"
+      },
+      {
+        "repository": "actions/setup-node",
+        "tagObserved": "v4",
+        "commit": "49933ea5288caeca8642d1e84afbd3f7d6820020"
+      },
+      {
+        "repository": "actions/setup-dotnet",
+        "tagObserved": "v4",
+        "commit": "67a3573c9a986a3f9c594539f4ab511d57bb3ce9"
+      },
+      {
+        "repository": "actions/upload-artifact",
+        "tagObserved": "v4",
+        "commit": "ea165f8d65b6e75b540449e92b4886f43607fa02"
+      }
+    ],
+    "dotnetIsolation": {
+      "readmeCommit": "67a3573c9a986a3f9c594539f4ab511d57bb3ce9",
+      "readmeSha256": "435e90b43c806b81f31c35e4e2b53b4b48d734aa3bbfb7b1f214742a5ce0b1e7",
+      "supportedInterface": "DOTNET_INSTALL_DIR",
+      "installRoot": "${{ runner.temp }}/sda-dotnet-10.0.404",
+      "environment": [
+        "DOTNET_ROOT same isolated path",
+        "DOTNET_MULTILEVEL_LOOKUP=0"
+      ],
+      "verification": "Before package, dotnet --version must equal 10.0.404 and node --version v22.9.0. Verify executable resolves within isolated SDK installation. No root global.json or sourceDirty workaround."
+    }
+  },
+  "workflow": {
+    "name": "Build SDA website artifact",
+    "path": ".github/workflows/build-sda-website.yml",
+    "trigger": {
+      "pushOnly": true,
+      "branches": [
+        "main",
+        "agents/sda-website-migration-setup"
+      ],
+      "paths": [
+        ".github/workflows/build-sda-website.yml",
+        "Static/SDA-WebApp/**",
+        "Static/SDA-Standalone/**",
+        ".gitattributes",
+        ".gitignore"
+      ],
+      "excluded": "No workflow_dispatch, pull_request, workflow_run, schedule or repository_dispatch"
+    },
+    "permissions": {
+      "contents": "read"
+    },
+    "runner": "ubuntu-24.04",
+    "timeoutMinutes": 25,
+    "concurrency": "Per exact ref, cancel-in-progress false",
+    "contextGuards": "Require B-D-D-B/PublishGraph.Foundation, push, one exact allowed refs/heads/ value, checked-out HEAD exactly github.sha. Checkout exact github.sha with persist-credentials false. No arbitrary ref/target inputs, environments, secrets, cache restore, id-token, Azure, deployment or acceptance generation.",
+    "toolchain": {
+      "dotnet": "10.0.404",
+      "node": "22.9.0",
+      "pwsh": "Observe actual version; prerequisite executable required",
+      "git": "Observe actual version",
+      "image": "Record ImageOS/ImageVersion and RUNNER_OS/RUNNER_ARCH as observed; hosted image label is not immutable-image proof"
+    },
+    "sequence": [
+      "Checkout pinned SHA; install pinned tools outside source; verify context and actual versions",
+      "producer.cjs prepare: capture actual source/clean/input/toolchain facts before creating ignored build outputs",
+      "Unchanged package.cjs produces website.zip + package.json below ignored payload directory",
+      "producer.cjs verify-build: actual archive/content/receipt and postbuild clean observations",
+      "Pinned upload-artifact uploads exactly payload/website.zip + payload/package.json, compression-level 0, if-no-files-found error",
+      "producer.cjs record-upload writes supplementary producer-evidence.json from actual native upload outputs and prior observations",
+      "Pinned upload-artifact uploads only supplementary producer-evidence.json as distinct artifact"
+    ],
+    "artifacts": {
+      "bundleName": "sda-website-${GITHUB_SHA}-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}",
+      "evidenceName": "same bundle name plus -evidence",
+      "retentionDays": 7,
+      "maxBundleBytes": 209715200,
+      "maxEvidenceBytes": 2097152,
+      "uploadDigest": "Native GitHub outer artifact archive digest; distinct from inner website.zip and package.json SHA256",
+      "failure": "Missing/malformed native ID/digest, oversize input, failed evidence upload or failed run cannot be accepted. First upload may remain after a later failure; no deletion or fallback."
+    }
+  },
+  "interfaces": {
+    "helper": "producer.cjs exports focused pure/context/source/receipt functions plus fixed modes prepare, verify-build, record-upload and observe. No arbitrary release target or dispatch interface.",
+    "prepare": {
+      "inputs": "Actual process GitHub context, repository source, protocol/content contract and observed tool commands; no caller-provided clean:true",
+      "output": "Ignored prebuild evidence: exact HEAD/tree, raw git status --porcelain=v1 --untracked-files=all bytes/base64/hash, empty preBuildIgnoredInputs after inventory of ignored files, sourceInputs with path/bytes/SHA256/Git blob/mode, observed toolchain/actions, exact run ID/attempt/workflow path/blob."
+    },
+    "source": "Include all protocol requiredSourceInputs, producer workflow/helper, .gitignore and exact452 content files, host/project controls. Reject missing, link, untracked, modified, unexpected mode, mismatched content/source blob. Hash actual bytes and compare tracked blobs; no secret logging.",
+    "verifyBuild": {
+      "inputs": "Fresh package ZIP/receipt and captured prepare evidence",
+      "checks": "Fresh raw postbuild status empty and same HEAD/tree; package sourceDirty literal false, exact sourceCommit/tool versions/host hashes/content452; actual inner ZIP inventory via existing read-only ZipFile reader, declared inventory match, portability and size caps. Build-generated ignored bin/obj/artifacts are expected after prebuild only.",
+      "output": "Supplementary pre-upload evidence, never independent PASS or completed-run status"
+    },
+    "recordUpload": {
+      "inputs": "Actual upload-artifact outputs artifact-id/artifact-digest plus deterministic name/7-day retention and prepared evidence",
+      "output": "Protocol-shaped producer evidence with upload ID/name/archiveSha256/retentionDays, source/tool/clean/run facts. No evidence artifact digest selfreference, no completed-success claim, no source-build acceptance receipt."
+    },
+    "observe": {
+      "boundary": "Read-only only after separately READY exact push effect. Helper never dispatches/reruns/cancels/deletes/uploads/builds or generates independent acceptance.",
+      "inputs": "Separate fixed reviewed effect packet selecting repository, exact commit/tree/workflow path/blob/ref/event/run attempt, deterministic names and caps; no latest fallback.",
+      "output": "Captured completed run/artifact metadata, downloaded archive bytes and hashes, actual ZipFile inventory and producer evidence consistency facts. No schema-only truth or independent acceptance. Future independent reviewer must supply actual source-build receipt; env/app wrapper waits real owner outputs/review.",
+      "checks": "Require unique exact matching push run, completed success, correct head_sha/path/repository/ref/attempt; exact two expected artifact names/IDs/run links, nonexpired observed expiry and retention data; actual outer GitHub digest and inner ZIP/package hashes/inventory; source/tool/evidence linkage. Missing acceptance remains explicitly absent, not fabricated."
+    }
+  },
+  "localCommands": [
+    "node --check Static/SDA-WebApp/tools/producer.cjs",
+    "node --check Static/SDA-WebApp/tools/check-producer.cjs",
+    "node Static/SDA-WebApp/tools/check-producer.cjs --output artifacts/SDA-WEBAPP-PRODUCER-01/check-01.json",
+    "node Static/SDA-WebApp/tools/package.cjs --output artifacts/SDA-WEBAPP-PRODUCER-01/local-build-01/website.zip --receipt artifacts/SDA-WEBAPP-PRODUCER-01/local-build-01/package.json"
+  ],
+  "localBuildQualification": "One actual unchanged-builder local package build is an inventory/portability/build oracle, not an actual clean producer run. Current registered/source worktree is dirty; its actual sourceDirty=true must remain true and it is NOT promotable. Production prepare refuses that dirty context. Clean pre/post positive and negative source guards use explicitly synthetic tiny local Git fixtures. Do not commit early, fake GITHUB_RUN_ID proof, overwrite a historical package, or promise the old ZIP hash.",
+  "acceptanceMap": [
+    {
+      "requirement": "Workflow fixed build-only boundary",
+      "checks": "Static positive exact push branch/path/action/tool pins and permissions; reject dispatch/PR/other trigger, environment/secrets/idtoken/Azure/deploy commands/arbitrary input/ref/cache; verify sole manual DEPLOY and null bindings byteexact."
+    },
+    {
+      "requirement": "Source/context/toolchain/clean evidence",
+      "checks": "Synthetic tiny Git repo clean positive; wrong repo/ref/event/SHA/head/tree, dirty tracked/untracked/raw status, nonempty prebuild ignored files, missing/changed source/blob/mode/link, wrong dotnet/node/path, missing observed tool/image fields negative; clearly labeled synthetic fixtures, not real run proof."
+    },
+    {
+      "requirement": "Actual ZIP reader and local package",
+      "checks": "Tiny real .NET ZIP fixture positive; mismatched expected count/name/size/hash and traversal/unexpected/link entries fail as supported by existing reader. Actual local build exactly452 unchanged bytes and portable runtime startup; compare actual archive declared inventory, receipt sourceDirty honest. No full runtime/browser suite."
+    },
+    {
+      "requirement": "Upload/evidence/observer linkage",
+      "checks": "Mock valid native ID/digest/retention and separate evidence pass; missing/malformed ID/digest, digest-vs-inner confusion, size overflow, wrong name/source/run/artifact/attempt/status/expiry, duplicate/missing artifact, evidence mismatch fail. Completed state only post-run observer, no producer self-PASS."
+    },
+    {
+      "requirement": "Protocol preservation and actual acceptance limits",
+      "checks": "Existing60 protocol checks may run once as focused compatibility oracle plus new bounded producer checks. Preserve all protected identities/runtime tree and prior Working prefix. No full runtime rerun, realrun/permissions/retention truth claim, fake independent receipt or envapp acceptance. Package bytes newly observed, not assumed reproducible."
+    }
+  ],
+  "executionOrder": [
+    "Await exact independent local D1-D8 READY for this plan",
+    "Create only four owned new source files; capture attributed READY identity/history in new evidence",
+    "Run syntax and focused mocks/tiny actual ZIP/local build checks; retain all adverse attempts",
+    "Freeze exact source/evidence identities, protected guards, local qualification and actual counts for one independent local R1-R8 review",
+    "After local PASS, read current commit/sync skills, stage exact reviewed paths+attributed review, preserve indexed/committed SHA256 bytes including CRLF Working. Local commit is permitted publication preparation; NO push yet",
+    "Freeze separate exact publication/push-trigger effect packet outside committed source (avoids commit selfreference), seek independent D1-D8 before push",
+    "Only after effect READY: exact fast-forward isolated-branch push and bounded read-only run/artifact capture, then frozen effect R1-R8. No manual dispatch/merge/cloud/activation"
+  ],
+  "futureEffectBoundary": {
+    "notApprovedByThisPlan": true,
+    "requiredPacket": "Exact local R receipt + reviewed source hashes, local commit/tree/workflow SHA, action/tool pins, remote ref/preimage, actor and exact push command, effect trigger/permissions and finite bounds. Packet under ignored artifacts path then exact independent D1-D8 before push.",
+    "candidateCommand": "git push origin HEAD:refs/heads/agents/sda-website-migration-setup; only fast-forward from verified remote preimage, no force/amend/merge/main update",
+    "limits": "At most one first push-trigger run for exact published commit/attempt1, job25min; observe at most45min total from push, poll15seconds, commentary at60seconds. At most two named artifact downloads with metadata size caps200MiB bundle/2MiB evidence before download;7day configured retention and observed actual expiry. No extra run/rerun/dispatch/cancel/delete or permission workaround. Timeout/queue/failed/missing/ambiguous facts stop effect acceptance; report raw adverse state. Native runner job timeout bounds compute; no exact billing guarantee.",
+    "external": "Repo Actions/push ability and official service/tool availability required; no Azure outputs. Queue/run/token/download inaccessibility is a stop, no PAT/broad-identity workaround. Independent source-build acceptance and any consumer environment/app acceptance remain separate, not produced by workflow or observer."
+  },
+  "finiteRecovery": "Retain failure/partial-output preimages first. For one evidence-supported localized new-owned-file mechanical correction with unchanged contract/oracle and no remote effect, fix and rerun only affected focused check into fresh outputs. Stop on unchanged repeated failure, unexplained protected mismatch, unbounded dependency or consequential trust change; coordinator obtains affected READY if design boundary changes. No blind retry, sourceDirty workaround, accepted protocol rewrite, permission expansion, new workflow family or suite expansion.",
+  "currentLimits": "Plan only; zero implementation tests/run/artifact/cloud effects yet. Prior artifact protocol no-implementation exclusion is its historical phase scope; latest explicit user authorizes this bounded producer phase. Current deployment/auth/domain/env/TLS/CAP restrictions and all old acceptances remain unchanged.",
+  "telemetry": "[Status: Frozen] | [Lifecycle: SDA-WEBAPP-PRODUCER-01 local plan awaiting exact D1-D8; push effect separately gated] | [Model: gpt-6.1-sol/medium launch guarantee; actual telemetry unavailable] | [Tests: 0/0/0]"
+}

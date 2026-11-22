@@ -1,0 +1,6 @@
+{
+  "stage": "Pre-freeze changed-path coverage collector",
+  "error": "Trimming leading status text removed a significant leading space before slicing the two-column Git status prefix, truncating the first path. Coverage assertion stopped freeze; no product/source/build effect.",
+  "correction": "Preserve raw line prefix; trimEnd only. Existing application/observer receipts retained; no source or test oracle change.",
+  "effects": "No freeze written by failed collector. Subsequent corrected collection mechanically verifies exact owned paths."
+}

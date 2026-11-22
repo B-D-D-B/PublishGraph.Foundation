@@ -1,0 +1,21 @@
+{
+  "function": "SDA-WEBAPP-PRODUCER-01",
+  "failedAttempt": {
+    "path": "Documentation/Projects/Working/logs/SDA-WEBAPP-PRODUCER-01/check-01.json",
+    "sha256": "ddc1731adaf0619e13d32c1a29a53781858f96427828fbfc4192fb1f8a968766",
+    "passed": 81,
+    "failed": 2,
+    "total": 83
+  },
+  "cause": "Tiny synthetic ZIP link fixture assigned unsigned0xA0000000L to signed .NET Int32 ExternalAttributes; fixture setup failed so later extractor-negative lacked actual link. Protected reader unchanged.",
+  "correction": "Checker only uses signed equivalent -1610612736 and ErrorActionPreference Stop to avoid false fixture setup success.",
+  "scope": "One bounded new-checker mechanical correction under exact READY finite recovery; no oracle/protocol/production trust change",
+  "correctedAttempt": {
+    "path": "Documentation/Projects/Working/logs/SDA-WEBAPP-PRODUCER-01/check-02.json",
+    "sha256": "06db748ac2af8976343b53777cce073fbad641c54fa812f160156def0fda80d5",
+    "passed": 95,
+    "failed": 0,
+    "total": 95
+  },
+  "additionalCoverage": "Added planned explicitly synthetic package receipt/content/portable-file negatives; no extra runtime suite or service observation."
+}
