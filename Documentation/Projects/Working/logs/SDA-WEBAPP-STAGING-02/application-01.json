@@ -1,0 +1,70 @@
+{
+  "function": "SDA-WEBAPP-STAGING-02",
+  "scope": "LOCAL fixed two-stage consumer revision and explicit punchlist; no source effect yet",
+  "planSha256": "37dca51064d215349ada8eadb9532882082cec9f890a924cb59c3ddac58cd76f",
+  "readinessReceipt": "Documentation/Projects/Working/logs/SDA-WEBAPP-STAGING-02/readiness-01.json",
+  "changes": "Binding.stage fixeddefault-host/custom-domain, no dispatch input. Owner/artifact/CAP scope checksstage; default skips functional auth/vanity only and keeps samepayload prior defaultPASS; custom preserves auth/DOMAIN01/priorboth. Target skips only defaultfunctional auth parse, retains owner/stage/client/principal/FIC/plan sixapp-only/literalfalse. Punchlist emitted as limitations, no broadapprovalpolicy/securitywaiver.",
+  "tests": {
+    "syntax": {
+      "pass": 5,
+      "fail": 0
+    },
+    "binding": {
+      "pass": 105,
+      "fail": 0,
+      "total": 105,
+      "receipt": "Documentation/Projects/Working/logs/SDA-WEBAPP-STAGING-02/binding-01.json"
+    },
+    "target": {
+      "pass": 42,
+      "fail": 0,
+      "total": 42,
+      "receipt": "Documentation/Projects/Working/logs/SDA-WEBAPP-STAGING-02/target-01.json"
+    },
+    "workflow": {
+      "pass": 37,
+      "fail": 0,
+      "total": 37,
+      "receipt": "Documentation/Projects/Working/logs/SDA-WEBAPP-STAGING-02/workflow-01.json"
+    },
+    "aggregateFocused": {
+      "pass": 184,
+      "fail": 0,
+      "total": 184
+    },
+    "guards": {
+      "assertions": 43,
+      "receipt": "Documentation/Projects/Working/logs/SDA-WEBAPP-STAGING-02/guards-01.json"
+    }
+  },
+  "history": "First focusedattempt allPASS; no failedtest/outcome. No fullruntime/browser/build/actualGitHub/Azure/producer suite executed. Previous failedproducer attempts and old255publicationhold remain immutable historical records.",
+  "contract": {
+    "path": "Static/SDA-WebApp/tools/staging-contract.json",
+    "sha256": "c5ec7f95040b1148052cfbea3a12af15bda66b92773200f49bc167453c1e3f2f"
+  },
+  "punchlist": [
+    {
+      "id": "content-routes",
+      "state": "OPEN",
+      "meaning": "Content/route completeness and LIVE equivalence remain unaccepted; temporary404s allowed for this staging scope"
+    },
+    {
+      "id": "oauth",
+      "state": "OPEN",
+      "meaning": "OAuth functionality may be absent/fail; no successful auth emulation/private-content exposure; later disposition/replacement remains open"
+    },
+    {
+      "id": "vanity-domain-tls",
+      "state": "OPEN",
+      "meaning": "DOMAIN-01, four Prod names, Dev/Test vanity agreement, DNS/TLS/cert/cutover remain later owner gates; default-host TLS still mandatory"
+    },
+    {
+      "id": "availability",
+      "state": "ACCEPTED STAGING LIMIT",
+      "meaning": "Outages permitted; no zero-downtime/old-new coexistence guarantee; old resources retained, no deletion"
+    }
+  ],
+  "limits": "Real owner app/host/settings/SCM/identity/FIC/plan/CAP/environment/token evidence and env/app/stage artifactwrapper/prior runtime acceptance unavailable. Bindings remain null; no actualdeployment/dispatch/cloud/fullmigration/equivalence/securitywaiver. Scoped localR required before LOCALcommit; separate exact effectD required before sourcepush/automaticproducer observation.",
+  "configuration": "Sol gpt-6.1-sol/medium and Astra gpt-6-astra/medium explicit launch guarantees; actual runtime telemetry unavailable",
+  "recordedUtc": "2026-11-22T17:45:54.468Z"
+}

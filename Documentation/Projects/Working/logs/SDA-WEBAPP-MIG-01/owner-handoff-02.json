@@ -1,0 +1,219 @@
+{
+  "function": "SDA-WEBAPP-MIG-01-I",
+  "status": "F01/F02 corrected exact local result proposed; independent affected R1-R8 pending; no live effects",
+  "runtime": {
+    "kind": "ordinary Linux Web App",
+    "stack": "DOTNETCORE|10.0",
+    "startup": "dotnet /home/site/wwwroot/SDA.Website.dll",
+    "healthCheckPath": "/",
+    "settings": {
+      "SDA_CONTENT_ROOT": "/home/site/wwwroot/wwwroot",
+      "ASPNETCORE_URLS": "http://0.0.0.0:8080",
+      "SCM_DO_BUILD_DURING_DEPLOYMENT": "false"
+    },
+    "startupPortPrerequisite": "owner must validate actual built-in .NET10 image port contract before effects",
+    "alwaysOn": true,
+    "httpsOnly": true,
+    "minTlsVersion": "1.2",
+    "ftps": "Disabled",
+    "basicPublishing": {
+      "ftp": false,
+      "scm": false
+    },
+    "runtimeManagedIdentity": "No code dependency or Azure SDK use; none recommended; owner decision pending (W1 independent-identity proposal is superseded only for this downstream owner choice)",
+    "outboundRequirements": "No host dependency on storage/vault/mail/auth/backend. Browser retains accepted external iframe/media origins.",
+    "vaultRoles": [],
+    "mailRoles": [],
+    "contact": "UI disabled; no challenge or API submit; all API paths return captured stopped-backend403 without reading payload or sending mail; old disabled Function untouched",
+    "auth": "No OAuth implemented. Explicit user disposition or reviewed replacement required before live dispatch/default-host/full migration acceptance"
+  },
+  "package": {
+    "receiptPath": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Documentation/Projects/Working/logs/SDA-WEBAPP-MIG-01/package-02/package.json",
+    "receiptSha256": "689453b03b9165a25006c73e218f165b4c937a0a01d12e63d58abab68a001213",
+    "zip": {
+      "path": "C:\\GitHub\\SiliconDreamArtists\\PublishGraph.Foundation.worktrees\\sda-website-migration-setup\\Documentation\\Projects\\Working\\logs\\SDA-WEBAPP-MIG-01\\package-02\\website.zip",
+      "sha256": "42f07af3f6239c5a4205e419d201cbf4b06ba2216dc3da03740f25fc89706a4f",
+      "bytes": 143084287
+    },
+    "contentFiles": 452,
+    "contentBytes": 152387065,
+    "zipRoot": "Published framework-dependent DLL/deps/runtimeconfig/content contract and wwwroot/452 unchanged accepted entities; no .exe, web.config, tools or evidence",
+    "portableEvidence": "ZIP per-entry hashes + source-free extracted-package DLL startup suite; execution host is Windows, actual Linux App Service integration remains gated",
+    "acceptedArtifactManifestSha256": "07baae018675574b9d7b060ff1373af1128e6c6eb49fb43390c751aebd04425f"
+  },
+  "targets": [
+    {
+      "environment": "dev",
+      "candidateName": "sda-website-web-dev",
+      "planName": "ASP-sda-dev-fusion",
+      "sku": "B1 upgrade pending owner",
+      "region": "West US 3",
+      "resourceIdsDefaultHostsInboundIPsIdentity": "Not available; app not created; candidate name availability unproven",
+      "existingPlanId": "/subscriptions/cc1fa56e-a8ce-411f-bb5c-58e96d9ac4f8/resourceGroups/sda-dev/providers/Microsoft.Web/serverfarms/ASP-sda-dev-fusion",
+      "observedSku": "F1",
+      "requiredSku": "B1",
+      "linux": true,
+      "capacity": 1,
+      "source": "Exact existing IDs/current SKU supplied by sole infrastructure owner via coordinator; future actual B1 evidence still required"
+    },
+    {
+      "environment": "test",
+      "candidateName": "sda-website-web-test",
+      "planName": "ASP-sda-test-fusion",
+      "sku": "B1 upgrade pending owner",
+      "region": "West US 3",
+      "resourceIdsDefaultHostsInboundIPsIdentity": "Not available; app not created; candidate name availability unproven",
+      "existingPlanId": "/subscriptions/5c813ecc-3c19-44de-b676-304116fc869d/resourceGroups/sda-test/providers/Microsoft.Web/serverfarms/ASP-sda-test-fusion",
+      "observedSku": "F1",
+      "requiredSku": "B1",
+      "linux": true,
+      "capacity": 1,
+      "source": "Exact existing IDs/current SKU supplied by sole infrastructure owner via coordinator; future actual B1 evidence still required"
+    },
+    {
+      "environment": "prod",
+      "candidateName": "sda-website-web-prod",
+      "planName": "ASP-sda-prod-fusion",
+      "sku": "B3 unchanged",
+      "region": "West US 3",
+      "resourceIdsDefaultHostsInboundIPsIdentity": "Not available; app not created; candidate name availability unproven",
+      "existingPlanId": "/subscriptions/b7690041-454b-472b-b340-3d8dde115103/resourceGroups/sda-prod/providers/Microsoft.Web/serverfarms/ASP-sda-prod-fusion",
+      "observedSku": "B3",
+      "requiredSku": "B3",
+      "linux": true,
+      "capacity": 1,
+      "source": "Exact existing IDs/current SKU supplied by sole infrastructure owner via coordinator; future actual B1 evidence still required"
+    }
+  ],
+  "oidc": {
+    "repository": "B-D-D-B/PublishGraph.Foundation",
+    "issuer": "https://token.actions.githubusercontent.com",
+    "audience": "api://AzureADTokenExchange",
+    "workflow": ".github/workflows/deploy-sda-website.yml",
+    "trigger": "manual workflow_dispatch only",
+    "preparedEnvironments": [
+      "sda-website-dev",
+      "sda-website-test",
+      "sda-website-prod"
+    ],
+    "preparedSubjects": [
+      "repo:B-D-D-B/PublishGraph.Foundation:environment:sda-website-dev",
+      "repo:B-D-D-B/PublishGraph.Foundation:environment:sda-website-test",
+      "repo:B-D-D-B/PublishGraph.Foundation:environment:sda-website-prod"
+    ],
+    "ownerAlternateCandidates": [
+      "sda-dev",
+      "sda-test",
+      "sda-prod"
+    ],
+    "agreement": "Unresolved; no GitHub environments currently exist; environment/subject/branch policies must agree under affected READY before creation/dispatch",
+    "deploymentIdentity": "new dedicated environment-specific deployment UAMI and FIC; never reuse Fusion/Conductor/Frame",
+    "role": "Website Contributor on new exact app ARM ID only",
+    "variables": [
+      "AZURE_CLIENT_ID",
+      "AZURE_TENANT_ID",
+      "AZURE_SUBSCRIPTION_ID",
+      "SDA_APP_NAME",
+      "SDA_RESOURCE_GROUP",
+      "SDA_APP_ID",
+      "SDA_PLAN_ID",
+      "SDA_PRINCIPAL_ID",
+      "SDA_DEPLOY_ROLE_ID",
+      "SDA_HOSTING_PACKET_SHA256",
+      "SDA_AUTH_DISPOSITION_SHA256",
+      "SDA_AUTH_READY",
+      "SDA_HOSTING_PACKET_BASE64"
+    ],
+    "basicPublishing": "disabled; OIDC/ARM deployment only",
+    "guardBoundary": "App-only ARM/config/policy/role reads. No shared serverFarm or Graph read; no added role. Accepted packet bytes must match SHA256 and bind observed plan facts plus tenant/client/principal/role mapping; actual logged-in client checked against that accepted pair before roles.",
+    "releasePacketFormat": {
+      "version": 1,
+      "environment": "dev|test|prod",
+      "subscriptionId": "actual owner-created target subscription",
+      "appId": "exact actual target ARM ID",
+      "authDispositionSha256": "exact accepted auth decision/replacement receipt",
+      "identity": {
+        "tenantId": "actual tenant",
+        "clientId": "actual dedicated deployment UAMI client ID",
+        "principalId": "same UAMI actual principal ID",
+        "roleDefinitionId": "exact Website Contributor role GUID",
+        "roleScope": "exact app ARM ID only",
+        "mappingEvidenceSha256": "independently accepted owner ARM UAMI/FIC/RBAC mapping receipt hash",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "audience": "api://AzureADTokenExchange",
+        "subject": "exact agreed repo/environment FIC subject; prepared sda-website-* only"
+      },
+      "plan": {
+        "id": "exact existing owner plan ID",
+        "observedSku": "actual B1/B1/B3 after accepted owner effect; F1 fails",
+        "requiredSku": "B1/B1/B3",
+        "linux": true,
+        "region": "westus3",
+        "capacity": 1,
+        "verificationEvidenceSha256": "exact accepted owner current plan verification receipt hash",
+        "verifiedAtUtc": "actual owner observation UTC timestamp"
+      },
+      "transport": "Base64 of exact accepted packet bytes; SDA_HOSTING_PACKET_SHA256 is SHA256 of decoded bytes. No fabricated current packet exists."
+    }
+  },
+  "vanity": {
+    "prod": [
+      "sda.studio",
+      "www.sda.studio",
+      "silicondreamartists.com",
+      "www.silicondreamartists.com"
+    ],
+    "devTest": "Exact prefixed candidates in registration; parent confirmation pending",
+    "dns": "All four Prod @/www labels across two zones currently TTL300 A aliases to old SWA; actual source IDs/ETags and full untouched record inventory owned by Terraform owner",
+    "apex": "Observed new inbound IP plus ownership TXT; no apex CNAME",
+    "www": "Finite protected A-alias delete then CNAME create to actual observed default host; inverse is exact original alias target/resource/TTL",
+    "tls": "Trusted prebound DNS01/BYOC or explicitly accepted gap; managed cert after remap cannot guarantee continuous HTTPS; vault reuse not proven; renewer owner required",
+    "rollback": "Preserve old SWA/Function/bindings/settings. Per-host inspected exact inverse once, reverse order,45min deadline,30s probes; confirm authoritative+recursive DNS,trusted TLS and old bytes. No deletion or blind retry."
+  },
+  "capacity": {
+    "contentBytes": 152387065,
+    "zipBytes": 143084287,
+    "proposedSample": "5 minutes, representative home/art/contact/static GETs, proposed concurrency4 for owner selection; no submissions",
+    "thresholds": "Owner must set concurrency,p95/error/CPU/memory thresholds accounting for shared Fusion/Frame/other apps; no capacity guarantee",
+    "combinedFixtureInputs": {
+      "status": "user-supplied read-only Frame evidence; no cloud/capacity PASS and no load authorization",
+      "websiteHome": "THREE canonical Frame embeds: logos,built,surrealism; disableaudio/menu=true. Existing browser contract compares complete iframe array and attributes byte-for-byte. Shared cache reuse belongs in combined fixture.",
+      "standalone": "fineart/horror audio-on with gesture/menu switch, refresh/deeplink/missing asset404 and Feeds/media180s refresh are Frame-owner obligations, not website changes",
+      "fullGraph": "canonical56assets9665992decoded including38WASM6216472; legacy55assets9646604decoded including38WASM6200088; full graph/all locales is NOT startup or wire",
+      "boundedSample": "2sessions max6 requests each;112assets+30warm root/query/conditional,concurrency3;142/142. coldp951148.64ms,p50160.50,max1988.05;session3472.62/3186.37ms. warmp9541.08,p5025.34,max43.10ms. same client/region only.",
+      "startupSample": "50firstparty resources7540651decoded LIVE/local identical. liveencoded2354423/transfer2368697;localencoded3344535/transfer3358733 (~42%more BrotliFastest transfer). Use~3.36MB/viewer local transfer and10coldviewer~33.6MB fixture before Feeds/media/CPU compression; not fullgraph9.66MB.",
+      "proposals": "2cold/10burst/30warm frames for30min are engineering candidates only; numeric rates/gates/aggregate owners and independent acceptance pending",
+      "separation": "Measure firstparty static separately from external Feeds/media latency, cache reuse and CPU/memory/bandwidth under owner-approved aggregate thresholds. Do not run unapproved load."
+    }
+  },
+  "files": [
+    {
+      "path": "Static/SDA-WebApp/Program.cs",
+      "sha256": "5eda323ae16646840401d197c2e47e59e734d11136b166a7ea92835a6d6d2966"
+    },
+    {
+      "path": "Static/SDA-WebApp/SDA.Website.csproj",
+      "sha256": "096d7f7151530e7a45b06c4309c98670f7e37112f74803652cf43b2ed66096bb"
+    },
+    {
+      "path": "Static/SDA-WebApp/content-contract.json",
+      "sha256": "e1f45d775db89ae580694c16daea38550db0ce133472ea6388f83efee175e99e"
+    },
+    {
+      "path": ".github/workflows/deploy-sda-website.yml",
+      "sha256": "03e1d967172e4ee11e5d2861bc837503ce0b74ff612370d23d360149efd0455a"
+    },
+    {
+      "path": "Static/SDA-WebApp/tools/release-target.cjs",
+      "sha256": "18397f600bf767d09e1f4b64a3f8f71f69b077bfa5fcbb3c40282bdb88171de8"
+    }
+  ],
+  "retirement": "Excluded; retain old SWA and disabled contact Function; future exact owner deletion packet only",
+  "ownerStagePrerequisites": {
+    "domain": "DOMAIN-01 before any app deployment",
+    "environmentOrder": "Dev domain acceptance before Test if required by exact owner plan",
+    "planIdentity": "User supplied C5F6C025 prefix only; full exact owner plan/gate identity and accepted receipts pending",
+    "releaseBoundary": "Owner verifies fresh actual shared plan and identity mapping within protected release boundary; no shared plan changes between packet verification and release; workflow never overrides owner per-stage gates"
+  },
+  "supersedes": "owner-handoff-01.json only for current corrected release guard/identity/plan/capacity dependency contract; historical packet preserved"
+}

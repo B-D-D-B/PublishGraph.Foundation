@@ -1,0 +1,2 @@
+Static/SDA-Standalone/index.php/artists.html:31: trailing whitespace.
++    background-image: url('/assets/placeholders/artists-dreamscape.png') !important    

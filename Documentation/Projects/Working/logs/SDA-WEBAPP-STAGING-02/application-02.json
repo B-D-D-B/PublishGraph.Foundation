@@ -1,0 +1,57 @@
+{
+  "function": "SDA-WEBAPP-STAGING-02",
+  "scope": "LOCAL F01 correction under existing exactD; same stage/gap/security oracle",
+  "planSha256": "37dca51064d215349ada8eadb9532882082cec9f890a924cb59c3ddac58cd76f",
+  "priorFreeze": {
+    "path": "Documentation/Projects/Working/logs/SDA-WEBAPP-STAGING-02/result-freeze-01.json",
+    "sha256": "957badb1bae4619f94d33624ed36c2f9c6822f3258c8c04e29375ad96c9bf3b5"
+  },
+  "reviewHistory": {
+    "reviewer": "/root/astra_reviewer",
+    "disposition": "REMEDIATE",
+    "finding": "F01medium: missingselected/owner/actualdefaultHost correlation; unrelated validhost accepted. Prior R4/R7/R8 PASS. Independent closure pending.",
+    "preimagesAndAdverse": "Documentation/Projects/Working/logs/SDA-WEBAPP-STAGING-02/F01-preimages-01.json",
+    "docPreimages": "Documentation/Projects/Working/logs/SDA-WEBAPP-STAGING-02/F01-doc-preimages-01.json"
+  },
+  "correction": "Require explicit ownerPacket.defaultHostname equal selectedtarget beforeprovider; existing appshow query nowprojects defaultHostName and compares exacttuple. No newproviderread/permission. Syntheticfixtures/negativecases and narrow contract/README/staticcheck updated; fullscopedsemantics unchanged.",
+  "tests": {
+    "syntax": {
+      "pass": 5,
+      "fail": 0
+    },
+    "binding": {
+      "pass": 111,
+      "fail": 0,
+      "total": 111,
+      "receipt": "Documentation/Projects/Working/logs/SDA-WEBAPP-STAGING-02/binding-02.json"
+    },
+    "target": {
+      "pass": 52,
+      "fail": 0,
+      "total": 52,
+      "receipt": "Documentation/Projects/Working/logs/SDA-WEBAPP-STAGING-02/target-02.json"
+    },
+    "workflow": {
+      "pass": 38,
+      "fail": 0,
+      "total": 38,
+      "receipt": "Documentation/Projects/Working/logs/SDA-WEBAPP-STAGING-02/workflow-02.json"
+    },
+    "aggregateFocused": {
+      "pass": 201,
+      "fail": 0,
+      "total": 201
+    },
+    "guards": {
+      "assertions": 44,
+      "receipt": "Documentation/Projects/Working/logs/SDA-WEBAPP-STAGING-02/guards-02.json"
+    }
+  },
+  "contract": {
+    "path": "Static/SDA-WebApp/tools/staging-contract.json",
+    "sha256": "614bd2626fd068688eded1cb7623ddd535a3df61a6dec8b37a1b6e3b046f8a5b"
+  },
+  "limits": "Real owner app/host/settings/SCM/identity/FIC/plan/CAP/environment/token evidence and env/app/stage artifactwrapper/prior runtime acceptance unavailable. Bindings remain null; no actualdeployment/dispatch/cloud/fullmigration/equivalence/securitywaiver. Scoped localR required before LOCALcommit; separate exact effectD required before sourcepush/automaticproducer observation.",
+  "configuration": "Sol gpt-6.1-sol/medium and Astra gpt-6-astra/medium explicit launch guarantees; actual runtime telemetry unavailable",
+  "recordedUtc": "2026-11-22T17:49:59.371Z"
+}

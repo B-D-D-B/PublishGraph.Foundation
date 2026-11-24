@@ -1,0 +1,222 @@
+{
+  "version": 1,
+  "function": "SDA-WEBAPP-DEPLOY-CONTRACT-01",
+  "service": "sda-website",
+  "status": "inactive",
+  "purpose": "Successor source-owned deployment-control/owner handoff; no manual control-byte pins. Automatic accepted Actions integrity remains required.",
+  "sourceAuthority": {
+    "repository": "B-D-D-B/PublishGraph.Foundation",
+    "workflow": ".github/workflows/deploy-sda-website.yml",
+    "allowedRef": "refs/heads/main",
+    "inputs": [
+      "environment"
+    ],
+    "environments": [
+      "dev",
+      "test",
+      "prod"
+    ],
+    "bindings": "All three existing entries remain null; this document does not populate them",
+    "trust": "Committed, independently reviewed fixed-main source controls; no digest, opaque approval token, approved:true or ready:true substitutes for semantic evidence"
+  },
+  "controlDescriptor": {
+    "required": [
+      "path",
+      "functionId",
+      "gateId",
+      "disposition"
+    ],
+    "pathPrefix": "Documentation/Projects/Working/logs/SDA-WEBAPP-MIG-01/release-evidence/",
+    "pathRules": "Normalized relative regular file, nonlink at every component; JSON non-null non-array object",
+    "notRequired": [
+      "sha256",
+      "BindingSha256",
+      "bindingSha256"
+    ],
+    "legacyOptionalHashes": "Ignored by control resolution; new shapes omit them",
+    "commonSemanticFields": [
+      "kind",
+      "disposition",
+      "functionId",
+      "gateId",
+      "environment",
+      "appId",
+      "sourceCommit",
+      "artifactSha256"
+    ],
+    "semantics": "Descriptor gate/function/disposition and JSON kind/environment/app/sourceCommit/artifactSha256 must agree with fixed selection. Source/payload hashes here identify the accepted artifact, not control-byte pins."
+  },
+  "receipts": {
+    "ownerPacket": {
+      "kind": "owner-hosting-packet",
+      "dispositions": [
+        "READY",
+        "PASS"
+      ],
+      "additionalFields": [
+        "version",
+        "subscriptionId",
+        "identity",
+        "plan"
+      ],
+      "version": 1,
+      "scope": "Direct sourceCommit and artifactSha256 equality to accepted artifact, with existing semantic gate/function/environment/app checks"
+    },
+    "auth": {
+      "kind": "auth-disposition",
+      "dispositions": [
+        "PASS"
+      ]
+    },
+    "artifactAcceptance": {
+      "kind": "artifact-acceptance",
+      "dispositions": [
+        "PASS"
+      ],
+      "limit": "Real env/app-specific wrapper required; source-build acceptance alone does not supply it"
+    },
+    "ownerReadiness": {
+      "kind": "owner-stage-readiness",
+      "dispositions": [
+        "READY",
+        "PASS"
+      ],
+      "hosting": "Actual DOTNETCORE|10.0/AlwaysOn/HTTPS/TLS>=1.2/DisabledFTPS/portableDLLstartup/contentroot/8080/buildOnDeployfalse/literalfalseFTPandSCM"
+    },
+    "domainReadiness": {
+      "kind": "domain-readiness",
+      "gateId": "DOMAIN-01",
+      "dispositions": [
+        "READY",
+        "PASS"
+      ]
+    },
+    "capacityReadiness": {
+      "kind": "capacity-stage-readiness",
+      "dispositions": [
+        "READY",
+        "PASS"
+      ]
+    },
+    "priorEnvironment": {
+      "kind": "environment-acceptance",
+      "dispositions": [
+        "PASS"
+      ],
+      "stages": [
+        "default-host",
+        "custom-domain"
+      ],
+      "order": "Dev none; Test requires both Dev PASS; Prod requires both Test PASS; same immutable source and ZIP payload"
+    }
+  },
+  "ownerPacket": {
+    "identityFields": [
+      "tenantId",
+      "clientId",
+      "principalId",
+      "roleDefinitionId",
+      "roleScope",
+      "issuer",
+      "audience",
+      "subject"
+    ],
+    "identityMeaning": "Exact source-versioned owner mapping to fixed dedicated app-only binding; actual authenticated client and observed app-scoped principal/role remain checked",
+    "planFields": [
+      "id",
+      "observedSku",
+      "requiredSku",
+      "linux",
+      "region",
+      "capacity",
+      "verifiedAtUtc"
+    ],
+    "planMeaning": "Actual owner observation: Linux westus3 capacity1 required B1/B1/B3, observedSKU equals required, valid observed time. Actual app ARM serverFarm association independently checked using app-only role. No shared plan/directory read.",
+    "removedPrerequisites": [
+      "SDA_HOSTING_PACKET_SHA256",
+      "SDA_AUTH_DISPOSITION_SHA256",
+      "authDispositionSha256",
+      "identity.mappingEvidenceSha256",
+      "plan.verificationEvidenceSha256"
+    ],
+    "ownerEvidence": "Real semantic owner-stage-readiness still required; removing dummy hash-format markers creates no owner/provider evidence"
+  },
+  "automaticIntegrity": {
+    "preserved": true,
+    "artifactDescriptorFields": [
+      "runId",
+      "id",
+      "name",
+      "sourceCommit",
+      "producerWorkflowPath",
+      "archiveSha256",
+      "zipSha256",
+      "packageReceiptSha256"
+    ],
+    "observations": "Exact completed successful run/repository/source/workflow; exact immutable artifact ID/name/run/source/outerdigest and nonexpired metadata; no latest fallback",
+    "payload": "Exactly website.zip+package.json regular nonlink files; exact ZIP/packageReceipt byte hashes plus package source/package hash, rehash before Actions deployment",
+    "otherPreserved": "Producer protocol/validator/source/toolchain/content hashes, action commit pins, exact github.sha checkout, independently accepted source-build evidence and all historical source/artifact receipt hashes remain unchanged."
+  },
+  "targetGuards": {
+    "appOnly": true,
+    "authenticatedClientPrincipalRoleBinding": true,
+    "literalFalsePublishing": [
+      "ftp",
+      "scm"
+    ],
+    "actualReads": [
+      "account show",
+      "app show",
+      "app config show",
+      "app-scoped role assignment list",
+      "FTP basic publishing policy",
+      "SCM basic publishing policy"
+    ],
+    "noSharedPlanOrGraph": true
+  },
+  "historicalReferences": [
+    {
+      "path": "Documentation/Projects/Working/logs/SDA-WEBAPP-MIG-01/owner-handoff-02.json",
+      "sha256": "022af5259238a6358e0a68d46f3e75ad4ef4dbc9a7e40d0ed48eefb9d44ca64e",
+      "meaning": "Immutable historical/audit identity only; never a manual deployment control pin"
+    },
+    {
+      "path": "Documentation/Projects/Working/logs/SDA-WEBAPP-MIG-01/capacity-addendum-01.json",
+      "sha256": "82537d85319d5e6cd68e3a0ca8972e643f283c9af06526e21da657e7618ef71d",
+      "meaning": "Immutable historical/audit identity only; never a manual deployment control pin"
+    },
+    {
+      "path": "Documentation/Projects/Working/logs/SDA-WEBAPP-PRODUCER-01/independent-source-build-acceptance-02.json",
+      "sha256": "3c14d7f9c4413e247630c7c358d4aab4c2103f4ec580a348d21bf9c550f2caa5",
+      "meaning": "Immutable historical/audit identity only; never a manual deployment control pin"
+    },
+    {
+      "path": "Documentation/Projects/Working/logs/SDA-WEBAPP-PRODUCER-01/source-build-linkage-02.json",
+      "sha256": "23b8250230c38bc06d345d17fc8e4b322e6690f7539951ca760a186275e7749c",
+      "meaning": "Immutable historical/audit identity only; never a manual deployment control pin"
+    }
+  ],
+  "pending": [
+    "Real owner app/defaultHost/settings/identity/FIC/plan observations",
+    "GitHub sda-* versus sda-website-* environment agreement and actual workflow-token environment-policy permissions",
+    "Auth disposition/replacement",
+    "DOMAIN/TLS/DNS and capacity gates",
+    "Env/app-specific accepted artifact wrapper and prior environment PASS"
+  ],
+  "publication": {
+    "held": true,
+    "allowed": "After independent result PASS, exact local commit only",
+    "reason": "Consumer paths match automatic build push filter; latest user instruction authorizes no GitHub execution/cloud effect",
+    "forbidden": [
+      "push",
+      "skip-CI workaround",
+      "manual dispatch",
+      "rerun",
+      "merge",
+      "binding activation",
+      "permission/provider changes",
+      "deployment"
+    ]
+  },
+  "scope": "Source-owned successor only; old owner02/Infrastructure records and accepted producer/source-build receipts remain unchanged. No actual provider outputs, stage PASS or deployment acceptance supplied."
+}

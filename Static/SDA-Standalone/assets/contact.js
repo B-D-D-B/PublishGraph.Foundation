@@ -7,11 +7,8 @@
   var mapping={'63':'membership','66':'artist','64':'commission','65':'sda-frame','89':'collectors','90':'other'};
   var subjects=Array.from(form.querySelectorAll('input[type="checkbox"]')),token='',busy=false,widgetId;
   var uncertain='We could not confirm the result. Your inquiry may have been accepted; retrying may send a duplicate.';
-  var authorizedHosts=['sda.studio','www.sda.studio','silicondreamartists.com','www.silicondreamartists.com'];
-  var binding=JSON.stringify([form.dataset.enabled,form.dataset.endpoint,form.dataset.sitekey,form.dataset.activeHosts]);
-  function activeHost(){var raw=form.dataset.activeHosts;if(typeof raw!=='string'||!raw)return false;var hosts=raw.split(',');return hosts.every(function(h){return authorizedHosts.includes(h);})&&new Set(hosts).size===hosts.length&&hosts.includes(location.hostname)&&location.protocol==='https:'&&!location.port;}
-  function endpoint(){try{if(form.dataset.endpoint!=='/api/contact')return null;var u=new URL(form.dataset.endpoint,location.origin);return activeHost()&&u.origin===location.origin&&u.pathname==='/api/contact'&&!u.username&&!u.password&&!u.search&&!u.hash?u.href:null;}catch(e){return null;}}
-  function configured(){return binding===JSON.stringify([form.dataset.enabled,form.dataset.endpoint,form.dataset.sitekey,form.dataset.activeHosts])&&form.dataset.enabled==='true'&&typeof form.dataset.sitekey==='string'&&!!form.dataset.sitekey.trim()&&!!endpoint();}
+  function endpoint(){try{if(form.dataset.endpoint!=='/api/contact')return null;var u=new URL(form.dataset.endpoint,location.origin),local=location.protocol==='http:'&&['127.0.0.1','localhost','[::1]'].includes(location.hostname);return (location.protocol==='https:'||local)&&u.origin===location.origin&&u.pathname==='/api/contact'&&!u.username&&!u.password&&!u.search&&!u.hash?u.href:null;}catch(e){return null;}}
+  function configured(){return form.dataset.enabled==='true'&&!!form.dataset.sitekey&&!!endpoint();}
   function ready(){button.disabled=busy||!configured()||!token;}
   var fieldLabels={firstName:'First name',lastName:'Last name',email:'Email address',subjects:'Subjects',message:'Message',challengeToken:'Verification challenge'},fieldFeedback=false;
   function say(text){status.textContent=text;fieldFeedback=false;}
@@ -45,6 +42,6 @@
     }catch(e){say(uncertain);}finally{clearTimeout(timer);busy=false;form.removeAttribute('aria-busy');resetChallenge();}
   });
   if(!configured()){say('Online submission is not configured yet.');ready();return;}
-  window.sdaContactChallengeReady=function(){if(!configured()){token='';ready();return;}widgetId=window.turnstile.render(widget,{sitekey:form.dataset.sitekey,action:'contact',callback:function(t){token=configured()?t:'';ready();},'expired-callback':resetChallenge,'error-callback':function(){token='';ready();say('Verification is unavailable. Please try again later.');}});};
+  window.sdaContactChallengeReady=function(){widgetId=window.turnstile.render(widget,{sitekey:form.dataset.sitekey,action:'contact',callback:function(t){token=t;ready();},'expired-callback':resetChallenge,'error-callback':function(){token='';ready();say('Verification is unavailable. Please try again later.');}});};
   var script=document.createElement('script');script.src='https://challenges.cloudflare.com/turnstile/v0/api.js?onload=sdaContactChallengeReady&render=explicit';script.async=true;script.defer=true;document.head.appendChild(script);
 })();

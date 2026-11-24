@@ -1,0 +1,53 @@
+{
+  "function": "SDA-WEBAPP-MIG-01-I",
+  "event": "Explicit user RESUME after usage-limit interruption",
+  "continuity": "Same execution and exact READY plan; prior findings/history retained; no reset or new initial execution",
+  "readyPlanSha256": "8200cab4da23d3126c60dc0e35faa5aaa81245f538190f3139804faf39c13b56",
+  "base": "90b090cd3b5a5abfe2c0548a571663218953648a",
+  "actualPartialSource": [
+    {
+      "path": ".github/workflows/deploy-sda-website.yml",
+      "sha256": "07d6c5532a91c8fbf2d85ad28637d7d8ebb3aa587fdf86a2065d3c6ee17fbe2f"
+    },
+    {
+      "path": "Static/SDA-WebApp/tools/check-release-target.cjs",
+      "sha256": "4a0256fd70780e4372e71a5a81fea714a72bcf9bec9ce5b9c28ab17a55eb7d0d"
+    },
+    {
+      "path": "Static/SDA-WebApp/tools/release-target.cjs",
+      "sha256": "07c24cc4549782fc8d71eef528fbe92034f8ed0de15389679e2edec665598b04"
+    },
+    {
+      "path": ".github/sda-website-release-bindings.json",
+      "sha256": "82a24e98181e3593026aed76bbabfe7fdcb9aeb05fe23d739a599e6257fd9578"
+    },
+    {
+      "path": "Static/SDA-WebApp/tools/release-binding.cjs",
+      "sha256": "4c15fa26484765707616f00cc3b87faca0d1da65e41d8b21553159f7398ad04a"
+    },
+    {
+      "path": "Static/SDA-WebApp/tools/check-release-binding.cjs",
+      "sha256": "5c1bae9e7189ede7a71a7cc597552ddfc626b148e2dcaebf1b35f6429105e680"
+    }
+  ],
+  "existingFocusedChecks": [
+    {
+      "path": "release-ux-binding-check-01.json",
+      "counts": {
+        "pass": 42,
+        "fail": 0,
+        "total": 42
+      }
+    },
+    {
+      "path": "release-ux-target-check-01.json",
+      "counts": {
+        "pass": 19,
+        "fail": 0,
+        "total": 19
+      }
+    }
+  ],
+  "limits": "Partial hashes are an inspected continuation snapshot, not adoption of an unknown baseline. All unchanged authorities/protected source identities match. Three bindings remain null; no commit or cloud effect.",
+  "configuration": "Inherited Sol6.1medium explicit launch guarantee; actual telemetry unavailable"
+}

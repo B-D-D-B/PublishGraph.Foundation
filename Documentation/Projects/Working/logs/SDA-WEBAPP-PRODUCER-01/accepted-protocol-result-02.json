@@ -1,0 +1,10 @@
+{
+  "outcome": "local-contract-checks-pass",
+  "checkedAtUtc": "2026-11-22T09:07:01.879Z",
+  "protocolSha256": "cdb8ac1509a2b3d30811d40cb81c62fd2901fc9f01cb1b2ddaced511ec66bc39",
+  "sourceCommit": "d92846a5f0e4951cc333d949ccf22fe64bd8f01b",
+  "sourceTree": "cdff3b8dfd9c77771424357705844b938afe6f3c",
+  "runId": 45005419661,
+  "artifactId": 14747831820,
+  "limits": "Checks supplied local evidence only; no independent acceptance is awarded or producer/cloud effect performed."
+}

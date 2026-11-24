@@ -1,0 +1,23 @@
+{
+  "function": "SDA-WEBAPP-PRODUCER-01",
+  "outcome": "local-build-and-preservation-checks-pass",
+  "assertions": 40,
+  "zip": {
+    "path": "artifacts/SDA-WEBAPP-PRODUCER-01/local-build-01/website.zip",
+    "bytes": 143084286,
+    "sha256": "ffb6ed3c80215249f93db8c56618f30925abd2c910fd91b62a520e7ff1c93fde",
+    "entries": 458,
+    "contentCount": 452
+  },
+  "receipt": {
+    "path": "artifacts/SDA-WEBAPP-PRODUCER-01/local-build-01/package.json",
+    "sha256": "3c1237a1aa11905be0dd6d63d7f41daef0c27b0a1c10aaf8e118235fc9daef4d",
+    "sourceCommit": "3849ad4bce027849b3cc78a2b8c28d29d2157a97",
+    "sourceDirty": true,
+    "dotnet": "10.0.404",
+    "node": "v22.9.0"
+  },
+  "limits": "Actual local unchanged-builder build and read-only458-entry ZIP inspection. Dirty local source truth retained; NOT clean producer proof, actual Actions execution, Linux hosted execution, independent artifact acceptance, cloud or deployment.",
+  "protectedCount": 20,
+  "authorityCount": 5
+}

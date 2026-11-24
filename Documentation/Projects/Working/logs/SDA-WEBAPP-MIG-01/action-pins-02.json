@@ -1,0 +1,56 @@
+{
+  "capturedUtc": "2026-11-22T05:33:34.952Z",
+  "pins": {
+    "CHECKOUT": {
+      "repo": "actions/checkout",
+      "tag": "v4",
+      "sha": "11d5960a326750d5838078e36cf38b85af677262",
+      "tagObjects": []
+    },
+    "DOTNET": {
+      "repo": "actions/setup-dotnet",
+      "tag": "v4",
+      "sha": "67a3573c9a986a3f9c594539f4ab511d57bb3ce9",
+      "tagObjects": []
+    },
+    "LOGIN": {
+      "repo": "Azure/login",
+      "tag": "v2",
+      "sha": "7184910d9eb2b1c5e48f7073824a90609bb9b6d6",
+      "tagObjects": [
+        {
+          "node_id": "TA_kwDODJCIF9oAKDgyMTZlMTFkOGNkOWI0MmZlOTI1Yzg1MmFmOGU3NjMxMWZmMDY3YWM",
+          "sha": "8216e11d8cd9b42fe925c852af8e76311ff067ac",
+          "url": "https://api.github.com/repos/Azure/login/git/tags/8216e11d8cd9b42fe925c852af8e76311ff067ac",
+          "tagger": {
+            "name": "Maddison Das",
+            "email": "272712104+MaddyMicrosoft@users.noreply.github.com",
+            "date": "2026-08-04T02:38:44Z"
+          },
+          "object": {
+            "sha": "7184910d9eb2b1c5e48f7073824a90609bb9b6d6",
+            "type": "commit",
+            "url": "https://api.github.com/repos/Azure/login/git/commits/7184910d9eb2b1c5e48f7073824a90609bb9b6d6"
+          },
+          "tag": "v2",
+          "message": "Update v2 to v2.3.1\n",
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null,
+            "verified_at": null
+          }
+        }
+      ]
+    },
+    "UPLOAD": {
+      "repo": "actions/upload-artifact",
+      "tag": "v4",
+      "sha": "ea165f8d65b6e75b540449e92b4886f43607fa02",
+      "tagObjects": []
+    }
+  },
+  "workflowSha256": "57d9af09f85c44307a12d576d539d910b3ea5ff4bc085c54278a38dfa2719008",
+  "recovery": "Initial resolver expected commit ref; observed Azure/login annotated tag; bounded dereference preserves intended v2 action; no product effect."
+}

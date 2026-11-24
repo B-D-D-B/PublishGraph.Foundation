@@ -1,0 +1,135 @@
+{
+  "mode": "Workflow source/static checks and synthetic inline gate execution only; no actual Actions token or provider proof",
+  "workflowSha256": "07d6c5532a91c8fbf2d85ad28637d7d8ebb3aa587fdf86a2065d3c6ee17fbe2f",
+  "counts": {
+    "pass": 31,
+    "fail": 0,
+    "total": 31
+  },
+  "rows": [
+    {
+      "name": "exact-environment-only-input",
+      "pass": true
+    },
+    {
+      "name": "manual-only",
+      "pass": true
+    },
+    {
+      "name": "one-website-manual-workflow",
+      "pass": true
+    },
+    {
+      "name": "no-mutable-target-or-approval-variables",
+      "pass": true
+    },
+    {
+      "name": "no-deployment-rebuild-or-artifact-upload",
+      "pass": true
+    },
+    {
+      "name": "per-environment-serialization",
+      "pass": true
+    },
+    {
+      "name": "resolver-before-named-environment-and-oidc",
+      "pass": true
+    },
+    {
+      "name": "minimal-job-permissions",
+      "pass": true
+    },
+    {
+      "name": "exact-immutable-artifact-selector",
+      "pass": true
+    },
+    {
+      "name": "ref-refusal-before-checkout",
+      "pass": true
+    },
+    {
+      "name": "fixed-receipts-payload-before-azure-login",
+      "pass": true
+    },
+    {
+      "name": "fixed-resolver-oidc-outputs-only",
+      "pass": true
+    },
+    {
+      "name": "rehash-immediately-before-actions-deployment",
+      "pass": true
+    },
+    {
+      "name": "actions-commit-pinned",
+      "pass": true
+    },
+    {
+      "name": "real-bindings-null-inactive",
+      "pass": true
+    },
+    {
+      "name": "fixed-main-service-contract",
+      "pass": true
+    },
+    {
+      "name": "successor-semantic-control-descriptor-no-pin",
+      "pass": true
+    },
+    {
+      "name": "successor-automatic-artifact-integrity-retained",
+      "pass": true
+    },
+    {
+      "name": "successor-owner-scope-kind-and-literal-false",
+      "pass": true
+    },
+    {
+      "name": "successor-no-push-or-activation",
+      "pass": true
+    },
+    {
+      "name": "resolver-no-manual-control-digest-gate",
+      "pass": true
+    },
+    {
+      "name": "inline-precheckout-gate-exists",
+      "pass": true
+    },
+    {
+      "name": "inline-valid-choice:dev",
+      "pass": true
+    },
+    {
+      "name": "inline-valid-choice:test",
+      "pass": true
+    },
+    {
+      "name": "inline-valid-choice:prod",
+      "pass": true
+    },
+    {
+      "name": "inline-reject:feature-ref",
+      "pass": true
+    },
+    {
+      "name": "inline-reject:tag-ref",
+      "pass": true
+    },
+    {
+      "name": "inline-reject:fork-repo",
+      "pass": true
+    },
+    {
+      "name": "inline-reject:nonmanual-event",
+      "pass": true
+    },
+    {
+      "name": "inline-reject:extra-target-input",
+      "pass": true
+    },
+    {
+      "name": "inline-reject:invalid-environment",
+      "pass": true
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "function": "SDA-WEBAPP-PRODUCER-01",
+  "planSha256": "288d551aec8f3de1ce9dff1939590532fa064c8def2a13c9ee575175a282cae1",
+  "independentReadiness": "Documentation/Projects/Working/logs/SDA-WEBAPP-PRODUCER-01/readiness-01.json",
+  "implementation": [
+    ".github/workflows/build-sda-website.yml",
+    "Static/SDA-WebApp/tools/producer.cjs",
+    "Static/SDA-WebApp/tools/check-producer.cjs",
+    "Static/SDA-WebApp/tools/PRODUCER.md"
+  ],
+  "checks": {
+    "syntax": 2,
+    "focused": {
+      "passed": 95,
+      "failed": 0,
+      "total": 95,
+      "receipt": "Documentation/Projects/Working/logs/SDA-WEBAPP-PRODUCER-01/check-02.json"
+    },
+    "protocolCompatibility": {
+      "passed": 60,
+      "failed": 0,
+      "total": 60,
+      "receipt": "Documentation/Projects/Working/logs/SDA-WEBAPP-PRODUCER-01/protocol-01.json"
+    },
+    "localBuildAndPreservation": {
+      "assertions": 40,
+      "receipt": "Documentation/Projects/Working/logs/SDA-WEBAPP-PRODUCER-01/local-build-01.json"
+    },
+    "observerDirtyGuard": {
+      "assertions": 2,
+      "receipt": "Documentation/Projects/Working/logs/SDA-WEBAPP-PRODUCER-01/observer-local-guard-01.json"
+    }
+  },
+  "adverseHistory": {
+    "receipt": "Documentation/Projects/Working/logs/SDA-WEBAPP-PRODUCER-01/recovery-01.json",
+    "initial": {
+      "passed": 81,
+      "failed": 2,
+      "total": 83
+    },
+    "closedLocally": "Fixture signed ExternalAttributes correction; independent result verdict pending"
+  },
+  "localSourceTruth": "Actual package sourceDirty:true retained; itsZIP is local build oracle only, not producer proof. Actual458-entry inspection/452content validated. No Linux hosted execution or runtime suite repeated.",
+  "boundaries": "No commit, push, Actions run/artifact, manual dispatch, Azure/OIDC/deploy/activation/independent selfacceptance. Local result awaits distinct R1-R8; future push effect requires exact committed revision packet and separate DREADY/Rreview.",
+  "configuration": "Explicit gpt-6.1-sol/medium worker and gpt-6-astra/medium reviewer launch guarantee; actual runtime telemetry unavailable",
+  "recordedUtc": "2026-11-22T08:40:17.108Z"
+}

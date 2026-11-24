@@ -1,0 +1,4 @@
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+  SDA.Website -> C:\GitHub\SiliconDreamArtists\PublishGraph.Foundation.worktrees\sda-website-migration-setup\Static\SDA-WebApp\bin\Release\net10.0\SDA.Website.dll
+  SDA.Website -> C:\GitHub\SiliconDreamArtists\PublishGraph.Foundation.worktrees\sda-website-migration-setup\Documentation\Projects\Working\logs\SDA-WEBAPP-MIG-01\package-02\publish\

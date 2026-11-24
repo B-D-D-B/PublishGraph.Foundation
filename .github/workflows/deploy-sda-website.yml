@@ -1,0 +1,93 @@
+name: Deploy SDA website
+on:
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: Reviewed target environment
+        required: true
+        type: choice
+        options: [dev, test, prod]
+permissions:
+  contents: read
+concurrency:
+  group: sda-website-${{ inputs.environment }}
+  cancel-in-progress: false
+jobs:
+  resolve:
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: read
+      actions: read
+    outputs:
+      github_environment: ${{ steps.resolve.outputs.github_environment }}
+      artifact_id: ${{ steps.resolve.outputs.artifact_id }}
+      artifact_run_id: ${{ steps.resolve.outputs.artifact_run_id }}
+      client_id: ${{ steps.resolve.outputs.client_id }}
+      tenant_id: ${{ steps.resolve.outputs.tenant_id }}
+      subscription_id: ${{ steps.resolve.outputs.subscription_id }}
+    steps:
+      - name: Refuse arbitrary dispatch refs and inputs before checkout
+        shell: bash
+        run: |
+          node <<'NODE'
+          const fs = require('node:fs');
+          const event = JSON.parse(fs.readFileSync(process.env.GITHUB_EVENT_PATH));
+          if (process.env.GITHUB_REPOSITORY !== 'B-D-D-B/PublishGraph.Foundation' ||
+              process.env.GITHUB_REF !== 'refs/heads/main' || process.env.GITHUB_EVENT_NAME !== 'workflow_dispatch' ||
+              !event.inputs || Object.keys(event.inputs).length !== 1 ||
+              !['dev', 'test', 'prod'].includes(event.inputs.environment)) throw Error('Dispatch ref/input refused');
+          NODE
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          ref: ${{ github.sha }}
+          persist-credentials: false
+      - name: Resolve fixed accepted binding before any environment or Azure login
+        id: resolve
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: >-
+          node Static/SDA-WebApp/tools/release-binding.cjs --resolve
+          --environment '${{ inputs.environment }}' --output release/selection.json
+  deploy:
+    needs: resolve
+    runs-on: ubuntu-24.04
+    environment: ${{ needs.resolve.outputs.github_environment }}
+    permissions:
+      contents: read
+      actions: read
+      id-token: write
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          ref: ${{ github.sha }}
+          persist-credentials: false
+      - name: Download only the reviewed immutable Actions artifact
+        uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093
+        with:
+          artifact-ids: ${{ needs.resolve.outputs.artifact_id }}
+          run-id: ${{ needs.resolve.outputs.artifact_run_id }}
+          repository: ${{ github.repository }}
+          github-token: ${{ github.token }}
+          path: release/accepted
+          merge-multiple: true
+      - name: Recheck fixed receipts and accepted ZIP before Azure login
+        run: >-
+          node Static/SDA-WebApp/tools/release-binding.cjs --verify-artifact
+          --environment '${{ inputs.environment }}' --directory release/accepted --output release/ready.json
+      - uses: azure/login@7184910d9eb2b1c5e48f7073824a90609bb9b6d6
+        with:
+          client-id: ${{ needs.resolve.outputs.client_id }}
+          tenant-id: ${{ needs.resolve.outputs.tenant_id }}
+          subscription-id: ${{ needs.resolve.outputs.subscription_id }}
+      - name: Preserve exact app-only identity and literal-false publishing guards
+        run: >-
+          node Static/SDA-WebApp/tools/release-target.cjs --verify
+          --environment '${{ inputs.environment }}' --directory release/accepted
+      - name: Deploy the same rehashed accepted ZIP through Actions only
+        shell: bash
+        run: |
+          node Static/SDA-WebApp/tools/release-binding.cjs --verify-artifact --environment '${{ inputs.environment }}' --directory release/accepted --output release/final-ready.json
+          subscription="$(node -p "require('./release/final-ready.json').binding.target.subscriptionId")"
+          resource_group="$(node -p "require('./release/final-ready.json').binding.target.resourceGroup")"
+          app_name="$(node -p "require('./release/final-ready.json').binding.target.appName")"
+          az webapp deploy --subscription "$subscription" --resource-group "$resource_group" --name "$app_name" --type zip --src-path release/accepted/website.zip --clean true --restart true

@@ -1,0 +1,19 @@
+{
+  "outcome": "stage-scope-and-preservation-pass",
+  "assertions": 43,
+  "authorities": 5,
+  "protected": 29,
+  "base": "255e1fce072b193aec002811186fd21d70b23726",
+  "runtimeTree": "2a849332d7d6e3367b5b194c01cf21e4c2a5dabe",
+  "historicalContractLogsTree": "76a752b13baaae61ad7e72b65856f7f0b3296d9f",
+  "registrationUnchanged": true,
+  "realBindings": "All3null; no activation",
+  "manualAndProducerWorkflow": "Byteexact, env-only manual dropdown unchanged",
+  "automaticProducerInventory": "Protected producer retains467actual build inputs, does not explicitly include excluded consumer tools/stagingcontract. Future effect packet separately binds reviewed consumercontract/source identities plus whole commit/tree. No producer/helper amendment.",
+  "contact": "Protected Program API disabled body/no backend/mail and content exact; focused static test only, no actualdefault-host deployment",
+  "manualPins": "Not reintroduced",
+  "contract": {
+    "path": "Static/SDA-WebApp/tools/staging-contract.json",
+    "sha256": "c5ec7f95040b1148052cfbea3a12af15bda66b92773200f49bc167453c1e3f2f"
+  }
+}

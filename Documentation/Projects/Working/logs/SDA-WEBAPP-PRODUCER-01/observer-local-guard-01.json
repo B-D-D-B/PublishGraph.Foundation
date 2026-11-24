@@ -1,0 +1,6 @@
+{
+  "outcome": "local-negative-guard-pass",
+  "assertions": 2,
+  "case": "Dirty observer checkout refused by actual raw Git clean-state guard before API invocation/download/output creation",
+  "limits": "No actual run/service observation or effect"
+}

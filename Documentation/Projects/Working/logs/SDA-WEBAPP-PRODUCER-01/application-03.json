@@ -1,0 +1,38 @@
+{
+  "function": "SDA-WEBAPP-PRODUCER-01",
+  "phase": "F02 corrective continuation after failed first effect; no lifecycle reset",
+  "planSha256": "288d551aec8f3de1ce9dff1939590532fa064c8def2a13c9ee575175a282cae1",
+  "sourceBaseCommit": "221126ac8f285681ae83e210dc8d3d5364f029a3",
+  "readiness": "Coordinator relayed independent Astra existing local DREADY sufficient for bounded workflow/checker context placement correction; future local R and exact NEWcommit/effect D remain required.",
+  "priorEffectReview": {
+    "reviewer": "/root/astra_reviewer",
+    "disposition": "REMEDIATE",
+    "finding": "F02 medium R1/R2/R3/R5/R6; native unsupported jobenvrunner.temp. Publication succeeded;0jobs0artifacts; actual artifact acceptance remains BLOCKED.",
+    "evidence": "Documentation/Projects/Working/logs/SDA-WEBAPP-PRODUCER-01/F02-preimages-01.json"
+  },
+  "changes": "Workflow only: move same isolated SDK paths to supported step-level env for setup-dotnet and four build/helper calls. Checker only: reject jobenvrunner and assert all five matching install/root paths plus negative cases. No helper/runtime/builder/protocol/consumer/rootcontrols changes.",
+  "checks": {
+    "focused": {
+      "passed": 133,
+      "failed": 0,
+      "total": 133,
+      "addedRegressionCases": 18,
+      "receipt": "Documentation/Projects/Working/logs/SDA-WEBAPP-PRODUCER-01/check-04.json"
+    },
+    "checkerSyntax": "PASS",
+    "reusedUnchangedHelperSyntax": "Prior PASS; helper source SHA unchanged",
+    "reusedProtocol": "60/60 from prior immutable receipt; protocol source unchanged",
+    "reusedLocalBuild": "Prior honest dirty build/458actualZIP entries/452content inspection reused; no build/runtime input changed and placement-only workflow correction does not justify local rebuild",
+    "primaryDocs": {
+      "url": "https://docs.github.com/en/actions/reference/workflows-and-actions/contexts#context-availability",
+      "availability": {
+        "url": "https://docs.github.com/en/actions/reference/workflows-and-actions/contexts#context-availability",
+        "jobEnv": "github, needs, strategy, matrix, vars, secrets, inputs; runner unavailable",
+        "stepEnv": "github, needs, strategy, matrix, job, runner, env, vars, secrets, steps, inputs; runner supported"
+      }
+    }
+  },
+  "limits": "No second localcommit/push/run yet. First effect STOPPED is preserved. Independent affected local R1-R8 required before localcommit; NEWexactcommittedrevision/remote221/effectpacket DREADY before secondpush. No rerun/manualdispatch/cancel/delete/Azure/OIDC/deployment/permission expansion/selfacceptance.",
+  "configuration": "Explicit gpt-6.1-sol/medium worker and gpt-6-astra/medium reviewer launch guarantee; actual runtime telemetry unavailable",
+  "recordedUtc": "2026-11-22T08:56:06.461Z"
+}

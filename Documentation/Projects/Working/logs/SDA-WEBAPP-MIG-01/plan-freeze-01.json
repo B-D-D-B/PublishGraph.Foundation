@@ -1,0 +1,31 @@
+{
+  "capturedUtc": "2026-11-22T05:22:36.298Z",
+  "plan": {
+    "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Documentation/Projects/Working/SDA-WEBAPP-MIG-01-Working.md",
+    "sha256": "7cb555fcfb3a5f0353fb1fc1554f424dfd692f6f5b0c416ff8f8e7281f990d4b"
+  },
+  "registrationPrefixUnchanged": true,
+  "evidence": [
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Documentation/Projects/Working/logs/SDA-WEBAPP-MIG-01/planning-baseline-01.json",
+      "sha256": "43899f379e72588f410d9edaef0da0319792f242e016e19d369144cb17199bcb"
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Documentation/Projects/Working/logs/SDA-WEBAPP-MIG-01/live-http-01.json",
+      "sha256": "c8c12a17aff85aeb6a3543352a8c6c63c52b1bccee5d54cc9701817a4ee3a2d9"
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Documentation/Projects/Working/logs/SDA-WEBAPP-MIG-01/live-inventory-01.json",
+      "sha256": "a02d4f97ecf52a635073f94df0cd52ebf198f2f763e735b5b2f7561c5b4d586b"
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Documentation/Projects/Working/logs/SDA-WEBAPP-MIG-01/error-fixtures-01.json",
+      "sha256": "208ce8e45a2ce53e6bb00181ebc9170a1f2c28a7f82dadebce011a79aa780e4a"
+    }
+  ],
+  "privateExcluded": [
+    "boundary-http-01.json",
+    "registration-preimage.bin"
+  ],
+  "scope": "D1-D8 exact W1 local implementation boundary only; no auth/cloud/DNS READY requested"
+}

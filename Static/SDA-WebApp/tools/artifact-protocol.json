@@ -1,0 +1,76 @@
+{
+  "version": 1,
+  "service": "sda-website",
+  "repository": "B-D-D-B/PublishGraph.Foundation",
+  "bundleFiles": [
+    "package.json",
+    "website.zip"
+  ],
+  "actualProducer": null,
+  "consumerBaseline": {
+    "commit": "fa723dc086d4d84abab13ef87f470ccf7c4358db",
+    "workflow": {
+      "path": ".github/workflows/deploy-sda-website.yml",
+      "sha256": "07d6c5532a91c8fbf2d85ad28637d7d8ebb3aa587fdf86a2065d3c6ee17fbe2f"
+    },
+    "validator": {
+      "path": "Static/SDA-WebApp/tools/release-binding.cjs",
+      "sha256": "1071cb4705a7791ee5e8cfdddd90f991268bfa1175919b9421eec76034efa652"
+    },
+    "inactiveBindings": {
+      "path": ".github/sda-website-release-bindings.json",
+      "sha256": "82a24e98181e3593026aed76bbabfe7fdcb9aeb05fe23d739a599e6257fd9578"
+    }
+  },
+  "runtime": {
+    "contractPath": "Static/SDA-WebApp/content-contract.json",
+    "contractSha256": "e1f45d775db89ae580694c16daea38550db0ce133472ea6388f83efee175e99e",
+    "count": 452,
+    "acceptedArtifactManifestSha256": "07baae018675574b9d7b060ff1373af1128e6c6eb49fb43390c751aebd04425f"
+  },
+  "requiredSourceInputs": [
+    ".gitattributes",
+    "Static/SDA-WebApp/Program.cs",
+    "Static/SDA-WebApp/SDA.Website.csproj",
+    "Static/SDA-WebApp/content-contract.json",
+    "Static/SDA-WebApp/tools/package.cjs",
+    "Static/SDA-WebApp/tools/common.cjs",
+    "Static/SDA-WebApp/tools/artifact-protocol.json",
+    "Static/SDA-WebApp/tools/validate-artifact-protocol.cjs"
+  ],
+  "hostSourcePrefix": "Static/SDA-WebApp/",
+  "hostSourceFiles": [
+    "Program.cs",
+    "SDA.Website.csproj",
+    "content-contract.json"
+  ],
+  "toolchainFields": [
+    "dotnet",
+    "node",
+    "pwsh",
+    "git",
+    "runnerOs",
+    "runnerArch",
+    "runnerImage",
+    "runnerImageVersion"
+  ],
+  "evidenceVersion": 1,
+  "sourceAcceptanceKind": "source-build-acceptance",
+  "consumerAcceptanceKind": "artifact-acceptance",
+  "evidenceRules": [
+    "Producer evidence raw bytes and independent acceptance raw bytes are separate from the exact two-file deployment artifact.",
+    "Build source commit/tree and raw empty pre/post Git status observations must match exact reviewed identities; sourceDirty must be literal false.",
+    "Exact observed toolchain, pinned actions, source input/content/archive inventories and run/workflow identity are bound by the independently fixed expected record.",
+    "GitHub archive digest is separate from website.zip and package.json SHA256; completed successful run and nonexpired observed artifact are required.",
+    "Local checks never create independent PASS, real producer proof, environment/app acceptance or binding activation."
+  ],
+  "protectedMode": "No workflow, builder, consumer, runtime or binding mutation; no actual producer is defined or run by this contract",
+  "requiredSourceHashes": {
+    "Static/SDA-WebApp/tools/package.cjs": "4b8c64d649e39b0abc2c85efdf80b4213ce9c75ff6489bcae0ec8cc32e55c1be",
+    "Static/SDA-WebApp/tools/common.cjs": "b328c3d093d458e0326e16f4653ba6c65d8d368848409876c5dfca4c5e701ba0",
+    "Static/SDA-WebApp/SDA.Website.csproj": "096d7f7151530e7a45b06c4309c98670f7e37112f74803652cf43b2ed66096bb",
+    "Static/SDA-WebApp/Program.cs": "5eda323ae16646840401d197c2e47e59e734d11136b166a7ea92835a6d6d2966",
+    "Static/SDA-WebApp/content-contract.json": "e1f45d775db89ae580694c16daea38550db0ce133472ea6388f83efee175e99e",
+    ".gitattributes": "91022b0ce5958783be7b8e8fcdea1729a9f23becea9b038c2df7868d39cf70f6"
+  }
+}

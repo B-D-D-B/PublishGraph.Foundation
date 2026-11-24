@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "repository": "B-D-D-B/PublishGraph.Foundation",
+  "workflowPath": ".github/workflows/deploy-sda-website.yml",
+  "allowedWorkflowRef": "refs/heads/main",
+  "knownInfrastructure": {
+    "dev": {
+      "subscriptionId": "cc1fa56e-a8ce-411f-bb5c-58e96d9ac4f8",
+      "resourceGroup": "sda-dev",
+      "planId": "/subscriptions/cc1fa56e-a8ce-411f-bb5c-58e96d9ac4f8/resourceGroups/sda-dev/providers/Microsoft.Web/serverfarms/ASP-sda-dev-fusion",
+      "observedSku": "F1",
+      "requiredSku": "B1",
+      "region": "westus3",
+      "capacity": 1,
+      "linux": true
+    },
+    "test": {
+      "subscriptionId": "5c813ecc-3c19-44de-b676-304116fc869d",
+      "resourceGroup": "sda-test",
+      "planId": "/subscriptions/5c813ecc-3c19-44de-b676-304116fc869d/resourceGroups/sda-test/providers/Microsoft.Web/serverfarms/ASP-sda-test-fusion",
+      "observedSku": "F1",
+      "requiredSku": "B1",
+      "region": "westus3",
+      "capacity": 1,
+      "linux": true
+    },
+    "prod": {
+      "subscriptionId": "b7690041-454b-472b-b340-3d8dde115103",
+      "resourceGroup": "sda-prod",
+      "planId": "/subscriptions/b7690041-454b-472b-b340-3d8dde115103/resourceGroups/sda-prod/providers/Microsoft.Web/serverfarms/ASP-sda-prod-fusion",
+      "observedSku": "B3",
+      "requiredSku": "B3",
+      "region": "westus3",
+      "capacity": 1,
+      "linux": true
+    }
+  },
+  "environments": {
+    "dev": null,
+    "test": null,
+    "prod": null
+  }
+}

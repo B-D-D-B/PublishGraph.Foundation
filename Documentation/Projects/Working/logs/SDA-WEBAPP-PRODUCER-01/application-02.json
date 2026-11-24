@@ -1,0 +1,73 @@
+{
+  "function": "SDA-WEBAPP-PRODUCER-01",
+  "planSha256": "288d551aec8f3de1ce9dff1939590532fa064c8def2a13c9ee575175a282cae1",
+  "priorResultFreeze": {
+    "path": "Documentation/Projects/Working/logs/SDA-WEBAPP-PRODUCER-01/result-freeze-01.json",
+    "sha256": "70201566089b56fa03f4b5b5a2c3b848da0c9025bd759c04ddeb9cb9ccb64e3f"
+  },
+  "independentReview": {
+    "reviewer": "/root/astra_reviewer",
+    "priorDisposition": "REMEDIATE",
+    "finding": "F01 medium R2/R3/R5/R6; other dimensions PASS",
+    "history": "Documentation/Projects/Working/logs/SDA-WEBAPP-PRODUCER-01/F01-preimages-01.json",
+    "workerCorrection": "One shared inputPaths function now includes all four read-only root build controls for both prepare and observe; workflow filters include each control. No root bytes/protocol/builder/consumer edits. Independent closure not self-awarded."
+  },
+  "checks": {
+    "syntax": 2,
+    "focused": {
+      "passed": 115,
+      "failed": 0,
+      "total": 115,
+      "receipt": "Documentation/Projects/Working/logs/SDA-WEBAPP-PRODUCER-01/check-03.json",
+      "addedCases": 20
+    },
+    "reusedUnchangedProtocolCompatibility": {
+      "passed": 60,
+      "failed": 0,
+      "total": 60,
+      "receipt": "Documentation/Projects/Working/logs/SDA-WEBAPP-PRODUCER-01/protocol-01.json"
+    },
+    "reusedUnaffectedLocalBuildAndPreservation": {
+      "assertions": 40,
+      "receipt": "Documentation/Projects/Working/logs/SDA-WEBAPP-PRODUCER-01/local-build-01.json"
+    },
+    "reusedObserverDirtyGuard": {
+      "assertions": 2,
+      "receipt": "Documentation/Projects/Working/logs/SDA-WEBAPP-PRODUCER-01/observer-local-guard-01.json"
+    },
+    "rootControls": {
+      "count": 4,
+      "identities": [
+        {
+          "path": "global.json",
+          "sha256": "ce61f5ae207d33d00594c77c5999c7f0dc66434e85a85f38090335d588438974",
+          "bytes": 109,
+          "gitBlob": "e1c5e9980fedfa6ce8a2a67c128634c78c392f46"
+        },
+        {
+          "path": "Directory.Build.props",
+          "sha256": "aec8391f6be4e0087736ee398a572540b1de9e0b8f609e717976034bd8bf0d6e",
+          "bytes": 319,
+          "gitBlob": "ad3c9d4367ed18982cf067802f7e0e9bf840cae5"
+        },
+        {
+          "path": "Directory.Packages.props",
+          "sha256": "3c48ef7a724fe48d05559ea0e3fcf78bfae6971b50749708595e495a81d9683e",
+          "bytes": 633,
+          "gitBlob": "c2bb30af4da5765f1073d18753cd385e8c2a1223"
+        },
+        {
+          "path": "NuGet.Config",
+          "sha256": "f545a7e2ea14ac53cdfb91217cae67b8ff14275313f6298f9a3331d205b6c948",
+          "bytes": 217,
+          "gitBlob": "4d736c19ec5ff475609182bf1152633c566d1458"
+        }
+      ],
+      "observedEqualsBaseCommit": true
+    }
+  },
+  "reuseRationale": "Only helper input metadata and workflow path filters changed. Four root build control bytes match base and original local build context; accepted builder/host/content/protocol unchanged. Reuse dirty local buildZIP/actual458-entry inspection and60protocolchecks; no rebuild or runtime suite justified.",
+  "limits": "No commit, push, Actions run/artifact, manual dispatch, Azure/OIDC/deploy/activation/independent selfacceptance. Local result awaits distinct R1-R8; future push effect requires exact committed revision packet and separate DREADY/Rreview.",
+  "configuration": "Explicit gpt-6.1-sol/medium worker and gpt-6-astra/medium reviewer launch guarantee; actual runtime telemetry unavailable",
+  "recordedUtc": "2026-11-22T08:44:09.076Z"
+}

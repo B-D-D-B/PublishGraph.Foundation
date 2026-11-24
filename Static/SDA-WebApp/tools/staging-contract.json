@@ -1,0 +1,66 @@
+{
+  "version": 1,
+  "function": "SDA-WEBAPP-STAGING-02",
+  "service": "sda-website",
+  "status": "inactive",
+  "stageField": "binding.stage",
+  "stages": [
+    "default-host",
+    "custom-domain"
+  ],
+  "input": "Only existing dev/test/prod environment dropdown; stage fixed in independently reviewed source binding, never caller input",
+  "stageScopedControls": [
+    "ownerPacket",
+    "ownerReadiness",
+    "artifactAcceptance",
+    "capacityReadiness"
+  ],
+  "defaultHost": {
+    "scope": "default-host-only",
+    "authDispositionPassRequired": false,
+    "vanityDomain01Required": false,
+    "predecessorStages": [
+      "default-host"
+    ],
+    "requirements": "Actual same-env/app/stage/source/ZIP owner and hosting observations, accepted artifact PASS, stage capacity readiness and exact fixed app-only identity/plan/TLS/SCM/FTP evidence. Dev none; Test priorDevdefaultPASS; Prod priorTestdefaultPASS, same source/ZIP."
+  },
+  "customDomain": {
+    "scope": "custom-domain",
+    "authDispositionPassRequired": true,
+    "vanityDomain01Required": true,
+    "predecessorStages": [
+      "default-host",
+      "custom-domain"
+    ],
+    "requirements": "All current full custom/auth/DOMAIN01/owner/CAP/identity/integrity guards; both prior environment stages PASS for same source/ZIP. Later distinct cutover acceptance, never inferred from default-host."
+  },
+  "defaultHostKnownGaps": [
+    {
+      "id": "content-routes",
+      "state": "OPEN",
+      "meaning": "Content/route completeness and LIVE equivalence remain unaccepted; temporary404s allowed for this staging scope"
+    },
+    {
+      "id": "oauth",
+      "state": "OPEN",
+      "meaning": "OAuth functionality may be absent/fail; no successful auth emulation/private-content exposure; later disposition/replacement remains open"
+    },
+    {
+      "id": "vanity-domain-tls",
+      "state": "OPEN",
+      "meaning": "DOMAIN-01, four Prod names, Dev/Test vanity agreement, DNS/TLS/cert/cutover remain later owner gates; default-host TLS still mandatory"
+    },
+    {
+      "id": "availability",
+      "state": "ACCEPTED STAGING LIMIT",
+      "meaning": "Outages permitted; no zero-downtime/old-new coexistence guarantee; old resources retained, no deletion"
+    }
+  ],
+  "security": "No security waiver: public static staging only, contact stays disabled/no mail or credentials, no private content/auth-success emulation. Default azurewebsites HTTPS/TLS and app-only authenticated client/principal/FIC/role/plan/AlwaysOn/literalfalse FTP/SCM remain mandatory.",
+  "ownerOutputs": "Still unavailable: actual app/defaulthost/settings/SCM/identity/FIC/required plan observation/time, environment agreement/token support, stageCAP, env/app artifact wrapper and prior runtime stage PASS. All three real bindings remain null; no provider outputs or receipts manufactured.",
+  "integrity": "No manual control-byte SHA pins. Preserve automatic source/build/run/artifact/archive/ZIP/package receipt equality, fixed-main source/context and semantic receipt env/app/source/payload/stage. Global source-build PASS is not an environment/app wrapper.",
+  "publication": "Latest user permits reviewed source publication and producer build; exact localR/localcommit then distinct commit-bound effectD before push. Existing255 hold is historical and superseded only for authorized reviewed effects, no skipCI.",
+  "deployment": "No binding population/activation/manual dispatch/directCLI/Kudu/Azure/Infrastructure/DNS/cert/retirement changes in this function. Actual default-host deployment waits real owner/security/CAP prerequisites and affected review, not OAuth/content/vanity/zero-downtime completion.",
+  "claims": "Source/default-host progress records only scoped observed outcomes and explicit punchlist. No full migration, LIVE equivalence, uptime, capacity or functional OAuth completion claim.",
+  "defaultHostnameBinding": "Required ownerPacket.defaultHostname equals selected target.defaultHostname and actual app.defaultHostName observed by the existing app-only app-show query; missing or unrelated syntactically valid hostname fails in either stage, with no new permission/provider call."
+}

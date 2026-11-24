@@ -1,0 +1,139 @@
+{
+  "mode": "Synthetic fixed selections and in-memory app-only responses; zero cloud calls",
+  "guardSha256": "d219c026eec39fc003d02a4498e85d9e2c8f6e4421752457e7264e9928ad75f3",
+  "counts": {
+    "pass": 32,
+    "fail": 0,
+    "total": 32
+  },
+  "rows": [
+    {
+      "name": "complete-fixed-app-only-path:dev",
+      "pass": true
+    },
+    {
+      "name": "complete-fixed-app-only-path:test",
+      "pass": true
+    },
+    {
+      "name": "complete-fixed-app-only-path:prod",
+      "pass": true
+    },
+    {
+      "name": "benign-control-formatting-no-pin",
+      "pass": true
+    },
+    {
+      "name": "mismatched-client-fails-before-azure",
+      "pass": true
+    },
+    {
+      "name": "unrelated-narrow-principal-fails-before-azure",
+      "pass": true
+    },
+    {
+      "name": "authenticated-client-mismatch",
+      "pass": true
+    },
+    {
+      "name": "observed-role-principal-mismatch",
+      "pass": true
+    },
+    {
+      "name": "inherited-broad-role-rejected",
+      "pass": true
+    },
+    {
+      "name": "actual-app-plan-mismatch",
+      "pass": true
+    },
+    {
+      "name": "owner-current-f1-is-not-required-b1",
+      "pass": true
+    },
+    {
+      "name": "owner-packet-semantic:sourceCommit",
+      "pass": true
+    },
+    {
+      "name": "owner-packet-semantic:artifactSha256",
+      "pass": true
+    },
+    {
+      "name": "owner-packet-semantic:kind",
+      "pass": true
+    },
+    {
+      "name": "owner-packet-semantic:gateId",
+      "pass": true
+    },
+    {
+      "name": "owner-packet-semantic:disposition",
+      "pass": true
+    },
+    {
+      "name": "owner-plan-observation:id",
+      "pass": true
+    },
+    {
+      "name": "owner-plan-observation:requiredSku",
+      "pass": true
+    },
+    {
+      "name": "owner-plan-observation:linux",
+      "pass": true
+    },
+    {
+      "name": "owner-plan-observation:region",
+      "pass": true
+    },
+    {
+      "name": "owner-plan-observation:capacity",
+      "pass": true
+    },
+    {
+      "name": "owner-plan-observation:verifiedAtUtc",
+      "pass": true
+    },
+    {
+      "name": "missing-owner-plan-time",
+      "pass": true
+    },
+    {
+      "name": "missing-owner-identity-principal",
+      "pass": true
+    },
+    {
+      "name": "wrong-fic-subject",
+      "pass": true
+    },
+    {
+      "name": "auth-receipt-semantic-drift",
+      "pass": true
+    },
+    {
+      "name": "basic-publishing-not-literal-false:true",
+      "pass": true
+    },
+    {
+      "name": "basic-publishing-not-literal-false:false",
+      "pass": true
+    },
+    {
+      "name": "owner-packet-semantic-drift",
+      "pass": true
+    },
+    {
+      "name": "no-shared-plan-or-directory-cli",
+      "pass": true
+    },
+    {
+      "name": "no-approval-boolean-switch",
+      "pass": true
+    },
+    {
+      "name": "no-control-hash-environment-or-marker-gates",
+      "pass": true
+    }
+  ]
+}

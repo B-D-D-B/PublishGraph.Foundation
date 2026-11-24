@@ -1,0 +1,100 @@
+{
+  "kind": "source-build-acceptance",
+  "disposition": "PASS",
+  "functionId": "SDA-WEBAPP-STAGING-02",
+  "gateId": "SDA-WEBAPP-STAGING-02-SOURCE-BUILD-R1-R8-01",
+  "reviewer": "/root/astra_reviewer",
+  "worker": "/root/sol_worker",
+  "reviewedAtUtc": "2026-11-22T18:00:08.571Z",
+  "repository": "B-D-D-B/PublishGraph.Foundation",
+  "protocolSha256": "cdb8ac1509a2b3d30811d40cb81c62fd2901fc9f01cb1b2ddaced511ec66bc39",
+  "sourceCommit": "55beb7712019589ad8522b258e4dec07674211f0",
+  "sourceTree": "74e9a7f834e34c6674d297255c988883c1fe885c",
+  "producerWorkflowPath": ".github/workflows/build-sda-website.yml",
+  "producerWorkflowSha256": "c1cc496b3b07daa350dfd8e3720123e7250510b957bc236ed7ebb2c373f1a90b",
+  "producerEvidenceSha256": "68f6a5bba3dba6c46dda8c3014fff0cf3b7b5d24b26beb12ce3a2cf471c088af",
+  "sourceInputsSha256": "f09316be1a63f5ce04619b7c97b59cddc86c45a90676fbbefffe4a9853d8bc76",
+  "toolchainSha256": "e6af826362f2a61cca9ea4a225e308ff5f3bf18b5e96d73d83d2440ad41f2123",
+  "runId": 45052120184,
+  "runAttempt": 1,
+  "artifactId": 14765806863,
+  "artifactName": "sda-website-55beb7712019589ad8522b258e4dec07674211f0-45052120184-1",
+  "archiveSha256": "66201ce0f9a2efeb82912ca3262480167eb1b91db08c69bdb23c00b2f78234cb",
+  "zipSha256": "89dc4f400c1f00e4b9338a135529fb20364ee81464794fd280372bb81f0ced25",
+  "packageReceiptSha256": "6763af30998a1eedf1765f2d19c627a8f39195db79bed82ff17eceb1239f4830",
+  "archiveInventorySha256": "434921694dc0f21f6a17a1f2531ef5c6e0a5341c687786f6f879b35edf80ea01",
+  "observationsSha256": "305105535ab8b09216cf1e24e5ffc5d4149fc069b524b1e9816dc280afdb3e32",
+  "retentionDays": 7,
+  "scope": "Exact reviewed source publication and actual Linux hosted producer/source-build artifact acceptance only",
+  "effectResultFreezeSha256": "8bb43c036a71e4295d50f95785349f936b94937c69e9dfbed6257415699022a5",
+  "reviewTargetSha256": "eb5b0c84526bf2ebb043b7edb3da45da9b40a7d8a5c16d5043f80e7cfb244f9a",
+  "reviewedConsumerControls": [
+    {
+      "path": "Static/SDA-WebApp/tools/release-binding.cjs",
+      "bytes": 14524,
+      "sha256": "3bde8ee9b957a25b3ad47f1e7790b0799293b0c478805ffa735015768745e332"
+    },
+    {
+      "path": "Static/SDA-WebApp/tools/release-target.cjs",
+      "bytes": 8173,
+      "sha256": "04b73f250cd54ac84941fa74247b30e4d3ceee6a167f7a5aa3036a9ad5fb6bc3"
+    },
+    {
+      "path": "Static/SDA-WebApp/tools/check-release-binding.cjs",
+      "bytes": 22488,
+      "sha256": "3ff4dac3d2eff6598d34fdca2af7fc5b9951954d6ad34a2c6b46419c2266eefa"
+    },
+    {
+      "path": "Static/SDA-WebApp/tools/check-release-target.cjs",
+      "bytes": 10187,
+      "sha256": "474e95fda4d30fb81c8c899991cdccdcc514ba1b659f7f9e7a30771e14c038a0"
+    },
+    {
+      "path": "Static/SDA-WebApp/tools/check-workflow.cjs",
+      "bytes": 9507,
+      "sha256": "392433b6c14b5b8c699f7d476235e3f89f8b32307936a8feae94bd9dadcfb581"
+    },
+    {
+      "path": "Static/SDA-WebApp/README.md",
+      "bytes": 10796,
+      "sha256": "095b3d8b9c6d5c59806cde908fff3528d8ad075a9e115adb57cb765982dd0beb"
+    },
+    {
+      "path": "Static/SDA-WebApp/tools/staging-contract.json",
+      "bytes": 4157,
+      "sha256": "614bd2626fd068688eded1cb7623ddd535a3df61a6dec8b37a1b6e3b046f8a5b"
+    }
+  ],
+  "inventoryDistinction": "Producer helper remains protected and explicitly captures467BUILDinputs; excluded consumer tools/stagingcontract are separately fixed here by SHA256+exact commit/tree and localR, not falsely added to actual producer inventory.",
+  "dimensions": {
+    "R1": "pass: exact source push and first-attempt producer succeeded with actual clean source and accepted content",
+    "R2": "pass: authorized source/build publication and bounded capture obligations fulfilled; no default-host deployment claimed",
+    "R3": "pass: exact two-file artifact bundle and separate evidence conform to protected producer protocol",
+    "R4": "pass: source/tree/build inputs/toolchain/run/artifact/archives/payload/receipt identities agree; seven consumer controls separately commit-bound",
+    "R5": "pass: actual successful lifecycle and currently valid observed expiry; historical failure and F01 evidence retained",
+    "R6": "pass: build-only ownership, no Azure/OIDC/deployment/activation; null bindings and protected runtime preserved",
+    "R7": "pass: bounded capture reuses reviewed producer and source controls without additional authority",
+    "R8": "pass:17 frozen identities,467 build input identities,7 consumer identities,452 content entries,458 inner entries,2 bundle entries and1 evidence entry independently verified; fresh native metadata corroborates success and artifact digests"
+  },
+  "verification": {
+    "runId": 45052120184,
+    "runAttempt": 1,
+    "jobId": 137299324953,
+    "jobConclusion": "success",
+    "sourceDirty": false,
+    "rawPrePostGitStatusEmpty": true,
+    "preBuildIgnoredInputsEmpty": true,
+    "actualBuildInputCount": 467,
+    "separatelyReviewedConsumerCount": 7,
+    "contentCount": 452,
+    "innerZipEntries": 458,
+    "outerBundleEntries": 2,
+    "evidenceArchiveEntries": 1,
+    "artifactExpiredAtReview": false,
+    "artifactExpiresAtUtc": "2026-11-29T17:55:54Z",
+    "freshNativeMetadataRead": true,
+    "additionalArtifactDownloads": 0
+  },
+  "configuration": "Normal; explicit gpt-6-astra/medium launch guarantee; actual runtime telemetry unavailable",
+  "limits": "No default-host or App Service runtime/deployment acceptance, OAuth/content equivalence, full migration, capacity/uptime, env/app/stage wrapper, owner output, binding activation, Azure/OIDC or retirement acceptance. Hosted image/tool versions and expiry are observed facts, not immutable-image or future-availability guarantees. Prior failed producer and staging F01 history remain preserved."
+}

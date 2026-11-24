@@ -1,0 +1,209 @@
+{
+  "function": "SDA-WEBAPP-ARTIFACT-01",
+  "purpose": "Independent R1-R8 LOCAL protocol/validator/mock acceptance",
+  "sourceBase": "fa723dc086d4d84abab13ef87f470ccf7c4358db",
+  "plan": {
+    "path": "Documentation/Projects/Working/logs/SDA-WEBAPP-ARTIFACT-01/plan-01.json",
+    "sha256": "5bb13489ff0c95b00d24886fa4655aeb48435fa936881982a2a35f95728a9aa2"
+  },
+  "files": [
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Documentation/Projects/Working/SDA-WEBAPP-MIG-01-Working.md",
+      "relativePath": "Documentation/Projects/Working/SDA-WEBAPP-MIG-01-Working.md",
+      "sha256": "92e8a226786b8cf6a5ddca5189c88a524620068f1dfcdfd44fd7da78654a5e17",
+      "bytes": 43720
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Documentation/Projects/Working/logs/SDA-WEBAPP-ARTIFACT-01/application-01.json",
+      "relativePath": "Documentation/Projects/Working/logs/SDA-WEBAPP-ARTIFACT-01/application-01.json",
+      "sha256": "21a3b0ad62e4fe0992bc0bda241d9aea324f8127259fbde3a811ad63b860395a",
+      "bytes": 2181
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Documentation/Projects/Working/logs/SDA-WEBAPP-ARTIFACT-01/check-02.json",
+      "relativePath": "Documentation/Projects/Working/logs/SDA-WEBAPP-ARTIFACT-01/check-02.json",
+      "sha256": "60846f8543c453211cdd9ab288a382158f277b3bd09a9925365701cc5265d66f",
+      "bytes": 4631
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Documentation/Projects/Working/logs/SDA-WEBAPP-ARTIFACT-01/check-03.json",
+      "relativePath": "Documentation/Projects/Working/logs/SDA-WEBAPP-ARTIFACT-01/check-03.json",
+      "sha256": "33b8966f19e9255d0a62aeffc6b65ee0b3251c6165b93d079dfe512eafdfced9",
+      "bytes": 4717
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Documentation/Projects/Working/logs/SDA-WEBAPP-ARTIFACT-01/plan-01.json",
+      "relativePath": "Documentation/Projects/Working/logs/SDA-WEBAPP-ARTIFACT-01/plan-01.json",
+      "sha256": "5bb13489ff0c95b00d24886fa4655aeb48435fa936881982a2a35f95728a9aa2",
+      "bytes": 21801
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Documentation/Projects/Working/logs/SDA-WEBAPP-ARTIFACT-01/readiness-01.json",
+      "relativePath": "Documentation/Projects/Working/logs/SDA-WEBAPP-ARTIFACT-01/readiness-01.json",
+      "sha256": "e8b39b1b2a69b2c5b6ed891c2a85a08aa1c8fd414a536f18a801984073eae6b5",
+      "bytes": 904
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Documentation/Projects/Working/logs/SDA-WEBAPP-ARTIFACT-01/recovery-01.json",
+      "relativePath": "Documentation/Projects/Working/logs/SDA-WEBAPP-ARTIFACT-01/recovery-01.json",
+      "sha256": "6e2c4b3b0c06808e3e148ed7c62abf8225231be23a163a40239ed58687d8f490",
+      "bytes": 827
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Static/SDA-WebApp/tools/ARTIFACT-PROTOCOL.md",
+      "relativePath": "Static/SDA-WebApp/tools/ARTIFACT-PROTOCOL.md",
+      "sha256": "9a34ab7f995ce25d722da3e4e8d38de239f0579be2f931e950b8bfe428ccee7d",
+      "bytes": 6428
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Static/SDA-WebApp/tools/artifact-protocol.json",
+      "relativePath": "Static/SDA-WebApp/tools/artifact-protocol.json",
+      "sha256": "cdb8ac1509a2b3d30811d40cb81c62fd2901fc9f01cb1b2ddaced511ec66bc39",
+      "bytes": 3453
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Static/SDA-WebApp/tools/check-artifact-protocol.cjs",
+      "relativePath": "Static/SDA-WebApp/tools/check-artifact-protocol.cjs",
+      "sha256": "db3d03bc06711e793f9a72f852361c020792586fa464f3bb8d7d5ed11186a826",
+      "bytes": 15874
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Static/SDA-WebApp/tools/validate-artifact-protocol.cjs",
+      "relativePath": "Static/SDA-WebApp/tools/validate-artifact-protocol.cjs",
+      "sha256": "56a527a537a195f68fcdca07c83315984b446e1d1faa2374cd9334b40b4f9773",
+      "bytes": 16035
+    }
+  ],
+  "protectedSource": [
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/.github/workflows/deploy-sda-website.yml",
+      "relativePath": ".github/workflows/deploy-sda-website.yml",
+      "sha256": "07d6c5532a91c8fbf2d85ad28637d7d8ebb3aa587fdf86a2065d3c6ee17fbe2f",
+      "gitBlob": "54c1488fee2c7e540f588af3ed64a2ccfe47816b"
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/.github/sda-website-release-bindings.json",
+      "relativePath": ".github/sda-website-release-bindings.json",
+      "sha256": "82a24e98181e3593026aed76bbabfe7fdcb9aeb05fe23d739a599e6257fd9578",
+      "gitBlob": "b56bcc52b6e8cfd170f49deda6dbd0653b7f5107"
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Static/SDA-WebApp/tools/package.cjs",
+      "relativePath": "Static/SDA-WebApp/tools/package.cjs",
+      "sha256": "4b8c64d649e39b0abc2c85efdf80b4213ce9c75ff6489bcae0ec8cc32e55c1be",
+      "gitBlob": "c473869403b91d07bbd5d7055a13b3067181686b"
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Static/SDA-WebApp/tools/common.cjs",
+      "relativePath": "Static/SDA-WebApp/tools/common.cjs",
+      "sha256": "b328c3d093d458e0326e16f4653ba6c65d8d368848409876c5dfca4c5e701ba0",
+      "gitBlob": "690908fdd24c6d6d84bb7d5b95b562d1063d80d2"
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Static/SDA-WebApp/tools/release-binding.cjs",
+      "relativePath": "Static/SDA-WebApp/tools/release-binding.cjs",
+      "sha256": "1071cb4705a7791ee5e8cfdddd90f991268bfa1175919b9421eec76034efa652",
+      "gitBlob": "c9655932168350bf9c78c9d5a213425bbfb471f6"
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Static/SDA-WebApp/tools/release-target.cjs",
+      "relativePath": "Static/SDA-WebApp/tools/release-target.cjs",
+      "sha256": "07c24cc4549782fc8d71eef528fbe92034f8ed0de15389679e2edec665598b04",
+      "gitBlob": "9515562dc26f1547b2d616dd440f1b3a25b29548"
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Static/SDA-WebApp/SDA.Website.csproj",
+      "relativePath": "Static/SDA-WebApp/SDA.Website.csproj",
+      "sha256": "096d7f7151530e7a45b06c4309c98670f7e37112f74803652cf43b2ed66096bb",
+      "gitBlob": "ed54625d5a6c77a92e6d234d800dbbd89836c151"
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Static/SDA-WebApp/Program.cs",
+      "relativePath": "Static/SDA-WebApp/Program.cs",
+      "sha256": "5eda323ae16646840401d197c2e47e59e734d11136b166a7ea92835a6d6d2966",
+      "gitBlob": "b7fcdf31ec1ba40d13b604b7e090ed2109e35731"
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Static/SDA-WebApp/content-contract.json",
+      "relativePath": "Static/SDA-WebApp/content-contract.json",
+      "sha256": "e1f45d775db89ae580694c16daea38550db0ce133472ea6388f83efee175e99e",
+      "gitBlob": "2eb382cce97873c2bb665eeb5b3382b1eb7b92b9"
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/.gitignore",
+      "relativePath": ".gitignore",
+      "sha256": "283439fac1fca3f77cd5ffd8a2de4928c5c955429e227ce8612fab831fb57b0c",
+      "gitBlob": "7aec3dc4aef0809c686bbc83d87cb986aa39dc37"
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/.gitattributes",
+      "relativePath": ".gitattributes",
+      "sha256": "91022b0ce5958783be7b8e8fcdea1729a9f23becea9b038c2df7868d39cf70f6",
+      "gitBlob": "39ff214e9e972552d18cc052e2c91274840761f1"
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Documentation/Projects/Working/logs/SDA-WEBAPP-MIG-01/release-ux-independent-review-01.json",
+      "relativePath": "Documentation/Projects/Working/logs/SDA-WEBAPP-MIG-01/release-ux-independent-review-01.json",
+      "sha256": "c1593d6f4c4b2676aa68e845d7466a5690ae8e6ea00101ce5027ab0a3b994ef8",
+      "gitBlob": "d02d5578ebdf8f246301cd1b0c4234c784b3a7d5"
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Documentation/Projects/Working/logs/SDA-WEBAPP-MIG-01/owner-handoff-02.json",
+      "relativePath": "Documentation/Projects/Working/logs/SDA-WEBAPP-MIG-01/owner-handoff-02.json",
+      "sha256": "022af5259238a6358e0a68d46f3e75ad4ef4dbc9a7e40d0ed48eefb9d44ca64e",
+      "gitBlob": "b134b5c4b412a71d25a987e42cb21f2c77accc7f"
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation.worktrees/sda-website-migration-setup/Documentation/Projects/Working/logs/SDA-WEBAPP-MIG-01/capacity-addendum-01.json",
+      "relativePath": "Documentation/Projects/Working/logs/SDA-WEBAPP-MIG-01/capacity-addendum-01.json",
+      "sha256": "82537d85319d5e6cd68e3a0ca8972e643f283c9af06526e21da657e7618ef71d",
+      "gitBlob": "b6fdee07f28163b98ebbcd1fe94a7cc980ae2c55"
+    }
+  ],
+  "authorities": [
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/PublishGraph.Foundation/AGENTS.md",
+      "sha256": "d3b2d81b9351aaed4b8644a223829787d73cc98c9efb31aa0968dce33d9d9339"
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/BDDB.AITooling/guidance/standard-practices.md",
+      "sha256": "a0182beeb6266a0627007ec0a2d255e3feba60578c640e67a020218709507bce"
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/BDDB.AITooling/guidance/worker-review-cycle.md",
+      "sha256": "c9dda120c85d4b03976172d8104be52c30c2cc02ad87db556074b85b48e22ff8"
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/BDDB.AITooling/guidance/technical-audit-rubric.md",
+      "sha256": "e9cc31452998747d3a7efde04ccef40dec346a8305be6efdb05873ce6cb869ef"
+    },
+    {
+      "path": "C:/GitHub/SiliconDreamArtists/BDDB.AITooling/guidance/result-audit-rubric.md",
+      "sha256": "a259be47851e260c2bb3ef12f71112f7ecf83d49c85a8ed091494ee169b2cb51"
+    }
+  ],
+  "registrationPriorPrefix": {
+    "sha256": "051033569e1c52501004daedef38c976614827e4e89d134e13070b0d8b580232",
+    "bytes": 41118,
+    "preserved": true
+  },
+  "contract": {
+    "path": "Static/SDA-WebApp/tools/artifact-protocol.json",
+    "sha256": "cdb8ac1509a2b3d30811d40cb81c62fd2901fc9f01cb1b2ddaced511ec66bc39"
+  },
+  "validator": {
+    "path": "Static/SDA-WebApp/tools/validate-artifact-protocol.cjs",
+    "sha256": "56a527a537a195f68fcdca07c83315984b446e1d1faa2374cd9334b40b4f9773"
+  },
+  "focusedCheck": {
+    "path": "Documentation/Projects/Working/logs/SDA-WEBAPP-ARTIFACT-01/check-03.json",
+    "sha256": "33b8966f19e9255d0a62aeffc6b65ee0b3251c6165b93d079dfe512eafdfced9",
+    "counts": {
+      "pass": 60,
+      "fail": 0,
+      "total": 60
+    }
+  },
+  "limits": "Actual producer is null. All run/artifact/source acceptance/env-app wrapper test data are synthetic; no actual ZIP inspection/build/producerworkflow/run/API/Azure/dispatch/activation/merge/capacity acceptance.",
+  "status": "Frozen for independent result; not yet accepted or published"
+}

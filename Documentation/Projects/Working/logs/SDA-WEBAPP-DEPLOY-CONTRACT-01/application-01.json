@@ -1,0 +1,48 @@
+{
+  "function": "SDA-WEBAPP-DEPLOY-CONTRACT-01",
+  "scope": "Local removal of deployment control-byte hash prerequisites, source-owned semantic successor contract; no effect",
+  "planSha256": "028ebdb013e1e4c9224db33b2802ae2a0bf4e17eacee27ea783f3a53265ff1aa",
+  "readinessReceipt": "Documentation/Projects/Working/logs/SDA-WEBAPP-DEPLOY-CONTRACT-01/readiness-01.json",
+  "changes": "Receipt descriptors no longer require/control-byte-match SHA. Semantic owner-hosting packet now directly scopes accepted source/payload. Remove SHA env and dummy mapping/plan markers, retain actual owner observation/time and account/app/role/FTP/SCM semantics. Remove ambiguous binding audit output. No YAML or bindings changed.",
+  "tests": {
+    "syntax": {
+      "pass": 5,
+      "fail": 0
+    },
+    "binding": {
+      "pass": 79,
+      "fail": 0,
+      "total": 79,
+      "receipt": "Documentation/Projects/Working/logs/SDA-WEBAPP-DEPLOY-CONTRACT-01/binding-02.json"
+    },
+    "target": {
+      "pass": 32,
+      "fail": 0,
+      "total": 32,
+      "receipt": "Documentation/Projects/Working/logs/SDA-WEBAPP-DEPLOY-CONTRACT-01/target-01.json"
+    },
+    "workflow": {
+      "pass": 31,
+      "fail": 0,
+      "total": 31,
+      "receipt": "Documentation/Projects/Working/logs/SDA-WEBAPP-DEPLOY-CONTRACT-01/workflow-01.json"
+    },
+    "aggregateFocused": {
+      "pass": 142,
+      "fail": 0,
+      "total": 142
+    },
+    "guards": {
+      "assertions": 39,
+      "receipt": "Documentation/Projects/Working/logs/SDA-WEBAPP-DEPLOY-CONTRACT-01/guards-01.json"
+    }
+  },
+  "history": "First focused run139/139; then three planned missing-owner/auth negatives added and benign formatting also reordered. Affected binding rerun79/79, target32/workflow31 unchanged. No failed test/outcome, no build/runtime/producer/actualAPI/cloud suite run.",
+  "contract": {
+    "path": "Static/SDA-WebApp/tools/deploy-contract.json",
+    "sha256": "f408352a1efdf7bd46a2fdefadd458aa18c77d2683f53b7ccfc4115cab55aac2"
+  },
+  "limitations": "Actual owner/environment/app/OIDC/auth/domain/capacity/priorstage outputs not supplied; examples/fixtures synthetic. Sourcebuild receipt remains no env/app acceptance wrapper. Nullguards/deploydisabled unchanged. Source publication HELD by latest no-effect directive because consumer paths trigger producer. Await independent R1-R8 before LOCALcommit only.",
+  "configuration": "gpt-6.1-sol/medium and gpt-6-astra/medium explicit launch guarantees; actual runtime telemetry unavailable",
+  "recordedUtc": "2026-11-22T09:50:11.426Z"
+}

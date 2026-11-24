@@ -1,0 +1,41 @@
+{
+  "function": "SDA-WEBAPP-ARTIFACT-01",
+  "scope": "Local four-file producer protocol and focused synthetic conformance only",
+  "sourceBase": "fa723dc086d4d84abab13ef87f470ccf7c4358db",
+  "readyPlanSha256": "5bb13489ff0c95b00d24886fa4655aeb48435fa936881982a2a35f95728a9aa2",
+  "sources": [
+    {
+      "path": "Static/SDA-WebApp/tools/artifact-protocol.json",
+      "sha256": "cdb8ac1509a2b3d30811d40cb81c62fd2901fc9f01cb1b2ddaced511ec66bc39",
+      "bytes": 3453
+    },
+    {
+      "path": "Static/SDA-WebApp/tools/ARTIFACT-PROTOCOL.md",
+      "sha256": "9a34ab7f995ce25d722da3e4e8d38de239f0579be2f931e950b8bfe428ccee7d",
+      "bytes": 6428
+    },
+    {
+      "path": "Static/SDA-WebApp/tools/validate-artifact-protocol.cjs",
+      "sha256": "56a527a537a195f68fcdca07c83315984b446e1d1faa2374cd9334b40b4f9773",
+      "bytes": 16035
+    },
+    {
+      "path": "Static/SDA-WebApp/tools/check-artifact-protocol.cjs",
+      "sha256": "db3d03bc06711e793f9a72f852361c020792586fa464f3bb8d7d5ed11186a826",
+      "bytes": 15874
+    }
+  ],
+  "finalCheck": {
+    "path": "Documentation/Projects/Working/logs/SDA-WEBAPP-ARTIFACT-01/check-03.json",
+    "sha256": "33b8966f19e9255d0a62aeffc6b65ee0b3251c6165b93d079dfe512eafdfced9",
+    "counts": {
+      "pass": 60,
+      "fail": 0,
+      "total": 60
+    }
+  },
+  "history": "First checker stopped during malformed-fixture sealing before report; recovery-01 records diagnosis/repair. Fresh check-02 passed59; final check-03 passed60 including complete run/artifact/expiry observation digest binding. No initial execution reset; all receipts retained.",
+  "preservation": "14 protected source/evidence identities and5 authorities reverified; current coordinator registration hash unchanged and all committed prior Working bytes remain exact prefix; no consumer/package/workflow/nullbinding/runtime/oldrecord edit.",
+  "limits": "Actual producer is null. All run/artifact/source acceptance/env-app wrapper test data are synthetic; no actual ZIP inspection/build/producerworkflow/run/API/Azure/dispatch/activation/merge/capacity acceptance.",
+  "next": "Independent R1-R8 of frozen local result before authorized commit/push; no worker PASS"
+}

@@ -1,0 +1,36 @@
+{
+  "function": "SDA-WEBAPP-STAGING-02",
+  "reviewer": "/root/astra_reviewer",
+  "worker": "/root/sol_worker",
+  "disposition": "PASS",
+  "scope": "Exact LOCAL stage consumer revision/punchlist only, no source effect, actual owner/runtime/default-host acceptance or deployment",
+  "freeze": {
+    "path": "Documentation/Projects/Working/logs/SDA-WEBAPP-STAGING-02/result-freeze-02.json",
+    "sha256": "75a9080e49e1474940b953d45ff28d977001d40b25a8f1bfe023526538eecd2d"
+  },
+  "contract": {
+    "path": "Static/SDA-WebApp/tools/staging-contract.json",
+    "sha256": "614bd2626fd068688eded1cb7623ddd535a3df61a6dec8b37a1b6e3b046f8a5b"
+  },
+  "dimensions": {
+    "R1": "PASS",
+    "R2": "PASS",
+    "R3": "PASS",
+    "R4": "PASS",
+    "R5": "PASS",
+    "R6": "PASS",
+    "R7": "PASS",
+    "R8": "PASS"
+  },
+  "findings": [
+    {
+      "id": "F01",
+      "disposition": "CLOSED LOCALLY",
+      "description": "Selected explicitowner and actualapp defaultHost tuple checked using existing appread; wrong/missing host fails bothstages with unchanged6calls"
+    }
+  ],
+  "independentVerification": "Coordinator conveyed24source/evidence29protected5authorities/coverage/priorfreeze unchanged verified;201focused5syntax44guards PASS. First accepted-wronghost reproduction/history retained.",
+  "configuration": "gpt-6-astra/medium explicit launch guarantee; actual runtime telemetry unavailable",
+  "publication": "LOCAL commit authorized; separate exact commit/tree/remote/actor/producer effect DREADY before push. All actual bindings remain null, no activation/dispatch/cloud.",
+  "recordedUtc": "2026-11-22T17:51:36.906Z"
+}
