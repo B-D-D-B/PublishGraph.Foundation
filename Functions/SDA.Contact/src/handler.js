@@ -11,10 +11,18 @@ async function readBody(request) {
 }
 function createHandler(config,deps) {return async function(request,context={}){
   const requestId=randomUUID(),started=Date.now(); let cors={};
+  try {
+    if(request.method==='OPTIONS'){
+      const markers=request.query?.getAll('obs_run')||[];
+      const markerPresent=markers.length===1&&markers[0].length===36&&/^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/.test(markers[0]);
+      context.log?.(JSON.stringify({event:'contact.options.enter',invocationId:context.invocationId,requestId,markerPresent,...(markerPresent?{obs_run:markers[0]}:{})}));
+    }
+  }catch{}
   const respond=(status,code,extra={})=>{context.log?.(JSON.stringify({requestId,status,code,durationMs:Date.now()-started}));return {status,headers:{'Content-Type':'application/json','Cache-Control':'no-store',...cors},jsonBody:{ok:false,code,message:texts[code],requestId,...extra}};};
   try {
     const origin=request.headers.get('origin');
     if(!origin||origin==='null'||!config.origins.includes(origin))return respond(403,'origin_not_allowed');
+    const expectedHostname=new URL(origin).hostname;
     cors={'Access-Control-Allow-Origin':origin,Vary:'Origin'};
     if(request.method==='OPTIONS'){
       const hs=request.headers.get('access-control-request-headers');
@@ -26,7 +34,7 @@ function createHandler(config,deps) {return async function(request,context={}){
     let data;try {data=JSON.parse(await readBody(request));}catch(e){return respond(e.status===413?413:400,e.status===413?'request_too_large':'invalid_json');}
     const v=validate(data);if(!v.valid)return respond(400,'validation_failed',{fields:v.fields});
     if(!config.enabled||!config.from||!deps.send)return respond(503,'temporarily_unavailable');
-    let verified;try {verified=await deps.verify(v.data.challengeToken);}catch{return respond(503,'temporarily_unavailable');}
+    let verified;try {verified=await deps.verify(v.data.challengeToken,expectedHostname);}catch{return respond(503,'temporarily_unavailable');}
     if(!verified)return respond(403,'challenge_failed');
     let reserved;try{reserved=await deps.reserve();}catch{return respond(503,'temporarily_unavailable');}
     if(!reserved){const r=respond(429,'daily_limit');const now=deps.now?.()||new Date();r.headers['Retry-After']=String(Math.ceil((Date.UTC(now.getUTCFullYear(),now.getUTCMonth(),now.getUTCDate()+1)-now)/1000));return r;}

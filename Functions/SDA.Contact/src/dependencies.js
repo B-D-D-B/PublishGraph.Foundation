@@ -1,15 +1,16 @@
 'use strict';
-// No production mock/bypass switch. Production mail adapter awaits owner selection.
+const {AUTHORIZED_HOSTS}=require('./host-config');
+// No production mock/bypass switch. Dependency deadlines propagate cancellation.
 async function bounded(work, ms) {
   const controller=new AbortController(); let timer;
   try {return await Promise.race([Promise.resolve().then(()=>work(controller.signal)),new Promise((_,reject)=>{timer=setTimeout(()=>{controller.abort();reject(new Error('dependency_timeout'));},ms);})]);} finally {clearTimeout(timer);}
 }
-async function verifyChallenge(token, config, fetcher=fetch) {
-  if(!config.challengeSecret||!config.challengeHostname) throw Error('challenge_unconfigured');
+async function verifyChallenge(token, config, expectedHostname, fetcher=fetch) {
+  if(!config.challengeSecret||!Array.isArray(config.challengeHostnames)||!config.challengeHostnames.length||new Set(config.challengeHostnames).size!==config.challengeHostnames.length||!config.challengeHostnames.every(h=>AUTHORIZED_HOSTS.includes(h))||!config.challengeHostnames.includes(expectedHostname)) throw Error('challenge_unconfigured');
   return bounded(async signal=>{
     const r=await fetcher('https://challenges.cloudflare.com/turnstile/v0/siteverify',{method:'POST',signal,body:new URLSearchParams({secret:config.challengeSecret,response:token})});
     if(!r.ok) throw Error('challenge_unavailable');
-    const data=await r.json();return data.success===true&&data.hostname===config.challengeHostname&&data.action==='contact';
+    const data=await r.json();return data.success===true&&config.challengeHostnames.includes(data.hostname)&&data.hostname===expectedHostname&&data.action==='contact';
   },5000);
 }
 async function reserve(client, now=new Date()) {
