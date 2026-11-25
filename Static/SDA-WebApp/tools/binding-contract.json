@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "status": "inactive",
+  "supersedes": "deploy-contract.json ownerPacket.planMeaning SKU and app association projection only",
+  "requiredSku": {
+    "dev": "B2",
+    "test": "B1",
+    "prod": "B3"
+  },
+  "appPlanAssociation": {
+    "projectionFields": [
+      "serverFarmId",
+      "appServicePlanId",
+      "properties.serverFarmId"
+    ],
+    "absentValues": [
+      "missing",
+      "null"
+    ],
+    "requirement": "At least one nonempty string; every present non-null projection must equal the fixed reviewed owner plan ID case-insensitively. Missing, malformed, conflicting or mismatching associations fail closed.",
+    "scope": "Single existing app-only webapp show query; no shared-plan, Graph or additional role access."
+  },
+  "activation": "All real bindings remain null until actual protected GitHub environment, app/identity/FIC/role/settings/SCM and independently accepted environment/app artifact evidence exist."
+}

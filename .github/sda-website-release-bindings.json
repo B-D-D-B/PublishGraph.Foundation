@@ -8,8 +8,8 @@
       "subscriptionId": "cc1fa56e-a8ce-411f-bb5c-58e96d9ac4f8",
       "resourceGroup": "sda-dev",
       "planId": "/subscriptions/cc1fa56e-a8ce-411f-bb5c-58e96d9ac4f8/resourceGroups/sda-dev/providers/Microsoft.Web/serverfarms/ASP-sda-dev-fusion",
-      "observedSku": "F1",
-      "requiredSku": "B1",
+      "observedSku": "B2",
+      "requiredSku": "B2",
       "region": "westus3",
       "capacity": 1,
       "linux": true

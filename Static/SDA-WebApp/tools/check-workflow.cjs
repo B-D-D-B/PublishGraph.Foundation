@@ -27,7 +27,17 @@ check('actions-commit-pinned', uses.length === 4 && uses.every(match => /^[a-f0-
 const contract = JSON.parse(fs.readFileSync(path.resolve(project, '../../.github/sda-website-release-bindings.json')));
 check('real-bindings-null-inactive', Object.keys(contract.environments).length === 3 && Object.values(contract.environments).every(value => value === null));
 check('fixed-main-service-contract', contract.allowedWorkflowRef === 'refs/heads/main' && contract.repository === 'B-D-D-B/PublishGraph.Foundation' && contract.workflowPath === '.github/workflows/deploy-sda-website.yml');
+const bindingCorrection = JSON.parse(fs.readFileSync(path.join(__dirname, 'binding-contract.json')));
+check('B02-inactive-successor-sku-contract', bindingCorrection.version === 1 && bindingCorrection.status === 'inactive'
+  && JSON.stringify(bindingCorrection.requiredSku) === JSON.stringify({ dev: 'B2', test: 'B1', prod: 'B3' })
+  && contract.knownInfrastructure.dev.observedSku === 'B2' && contract.knownInfrastructure.dev.requiredSku === 'B2'
+  && contract.knownInfrastructure.test.observedSku === 'F1' && contract.knownInfrastructure.test.requiredSku === 'B1'
+  && contract.knownInfrastructure.prod.observedSku === 'B3' && contract.knownInfrastructure.prod.requiredSku === 'B3');
+check('B02-app-only-all-present-projections', JSON.stringify(bindingCorrection.appPlanAssociation.projectionFields) === JSON.stringify(['serverFarmId', 'appServicePlanId', 'properties.serverFarmId'])
+  && JSON.stringify(bindingCorrection.appPlanAssociation.absentValues) === JSON.stringify(['missing', 'null']));
 const successor = JSON.parse(fs.readFileSync(path.join(__dirname, 'deploy-contract.json')));
+check('B02-successor-reference-resolves', bindingCorrection.supersedes === 'deploy-contract.json ownerPacket.planMeaning SKU and app association projection only'
+  && typeof successor.ownerPacket.planMeaning === 'string' && successor.ownerPacket.planMeaning.length > 0);
 check('successor-semantic-control-descriptor-no-pin', successor.version === 1 && successor.status === 'inactive'
   && JSON.stringify(successor.controlDescriptor.required) === JSON.stringify(['path', 'functionId', 'gateId', 'disposition']));
 check('successor-automatic-artifact-integrity-retained', successor.automaticIntegrity.preserved === true

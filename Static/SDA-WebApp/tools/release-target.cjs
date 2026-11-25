@@ -1,5 +1,6 @@
 'use strict';
 const cp = require('node:child_process');
+const bindingContract = require('./binding-contract.json');
 const equal = (a, b) => typeof a === 'string' && typeof b === 'string' && a.toLowerCase() === b.toLowerCase();
 function targetEnvironment(selection) {
   const b = selection.binding;
@@ -44,11 +45,11 @@ function validatePacket(selection) {
   if (selection.repository !== 'B-D-D-B/PublishGraph.Foundation' || selection.binding.oidc.subject !== subject
       || identity.issuer !== 'https://token.actions.githubusercontent.com' || identity.audience !== 'api://AzureADTokenExchange'
       || identity.subject !== subject) throw Error('Owner packet federated subject mismatch');
-  const plan = packet.plan, requiredSku = env.SDA_ENVIRONMENT === 'prod' ? 'B3' : 'B1';
+  const plan = packet.plan, requiredSku = bindingContract.requiredSku[env.SDA_ENVIRONMENT];
   if (!plan || !equal(plan.id, env.SDA_PLAN_ID) || !plan.id.toLowerCase().startsWith(`/subscriptions/${env.AZURE_SUBSCRIPTION_ID}/`.toLowerCase())
       || plan.observedSku !== requiredSku || plan.requiredSku !== requiredSku || plan.linux !== true
       || plan.region !== 'westus3' || plan.capacity !== 1
-      || !Number.isFinite(Date.parse(plan.verifiedAtUtc))) throw Error('Owner packet does not prove the required actual Linux B1/B1/B3 plan');
+      || !Number.isFinite(Date.parse(plan.verifiedAtUtc))) throw Error('Owner packet does not prove the required actual Linux B2/B1/B3 plan');
   return packet;
 }
 function executeAz(args, env) {
@@ -60,11 +61,13 @@ function verifyTarget(selection, execute = executeAz) {
   if (!equal(account.tenant, packet.identity.tenantId) || !equal(account.subscription, packet.subscriptionId)
       || account.user.type !== 'servicePrincipal' || !equal(account.user.name, packet.identity.clientId)) throw Error('Authenticated OIDC client does not match accepted owner identity');
   const scope = ['--resource-group', env.SDA_RESOURCE_GROUP, '--name', env.SDA_APP_NAME];
-  const app = az(['webapp', 'show', ...scope, '--query', '{id:id,plan:serverFarmId,kind:kind,httpsOnly:httpsOnly,defaultHostname:defaultHostName}']);
+  const app = az(['webapp', 'show', ...scope, '--query', '{id:id,plan:{serverFarmId:serverFarmId,appServicePlanId:appServicePlanId,armServerFarmId:properties.serverFarmId},kind:kind,httpsOnly:httpsOnly,defaultHostname:defaultHostName}']);
   const config = az(['webapp', 'config', 'show', ...scope, '--query', '{alwaysOn:alwaysOn,stack:linuxFxVersion,tls:minTlsVersion,ftps:ftpsState}']);
   // App association is observable with app-only RBAC. The shared plan's actual SKU
   // comes from independently accepted owner evidence; this identity never reads it.
-  if (!equal(app.id, packet.appId) || !equal(app.plan, packet.plan.id) || !equal(app.defaultHostname, packet.defaultHostname)
+  const plans = app.plan && typeof app.plan === 'object' && !Array.isArray(app.plan)
+    ? ['serverFarmId', 'appServicePlanId', 'armServerFarmId'].map(key => app.plan[key]).filter(value => value !== null && value !== undefined) : [];
+  if (!equal(app.id, packet.appId) || !plans.length || plans.some(value => !equal(value, packet.plan.id)) || !equal(app.defaultHostname, packet.defaultHostname)
       || !app.kind.includes('linux') || app.kind.includes('functionapp') || !app.httpsOnly) throw Error('Hosting packet does not match actual app/default hostname');
   if (!config.alwaysOn || config.stack !== 'DOTNETCORE|10.0' || !['1.2', '1.3'].includes(config.tls) || config.ftps !== 'Disabled') throw Error('Runtime/Always On/TLS/FTPS mismatch');
   const roles = az(['role', 'assignment', 'list', '--assignee', packet.identity.principalId, '--scope', packet.appId, '--include-inherited', '--fill-principal-name', 'false']);
